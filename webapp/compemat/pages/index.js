@@ -2,20 +2,28 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import {
   Grid,
-  Button,
   IconButton,
   Typography,
   Hidden,
   Menu,
   MenuItem,
+  Fade,
 } from "@material-ui/core";
-import AccountCircle from "@material-ui/icons/AccountCircle";
+import UserMenu from "../components/UserMenu";
+import Card from "../components/Card";
 import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "../components/Logo";
-import store from "../redux/store";
 import BasePage from "../components/BasePage";
-import { PRIMARY, CONTRAST_COLOR, SECONDARY } from "../public/colors";
 import Link from "next/link";
+import routes from "../public/routes";
+import { useRouter } from "next/router";
+import {
+  PRIMARY,
+  GREY_2,
+  CONTRAST_COLOR,
+  SECONDARY,
+  LINEAR_GREY_GRADIENT,
+} from "../public/colors";
 
 const styles = makeStyles((theme) => ({
   header: {
@@ -38,66 +46,84 @@ const styles = makeStyles((theme) => ({
     fontWeight: "600",
     textAlign: "center",
   },
+  link: {
+    color: SECONDARY,
+    fontSize: "16px",
+    fontWeight: "600",
+    textDecoration: "None",
+    "&:hover": {
+      color: CONTRAST_COLOR,
+    },
+  },
+  body: {
+    width: "100%",
+    padding: "10px",
+  },
+  cupon: {
+    width: "100%",
+    padding: "10px",
+    height: "200px",
+    backgroundColor: GREY_2,
+  },
+  cuponText: {
+    color: PRIMARY,
+    fontSize: "30px",
+    fontWeight: "600",
+    textAlign: "center",
+    lineHeight: "normal",
+  },
+  footer: {
+    width: "100%",
+    padding: "10px",
+    height: "50px",
+    background: LINEAR_GREY_GRADIENT,
+  },
+  footerText: {
+    color: CONTRAST_COLOR,
+    fontSize: "12px",
+    fontWeight: "600",
+    textAlign: "center",
+    lineHeight: "normal",
+  },
 }));
 
 function RowMenu() {
-  const goTo = (location) => {
-    return () => {};
-  };
+  const classes = styles();
 
   return (
-    <Grid container item alignItems="center">
-      <Link href="/course">
-        <Button color="secondary" onClick={goTo("/course")}>
-          Curso
-        </Button>
-      </Link>
-      <Button color="secondary" onClick={goTo("/exercise-categories")}>
-        Exercícios
-      </Button>
-      <Button color="secondary" onClick={goTo("/tutorials")}>
-        Tutoriais
-      </Button>
-      <Button color="secondary" onClick={goTo("/about")}>
-        Sobre
-      </Button>
+    <Grid container item alignItems="center" spacing={2}>
+      <Grid item>
+        <Link href={routes.course}>
+          <a className={classes.link}>Curso</a>
+        </Link>
+      </Grid>
+      <Grid item>
+        <Link href={routes.exercises}>
+          <a className={classes.link}>Exercícios</a>
+        </Link>
+      </Grid>
+      <Grid item>
+        <Link href={routes.tutorials}>
+          <a className={classes.link}>Tutorial</a>
+        </Link>
+      </Grid>
+      <Grid item>
+        <Link href={routes.about}>
+          <a className={classes.link}>Sobre</a>
+        </Link>
+      </Grid>
+      <Grid item>
+        <UserMenu />
+      </Grid>
     </Grid>
   );
 }
 
-function UserMenu() {
-  const isAuth = store.getState().isLogged;
-  const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  return (
-    <fragment>
-      <IconButton color="secondary" onClick={handleClick}>
-        <AccountCircle />
-      </IconButton>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        {!isAuth && <MenuItem onClick={handleClose}>Entrar</MenuItem>}
-        {isAuth && <MenuItem onClick={handleClose}>Perfil</MenuItem>}
-        {isAuth && <MenuItem onClick={handleClose}>Sair</MenuItem>}
-      </Menu>
-    </fragment>
-  );
-}
 
 function HamburguerMenu() {
+  const router = useRouter();
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -106,6 +132,10 @@ function HamburguerMenu() {
 
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const goTo = (place) => () => {
+    if (place) router.push(place);
   };
 
   return (
@@ -120,11 +150,12 @@ function HamburguerMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Curso</MenuItem>
-        <MenuItem onClick={handleClose}>Exercícios</MenuItem>
-        <MenuItem onClick={handleClose}>Tutoriais</MenuItem>
-        <MenuItem onClick={handleClose}>Sobre</MenuItem>
+        <MenuItem onClick={goTo(routes.course)}>Curso</MenuItem>
+        <MenuItem onClick={goTo(routes.exercises)}>Exercícios</MenuItem>
+        <MenuItem onClick={goTo(routes.tutorials)}>Tutoriais</MenuItem>
+        <MenuItem onClick={goTo(routes.about)}>Sobre</MenuItem>
       </Menu>
+      <UserMenu />
     </Grid>
   );
 }
@@ -146,7 +177,7 @@ function Header() {
         alignItems="center"
       >
         <Grid>
-          <Logo></Logo>
+          <Logo/>
         </Grid>
         <Grid>
           <Grid container direction="row" alignItems="center">
@@ -160,9 +191,6 @@ function Header() {
                 <HamburguerMenu />
               </Hidden>
             </Grid>
-            <Grid>
-              <UserMenu />
-            </Grid>
           </Grid>
         </Grid>
       </Grid>
@@ -174,26 +202,86 @@ function Header() {
         alignItems="center"
       >
         <Grid>
-          <Typography className={classes.message}>
-            {"Dê os primeiros passos na programação"}
-          </Typography>
+          <Fade in timeout={3000}>
+            <Typography className={classes.message}>
+              {"Dê os primeiros passos na programação"}
+            </Typography>
+          </Fade>
         </Grid>
         <Grid>
-          <Typography className={classes.submessage}>
-            {"Enquanto pratica para o ENEM"}
-          </Typography>
+          <Fade in timeout={3000}>
+            <Typography className={classes.submessage}>
+              {"Enquanto pratica para o ENEM"}
+            </Typography>
+          </Fade>
         </Grid>
       </Grid>
     </Grid>
   );
 }
 
+function Body() {
+  const classes = styles();
+
+  return (
+    <fragment>
+      <Grid
+        className={classes.body}
+        container
+        justifyContent="center"
+        spacing="2"
+      >
+        <Grid item xs={12} sm={4}>
+          <Card title={"Curso Completo"} image={"students.png"} height={"220"} content={"Um curso de reforço em matemática, baseado no conteúdo do ENEM, que vai te ajudar a dar os primeiros passos na programação."} />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Card title={"Pratique"} image={"study.png"} height={"220"} content={"Temos centenas de exercícios que vão te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."} />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Card title={"Prepare-se"} image={"exam.png"} height={"220"} content={"Se familiarize com as questões de matemática do ENEM dos últimos anos e faça uma excelente prova."} />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        className={classes.cupon}
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Fade in timeout={6000}>
+          <Typography className={classes.cuponText}>
+            {"Curso Gratuito com o Código"}
+          </Typography>
+        </Fade>
+        <Fade in timeout={6000}>
+          <Typography className={classes.cuponText}>{"[Em Breve]"}</Typography>
+        </Fade>
+      </Grid>
+      <Grid
+        container
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+        className={classes.footer}
+      >
+        <Typography className={classes.footerText}>
+          {"C&M (C) | 2021"}
+        </Typography>
+        <Typography className={classes.footerText}>
+          {"Udemy | Youtube | Email"}
+        </Typography>
+      </Grid>
+    </fragment>
+  );
+}
+
 function Home() {
   return (
     <div>
-      <Header></Header>
+      <Header />
+      <Body />
     </div>
   );
 }
 
-export default BasePage(Home);
+export default Home;
