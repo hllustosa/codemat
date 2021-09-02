@@ -16,14 +16,14 @@ export default function UserMenu() {
   };
 
   return (
-    <fragment>
+    <React.Fragment>
       {!isAuth && (
         <Button variant="contained" size="small" color="secondary">
           Entrar
         </Button>
       )}
       {isAuth && (
-        <fragment>
+        <React.Fragment>
           <IconButton color="secondary" onClick={handleClick}>
             <AccountCircle />
           </IconButton>
@@ -37,8 +37,8 @@ export default function UserMenu() {
             <MenuItem onClick={handleClose}>Perfil</MenuItem>
             <MenuItem onClick={handleClose}>Sair</MenuItem>
           </Menu>
-        </fragment>
+        </React.Fragment>
       )}
-    </fragment>
+    </React.Fragment>
   );
 }

@@ -6,6 +6,7 @@ const styles = makeStyles((theme) => ({
   title: {
     textDecorationColor: CONTRAST_COLOR,
     textDecoration: "underline",
+    textDecorationThickness : "4px",
     fontWeight: "600"
   },
 }));

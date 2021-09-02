@@ -26,7 +26,7 @@ export default function DenseAppBar(props) {
   const { title } = props;
 
   return (
-    <div className={classes.root}>
+    <header className={classes.root}>
       <AppBar  position="static" elevation={0}>
         <Toolbar className={classes.appbar} variant="dense">
           <Logo />
@@ -36,6 +36,6 @@ export default function DenseAppBar(props) {
           <UserMenu />
         </Toolbar>
       </AppBar>
-    </div>
+    </header>
   );
 }
