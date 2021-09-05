@@ -20,7 +20,7 @@ const withBasePage = (Component) => {
           />
           <meta name="description" content={meta} />
         </Head>
-        <Component setTitle={setTitle} setMeta={setMeta} setMeta {...props} />
+        <Component setTitle={setTitle} setMeta={setMeta} {...props} />
       </React.Fragment>
     );
   };

@@ -21,9 +21,12 @@ function Exercises(props) {
     console.log(data);
   });
 
-  React.useEffect(async () => {
-    const result = await Axios.get("https://gorest.co.in/public/v1/users");
-    setData(result);
+  React.useEffect(() => {
+    async function fetchDate() {
+      const result = await Axios.get("https://gorest.co.in/public/v1/users");
+      setData(result);
+    }
+    fetchDate();
   }, []);
 
   return (
