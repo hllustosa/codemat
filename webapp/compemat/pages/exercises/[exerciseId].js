@@ -1,10 +1,25 @@
 import Page from "../../components/Page";
 import React from "react";
 import Axios from "axios";
-import CodeRunner from "../../runner/CodeRunner";
+import CodeRunner, {CodeRunnerStates} from "../../runner/CodeRunner";
+
+
+import dynamic from 'next/dynamic'
+const TextEditor = dynamic(import('../../components/CodeEditor'), {
+  ssr: false
+})
+
 
 function Exercises(props) {
   const [data, setData] = React.useState({});
+  const [code, setCode] = React.useState("");
+
+  const runner = new CodeRunner({x: 10, y: 22 }, code, (status, r) => {
+    console.log(`status changed to ${status}`);
+    console.log(r);
+  }, (data) => {
+    console.log(data);
+  });
 
   React.useEffect(async () => {
     const result = await Axios.get("https://gorest.co.in/public/v1/users");
@@ -13,16 +28,20 @@ function Exercises(props) {
 
   return (
     <div>
+       <TextEditor code={code} setCode={setCode}/>
       <button
         onClick={() => {
-          const test = "try{ var a = 10 a.test.a} catch(e){}";
-          const runner = new CodeRunner(props.data, test, (r) => {
-            console.log(r);
-          });
           runner.runCode();
         }}
       >
         Executar
+      </button>
+      <button
+        onClick={() => {
+          runner.changeStatusTo(CodeRunnerStates.STOPPED);
+        }}
+      >
+        Parar
       </button>
     </div>
   );
