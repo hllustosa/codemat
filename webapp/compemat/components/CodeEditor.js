@@ -18,7 +18,7 @@ export default function CodeEditor(props) {
       theme="chrome"
       name="basic-code-editor"
       onChange={(currentCode) => setCode(currentCode)}
-      fontSize={18}
+      fontSize={16}
       showPrintMargin={true}
       showGutter={true}
       highlightActiveLine={false}

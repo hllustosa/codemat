@@ -19,10 +19,10 @@ export const CodeRunnerStates = {
 };
 
 export default class CodeRunner {
-  constructor(input, code, onStateChange, onNewOutputInput, onNewDebug) {
+  constructor(input, code, onStatusChange, onNewOutput, onNewDebug) {
     try {
       this.input = input;
-      this.onStateChange = onStateChange;
+      this.onStatusChange = onStatusChange;
       this.code = code;
       this.debug_logs = [];
       this.outputs = [];
@@ -37,7 +37,7 @@ export default class CodeRunner {
         };
 
         var output_wrapper = function output(data) {
-          if (onNewOutputInput) onNewOutputInput(data);
+          if (onNewOutput) onNewOutput(data);
           outputs.push(data);
         };
 
@@ -168,29 +168,28 @@ export default class CodeRunner {
   changeStatusTo = function (newStatus) {
     this.status = newStatus;
 
-    if (this.onStateChange) {
+    if (this.onStatusChange) {
       const state = {
         lastError: this.lastError,
         currentLine: this.currentLine,
-        inputs: this.inputs,
+        input: this.input,
         outputs: this.outputs,
         timedOut: this.timedOut,
         debugLogs: this.debugLogs,
         result: this.result,
       };
 
-      this.onStateChange(newStatus, state);
+      this.onStatusChange(newStatus, state);
     }
   };
-  
-  getSyntaErrorLine = function(error) {
-    try{
+
+  getSyntaErrorLine = function (error) {
+    try {
       var regExp = /\(([^)]+)\)/;
       var matches = regExp.exec(error.message);
       return matches[1].split(":")[0];
-    }
-    catch(error){
+    } catch (error) {
       return 0;
     }
-  }
+  };
 }
