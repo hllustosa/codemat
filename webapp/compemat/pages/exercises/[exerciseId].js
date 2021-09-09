@@ -1,6 +1,6 @@
 import Page from "../../components/Page";
 import AppBar from "../../components/AppBar";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Grid, makeStyles } from "@material-ui/core";
 import {
@@ -9,6 +9,7 @@ import {
   ChevronRightRounded,
   ChevronLeftRounded,
   StopRounded,
+  ClearAllRounded,
 } from "@material-ui/icons/";
 import {
   Title,
@@ -66,11 +67,10 @@ const styles = makeStyles((theme) => ({
   },
   executionTitle: {
     paddingTop: "10px",
-    paddingBottom: "10px",
   },
   executionList: {
     backgroundColor: "#F9F9F9",
-    margin: '10px',
+    margin: "10px",
     height: "300px",
     overflowY: "auto",
   },
@@ -82,7 +82,7 @@ function ProblemPane(props) {
 
   return (
     <Grid item className={classes.problemPane} style={{ width: problemSize }}>
-      <Grid container  justifyContent="space-between" wrap="nowrap">
+      <Grid container justifyContent="space-between" wrap="nowrap">
         <Grid item>
           <Title></Title>
         </Grid>
@@ -146,17 +146,18 @@ function ProblemPane(props) {
 function CodePane(props) {
   const classes = styles();
   const { codeSize, handleClick } = props;
+  const executionLogRef = React.useRef(null);
   const [code, setCode] = React.useState("");
   const [running, setRunning] = React.useState(false);
   const [runner, setRunner] = React.useState({});
   const [entries, setEntries] = React.useState([]);
-  const padding = {paddingRight: "10px", paddingLeft: "10px"};
+  const padding = { paddingRight: "10px", paddingLeft: "10px" };
 
   const handleTestExecutionFinished = (state) => {
     setRunning(false);
     console.log(JSON.stringify(state));
     state = state[0];
-    
+
     if (state.hasError) {
       entries.push({ content: state.lastError, type: "error" });
     } else {
@@ -171,18 +172,18 @@ function CodePane(props) {
         entries.push({ content: `Resposta correta`, type: "correct" });
       }
     }
-    
-    setEntries([... entries]);
+
+    setEntries([...entries]);
   };
 
   const handleNewOutput = (output) => {
     entries.push({ content: output, type: "output" });
-    setEntries([... entries]);
+    setEntries([...entries]);
   };
 
   const handleNewDebug = (debug) => {
     entries.push({ content: debug, type: "debug" });
-    setEntries([... entries]);
+    setEntries([...entries]);
   };
 
   const handleTestClick = () => {
@@ -200,16 +201,26 @@ function CodePane(props) {
         handleNewDebug
       );
 
-      setEntries([]);
       setRunner(runnerInstance);
       setRunning(true);
       runnerInstance.runTest();
     }
   };
 
+  useEffect(() => {
+    executionLogRef.current.scrollTop = executionLogRef.current.scrollHeight;
+  }, [entries]);
+
   return (
     <Grid item className={classes.codePane} style={{ width: codeSize }}>
-      <Grid container style={{paddingRight: "10px"}} item xs={12} justifyContent="space-between" wrap="nowrap">
+      <Grid
+        container
+        style={{ paddingRight: "10px" }}
+        item
+        xs={12}
+        justifyContent="space-between"
+        wrap="nowrap"
+      >
         <Grid item>
           <BaseIconButton onClick={handleClick}>
             <ChevronRightRounded />
@@ -242,11 +253,32 @@ function CodePane(props) {
       <Grid item xs={12} style={padding}>
         <TextEditor code={code} setCode={setCode} />
       </Grid>
-      <Grid item xs={12} style={padding} className={classes.executionTitle}>
-        <Title size={14}>Execução</Title>
+      <Grid
+        container
+        justifyContent="space-between"
+        wrap="nowrap"
+        item
+        xs={12}
+        style={padding}
+        className={classes.executionTitle}
+      >
+        <Grid>
+          <Title size={14}>Execução</Title>
+        </Grid>
+        <Grid>
+          <BaseIconButton onClick={() => setEntries([])}>
+            <ClearAllRounded />
+          </BaseIconButton>
+        </Grid>
       </Grid>
-      <Grid item xs={12} style={padding} className={classes.executionList}>
-          <ExecutioList items={entries} />
+      <Grid
+        item
+        xs={12}
+        ref={executionLogRef}
+        style={padding}
+        className={classes.executionList}
+      >
+        <ExecutioList items={entries} />
       </Grid>
     </Grid>
   );

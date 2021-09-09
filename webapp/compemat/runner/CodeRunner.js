@@ -24,7 +24,7 @@ export default class CodeRunner {
       this.input = input;
       this.onStatusChange = onStatusChange;
       this.code = code;
-      this.debug_logs = [];
+      this.debugLogs = [];
       this.outputs = [];
 
       const debugLogs = this.debugLogs;
@@ -47,7 +47,7 @@ export default class CodeRunner {
 
         interpreter.setProperty(
           globalObject,
-          "debug_log",
+          "debug",
           interpreter.createNativeFunction(debug_log_wrapper)
         );
 
