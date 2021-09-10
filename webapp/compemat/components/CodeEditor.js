@@ -5,7 +5,7 @@ import "ace-builds/src-noconflict/ext-language_tools";
 import "ace-builds/src-noconflict/ext-beautify";
 
 export default function CodeEditor(props) {
-  const { code, setCode } = props;
+  const { code, setCode, readOnly } = props;
 
   return (
     <AceEditor
@@ -22,6 +22,7 @@ export default function CodeEditor(props) {
       showPrintMargin={true}
       showGutter={true}
       highlightActiveLine={false}
+      readOnly={readOnly}
       value={code}
       setOptions={{
         enableBasicAutocompletion: false,

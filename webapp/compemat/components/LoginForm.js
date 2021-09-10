@@ -24,12 +24,10 @@ export default function ErrorDialog(props) {
   return (
     <Dialog
       onClose={handleClose}
-      aria-labelledby="titulo-dialogo-erro"
+      aria-labelledby="login-dialogo"
       open={open}
     >
-      <DialogTitle id="error-dialog">Detalhes do Erro</DialogTitle>
-      <Divider/>
-      <div className={classes.root} dangerouslySetInnerHTML={{ __html: content }}></div>
+      
     </Dialog>
   );
 }

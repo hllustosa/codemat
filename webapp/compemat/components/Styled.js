@@ -1,4 +1,4 @@
-import { Typography, Button, IconButton, Chip } from "@material-ui/core";
+import { Typography, Button, IconButton, Chip, CircularProgress } from "@material-ui/core";
 import { CONTRAST_COLOR } from "../public/colors";
 import { makeStyles } from "@material-ui/core";
 
@@ -28,6 +28,12 @@ export function BaseIconButton(props) {
     <IconButton color="primary" variant="outlined" size="small" {...props}>
       {props.children}
     </IconButton>
+  );
+}
+
+export function Progress(props) {
+  return (
+    <CircularProgress color="primary" variant="indeterminate" size={16} {...props}/>
   );
 }
 

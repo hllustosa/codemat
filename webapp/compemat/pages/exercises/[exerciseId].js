@@ -19,8 +19,9 @@ import {
   NoWrap,
   NoWrapContainer,
   NoWrapHtmlContainer,
+  Progress
 } from "../../components/Styled";
-import ExecutioList from "../../components/ExecutionList";
+import ExecutionList from "../../components/ExecutionList";
 import CodeRunnerManager from "../../runner/CoreRunnerManager";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
@@ -227,7 +228,7 @@ function CodePane(props) {
           </BaseIconButton>
         </Grid>
         <Grid item>
-          <Title size={22}>Solução</Title>
+          <Title size={22}>Solução {running && <Progress/>} </Title>
         </Grid>
         <Grid item>
           {!running && (
@@ -251,11 +252,12 @@ function CodePane(props) {
         </Grid>
       </Grid>
       <Grid item xs={12} style={padding}>
-        <TextEditor code={code} setCode={setCode} />
+        <TextEditor code={code} setCode={setCode} readOnly={running} />
       </Grid>
       <Grid
         container
         justifyContent="space-between"
+        alignItems="center"
         wrap="nowrap"
         item
         xs={12}
@@ -278,7 +280,7 @@ function CodePane(props) {
         style={padding}
         className={classes.executionList}
       >
-        <ExecutioList items={entries} />
+        <ExecutionList items={entries} />
       </Grid>
     </Grid>
   );

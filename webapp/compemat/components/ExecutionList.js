@@ -90,7 +90,7 @@ const createErrorItem = (content, index, handleClickOpen) => {
   );
 };
 
-export default function ExecutioList(props) {
+export default function ExecutionList(props) {
   const [open, setOpen] = React.useState(false);
   const [content, setContent] = React.useState("");
   const { items } = props;
