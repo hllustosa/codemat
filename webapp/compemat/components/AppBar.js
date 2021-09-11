@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
 import Logo from "./Logo";
 import UserMenu from "./UserMenu";
@@ -27,12 +28,14 @@ export default function DenseAppBar(props) {
 
   return (
     <header className={classes.root}>
-      <AppBar  position="static" elevation={0}>
+      <AppBar position="static" elevation={0}>
         <Toolbar className={classes.appbar} variant="dense">
           <Logo />
-          <Typography className={classes.title} variant="h6" color="inherit">
-            {title}
-          </Typography>
+          <Hidden xsDown    >
+            <Typography className={classes.title} variant="h6" color="inherit">
+              {title}
+            </Typography>
+          </Hidden>
           <UserMenu />
         </Toolbar>
       </AppBar>

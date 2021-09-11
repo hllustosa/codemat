@@ -113,7 +113,7 @@ export default function ExecutionList(props) {
   };
 
   return (
-    <List>
+    <List style={{width:"100%"}}>
       {items.map((item, index) =>
         creators[item.type](item.content, index, handleClickOpen)
       )}

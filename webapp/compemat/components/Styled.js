@@ -1,4 +1,11 @@
-import { Typography, Button, IconButton, Chip, CircularProgress } from "@material-ui/core";
+import {
+  Typography,
+  Button,
+  IconButton,
+  Chip,
+  CircularProgress,
+  TextField,
+} from "@material-ui/core";
 import { CONTRAST_COLOR } from "../public/colors";
 import { makeStyles } from "@material-ui/core";
 
@@ -33,21 +40,38 @@ export function BaseIconButton(props) {
 
 export function Progress(props) {
   return (
-    <CircularProgress color="primary" variant="indeterminate" size={16} {...props}/>
+    <CircularProgress
+      color="primary"
+      variant="indeterminate"
+      size={16}
+      {...props}
+    />
   );
 }
 
 export function BaseChip(props) {
-    return (
-      <Chip color="primary" size="small" {...props} style={{...props.style, color: CONTRAST_COLOR, marginRight:"3px"}}>
-        {props.children}
-      </Chip>
-    );
-  }
+  return (
+    <Chip
+      color="primary"
+      size="small"
+      {...props}
+      style={{ ...props.style, color: CONTRAST_COLOR, marginRight: "3px" }}
+    >
+      {props.children}
+    </Chip>
+  );
+}
 
 export function NoWrap(props) {
   return (
-    <div {...props} style={{ ...props.style, display: "flex", whiteSpace: props.off ? "normal" : "nowrap" }}>
+    <div
+      {...props}
+      style={{
+        ...props.style,
+        display: "flex",
+        whiteSpace: props.off ? "normal" : "nowrap",
+      }}
+    >
       {props.children}
     </div>
   );
@@ -55,14 +79,15 @@ export function NoWrap(props) {
 
 export function NoWrapContainer(props) {
   return (
-    <div {...props} style={{ minWidth: "320px", whiteSpace: "normal" }}> {props.children} </div>
+    <div {...props} style={{ minWidth: "290px", whiteSpace: "normal" }}>
+      {" "}
+      {props.children}{" "}
+    </div>
   );
 }
 
 export function NoWrapHtmlContainer(props) {
-  return (
-    <div {...props} style={{ minWidth: "320px", whiteSpace: "normal" }}/>
-  );
+  return <div {...props} style={{ minWidth: "200px", whiteSpace: "normal" }} />;
 }
 
 export function OutlinedButton(props) {
@@ -83,12 +108,39 @@ export function ContainedButton(props) {
   return (
     <Button
       color="primary"
-      variant="outlined"
+      variant="contained"
       size="small"
       disableElevation
+      fullWidth
       {...props}
     >
       {props.children}
     </Button>
+  );
+}
+
+export function TextButton(props) {
+  return (
+    <Button
+      color="primary"
+      size="small"
+      disableElevation
+      fullWidth
+      {...props}
+    >
+      {props.children}
+    </Button>
+  );
+}
+
+export function Input(props) {
+  return (
+    <TextField
+      fullWidth
+      label="Outlined"
+      variant="outlined"
+      size="small"
+      {...props}
+    />
   );
 }

@@ -19,7 +19,7 @@ import {
   NoWrap,
   NoWrapContainer,
   NoWrapHtmlContainer,
-  Progress
+  Progress,
 } from "../../components/Styled";
 import ExecutionList from "../../components/ExecutionList";
 import CodeRunnerManager from "../../runner/CoreRunnerManager";
@@ -31,25 +31,32 @@ const TextEditor = dynamic(import("../../components/CodeEditor"), {
 });
 
 const styles = makeStyles((theme) => ({
+  root: {
+    maxHeight: "calc(100vh - 48px)",
+  },
   problemPane: {
     marginTop: "1px",
-    overflow: "hidden",
-    minHeight: "calc(100vh - 68px)",
+    overflow: "auto",
     "-webkit-transition": "width 1s",
     "-moz-transition": "width 1s",
     "-o-transition": "width 1s",
     "-ms-transition": "width 1s",
     transition: "width 1s",
+    height: "calc(100vh - 52px)",
+    maxHeight: "calc(100vh - 52px)",
+    minHeight: "550px"
   },
   codePane: {
     marginTop: "1px",
-    overflow: "hidden",
-    minHeight: "calc(100vh - 68px)",
+    overflow: "auto",
     "-webkit-transition": "width 1s",
     "-moz-transition": "width 1s",
     "-o-transition": "width 1s",
     "-ms-transition": "width 1s",
     transition: "width 1s",
+    height: "calc(100vh - 52px)",
+    maxHeight: "calc(100vh - 52px)",
+    minHeight: "550px"
   },
   problemContent: {
     padding: "15px",
@@ -72,7 +79,8 @@ const styles = makeStyles((theme) => ({
   executionList: {
     backgroundColor: "#F9F9F9",
     margin: "10px",
-    height: "300px",
+    width: "calc(100% - 20px)",
+    flex: 1,
     overflowY: "auto",
   },
 }));
@@ -213,12 +221,18 @@ function CodePane(props) {
   }, [entries]);
 
   return (
-    <Grid item className={classes.codePane} style={{ width: codeSize }}>
+    <Grid
+      container
+      direction="column"
+      justifyContent="flex-start"
+      alignItems="stretch"
+      className={classes.codePane}
+      style={{ width: codeSize }}
+    >
       <Grid
         container
         style={{ paddingRight: "10px" }}
         item
-        xs={12}
         justifyContent="space-between"
         wrap="nowrap"
       >
@@ -228,7 +242,7 @@ function CodePane(props) {
           </BaseIconButton>
         </Grid>
         <Grid item>
-          <Title size={22}>Solução {running && <Progress/>} </Title>
+          <Title size={22}>Solução {running && <Progress />} </Title>
         </Grid>
         <Grid item>
           {!running && (
@@ -251,7 +265,7 @@ function CodePane(props) {
           )}
         </Grid>
       </Grid>
-      <Grid item xs={12} style={padding}>
+      <Grid container item style={padding}>
         <TextEditor code={code} setCode={setCode} readOnly={running} />
       </Grid>
       <Grid
@@ -260,7 +274,6 @@ function CodePane(props) {
         alignItems="center"
         wrap="nowrap"
         item
-        xs={12}
         style={padding}
         className={classes.executionTitle}
       >
@@ -274,8 +287,8 @@ function CodePane(props) {
         </Grid>
       </Grid>
       <Grid
+        container
         item
-        xs={12}
         ref={executionLogRef}
         style={padding}
         className={classes.executionList}
@@ -287,6 +300,7 @@ function CodePane(props) {
 }
 
 function Body(props) {
+  const classes = styles();
   const [showCode, setShowCode] = React.useState(true);
   const [showProblem, setShowProblem] = React.useState(true);
   const isSmallScreen = useMediaQuery("(max-width:600px)");
@@ -325,8 +339,8 @@ function Body(props) {
   };
 
   return (
-    <main>
-      <Grid container direction="row" spacing={0}>
+    <main className={classes.root}>
+      <Grid className={classes.root} container direction="row" spacing={0}>
         <ProblemPane
           data={props.data}
           problemSize={problemSize}
@@ -390,15 +404,32 @@ export async function getStaticProps(context) {
         name: "Exercício de Teste",
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
         </p>
-        
-        <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-        <g>
-        <title>Code</title>
-        <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
-        </g>
-        </svg>
-        </p>
-        Mauris molestie efficitur purus sit amet porta. Nam mattis neque mauris, sit amet tempor ante ornare at. Ut volutpat, magna a interdum vehicula, massa diam pharetra mi, semper volutpat ligula libero in mi. Nullam blandit tempor facilisis. Mauris ipsum sapien, fringilla vel justo id, commodo finibus ex. In pharetra mollis ante, sit amet semper arcu tristique sit amet. Proin consequat dui id eros convallis aliquam. Vivamus aliquam elit nec lobortis cursus. Integer mi enim, pulvinar nec est vitae, volutpat malesuada nisi. In sed risus sed augue rhoncus accumsan.`,
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
+          <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+          <g>
+          <title>Code</title>
+          <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
+          </g>
+          </svg>
+          <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+          <g>
+          <title>Code</title>
+          <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
+          </g>
+          </svg>
+          <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+          <g>
+          <title>Code</title>
+          <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
+          </g>
+          </svg>
+          
+          </p>
+          Mauris molestie efficitur purus sit amet porta. Nam mattis neque mauris, sit amet tempor ante ornare at. Ut volutpat, magna a interdum vehicula, massa diam pharetra mi, semper volutpat ligula libero in mi. Nullam blandit tempor facilisis. Mauris ipsum sapien, fringilla vel justo id, commodo finibus ex. In pharetra mollis ante, sit amet semper arcu tristique sit amet. Proin consequat dui id eros convallis aliquam. Vivamus aliquam elit nec lobortis cursus. Integer mi enim, pulvinar nec est vitae, volutpat malesuada nisi. In sed risus sed augue rhoncus accumsan.`,
         category: "programming",
         labels: ["aritmética", "básico"],
         previous: "ex_G3Fer3rDS432",
