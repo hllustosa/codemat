@@ -62,7 +62,12 @@ app.post("/", async (request, response) => {
         functions.logger.info("updated", JSON.stringify(trials));
         transaction.update(docRef, updated);
       } else {
-        transaction.set(docRef, { trials: [], submissions: [] });
+        transaction.set(docRef, { trials: [{
+          problem_id: newSubmission.problem_id,
+          problem_category: newSubmission.problem_category,
+          status: newSubmission.report.correctAnswer ? "solved" : "tried",
+          tried_count: 1,
+        }], submissions: [newSubmission] });
       }
     });
 
