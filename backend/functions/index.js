@@ -1,9 +1,12 @@
 const functions = require("firebase-functions");
+const userStats = require("./userStats");
+const admin = require("firebase-admin");
+
+//Initialize app
+admin.initializeApp(functions.config().firebase);
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-exports.helloWorld = functions.https.onRequest((request, response) => {
-  functions.logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
-});
+// // set GOOGLE_APPLICATION_CREDENTIALS=D:\Hermano\workspace\compemat\backend\compemat-3277c049031f.json 
+// // firebase emulators:start
+exports.userStats = functions.https.onRequest(userStats.app);
