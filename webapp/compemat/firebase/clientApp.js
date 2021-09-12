@@ -1,4 +1,5 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
+import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 import "firebase/firestore";
 import "firebase/auth";
 
@@ -18,6 +19,12 @@ let firebase;
 if (typeof window !== "undefined") {
   if (!getApps().length) {
     firebase = initializeApp(firebaseConfig);
+    initializeAppCheck(firebase,  {
+      provider: new ReCaptchaV3Provider(
+        "6LfUYV4cAAAAAB9Vt4vWxOLaMyVcwlTxruLYscSI"
+      ),
+      isTokenAutoRefreshEnabled: true
+    })
   } else {
     firebase = getApp();
   }

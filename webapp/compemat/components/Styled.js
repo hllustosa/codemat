@@ -5,9 +5,11 @@ import {
   Chip,
   CircularProgress,
   TextField,
+  Snackbar
 } from "@material-ui/core";
 import { CONTRAST_COLOR } from "../public/colors";
 import { makeStyles } from "@material-ui/core";
+import MuiAlert from "@material-ui/lab/Alert";
 
 const styles = makeStyles((theme) => ({
   title: {
@@ -121,13 +123,7 @@ export function ContainedButton(props) {
 
 export function TextButton(props) {
   return (
-    <Button
-      color="primary"
-      size="small"
-      disableElevation
-      fullWidth
-      {...props}
-    >
+    <Button color="primary" size="small" disableElevation fullWidth {...props}>
       {props.children}
     </Button>
   );
@@ -144,3 +140,44 @@ export function Input(props) {
     />
   );
 }
+
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
+export function ErrorMessage(props) {
+  const { open, handleClose, errorMessage } = props;
+
+  return (
+    <Snackbar
+      open={open}
+      autoHideDuration={6000}
+      onClose={handleClose}
+      message={errorMessage}
+      anchorOrigin={{ vertical: "top", horizontal: "center" }}
+    >
+      <Alert onClose={handleClose} severity="error">
+        {errorMessage}
+      </Alert>
+    </Snackbar>
+  );
+}
+
+export function SuccessMessage(props) {
+  const { open, handleClose, errorMessage } = props;
+
+  return (
+    <Snackbar
+      open={open}
+      autoHideDuration={6000}
+      onClose={handleClose}
+      message={errorMessage}
+      anchorOrigin={{ vertical: "top", horizontal: "center" }}
+    >
+      <Alert onClose={handleClose} severity="success">
+        {errorMessage}
+      </Alert>
+    </Snackbar>
+  );
+}
+

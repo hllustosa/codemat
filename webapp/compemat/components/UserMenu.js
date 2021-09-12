@@ -1,12 +1,12 @@
 import React from "react";
-import { Button, IconButton, Menu, MenuItem } from "@material-ui/core";
+import { Button, Avatar, Menu, MenuItem } from "@material-ui/core";
 import LoginForm from "./LoginForm";
-import AccountCircle from "@material-ui/icons/AccountCircle";
 import store from "../redux/store";
 import { getLogout } from "../redux/actions";
 
 export default function UserMenu() {
   const isAuth = store.getState().isLogged;
+  const user = store.getState().user;
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [loginOpen, setLoginOpen] = React.useState(false);
 
@@ -22,7 +22,7 @@ export default function UserMenu() {
     store.dispatch(getLogout());
     handleClose();
     window.location = "/";
-  }
+  };
 
   return (
     <React.Fragment>
@@ -39,9 +39,7 @@ export default function UserMenu() {
       )}
       {isAuth && (
         <React.Fragment>
-          <IconButton color="secondary" onClick={handleClick}>
-            <AccountCircle />
-          </IconButton>
+          <Avatar src={user.photoURL} onClick={handleClick}>{user.email[0].toUpperCase()}</Avatar>
           <Menu
             id="simple-menu"
             anchorEl={anchorEl}

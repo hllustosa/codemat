@@ -1,19 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Input,
-  Title,
   ContainedButton,
   TextButton,
+  ErrorMessage,
+  SuccessMessage,
 } from "../components/Styled";
 
-import {
-  Dialog,
-  DialogTitle,
-  Divider,
-  Grid,
-  Typography,
-} from "@material-ui/core";
+import { Dialog, Grid, Typography } from "@material-ui/core";
 import { auth } from "../firebase/clientApp";
 import firebase from "../firebase/clientApp";
 import {
@@ -21,17 +16,19 @@ import {
   createUserWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
-  signInWithEmailAndPassword
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+  sendEmailVerification,
 } from "firebase/auth";
 import { FacebookAuthProvider } from "firebase/auth";
 import {
   FacebookLoginButton,
   GoogleLoginButton,
 } from "react-social-login-buttons";
-import { useRouter } from "next/router";
 
 import store from "../redux/store";
 import { getLogin } from "../redux/actions";
+import URL from "../public/host";
 
 const useStyles = makeStyles({
   root: {
@@ -45,27 +42,51 @@ const useStyles = makeStyles({
   },
 });
 
-function Login(user) {
+function login(user) {
   store.dispatch(getLogin(user));
   window.location.reload();
 }
 
-function LoginWithEmail(email, password) {
+function handleLoginError(error, setErrorMessage) {
+  const errorMessage = error.message;
+
+  if (!errorMessage || errorMessage.includes("network-request-failed")) {
+    setErrorMessage("Problema de conexão");
+  } else {
+    setErrorMessage("Usuário ou senha inválidos");
+  }
+}
+
+function handleSignInError(error, setErrorMessage) {
+  const errorMessage = error.message;
+
+  if (!errorMessage || errorMessage.includes("email-already-in-use")) {
+    setErrorMessage("Email já cadastrado");
+  } else if (!errorMessage || errorMessage.includes("invalid-email")) {
+    setErrorMessage("Email inválido");
+  } else {
+    setErrorMessage("Não foi possível registrar um novo usuário");
+  }
+}
+
+function LoginWithEmail(email, password, setErrorMessage) {
   const auth = getAuth();
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
+      if (userCredential.user.emailVerified) {
+        login(userCredential.user);
+      } else {
+        setErrorMessage(
+          "Email não confirmado. Verifique seu email para fazer o login."
+        );
+      }
     })
     .catch((error) => {
-      alert(error)
-      const errorCode = error.code;
-      const errorMessage = error.message;
+      handleLoginError(error, setErrorMessage);
     });
 }
 
-function LoginWithGoogle() {
+function LoginWithGoogle(setErrorMessage) {
   const auth = getAuth(firebase);
   auth.languageCode = "pt-BR";
 
@@ -73,45 +94,83 @@ function LoginWithGoogle() {
 
   signInWithPopup(auth, provider)
     .then((result) => {
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      //const token = credential.accessToken;
-      const user = result.user;
-      Login(user);
+      login(result.user);
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.email;
-      const credential = GoogleAuthProvider.credentialFromError(error);
+      handleLoginError(error, setErrorMessage);
     });
 }
 
-function LoginWithFacebook() {
+function LoginWithFacebook(setErrorMessage) {
   const auth = getAuth(firebase);
   auth.languageCode = "pt-BR";
 
   const provider = new FacebookAuthProvider();
   signInWithPopup(auth, provider)
     .then((result) => {
-      const credential = FacebookAuthProvider.credentialFromResult(result);
-      //const token = credential.accessToken;
-      const user = result.user;
-      Login(user);
+      login(result.user);
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.email;
-      const credential = FacebookAuthProvider.credentialFromError(error);
+      handleLoginError(error, setErrorMessage);
     });
 }
 
-function SignInForm() {}
-
-function LoginForm(props) {
-  const classes = useStyles();
+function SignInForm() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [passwordCheck, setPasswordCheck] = React.useState("");
+  const [errorMessage, setErrorMessage] = React.useState("");
+  const [successMessage, setSuccessMessage] = React.useState("");
+  const [validationMessage, setValidationMessage] = React.useState("");
+
+  const classes = useStyles();
+
+  useEffect(() => {
+    if (!email) {
+      setValidationMessage("Email é obrigatório.");
+      return;
+    }
+
+    if (!password) {
+      setValidationMessage("Senha é obrigatória.");
+      return;
+    }
+
+    if (password.length < 6) {
+      setValidationMessage("Senha deve ter pelo menos 6 caracteres.");
+      return;
+    }
+
+    if (password !== passwordCheck) {
+      setValidationMessage("Senha e verificação de senha são diferentes.");
+      return;
+    }
+
+    setValidationMessage("");
+  }, [email, password, passwordCheck]);
+
+  const createUser = (email, password, setSuccessMessage, setErrorMessage) => {
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        return user;
+      })
+      .then((user) => {
+        sendEmailVerification(user, {
+          url: URL,
+          handleCodeInApp: false,
+        });
+      })
+      .then(() => {
+        setSuccessMessage(
+          "Usuário registrado com sucesso. Verifique seu email!"
+        );
+      })
+      .catch((error) => {
+        handleSignInError(error, setErrorMessage);
+      });
+  };
 
   return (
     <Grid
@@ -120,6 +179,125 @@ function LoginForm(props) {
       justifyContent="center"
       className={classes.base}
     >
+      <ErrorMessage
+        open={errorMessage}
+        errorMessage={errorMessage}
+        handleClose={() => setErrorMessage("")}
+      />
+
+      <SuccessMessage
+        open={successMessage}
+        errorMessage={successMessage}
+        handleClose={() => setSuccessMessage("")}
+      />
+
+      <Grid
+        style={{ height: "calc(100% - 20px)" }}
+        item
+        container
+        direction="column"
+        justifyContent="space-between"
+      >
+        <Grid
+          container
+          item
+          direction="column"
+          justifyContent="space-between"
+          style={{ height: "100%" }}
+        >
+          <Grid container item direction="column">
+            <Grid item style={{ marginBottom: "10px" }}>
+              <Typography style={{ textAlign: "center" }}>Registrar</Typography>
+            </Grid>
+            <Grid item style={{ marginBottom: "10px" }}>
+              <Input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                label="Email"
+                type="email"
+              />
+            </Grid>
+            <Grid item style={{ marginBottom: "10px" }}>
+              <Input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                label="Senha"
+                type="password"
+              />
+            </Grid>
+            <Grid item style={{ marginBottom: "10px" }}>
+              <Input
+                value={passwordCheck}
+                onChange={(e) => setPasswordCheck(e.target.value)}
+                label="Confirmar Senha"
+                type="password"
+              />
+            </Grid>
+            <Grid item style={{ marginBottom: "10px" }}>
+              <Typography size={12}>{validationMessage}</Typography>
+            </Grid>
+          </Grid>
+
+          <Grid item style={{ marginBottom: "10px" }}>
+            <ContainedButton
+              disabled={validationMessage}
+              onClick={() =>
+                createUser(email, password, setSuccessMessage, setErrorMessage)
+              }
+            >
+              Registrar
+            </ContainedButton>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+}
+
+function LoginForm(props) {
+  const { setShowSignIn } = props;
+  const classes = useStyles();
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [errorMessage, setErrorMessage] = React.useState("");
+  const [successMessage, setSuccessMessage] = React.useState("");
+
+  const sendResetPasswordMail = (email, setSuccessMessage, setErrorMessage) => {
+    const auth = getAuth();
+
+    sendPasswordResetEmail(auth, email, {
+      url: URL,
+      handleCodeInApp: false,
+    })
+      .then(() => {
+        setSuccessMessage("Email de redefinição de senha enviado.");
+      })
+      .catch((error) => {
+        setErrorMessage(
+          error//"Não foi possível enviar email para redefinição de senha"
+        );
+      });
+  };
+
+  return (
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      className={classes.base}
+    >
+      <ErrorMessage
+        open={errorMessage}
+        errorMessage={errorMessage}
+        handleClose={() => setErrorMessage("")}
+      />
+
+      <SuccessMessage
+        open={successMessage}
+        errorMessage={successMessage}
+        handleClose={() => setSuccessMessage("")}
+      />
+
       <Grid
         style={{ height: "calc(100% - 20px)" }}
         item
@@ -132,33 +310,62 @@ function LoginForm(props) {
             <Typography style={{ textAlign: "center" }}>Entrar</Typography>
           </Grid>
           <Grid item style={{ marginBottom: "10px" }}>
-            <Input value={email} onChange={e => setEmail(e.target.value)} label="Email" />{" "}
+            <Input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              label="Email"
+              type="email"
+            />{" "}
           </Grid>
           <Grid item style={{ marginBottom: "10px" }}>
-            <Input value={password} onChange={e => setPassword(e.target.value)} label="Senha" />{" "}
+            <Input
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              label="Senha"
+              type="password"
+            />{" "}
           </Grid>
-
           <Grid item style={{ marginBottom: "10px" }}>
-            <ContainedButton onClick={() => LoginWithEmail(email, password)}>Login</ContainedButton>
+            <ContainedButton
+              disabled={!(email && password)}
+              onClick={() => LoginWithEmail(email, password, setErrorMessage)}
+            >
+              Login
+            </ContainedButton>
           </Grid>
           <Grid container item direction="row" justifyContent="space-between">
             <Grid item style={{ marginBottom: "10px" }}>
-              <TextButton>Cadastrar</TextButton>
+              <TextButton onClick={() => setShowSignIn(true)}>
+                Cadastrar
+              </TextButton>
             </Grid>
             <Grid item style={{ marginBottom: "10px" }}>
-              <TextButton>Recuperar Senha</TextButton>
+              <TextButton
+                disabled={!email}
+                onClick={() =>
+                  sendResetPasswordMail(
+                    email,
+                    setSuccessMessage,
+                    setErrorMessage
+                  )
+                }
+              >
+                Recuperar Senha
+              </TextButton>
             </Grid>
           </Grid>
         </Grid>
 
         <Grid container item direction="column">
           <Grid item>
-            <GoogleLoginButton onClick={LoginWithGoogle}>
+            <GoogleLoginButton onClick={() => LoginWithGoogle(setErrorMessage)}>
               <span>Login Google</span>
             </GoogleLoginButton>
           </Grid>
           <Grid item>
-            <FacebookLoginButton onClick={LoginWithFacebook}>
+            <FacebookLoginButton
+              onClick={() => LoginWithFacebook(setErrorMessage)}
+            >
               <span>Login Facebook</span>
             </FacebookLoginButton>
           </Grid>
@@ -170,33 +377,19 @@ function LoginForm(props) {
 
 export default function SignInSignOnForm(props) {
   const classes = useStyles();
-  const { onClose, open, content } = props;
+  const { onClose, open } = props;
+  const [showSignIn, setShowSignIn] = React.useState(false);
 
   const handleClose = () => {
     onClose();
-  };
-
-  const createUser = (email, password) => {
-    /*
-    
-    */
-    /*createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        alert(JSON.stringify(userCredential));
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorMessage);
-      });*/
+    setShowSignIn(false);
   };
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="login-dialogo" open={open}>
       <div className={classes.root}>
-        <LoginForm />
+        {!showSignIn && <LoginForm setShowSignIn={setShowSignIn} />}
+        {showSignIn && <SignInForm />}
       </div>
     </Dialog>
   );
