@@ -11,6 +11,9 @@ const useStyles = makeStyles({
   root: {
     maxWidth: "100%",
   },
+  link: {
+    textDecoration: "none"
+  }
 });
 
 export default function ImgMediaCard(props) {
@@ -19,7 +22,7 @@ export default function ImgMediaCard(props) {
 
   return (
     <Fade in timeout={4000}>
-        <a href={href}>
+        <a  className={classes.link} href={href}>
           <Card className={classes.root}>
             <CardActionArea>
               <CardMedia

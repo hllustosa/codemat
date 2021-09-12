@@ -3,7 +3,7 @@ import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 import "firebase/firestore";
 import "firebase/auth";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyAdk2vTSBlcTqaaIIUeYfI9fk2oehz85DY",
   authDomain: "compemat.firebaseapp.com",
   databaseURL: "https://compemat-default-rtdb.firebaseio.com",

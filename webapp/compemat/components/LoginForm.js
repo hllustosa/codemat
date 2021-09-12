@@ -9,7 +9,6 @@ import {
 } from "../components/Styled";
 
 import { Dialog, Grid, Typography } from "@material-ui/core";
-import { auth } from "../firebase/clientApp";
 import firebase from "../firebase/clientApp";
 import {
   getAuth,
@@ -42,7 +41,10 @@ const useStyles = makeStyles({
   },
 });
 
-function login(user) {
+import { getRefreshToken, Request } from "../seedwork/Requests";
+
+async function login(user) {
+  console.log(JSON.stringify(user));
   store.dispatch(getLogin(user));
   window.location.reload();
 }
