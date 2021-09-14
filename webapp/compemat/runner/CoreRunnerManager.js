@@ -63,6 +63,8 @@ export default class CodeRunnerManager {
     ) {
       state["hasError"] = state.lastError ? true : false;
       state["answer"] = this.checkAnswer(state);
+      state["expected"] = this.problem.cases[this.currentCase].output;
+      
       this.states.push(state);
 
       if (

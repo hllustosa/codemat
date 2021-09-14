@@ -23,7 +23,10 @@ import {
 } from "../../components/Styled";
 import ExecutionList from "../../components/ExecutionList";
 import CodeRunnerManager from "../../runner/CoreRunnerManager";
+import ResultDialog from "../../components/ResultDialog";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { submitCode } from "../../seedwork/Requests";
+import store from "../../redux/store";
 
 import dynamic from "next/dynamic";
 const TextEditor = dynamic(import("../../components/CodeEditor"), {
@@ -44,7 +47,7 @@ const styles = makeStyles((theme) => ({
     transition: "width 1s",
     height: "calc(100vh - 52px)",
     maxHeight: "calc(100vh - 52px)",
-    minHeight: "550px"
+    minHeight: "550px",
   },
   codePane: {
     marginTop: "1px",
@@ -56,7 +59,7 @@ const styles = makeStyles((theme) => ({
     transition: "width 1s",
     height: "calc(100vh - 52px)",
     maxHeight: "calc(100vh - 52px)",
-    minHeight: "550px"
+    minHeight: "550px",
   },
   problemContent: {
     padding: "15px",
@@ -160,11 +163,16 @@ function CodePane(props) {
   const [running, setRunning] = React.useState(false);
   const [runner, setRunner] = React.useState({});
   const [entries, setEntries] = React.useState([]);
+  const [showResult, setShowResult] = React.useState(false);
+  const [result, setResult] = React.useState([]);
   const padding = { paddingRight: "10px", paddingLeft: "10px" };
+
+  useEffect(() => {
+    if (result.length) setShowResult(true);
+  }, [result]);
 
   const handleTestExecutionFinished = (state) => {
     setRunning(false);
-    console.log(JSON.stringify(state));
     state = state[0];
 
     if (state.hasError) {
@@ -183,6 +191,40 @@ function CodePane(props) {
     }
 
     setEntries([...entries]);
+  };
+
+  const handleExecutionFinished = async (state) => {
+    const correctAnswer = state.reduce((previousValue, currentValue) => {
+      return previousValue && currentValue.answer;
+    }, true);
+
+    const executionError = state.reduce((previousValue, currentValue) => {
+      if (!previousValue) {
+        if (currentValue.hasError) {
+          return currentValue.lastError;
+        }
+      }
+    }, "");
+
+    const data = {
+      problem_id: props.data.id,
+      code: code,
+      report: {
+        correctAnswer: correctAnswer,
+        executionError: executionError,
+      },
+    };
+
+    try {
+      if (store.getState().isLogged) {
+        await submitCode(data);
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setRunning(false);
+      setResult(state);
+    }
   };
 
   const handleNewOutput = (output) => {
@@ -213,6 +255,36 @@ function CodePane(props) {
       setRunner(runnerInstance);
       setRunning(true);
       runnerInstance.runTest();
+    }
+  };
+
+  const handleExecutionClick = () => {
+    if (running) {
+      if (runner) {
+        runner.interrupt();
+        setRunning(false);
+      }
+    } else {
+      const runnerInstance = new CodeRunnerManager(
+        props.data,
+        code,
+        handleExecutionFinished,
+        handleNewOutput,
+        handleNewDebug
+      );
+
+      setRunner(runnerInstance);
+      setRunning(true);
+      runnerInstance.runSolution();
+    }
+  };
+
+  const handleStop = () => {
+    if (running) {
+      if (runner) {
+        runner.interrupt();
+        setRunning(false);
+      }
     }
   };
 
@@ -250,7 +322,7 @@ function CodePane(props) {
               <BaseIconButton onClick={handleTestClick}>
                 <PlayArrowRounded />
               </BaseIconButton>
-              <BaseIconButton>
+              <BaseIconButton onClick={handleExecutionClick}>
                 <AssessmentRounded />
               </BaseIconButton>
             </NoWrap>
@@ -258,7 +330,7 @@ function CodePane(props) {
 
           {running && (
             <NoWrap>
-              <BaseIconButton onClick={handleTestClick}>
+              <BaseIconButton onClick={handleStop}>
                 <StopRounded />
               </BaseIconButton>
             </NoWrap>
@@ -295,6 +367,11 @@ function CodePane(props) {
       >
         <ExecutionList items={entries} />
       </Grid>
+      <ResultDialog
+        open={showResult}
+        onClose={() => setShowResult(false)}
+        results={result}
+      />
     </Grid>
   );
 }

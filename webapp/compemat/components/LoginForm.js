@@ -41,8 +41,6 @@ const useStyles = makeStyles({
   },
 });
 
-import { getRefreshToken, Request } from "../seedwork/Requests";
-
 async function login(user) {
   console.log(JSON.stringify(user));
   store.dispatch(getLogin(user));

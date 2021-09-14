@@ -1,7 +1,7 @@
 import axios from "axios";
 import { firebaseConfig } from "../firebase/clientApp";
 import store from "../redux/store";
-import { getLogin } from "../redux/actions";
+import { getLogin, getLogout } from "../redux/actions";
 
 export const BASE_URL =
   "https://us-central1-compemat.cloudfunctions.net/userStats";
@@ -23,31 +23,48 @@ export const getRefreshToken = async () => {
   }
 };
 
-export const Request = async (method, url, data) => {
-  let user = store.getState().user;
+export const Request = async (method, url, data, isRetry) => {
   try {
-    return await axios({
-      method: method,
-      url: url,
-      headers: {
-        authorization: `Bearer ${user.stsTokenManager.accessToken}`,
-      },
-      data: data,
-    });
+    const user = store.getState().user;
+    
+    if(!isRetry)
+      user.stsTokenManager.accessToken = user.stsTokenManager.accessToken + "1";
+
+    store.dispatch(getLogin(user));
+
+    return await doRequest(method, url, data);
   } catch (error) {
     if (error.response.status == 401 || error.response.status == 403) {
-      await getRefreshToken();
-      user = store.getState().user;
-
-      return await axios({
-        method: method,
-        url: url,
-        headers: {
-          authorization: `Bearer ${user.stsTokenManager.accessToken}`,
-        },
-        data: data,
-      });
+      if (!isRetry) {
+        await getRefreshToken();
+        return await Request(method, url, data, true);
+      } else {
+        store.dispatch(getLogout());
+        window.location = "/";
+      }
     }
+
     throw error;
   }
+};
+
+const doRequest = async (method, url, data) => {
+  const user = store.getState().user;
+
+  return await axios({
+    method: method,
+    url: url,
+    headers: {
+      authorization: `Bearer ${user.stsTokenManager.accessToken}`,
+    },
+    data: data,
+  });
+};
+
+export const submitCode = async (data) => {
+  return await Request("post", BASE_URL, data);
+};
+
+export const getUserData = async () => {
+  return await Request("get", BASE_URL);
 };
