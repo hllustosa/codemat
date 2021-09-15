@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   title: {
-    textAlign: "center",
+    textAlign: "right",
   },
   menuButton: {
     marginRight: theme.spacing(2),

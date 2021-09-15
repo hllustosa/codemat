@@ -213,6 +213,7 @@ function CodePane(props) {
         correctAnswer: correctAnswer,
         executionError: executionError,
       },
+      time: (new Date()).toISOString()
     };
 
     try {

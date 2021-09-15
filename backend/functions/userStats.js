@@ -62,12 +62,17 @@ app.post("/", async (request, response) => {
         functions.logger.info("updated", JSON.stringify(trials));
         transaction.update(docRef, updated);
       } else {
-        transaction.set(docRef, { trials: [{
-          problem_id: newSubmission.problem_id,
-          problem_category: newSubmission.problem_category,
-          status: newSubmission.report.correctAnswer ? "solved" : "tried",
-          tried_count: 1,
-        }], submissions: [newSubmission] });
+        transaction.set(docRef, {
+          trials: [
+            {
+              problem_id: newSubmission.problem_id,
+              problem_category: newSubmission.problem_category,
+              status: newSubmission.report.correctAnswer ? "solved" : "tried",
+              tried_count: 1,
+            },
+          ],
+          submissions: [newSubmission],
+        });
       }
     });
 
@@ -96,6 +101,7 @@ function validate(data) {
       problem_category: problems.data[data.problem_id],
       code: data.code,
       report: data.report,
+      time: data.time,
     },
     isValid: true,
   };

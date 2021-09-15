@@ -44,7 +44,7 @@ const useStyles = makeStyles({
 async function login(user) {
   console.log(JSON.stringify(user));
   store.dispatch(getLogin(user));
-  window.location.reload();
+  window.location.reload(); 
 }
 
 function handleLoginError(error, setErrorMessage) {

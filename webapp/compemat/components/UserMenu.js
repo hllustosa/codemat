@@ -24,8 +24,12 @@ export default function UserMenu() {
     window.location = "/";
   };
 
+  const gotToProfile = () => {
+    window.location = "/profile";
+  };
+
   return (
-    <React.Fragment>
+    <div style={{display:"flex", justifyContent: "right", width:"70px"}}>
       <LoginForm open={loginOpen} onClose={() => setLoginOpen(false)} />
       {!isAuth && (
         <Button
@@ -47,11 +51,11 @@ export default function UserMenu() {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Perfil</MenuItem>
+            <MenuItem onClick={gotToProfile}>Perfil</MenuItem>
             <MenuItem onClick={logout}>Sair</MenuItem>
           </Menu>
         </React.Fragment>
       )}
-    </React.Fragment>
+    </div>
   );
 }
