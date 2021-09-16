@@ -1,0 +1,16 @@
+{
+    "id": "ex_3fc8a8a5d619",
+    "name": "Produto Simples",
+    "category": "programming",
+    "labels": ["aritmética", "básico"],
+    "previous": "",
+    "next": "",
+    "cases": [
+      { "input": { "x": 10, "y": 12 }, "output": [120] },
+      { "input": { "x": 24, "y": 24 }, "output": [576] },
+      { "input": { "x": 1000, "y": 35 }, "output": [35000] },
+      { "input": { "x": 28, "y": 28 }, "output": [784] },
+      { "input": { "x": 455, "y": -28 }, "output": [-12740] }
+    ]
+  }
+  

@@ -1,7 +1,7 @@
 import Page from "../../components/Page";
 import AppBar from "../../components/AppBar";
 import React, { useEffect } from "react";
-
+import problems from "../../public/problems/index.json";
 import { Grid, makeStyles } from "@material-ui/core";
 import {
   PlayArrowRounded,
@@ -18,16 +18,16 @@ import {
   BaseChip,
   NoWrap,
   NoWrapContainer,
-  NoWrapHtmlContainer,
   Progress,
 } from "../../components/Styled";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import ExecutionList from "../../components/ExecutionList";
 import CodeRunnerManager from "../../runner/CoreRunnerManager";
 import ResultDialog from "../../components/ResultDialog";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { submitCode } from "../../seedwork/Requests";
+import { useQueryParams } from "../../seedwork/Utils";
+import { postSubmission } from "../../seedwork/Requests";
 import store from "../../redux/store";
-
+import { decode } from 'js-base64';
 import dynamic from "next/dynamic";
 const TextEditor = dynamic(import("../../components/CodeEditor"), {
   ssr: false,
@@ -66,6 +66,13 @@ const styles = makeStyles((theme) => ({
     margin: "auto",
     maxWidth: "1000px",
     width: "calc(100% - 30px)",
+  },
+  problemContentFrame: {
+    width: "100%",
+    height: "calc(100vh - 290px)",
+    minHeight: "330px",
+    minWidth: "290px",
+    backgroundColor: "#F5F3F5"
   },
   problemMark: {
     padding: "10px",
@@ -121,9 +128,7 @@ function ProblemPane(props) {
 
         <Grid item xs={12}>
           <NoWrap className={classes.problemContent}>
-            <NoWrapHtmlContainer
-              dangerouslySetInnerHTML={{ __html: data.content }}
-            />
+            <iframe className={classes.problemContentFrame} src={`/problems/all/${data.id}.html`}></iframe>
           </NoWrap>
         </Grid>
         <Grid item xs={12}>
@@ -157,9 +162,11 @@ function ProblemPane(props) {
 
 function CodePane(props) {
   const classes = styles();
+  const { c } = useQueryParams();
+  const paramCode = c ? decode(c) : "";
   const { codeSize, handleClick } = props;
   const executionLogRef = React.useRef(null);
-  const [code, setCode] = React.useState("");
+  const [code, setCode] = React.useState(paramCode);
   const [running, setRunning] = React.useState(false);
   const [runner, setRunner] = React.useState({});
   const [entries, setEntries] = React.useState([]);
@@ -213,12 +220,12 @@ function CodePane(props) {
         correctAnswer: correctAnswer,
         executionError: executionError,
       },
-      time: (new Date()).toISOString()
+      time: new Date().toISOString(),
     };
 
     try {
       if (store.getState().isLogged) {
-        await submitCode(data);
+        await postSubmission(data);
       }
     } catch (error) {
       console.log(error);
@@ -446,79 +453,23 @@ function Exercise(props) {
 export default Page(Exercise);
 
 export async function getStaticPaths() {
+  const problemIds = Object.keys(problems);
   return {
     fallback: false,
-    paths: [
-      {
-        params: {
-          exerciseId: "ex_Frf432D34ss",
-        },
+    paths: problemIds.map((id) => ({
+      params: {
+        exerciseId: id,
       },
-      {
-        params: {
-          exerciseId: "ex_D4fd34D234d",
-        },
-      },
-      {
-        params: {
-          exerciseId: "ex_G3Fer3rDS432",
-        },
-      },
-      {
-        params: {
-          exerciseId: "ex_Plo43jjrR3",
-        },
-      },
-    ],
+    })),
   };
 }
 
 export async function getStaticProps(context) {
   const exerciseId = context.params.exerciseId;
+  const exerciseData = require(`../../public/problems/all/${exerciseId}.json`);
   return {
     props: {
-      data: {
-        id: exerciseId,
-        name: "Exercício de Teste",
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
-        </p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula mi, feugiat sed euismod vel, varius sit amet justo. Duis malesuada mauris non condimentum blandit. In condimentum sit amet enim iaculis rhoncus. Donec volutpat non orci eu varius. Sed condimentum ex eu ipsum tincidunt, porta efficitur dui pulvinar. In metus neque, commodo sed congue in, suscipit ut orci. Nulla facilisi. Curabitur euismod, elit vel tincidunt laoreet, lectus risus blandit mauris, at cursus turpis urna a urna. Suspendisse varius fringilla odio, vitae condimentum lacus consectetur commodo. Nulla facilisi. Aenean nunc arcu, finibus sodales efficitur nec, facilisis in felis. Donec id lectus volutpat, fermentum est vel, commodo lacus. Donec volutpat facilisis elit, sit amet luctus nibh elementum in. Mauris sodales metus id efficitur vestibulum. Suspendisse aliquam erat purus, non viverra nulla convallis nec.
-          <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-          <g>
-          <title>Code</title>
-          <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
-          </g>
-          </svg>
-          <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-          <g>
-          <title>Code</title>
-          <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
-          </g>
-          </svg>
-          <svg width="96" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-          <g>
-          <title>Code</title>
-          <text y="35" x="48" fill="#000000" stroke-width="0" id="text" font-size="36" font-family="Monospace" text-anchor="middle" xml:space="preserve" font-weight="normal" font-style="normal" stroke="#000000">&lt;/&gt;</text>
-          </g>
-          </svg>
-          
-          </p>
-          Mauris molestie efficitur purus sit amet porta. Nam mattis neque mauris, sit amet tempor ante ornare at. Ut volutpat, magna a interdum vehicula, massa diam pharetra mi, semper volutpat ligula libero in mi. Nullam blandit tempor facilisis. Mauris ipsum sapien, fringilla vel justo id, commodo finibus ex. In pharetra mollis ante, sit amet semper arcu tristique sit amet. Proin consequat dui id eros convallis aliquam. Vivamus aliquam elit nec lobortis cursus. Integer mi enim, pulvinar nec est vitae, volutpat malesuada nisi. In sed risus sed augue rhoncus accumsan.`,
-        category: "programming",
-        labels: ["aritmética", "básico"],
-        previous: "ex_G3Fer3rDS432",
-        next: "ex_Plo43jjrR3",
-        cases: [
-          { input: { x: 10, y: 12 }, output: [22] },
-          { input: { x: 24, y: 24 }, output: [48] },
-          { input: { x: 1000, y: 35 }, output: [1035] },
-          { input: { x: 28, y: 28 }, output: [56] },
-        ],
-      },
+      data: exerciseData,
     },
   };
 }

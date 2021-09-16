@@ -22,7 +22,7 @@ import {
 } from "../../components/Styled";
 import { GREY_2, PRIMARY_LIGHT } from "../../public/colors";
 import store from "../../redux/store";
-import { getUserData, updatePassword } from "../../seedwork/Requests";
+import { getUserStats, updatePassword } from "../../seedwork/Requests";
 
 const styles = makeStyles((theme) => ({
   body: {
@@ -67,17 +67,17 @@ function PieGraph() {}
 function ProblemsList(props) {
   const { data } = props;
   return (
-    <div style={{width:"100%"}}>
+    <div style={{ width: "100%" }}>
       <List>
-        {data.trials.map((item, index) => (
-          [<ListItem key={`trial-${index}`}>
+        {data.trials.map((item, index) => [
+          <ListItem key={`trial-${index}`}>
             <ListItemText
               primary={`Problema ${item.problem_id}`}
               secondary={item.status}
             />
           </ListItem>,
-          <Divider key={`divider-${index}`}/>]
-        ))}
+          <Divider key={`divider-${index}`} />,
+        ])}
       </List>
     </div>
   );
@@ -220,7 +220,7 @@ function Body() {
   const classes = styles();
   const user = store.getState().user;
   const [value, setValue] = React.useState(2);
-  const [data, setData] = React.useState({});
+  const [data, setData] = React.useState({ trials: [], submissions: [] });
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -228,7 +228,7 @@ function Body() {
 
   useEffect(async () => {
     if (typeof window !== "undefined" && store.getState().isLogged) {
-      const userData = await getUserData();
+      const userData = await getUserStats();
       setData(userData.data);
     }
   }, []);
@@ -280,7 +280,7 @@ function Body() {
             <TabPanel value={value} index={1}>
               <ProblemsList data={data} />
             </TabPanel>
-            <TabPanel value={value} index={2}>
+            <TabPanel style={{ whidth: "100%" }} value={value} index={2}>
               <SubmissionsList data={data} />
             </TabPanel>
             <TabPanel value={value} index={3}>

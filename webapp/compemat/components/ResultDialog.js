@@ -120,6 +120,7 @@ export default function ResultDialog(props) {
       {results.map((item, index) => (
         <StyledAccordion
           id={`panel-${index}`}
+          key={`panel-${index}`}
           square
           expanded={expanded === `panel-${index}`}
           onChange={handleChange(`panel-${index}`)}

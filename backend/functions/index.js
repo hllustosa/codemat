@@ -10,4 +10,5 @@ admin.initializeApp(functions.config().firebase);
 // set GOOGLE_APPLICATION_CREDENTIALS
 //  =D:\Hermano\workspace\compemat\backend\compemat-3277c049031f.json
 // firebase emulators:start
-exports.userStats = functions.https.onRequest(userStats.app);
+exports.userstats = functions.https.onRequest(userStats.app);
+exports.submissions = functions.https.onRequest(userStats.app);
