@@ -27,8 +27,9 @@ import ResultDialog from "../../components/ResultDialog";
 import { useQueryParams } from "../../seedwork/Utils";
 import { postSubmission } from "../../seedwork/Requests";
 import store from "../../redux/store";
-import { decode } from 'js-base64';
+import { decode } from "js-base64";
 import dynamic from "next/dynamic";
+import { translateCategory } from "../../seedwork/Translations";
 const TextEditor = dynamic(import("../../components/CodeEditor"), {
   ssr: false,
 });
@@ -72,7 +73,7 @@ const styles = makeStyles((theme) => ({
     height: "calc(100vh - 290px)",
     minHeight: "330px",
     minWidth: "290px",
-    backgroundColor: "#F5F3F5"
+    backgroundColor: "#F5F3F5",
   },
   problemMark: {
     padding: "10px",
@@ -121,14 +122,17 @@ function ProblemPane(props) {
           <NoWrap className={classes.problemContent}>
             <NoWrapContainer>
               <span className={classes.markText}>{"Categoria: "} </span>{" "}
-              <BaseChip label={data.category} />
+              <BaseChip label={translateCategory(data.category)} />
             </NoWrapContainer>
           </NoWrap>
         </Grid>
 
         <Grid item xs={12}>
           <NoWrap className={classes.problemContent}>
-            <iframe className={classes.problemContentFrame} src={`/problems/all/${data.id}.html`}></iframe>
+            <iframe
+              className={classes.problemContentFrame}
+              src={`/problems/all/${data.id}.html`}
+            ></iframe>
           </NoWrap>
         </Grid>
         <Grid item xs={12}>
@@ -218,7 +222,7 @@ function CodePane(props) {
       code: code,
       report: {
         correctAnswer: correctAnswer,
-        executionError: executionError,
+        executionError: executionError ? executionError.split("<br/>")[0] : "",
       },
       time: new Date().toISOString(),
     };

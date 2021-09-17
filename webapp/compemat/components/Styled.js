@@ -6,7 +6,7 @@ import {
   CircularProgress,
   TextField,
   Snackbar,
-  Box
+  Grid
 } from "@material-ui/core";
 import { CONTRAST_COLOR } from "../public/colors";
 import { makeStyles } from "@material-ui/core";
@@ -194,9 +194,9 @@ export function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
+        <Grid container justifyContent="center">
+          {children}
+        </Grid>
       )}
     </div>
   );

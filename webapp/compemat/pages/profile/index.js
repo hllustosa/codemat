@@ -8,11 +8,13 @@ import {
   Typography,
   Tabs,
   Tab,
-  List,
+  IconButton,
   ListItem,
   ListItemText,
+  ListItemSecondaryAction,
   Divider,
 } from "@material-ui/core";
+import { VisibilityRounded } from "@material-ui/icons";
 import {
   TabPanel,
   Input,
@@ -20,9 +22,13 @@ import {
   ErrorMessage,
   SuccessMessage,
 } from "../../components/Styled";
-import { GREY_2, PRIMARY_LIGHT } from "../../public/colors";
+import PaginatedList from "../../components/PaginatedList";
+import { GREY_2 } from "../../public/colors";
 import store from "../../redux/store";
 import { getUserStats, updatePassword } from "../../seedwork/Requests";
+import { translateStatus } from "../../seedwork/Translations";
+import problems from "../../public/problems/index.json";
+import { encode } from "js-base64";
 
 const styles = makeStyles((theme) => ({
   body: {
@@ -66,25 +72,86 @@ function PieGraph() {}
 
 function ProblemsList(props) {
   const { data } = props;
+
+  const renderItem = (item, index) => {
+    return [
+      <ListItem key={`trial-${index}`}>
+        <ListItemText
+          primary={`${problems[item.problem_id].name}`}
+          secondary={translateStatus(item.status)}
+        />
+        <ListItemSecondaryAction>
+          <IconButton
+            edge="end"
+            aria-label="ver"
+            onClick={() => window.location.href = `/exercises/${item.problem_id}`}
+          >
+            <VisibilityRounded />
+          </IconButton>
+        </ListItemSecondaryAction>
+      </ListItem>,
+      <Divider key={`divider-${index}`} />,
+    ];
+  };
+
   return (
-    <div style={{ width: "100%" }}>
-      <List>
-        {data.trials.map((item, index) => [
-          <ListItem key={`trial-${index}`}>
-            <ListItemText
-              primary={`Problema ${item.problem_id}`}
-              secondary={item.status}
-            />
-          </ListItem>,
-          <Divider key={`divider-${index}`} />,
-        ])}
-      </List>
+    <div style={{ width: "100%", maxWidth: "640px" }}>
+      <PaginatedList
+        data={data.trials}
+        listItem={renderItem}
+        listStyles={{ width: "100%" }}
+      />
     </div>
   );
 }
 
-function SubmissionsList() {
-  return <div></div>;
+function SubmissionsList(props) {
+  const { data } = props;
+
+  const getDescription = (item) => {
+    const dateStr = new Date(item.time).toLocaleDateString();
+    const timeStr = new Date(item.time).toLocaleTimeString();
+
+    if(item.report.correctAnswer){
+      return `Resposta correta em ${dateStr} às ${timeStr}`
+    } else if (item.report.executionError) {
+      return `Erro de execução em ${dateStr} às ${timeStr}`
+    } else {
+      return `Resposta errada em ${dateStr} às ${timeStr}`
+    }
+  }
+
+
+  const renderItem = (item, index) => {
+    return [
+      <ListItem key={`trial-${index}`}>
+        <ListItemText
+          primary={`${problems[item.problem_id].name}`}
+          secondary={getDescription(item)}
+        />
+        <ListItemSecondaryAction>
+          <IconButton
+            edge="end"
+            aria-label="ver"
+            onClick={() => window.location.href = `/exercises/${item.problem_id}?c=${encode(item.code)}`}
+          >
+            <VisibilityRounded />
+          </IconButton>
+        </ListItemSecondaryAction>
+      </ListItem>,
+      <Divider key={`divider-${index}`} />,
+    ];
+  };
+
+  return (
+    <div style={{ width: "100%", maxWidth: "640px" }}>
+      <PaginatedList
+        data={data.submissions}
+        listItem={renderItem}
+        listStyles={{ width: "100%" }}
+      />
+    </div>
+  );;
 }
 
 function Security() {
@@ -93,7 +160,9 @@ function Security() {
   const [passwordCheck, setPasswordCheck] = React.useState("");
   const [errorMessage, setErrorMessage] = React.useState("");
   const [successMessage, setSuccessMessage] = React.useState("");
-  const [validationMessage, setValidationMessage] = React.useState("");
+  const [validationMessage, setValidationMessage] = React.useState(
+    "Informe a sua senha."
+  );
 
   const classes = styles();
 
@@ -198,17 +267,20 @@ function Security() {
             <Grid item style={{ marginBottom: "10px", maxWidth: "300px" }}>
               <Typography size={12}>{validationMessage}</Typography>
             </Grid>
-          </Grid>
-
-          <Grid item style={{ marginBottom: "10px" }}>
-            <ContainedButton
-              disabled={validationMessage}
-              onClick={() =>
-                updateUserPassword(password, setSuccessMessage, setErrorMessage)
-              }
-            >
-              Redefinir
-            </ContainedButton>
+            <Grid item style={{ marginBottom: "10px" }}>
+              <ContainedButton
+                disabled={validationMessage}
+                onClick={() =>
+                  updateUserPassword(
+                    password,
+                    setSuccessMessage,
+                    setErrorMessage
+                  )
+                }
+              >
+                Redefinir
+              </ContainedButton>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
@@ -219,7 +291,7 @@ function Security() {
 function Body() {
   const classes = styles();
   const user = store.getState().user;
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(0);
   const [data, setData] = React.useState({ trials: [], submissions: [] });
 
   const handleChange = (event, newValue) => {
@@ -274,16 +346,18 @@ function Body() {
             </Tabs>
           </Grid>
           <Grid item container justifyContent="center">
-            <TabPanel value={value} index={0}>
-              Item One
-            </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel
+              style={{ width: "100%" }}
+              value={value}
+              index={0}
+            ></TabPanel>
+            <TabPanel style={{ width: "100%" }} value={value} index={1}>
               <ProblemsList data={data} />
             </TabPanel>
-            <TabPanel style={{ whidth: "100%" }} value={value} index={2}>
+            <TabPanel style={{ width: "100%" }} value={value} index={2}>
               <SubmissionsList data={data} />
             </TabPanel>
-            <TabPanel value={value} index={3}>
+            <TabPanel style={{ width: "100%" }} value={value} index={3}>
               <Security />
             </TabPanel>
           </Grid>
