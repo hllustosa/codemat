@@ -10,6 +10,7 @@ import {
   Tooltip,
   IconButton,
 } from "@material-ui/core";
+import { useRouter } from "next/router";
 import LoginForm from "./LoginForm";
 import store from "../redux/store";
 import { getLogout } from "../redux/actions";
@@ -57,8 +58,9 @@ function AccountMenu(props) {
     window.location = "/";
   };
 
-  const gotToProfile = () => {
-    window.location = "/profile";
+  const router = useRouter();
+  const goTo = (place) => () => {
+    if (place) router.push(place);
   };
 
   return (
@@ -109,7 +111,7 @@ function AccountMenu(props) {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <MenuItem onClick={gotToProfile}>
+        <MenuItem onClick={goTo('/profile')}>
           <Avatar
             style={{
               width: 32,

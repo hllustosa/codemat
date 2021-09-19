@@ -1,10 +1,11 @@
+import React from "react";
+import { useRouter } from "next/router";
 import Page from "../../components/Page";
 import AppBar from "../../components/AppBar";
 import Card from "../../components/Card";
 import SearchField from "../../components/SearchField";
 import { makeStyles, Grid } from "@material-ui/core";
 import { GREY_2 } from "../../public/colors";
-import React from "react";
 
 const styles = makeStyles((theme) => ({
   body: {
@@ -23,6 +24,11 @@ function Body(props) {
   const classes = styles();
   props.setTitle("C & M: Exercícios de Programação");
 
+  const router = useRouter();
+  const goTo = (place) => () => {
+    if (place) router.push(place);
+  };
+
   return (
     <main className={classes.body}>
       <Grid
@@ -37,9 +43,12 @@ function Body(props) {
             onChange={(e) => {
               setSearch(e.target.value);
             }}
-            onClick={() => {
-              window.location.href = `/exercises/list?q=${search}`;
+            onKeyPress={(e) => {
+              if (e.which === 13) { 
+                goTo(`/exercises/list?q=${search}`)();
+              }
             }}
+            onClick={goTo(`/exercises/list?q=${search}`)}
           />
         </Grid>
 

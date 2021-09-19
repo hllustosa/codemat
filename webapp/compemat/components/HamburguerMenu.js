@@ -1,10 +1,7 @@
 import React from "react";
-import UserMenu from "./UserMenu";
 import routes from "../public/routes";
 import { useRouter } from "next/router";
 import {
-  Button,
-  Grid,
   IconButton,
   Avatar,
   Menu,
@@ -14,7 +11,7 @@ import {
   Divider,
   Tooltip,
 } from "@material-ui/core";
-import { GREY_2, CONTRAST_COLOR, PRIMARY_LIGHT } from "../public/colors";
+import { GREY_2, PRIMARY_LIGHT } from "../public/colors";
 import MenuIcon from "@material-ui/icons/MenuRounded";
 import LoginForm from "./LoginForm";
 import store from "../redux/store";
@@ -42,12 +39,7 @@ export default function HamburguerMenu(props) {
     window.location = "/";
   };
 
-  const gotToProfile = () => {
-    window.location = "/profile";
-  };
-
   const router = useRouter();
-
   const goTo = (place) => () => {
     if (place) router.push(place);
   };
@@ -102,7 +94,7 @@ export default function HamburguerMenu(props) {
         {isAuth && (
           <React.Fragment>
             {" "}
-            <MenuItem onClick={gotToProfile}>
+            <MenuItem onClick={goTo(routes.profile)}>
               <Avatar
                 style={{
                   width: 32,

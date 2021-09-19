@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import AppBar from "../../../components/AppBar";
 import Page from "../../../components/Page";
 import SearchField from "../../../components/SearchField";
-import DataGrid from "../../../components/DataGrid";
-import { makeStyles, Grid, Chip } from "@material-ui/core";
+import { useQueryParams } from "../../../seedwork/Utils";
+import { makeStyles, IconButton, Grid, ListItem, ListItemText, ListItemSecondaryAction, Divider  } from "@material-ui/core";
+import { VisibilityRounded  } from "@material-ui/icons";
 import { GREY_2, PRIMARY } from "../../../public/colors";
+import problems from "../../../public/problems/index.json";
+import { translateCategory } from "../../../seedwork/Translations";
+import PaginatedList from "../../../components/PaginatedList";
 
 const styles = makeStyles((theme) => ({
   body: {
@@ -22,82 +27,65 @@ const styles = makeStyles((theme) => ({
   },
 }));
 
-const columns = [
-  {
-    id: "exercise-name",
-    field: "name",
-    headerName: "Exercício",
-    flex: 2,
-    disableColumnMenu: true,
-    resizable: false,
-    sortable: false,
-    filterable: false,
-    hideSortIcons: true,
-  },
-  {
-    id: "category",
-    flex: 1,
-    field: "category",
-    headerName: "Categoria",
-    align: "right",
-    disableColumnMenu: true,
-    resizable: false,
-    sortable: false,
-    filterable: false,
-    hideSortIcons: true,
-    renderCell: (params) => (
-      params.value && <Chip
-        color="primary"
-        label={params.value}
-      />
-    ),
-  },
-  {
-    id: "access",
-    flex: 1,
-    field: "id",
-    headerName: "  ",
-    align: "right",
-    disableColumnMenu: true,
-    resizable: false,
-    sortable: false,
-    filterable: false,
-    hideSortIcons: true,
-    renderCell: (params) => (
-      <a
-        style={{ textDecoration: "none", color: PRIMARY }}
-        href={`/exercises/${params.value}`}
-      >
-        Visualizar
-      </a>
-    ),
-  },
-];
-
-const data = [
-  {
-    id: "ex_Frf432D34ss",
-    name: "Exercicio Teste 1",
-    category: "Programação"
-  },
-  {
-    id: "ex_D4fd34D234d",
-    name: "Exercicio Teste 2",
-    category: "Unidades"
-  },
-  {
-    id: "ex_G3Fer3rDS432",
-    name: "Exercicio Teste 3",
-    category: "Trigonometria"
-  },
-  {
-    id: "ex_Plo43jjrR3",
-    name: "Exercicio Teste 4",
-  },
-];
-
 function Body() {
   const classes = styles();
+  const router = useRouter();
+  const { q, cat } = useQueryParams();
+  const [search, setSearch] = React.useState(q ? q : "");
+  const [category, setCategory] = React.useState(cat ? cat : cat);
+  const [filteredProblems, setFilteredProblems] = React.useState([]);
+  
+  
+    console.log(JSON.stringify(filteredProblems));
+
+  useEffect(() => {
+    const keys = Object.keys(problems);
+    const foundProblems = keys
+      .map((key) => problems[key])
+      .filter((item) => {
+        if(!search && !category){
+          return true;
+        }
+
+        if (item.name.toUpperCase().includes(search.toUpperCase())) {
+          if (category) {
+            return item.category.toUpperCase().includes(category.toUpperCase());
+          }
+
+          return true;
+        }
+
+        return false;
+      });
+
+    setFilteredProblems(foundProblems);
+  }, [search, category]);
+
+  const goTo = (place) => () => {
+    if (place) router.push(place);
+  };
+
+  const renderItem = (item, index) => {
+    return [
+      <ListItem key={`trial-${index}`}>
+        <ListItemText
+          primary={`${item.name}`}
+          secondary={translateCategory(item.category)}
+        />
+        <ListItemSecondaryAction>
+          <IconButton
+            edge="end"
+            aria-label="ver"
+            color="primary"
+            onClick={goTo(`/exercises/${item.id}`)}
+          >
+            <VisibilityRounded />
+          </IconButton>
+        </ListItemSecondaryAction>
+      </ListItem>,
+      <Divider key={`divider-${index}`} />,
+    ];
+  };
 
   return (
     <main className={classes.body}>
@@ -109,10 +97,25 @@ function Body() {
         spacing={2}
       >
         <Grid item>
-          <SearchField />
+          <SearchField
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+            onKeyPress={(e) => {
+              if (e.which === 13) {
+                goTo(`/exercises/list?q=${search}`)();
+              }
+            }}
+            onClick={goTo(`/exercises/list?q=${search}`)}
+          />
         </Grid>
         <Grid item className={classes.grid}>
-          <DataGrid columns={columns} rows={data} />
+          <PaginatedList
+            data={filteredProblems}
+            listItem={renderItem}
+            listStyles={{ width: "100%" }}
+          />
         </Grid>
       </Grid>
     </main>

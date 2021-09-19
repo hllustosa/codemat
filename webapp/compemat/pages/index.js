@@ -198,6 +198,7 @@ function Body() {
               title={"Curso Completo"}
               image={"/img/students.png"}
               height={"220"}
+              href={"/"}
               content={
                 "Um curso de reforço em matemática, baseado no conteúdo do ENEM, que vai te ajudar a dar os primeiros passos na programação."
               }
@@ -208,6 +209,7 @@ function Body() {
               title={"Pratique"}
               image={"/img/study.png"}
               height={"220"}
+              href={"/"}
               content={
                 "Temos centenas de exercícios que vão te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."
               }
@@ -218,6 +220,7 @@ function Body() {
               title={"Prepare-se"}
               image={"/img/exam.png"}
               height={"220"}
+              href={"/"}
               content={
                 "Se familiarize com as questões de matemática do ENEM dos últimos anos e faça uma excelente prova."
               }

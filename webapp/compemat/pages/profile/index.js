@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import Page from "../../components/Page";
 import AppBar from "../../components/AppBar";
 import {
@@ -29,7 +30,6 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 import PaginatedList from "../../components/PaginatedList";
@@ -75,51 +75,6 @@ const styles = makeStyles((theme) => ({
     textAlign: "center",
   },
 }));
-
-const ds = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
 
 function Stats(props) {
   const { data } = props;
@@ -226,6 +181,10 @@ function Stats(props) {
 
 function ProblemsList(props) {
   const { data } = props;
+  const router = useRouter();
+  const goTo = (place) => () => {
+    if (place) router.push(place);
+  };
 
   const renderItem = (item, index) => {
     return [
@@ -239,9 +198,7 @@ function ProblemsList(props) {
             edge="end"
             aria-label="ver"
             color="primary"
-            onClick={() =>
-              (window.location.href = `/exercises/${item.problem_id}`)
-            }
+            onClick={goTo(`/exercises/${item.problem_id}`)}
           >
             <VisibilityRounded />
           </IconButton>
@@ -264,6 +221,11 @@ function ProblemsList(props) {
 
 function SubmissionsList(props) {
   const { data } = props;
+  const router = useRouter();
+  const goTo = (place) => () => {
+    if (place) router.push(place);
+  };
+
 
   const getDescription = (item) => {
     const dateStr = new Date(item.time).toLocaleDateString();
@@ -290,11 +252,7 @@ function SubmissionsList(props) {
             edge="end"
             aria-label="ver"
             color="primary"
-            onClick={() =>
-              (window.location.href = `/exercises/${item.problem_id}?c=${encode(
-                item.code
-              )}`)
-            }
+            onClick={goTo(`/exercises/${item.problem_id}?c=${encode(item.code)}`)}
           >
             <VisibilityRounded />
           </IconButton>

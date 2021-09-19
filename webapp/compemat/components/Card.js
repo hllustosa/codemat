@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -12,8 +13,8 @@ const useStyles = makeStyles({
     maxWidth: "100%",
   },
   link: {
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  },
 });
 
 export default function ImgMediaCard(props) {
@@ -22,32 +23,32 @@ export default function ImgMediaCard(props) {
 
   return (
     <Fade in timeout={4000}>
-        <a  className={classes.link} href={href}>
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt={title}
-                height={height}
-                image={image}
-                title={title}
-              />
-              <CardContent>
-                <Typography
-                  color="primary"
-                  gutterBottom
-                  variant="h5"
-                  component="h3"
-                >
-                  {title}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  {content}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </a>
+      <Link className={classes.link} href={href}>
+        <Card className={classes.root}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt={title}
+              height={height}
+              image={image}
+              title={title}
+            />
+            <CardContent>
+              <Typography
+                color="primary"
+                gutterBottom
+                variant="h5"
+                component="h3"
+              >
+                {title}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                {content}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Link>
     </Fade>
   );
 }

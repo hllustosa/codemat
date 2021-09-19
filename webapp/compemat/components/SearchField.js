@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SearchField(props) {
-  const { value, onChange, onClick } = props;
+  const { value, onChange, onClick, onKeyPress } = props;
   const classes = useStyles();
 
   return (
@@ -36,6 +36,7 @@ export default function SearchField(props) {
         type="text"
         value={value}
         onChange={onChange}
+        onKeyPress={onKeyPress}
         endAdornment={
           <InputAdornment position="end">
             <IconButton aria-label="buscar" onClick={onClick} edge="end">

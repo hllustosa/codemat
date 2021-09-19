@@ -73,7 +73,9 @@ const styles = makeStyles((theme) => ({
     height: "calc(100vh - 290px)",
     minHeight: "330px",
     minWidth: "290px",
-    backgroundColor: "#F5F3F5",
+    backgroundColor: "#eeeeee",
+    border:"none",
+    borderRadius: "15px"
   },
   problemMark: {
     padding: "10px",
@@ -93,6 +95,8 @@ const styles = makeStyles((theme) => ({
     width: "calc(100% - 20px)",
     flex: 1,
     overflowY: "auto",
+    borderRadius: "15px",
+    backgroundColor: "#eeeeee",
   },
 }));
 

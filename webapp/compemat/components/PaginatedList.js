@@ -53,7 +53,7 @@ export default function PaginatedList(props) {
           {pageNumber ? pageNumber.toString() : 1}
         </Grid>
         <Grid item>
-          <OutlinedButton disabled={page === pageNumber} onClick={next}>
+          <OutlinedButton disabled={page >= pageNumber} onClick={next}>
             Próximo
           </OutlinedButton>
         </Grid>
