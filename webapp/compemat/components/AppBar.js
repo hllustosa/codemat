@@ -5,7 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
 import Logo from "./Logo";
-import UserMenu from "./UserMenu";
+import HamburguerMenu from "./HamburguerMenu";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,7 +36,7 @@ export default function DenseAppBar(props) {
               {title}
             </Typography>
           </Hidden>
-          <UserMenu />
+          <HamburguerMenu />
         </Toolbar>
       </AppBar>
     </header>

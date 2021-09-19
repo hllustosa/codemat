@@ -2,21 +2,17 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import {
   Grid,
-  IconButton,
   Typography,
   Hidden,
-  Menu,
-  MenuItem,
   Fade,
 } from "@material-ui/core";
 import Page from "../components/Page";
 import UserMenu from "../components/UserMenu";
 import Card from "../components/Card";
-import MenuIcon from "@material-ui/icons/Menu";
 import Logo from "../components/Logo";
 import Link from "next/link";
 import routes from "../public/routes";
-import { useRouter } from "next/router";
+import HamburguerMenu from "../components/HamburguerMenu";
 import {
   PRIMARY,
   GREY_2,
@@ -122,44 +118,6 @@ function RowMenu() {
   );
 }
 
-function HamburguerMenu() {
-  const router = useRouter();
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const goTo = (place) => () => {
-    if (place) router.push(place);
-  };
-
-  return (
-    <Grid container item alignItems="center">
-      <IconButton color="secondary" onClick={handleClick}>
-        <MenuIcon />
-      </IconButton>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={goTo(routes.course)}>Curso</MenuItem>
-        <MenuItem onClick={goTo(routes.exercises)}>Exercícios</MenuItem>
-        <MenuItem onClick={goTo(routes.tutorials)}>Tutoriais</MenuItem>
-        <MenuItem onClick={goTo(routes.about)}>Sobre</MenuItem>
-      </Menu>
-      <UserMenu />
-    </Grid>
-  );
-}
 
 function Header() {
   const classes = styles();
