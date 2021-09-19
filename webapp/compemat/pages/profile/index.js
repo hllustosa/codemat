@@ -21,9 +21,19 @@ import {
   ContainedButton,
   ErrorMessage,
   SuccessMessage,
+  Title,
 } from "../../components/Styled";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import PaginatedList from "../../components/PaginatedList";
-import { GREY_2 } from "../../public/colors";
+import { GREY_2, PRIMARY_LIGHT, PRIMARY } from "../../public/colors";
 import store from "../../redux/store";
 import { getUserStats, updatePassword } from "../../seedwork/Requests";
 import { translateStatus } from "../../seedwork/Translations";
@@ -32,11 +42,11 @@ import { encode } from "js-base64";
 
 const styles = makeStyles((theme) => ({
   body: {
-    maxWidth: "1000px",
+    maxWidth: "800px",
     width: "100%",
-    minHeight: "calc(100vh - 130px)",
+    minHeight: "calc(100vh - 180px)",
     margin: "auto",
-    marginTop: "70px",
+    marginTop: "90px",
     backgroundColor: GREY_2,
     zIndex: 0,
     borderRadius: "15px",
@@ -45,14 +55,14 @@ const styles = makeStyles((theme) => ({
     position: "relative",
     height: "120px",
     width: "120px",
-    top: "-55px",
+    top: "-70px",
     left: "50%",
     fontSize: "30px",
     transform: "translateX(-50%)",
   },
   container: {
     padding: "15px",
-    marginTop: "-60px",
+    marginTop: "-85px",
   },
   base: {
     width: "300px",
@@ -66,9 +76,153 @@ const styles = makeStyles((theme) => ({
   },
 }));
 
-function BarGraph() {}
+const ds = [
+  {
+    name: "Page A",
+    uv: 4000,
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: "Page B",
+    uv: 3000,
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: "Page C",
+    uv: 2000,
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: "Page D",
+    uv: 2780,
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: "Page E",
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: "Page F",
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: "Page G",
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
+  },
+];
 
-function PieGraph() {}
+function Stats(props) {
+  const { data } = props;
+
+  const count = data.trials.reduce(
+    (count, item) => {
+      if (item.status === "solved") {
+        return { tried: count.tried + 1, solved: count.solved + 1 };
+      } else {
+        return { tried: count.tried + 1, solved: count.solved };
+      }
+    },
+    { tried: 0, solved: 0 }
+  );
+
+  const countCategories = data.trials.reduce(
+    (count, item) => {
+      count[item.problem_category].tentado++;
+      if (item.status === "solved") {
+        count[item.problem_category].resolvido++;
+      }
+      return count;
+    },
+    {
+      programming: { name:"Programação", tentado: 0, resolvido: 0 },
+      arithmetic: { name:"Aritmética",tentado: 0, resolvido: 0 },
+      combinatorics: { name:"Análise Combinátoria", tentado: 0, resolvido: 0 },
+      financial: { name:"Matemática Financeira", tentado: 0, resolvido: 0 },
+      functions: { name:"Funções", tentado: 0, resolvido: 0 },
+      probability: { name:"Probabilidade", tentado: 0, resolvido: 0 },
+      progression: { name:"Progressões", tentado: 0, resolvido: 0 },
+      trigonometry: { name:"Trigonométria", tentado: 0, resolvido: 0 },
+      unities: { name:"Unidades", tentado: 0, resolvido: 0 },
+    }
+  );
+
+  const countCategoriesList = Object.keys(countCategories).map( (item, index) => countCategories[item]);
+
+  return (
+    <div style={{ width: "100%", maxWidth: "640px" }}>
+      <Grid container direction="row">
+        <Grid
+          item
+          container
+          direction="column"
+          justifyContent="center"
+          alignContent="center"
+          style={{ height: "150px", padding: "15px" }}
+          xs={12}
+          sm={12}
+          md={12}
+        >
+          <Grid>
+            <Title
+              style={{
+                fontSize: "12px",
+                color: PRIMARY_LIGHT,
+                textAlign: "center",
+              }}
+            >{`Problemas`}</Title>
+          </Grid>
+          <Grid>
+            <Typography
+              align="center"
+              color="primary"
+              variant="h2"
+            >{`${count.solved}/${count.tried}`}</Typography>
+          </Grid>
+          <Grid>
+            <Title
+              style={{
+                fontSize: "12px",
+                color: PRIMARY_LIGHT,
+                textAlign: "center",
+              }}
+            >{`Resolvidos/Tentados`}</Title>
+          </Grid>
+        </Grid>
+        <Grid style={{ height: "300px" }} xs={12} sm={12} md={12}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              width={500}
+              height={300}
+              data={countCategoriesList}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="resolvido" fill={PRIMARY_LIGHT} />
+              <Bar dataKey="tentado" fill={PRIMARY} />
+            </BarChart>
+          </ResponsiveContainer>
+        </Grid>
+      </Grid>
+    </div>
+  );
+}
 
 function ProblemsList(props) {
   const { data } = props;
@@ -84,7 +238,10 @@ function ProblemsList(props) {
           <IconButton
             edge="end"
             aria-label="ver"
-            onClick={() => window.location.href = `/exercises/${item.problem_id}`}
+            color="primary"
+            onClick={() =>
+              (window.location.href = `/exercises/${item.problem_id}`)
+            }
           >
             <VisibilityRounded />
           </IconButton>
@@ -112,15 +269,14 @@ function SubmissionsList(props) {
     const dateStr = new Date(item.time).toLocaleDateString();
     const timeStr = new Date(item.time).toLocaleTimeString();
 
-    if(item.report.correctAnswer){
-      return `Resposta correta em ${dateStr} às ${timeStr}`
+    if (item.report.correctAnswer) {
+      return `Resposta correta em ${dateStr} às ${timeStr}`;
     } else if (item.report.executionError) {
-      return `Erro de execução em ${dateStr} às ${timeStr}`
+      return `Erro de execução em ${dateStr} às ${timeStr}`;
     } else {
-      return `Resposta errada em ${dateStr} às ${timeStr}`
+      return `Resposta errada em ${dateStr} às ${timeStr}`;
     }
-  }
-
+  };
 
   const renderItem = (item, index) => {
     return [
@@ -133,7 +289,12 @@ function SubmissionsList(props) {
           <IconButton
             edge="end"
             aria-label="ver"
-            onClick={() => window.location.href = `/exercises/${item.problem_id}?c=${encode(item.code)}`}
+            color="primary"
+            onClick={() =>
+              (window.location.href = `/exercises/${item.problem_id}?c=${encode(
+                item.code
+              )}`)
+            }
           >
             <VisibilityRounded />
           </IconButton>
@@ -146,12 +307,12 @@ function SubmissionsList(props) {
   return (
     <div style={{ width: "100%", maxWidth: "640px" }}>
       <PaginatedList
-        data={data.submissions}
+        data={data.submissions.reverse()}
         listItem={renderItem}
         listStyles={{ width: "100%" }}
       />
     </div>
-  );;
+  );
 }
 
 function Security() {
@@ -346,11 +507,9 @@ function Body() {
             </Tabs>
           </Grid>
           <Grid item container justifyContent="center">
-            <TabPanel
-              style={{ width: "100%" }}
-              value={value}
-              index={0}
-            ></TabPanel>
+            <TabPanel style={{ width: "100%" }} value={value} index={0}>
+              <Stats data={data} />
+            </TabPanel>
             <TabPanel style={{ width: "100%" }} value={value} index={1}>
               <ProblemsList data={data} />
             </TabPanel>

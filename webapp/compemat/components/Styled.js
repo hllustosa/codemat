@@ -27,6 +27,7 @@ export function Title(props) {
       className={classes.title}
       color="primary"
       style={{ fontSize: size }}
+      {...props}
     >
       {props.children}
     </Typography>
