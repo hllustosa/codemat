@@ -78,8 +78,9 @@ const styles = makeStyles((theme) => ({
 
 function Stats(props) {
   const { data } = props;
-
-  const count = data.trials.reduce(
+  let trials = data.trials ? data.trials : [];
+  
+  const count = trials.reduce(
     (count, item) => {
       if (item.status === "solved") {
         return { tried: count.tried + 1, solved: count.solved + 1 };
@@ -90,7 +91,7 @@ function Stats(props) {
     { tried: 0, solved: 0 }
   );
 
-  const countCategories = data.trials.reduce(
+  const countCategories = trials.reduce(
     (count, item) => {
       count[item.problem_category].tentado++;
       if (item.status === "solved") {

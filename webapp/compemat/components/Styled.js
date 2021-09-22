@@ -56,8 +56,8 @@ export function Progress(props) {
 export function BaseChip(props) {
   return (
     <Chip
-      color="primary"
       size="small"
+      color="primary"
       {...props}
       style={{ ...props.style, color: CONTRAST_COLOR, marginRight: "3px" }}
     >

@@ -35,7 +35,7 @@ function Body(props) {
         className={classes.body}
         container
         justifyContent="center"
-        spacing="2"
+        spacing={2}
       >
         <Grid item xs={12} md={12}>
           <SearchField

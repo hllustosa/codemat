@@ -121,7 +121,7 @@ function ProblemPane(props) {
           </BaseIconButton>
         </Grid>
       </Grid>
-      <Grid container direction="columnn" xs={12}>
+      <Grid container item direction="column" xs={12}>
         <Grid item xs={12}>
           <NoWrap className={classes.problemContent}>
             <NoWrapContainer>
