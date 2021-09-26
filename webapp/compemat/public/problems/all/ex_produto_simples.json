@@ -1,8 +1,8 @@
 {
-    "id": "ex_3fc8a8a5d619",
+    "id": "ex_produto_simples",
     "name": "Produto Simples",
     "category": "programming",
-    "labels": ["aritmética", "básico"],
+    "labels": ["aritmética", "básico", "seção 1"],
     "previous": "",
     "next": "",
     "cases": [

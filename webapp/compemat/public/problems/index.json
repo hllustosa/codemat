@@ -1,12 +1,62 @@
 {
-  "ex_d9b243b8fdef": {
-    "id": "ex_d9b243b8fdef",
-    "name": "Soma Simples",
-    "category": "Programming"
+  "ex_ola_mundo": {
+    "id": "ex_ola_mundo",
+    "name": "Olá, Mundo",
+    "category": "Programming",
+    "labels": ["básico", "seção 1"]
   },
-  "ex_3fc8a8a5d619": {
-    "id": "ex_3fc8a8a5d619",
+  "ex_soma_simples": {
+    "id": "ex_soma_simples",
+    "name": "Soma Simples",
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_produto_simples": {
+    "id": "ex_produto_simples",
     "name": "Produto Simples",
-    "category": "Programming"
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_media_simples": {
+    "id": "ex_media_simples",
+    "name": "Média Simples",
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_circunferencia": {
+    "id": "ex_circunferencia",
+    "name": "Cálculo da Circunferência",
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_media_ponderada": {
+    "id": "ex_media_ponderada",
+    "name": "Média Ponderada",
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_imc": {
+    "id": "ex_imc",
+    "name": "Índice de Massa Corporal",
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_cryptomoedas": {
+    "id": "ex_cryptomoedas",
+    "name": "Cryptomoedas",
+    "category": "Programming",
+    "labels": ["aritmética", "básico", "seção 1"]
+  },
+  "ex_temperatura": {
+    "id": "ex_temperatura",
+    "name": "Temperatura",
+    "category": "Programming",
+    "labels": ["física", "básico", "seção 1"]
+  },
+  "ex_movimento_retilineo": {
+    "id": "ex_movimento_retilineo",
+    "name": "Movimento Retilíneo",
+    "category": "Programming",
+    "labels": ["física", "básico", "seção 1"]
   }
 }

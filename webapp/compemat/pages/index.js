@@ -3,23 +3,15 @@ import { makeStyles } from "@material-ui/core";
 import {
   Grid,
   Typography,
-  Hidden,
   Fade,
 } from "@material-ui/core";
 import Page from "../components/Page";
-import UserMenu from "../components/UserMenu";
 import Card from "../components/Card";
-import Logo from "../components/Logo";
-import Link from "next/link";
-import routes from "../public/routes";
-import HamburguerMenu from "../components/HamburguerMenu";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {
   PRIMARY,
   GREY_2,
-  CONTRAST_COLOR,
-  SECONDARY,
 } from "../public/colors";
 
 const styles = makeStyles((theme) => ({
@@ -73,7 +65,7 @@ function Body() {
               height={"220"}
               href={"/course"}
               content={
-                "Temos centenas de exercícios que vão te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."
+                "Temos dezenas de exercícios que vão te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."
               }
             />
           </Grid>

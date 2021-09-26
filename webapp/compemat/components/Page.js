@@ -9,7 +9,7 @@ const withBasePage = (Component) => {
       "C & M - Computação, Programação e Matemática"
     );
     const [meta, setMeta] = React.useState(
-      "Página com centenas de exercícios de programação para iniciantes baseados em questões de matemática do ENEM."
+      "Página com dezenas de exercícios de programação para iniciantes baseados em questões de matemática do ENEM."
     );
 
     return (
