@@ -85,7 +85,7 @@ export default class CodeRunnerManager {
     
     state["expectedOutput"] = expectedOutput;
 
-    for (let i = 0; i < expectedOutput.length; i++) {
+    for (let i = 0; i < outputs.length; i++) {
       if (outputs[i] !== expectedOutput[i]) return false;
     }
 

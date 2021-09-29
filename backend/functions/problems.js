@@ -8,5 +8,15 @@ exports.data = {
     "ex_imc": "programming",
     "ex_cryptomoedas": "programming",
     "ex_temperatura": "programming",
-    "ex_movimento_retilineo" : "programming"
+    "ex_movimento_retilineo" : "programming",
+    "ex_seguranca_balada" : "programming",
+    "ex_comparador_numeros" : "programming",
+    "ex_positivo_negativo" : "programming",
+    "ex_par_ou_impar" : "programming",
+    "ex_lucro_ou_prejuizo" : "programming",
+    "ex_calculadora" : "programming",
+    "ex_media_2" : "programming",
+    "ex_maior_3" : "programming",
+    "ex_soma_positivos" : "programming",
+    "ex_por_extenso" : "programming"
 }

@@ -70,7 +70,7 @@ const styles = makeStyles((theme) => ({
   },
   problemContentFrame: {
     width: "100%",
-    height: "calc(100vh - 290px)",
+    height: "calc(100vh - 310px)",
     minHeight: "330px",
     minWidth: "290px",
     backgroundColor: "#eeeeee",

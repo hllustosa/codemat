@@ -1,0 +1,18 @@
+{
+    "id": "ex_temperatura",
+    "name": "Temperatura",
+    "category": "programming",
+    "labels": ["física", "básico", "seção 1"],
+    "previous": "",
+    "next": "",
+    "cases": [
+      { "input": { "temperatura": 22 }, "output": [71.6] },
+      { "input": { "temperatura": 28.1}, "output": [82.58000000000001] },
+      { "input": { "temperatura": 19.5 }, "output": [67.1] },
+      { "input": { "temperatura": 12.10 }, "output": [53.78] },
+      { "input": { "temperatura": -1.5 }, "output": [29.3] },
+      { "input": { "temperatura": 37.2 }, "output": [98.96000000000001] },
+      { "input": { "temperatura": 42.3 }, "output": [108.14] }
+    ]
+  }
+  

@@ -10,7 +10,7 @@ export default function CodeEditor(props) {
   return (
     <AceEditor
       style={{
-        height: "320px",
+        height: "360px",
         width: "100%",
       }}
       placeholder=""

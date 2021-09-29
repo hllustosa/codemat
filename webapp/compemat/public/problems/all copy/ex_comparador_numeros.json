@@ -1,0 +1,19 @@
+{
+  "id": "ex_comparador_numeros",
+  "name": "Comparador de Números",
+  "category": "Programming",
+  "labels": ["estrutura de controle", "básico", "seção 2"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    { "input": { "n1" : 215, "n2" : 124 }, "output": ["n1 é maior"] },
+    { "input": { "n1" : 106, "n2" : 245 }, "output": ["n2 é maior"] },
+    { "input": { "n1" : 42, "n2" : 42 }, "output": ["iguais"] },
+    { "input": { "n1" : 204, "n2" : 81 }, "output": ["n1 é maior"] },
+    { "input": { "n1" : 288, "n2" : 106 }, "output": ["n1 é maior"] },
+    { "input": { "n1" : 54, "n2" : 106 }, "output": ["n2 é maior"] },
+    { "input": { "n1" : 108, "n2" : 108 }, "output": ["iguais"] },
+    { "input": { "n1" : 36, "n2" : 171 }, "output": ["n2 é maior"] },
+    { "input": { "n1" : 92, "n2" : 106 }, "output": ["n2 é maior"] }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ex_lucro_ou_prejuizo",
+  "name": "Lucro ou Prejuízo",
+  "category": "Programming",
+  "labels": ["estrutura de controle", "básico", "seção 2"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    { "input": { "compra" : 33.50, "venda" : 45.25 }, "output": ["lucro"] },
+    { "input": { "compra" : 45.25, "venda" : 15.50 }, "output": ["prejuízo"] },
+    { "input": { "compra" : 105.75, "venda" : 108.50 }, "output": ["lucro"] },
+    { "input": { "compra" : 90.25, "venda" : 15.50 }, "output": ["prejuízo"] },
+    { "input": { "compra" : 15.50, "venda" : 35.00 }, "output": ["lucro"] },
+    { "input": { "compra" : 35.00, "venda" : 15.50 }, "output": ["prejuízo"] },
+    { "input": { "compra" : 108.50, "venda" : 120.75 }, "output": ["lucro"] },
+    { "input": { "compra" : 29.90, "venda" : 18.10 }, "output": ["prejuízo"] },
+    { "input": { "compra" : 12.30, "venda" : 90.25 }, "output": ["lucro"] }
+  ]
+}
