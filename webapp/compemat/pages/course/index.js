@@ -32,53 +32,72 @@ function Course() {
         height="130px"
       ></img>{" "}
       <p />
-      Milhões de estudantes do país inteiro ficaram sem aulas por causa da
-      pandemia, e como sempre, os mais pobres serão os mais prejudicados. 
-      As escolas públicas fecharam primeiro, abrirão depois e
+      Milhões de estudantes do país inteiro ficaram sem aulas devido à
+      pandemia, e como sempre, os mais pobres foram os mais prejudicados. 
+      As escolas públicas fecharam primeiro, abriram depois e
       praticamente não funcionaram durante este difícil momento pelo qual
       passamos. <p />
       Nesse cenário desolador, vai ser preciso muita paciência e determinação
       para minimizar o impacto negativo do tempo passado fora da sala de aula
       por milhões de jovens em todo o país.
       <p />
-      Este curso é uma pequena iniciativa individual que tem como objetivo
+      Este curso é uma pequena iniciativa individual cujo objetivo é
       fornecer um conteúdo de qualidade e estruturado para os estudantes que
       querem aprimorar seu conhecimento matemático enquanto aprendem uma nova
       habilidade, a programação.
       <p />
       Este curso une o útil ao mais útil ainda, permitindo que os alunos façam
       uma revisão do conteúdo de matemática do ensino médio, com foco nos
-      principais tópicos cobrados na prova ENEM, ao mesmo tempo que aprendem e
+      principais tópicos cobrados na prova ENEM, enquanto aprendem e
       praticam programação.
       <p />
-      Muitos podem questionar: "Pra que aprender a resolver as questões do ENEM
+      Muitos podem questionar: "Para que aprender a resolver as questões do ENEM
       utilizando programação, se não vou poder usar um computador durante a
-      prova?". A resposta para isso é simples, se você é capaz de criar uma
-      solução computacional reproduzivel para uma questão do ENEM, você
+      prova?". A resposta para isso é simples, se você consegue criar uma
+      solução computacional reproduzível para uma questão do ENEM, você
       facilmente seria capaz de manualmente resolver uma instância desse mesmo
-      problema. De qualquer forma, vale resaltar que esse curso não é uma bala
+      problema. De qualquer forma, vale ressaltar que este curso não é uma bala
       de prata para todas as necessidades de aprendizado em matemática, e os
       estudantes devem buscar fontes complementares de estudo e exercícios para
       se desenvolverem.
       <p />
-      A internet está cheia de recursos semelhantes a este curso e bastante
+      A internet está cheia de recursos parecidos e bastante
       valiosos. E isto é ótimo! Esse curso se apresenta como mais um recurso
       disponível aos estudantes. Espero que um bom número deles se beneficie e
       aprenda coisas novas.
       <p />
-      O curso está disponível na Udemy e é divido em algumas unidates temáticas.
+      O curso está disponível na Udemy e é divido em algumas unidades temáticas.
       Programação, Aritmética, Funções, Progressões, Trigonometria, Matemática
       Financeira, entre outros temas. O principal diferencial do curso é o
-      aspecto computacional. Esta página disponibiliza um ambiente com algumas
-      vários exercícios de programação e matemática, muitos baseados em questões
-      do ENEM.
+      aspecto computacional e prático. Por exemplo, esta página disponibiliza um ambiente com 
+      vários exercícios de programação e matemática, muitos deles baseados em questões
+      do ENEM. O ideal é que os alunos pratiquem resolvendo os exercícios enquanto avançam no curso.
       <p />
       Nesta página, os estudantes conseguem não apenas programar as soluções dos
       exercícios na linguagem JavaScript, como também obter uma resposta
       automática em tempo real sobre a corretude do código criado. O ambiente
-      mostra mensagens amigáveis para os usuários em caso de erro. Se o
+      também mostra mensagens amigáveis para os usuários em caso de erro, e se o
       estudante estiver logado, é possível registrar o progresso e as soluções
       enviadas para conferência posterior.
+      <p />
+      A Udemy foi a plataforma escolhida para hospedar o material por ser uma referência no mercado
+      de cursos online, e por ter um ambiente robusto, próprio para aprendizado e sem as distrações de outras
+      plataformas como o YouTube. 
+      <p />
+      Infelizmente, não é possível ter um curso de maior duração totalmente gratuíto no Udemy. 
+      E isto é ruim para os objetivos deste projeto, já que  curso foi pensado em alunos do ensino médio 
+      de escolas públicas, que em geral são de famílias de menor renda. Embora o curso
+      esteja disponível de forma paga na Udemy, o autor irá emitir o maior número de códigos de acesso 
+      gratuíto possível aos estudantes, para que a maioria dos alunos acesse o material gratuitamente. 
+      <p />
+      A necessidade de um ter um computador ou celular e acesso a internet
+      é uma barreira grande. Como medida individual, o autor do curso também planeja oferecer aulas e oficinas
+      presenciais baseadas no curso em um ambiente físico, quando isto for possível no futuro. Se o curso 
+      arrecadar algum valor, ele será utilizado para possibilitar as oficinas e atividades presenciais.   
+      <p />
+      Se você está lendo até aqui e está curioso sobre como o curso funciona, porque não dar uma chance? 
+      Acesse nossa página inicial, obtenha um código e se cadastre em [link do curso aqui] para começar a 
+      estudar agora mesmo.
       <p />
       O tempo está passando, para que esperar mais? Bora aprender?
       <p />

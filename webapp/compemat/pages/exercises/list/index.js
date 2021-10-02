@@ -35,9 +35,6 @@ function Body() {
   const [category, setCategory] = React.useState(cat ? cat : cat);
   const [filteredProblems, setFilteredProblems] = React.useState([]);
   
-  
-    console.log(JSON.stringify(filteredProblems));
-
   useEffect(() => {
     const keys = Object.keys(problems);
     const foundProblems = keys

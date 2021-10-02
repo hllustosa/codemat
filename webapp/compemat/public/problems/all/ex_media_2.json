@@ -1,0 +1,17 @@
+{
+  "id": "ex_media_2",
+  "name": "Média 2",
+  "category": "Programming",
+  "labels": ["estrutura de controle", "aritmética", "seção 2"],
+  "previous": "",
+  "next": "ex_produto_simples",
+  "cases": [
+    { "input": { "nota1": 9.8, "nota2": 7.6 }, "output": [8.7, "aprovado"] },
+    { "input": { "nota1": 10.0, "nota2": 10.0 }, "output": [10.0, "aprovado"] },
+    { "input": { "nota1": 0.0, "nota2": 1.5 }, "output": [0.75, "reprovado"] },
+    { "input": { "nota1": 7.3, "nota2": 8.6 }, "output": [7.949999999999999, "aprovado"] },
+    { "input": { "nota1": 10.0, "nota2": 9.5 }, "output": [9.75, "aprovado"] },
+    { "input": { "nota1": 6.8, "nota2": 5.6 }, "output": [6.199999999999999, "reprovado"] },
+    { "input": { "nota1": 4.4, "nota2": 7.7 }, "output": [6.050000000000001, "reprovado"] }
+  ]
+}

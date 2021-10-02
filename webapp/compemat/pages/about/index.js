@@ -26,22 +26,22 @@ function About() {
       <p style={{fontSize: "20px"}}> Saudações </p>
       Eu sou o prof. Hermano Lustosa! Sou nascido e criado em Teresópolis no
       estado do Rio de Janeiro. Filho de uma costureira e dona de casa e de um
-      mecânico. Sou (quase) casado com uma professora, e irmão de  outras duas. 
+      mecânico. Sou (quase) casado com uma professora, e irmão de outras duas. 
       Minha vida inteira sempre gostei de entender como as coisas
       funcionavam. Adoro ciências, tecnologia, matemática 
       e uma ou outra viagem filosófica e espiritualista. <p />
       Sou do mundo das exatas. Formado em Ciência da Computação pela minha
-      querida faculdade UNIFESO, e mestre e doutor em Gerenciamento de Dados
+      querida faculdade UNIFESO, mestre e doutor em Gerenciamento de Dados
       Científicos pelo LNCC. Passei minha vida em sala de aula, seja como aluno ou
       professor. Depois dos últimos 6 anos trabalhando como professor
-      universitário, me senti esmagado com um cenário devastador da educação ao meu redor e em
+      universitário, me senti esmagado com o cenário devastador da educação ao meu redor e em
       nosso país. <p />
-      Vi muitos alunos e alunas empurarrem a faculdade com a barriga, passando
+      Vi muitos alunos e alunas empurrarem a faculdade com a barriga, passando
       anos de suas vidas em um curso universitário caro, mas sem ter nenhuma
       paixão, gosto ou motivação pelo conteúdo que lhes era passado. Vi alunos e
-      alunas pobres que assistiam as aulas à noite após as 8h horas de trabalho
+      alunas pobres que assistiam às aulas à noite após as 8h horas de trabalho
       diário e cuja capacidade de ter atenção e aprender um tema novo e denso
-      era seriamente prejudicada. Vi a instituição na qual trabalhava tomar uma
+      era seriamente prejudicada. Vi a instituição onde trabalhava tomar uma
       série de medidas questionáveis para não ficar para trás na competição
       agressiva com as grandes franquias de EaD. E vejo hoje, a uma certa distância,
       o deficitário ensino público da minha comunidade ficar ainda pior. <p />
@@ -51,18 +51,19 @@ function About() {
       e qualquer outra coisa tech que se possa imaginar. Nesse mundo, saber
       programar e criar soluções computacionais é um privilégio! No momento
       temos pleno emprego, oportunidades e bons salários. <p />
-      O resultado da insatisfação com minha atuação como professor, meu amor
-      pela ciência e tecnologia e minha esperança no mercado de desenvolvimento é este 
-      novo curso de matemática, computação e programação, voltado para alunas e alunos do ensino
-      médio que queiram dar os primeiros passos no mundo do desenvolvimento de software.
+      Este novo curso de matemática, computação e programação,
+      é o resultado da minha insatisfação como professor, meu amor
+      pela ciência e tecnologia, e minha esperança no mercado de desenvolvimento de softwares.  
+      O curso é voltado para alunas e alunos do ensino médio que 
+      queiram dar os primeiros passos no mundo da programação.
       <p />
       Espero que o conteúdo passado no curso ajude os jovens a recuperar (mesmo
       que em pequena parte) o tempo perdido com a falta das aulas durante a
-      pandemia e que mesmo diante das dificuldades e limitações impostas pelo
-      momento atual, que os estudantes não percam a esperança e a aspiração de
+      pandemia. Também desejo que, mesmo diante das dificuldades e limitações impostas pelo
+      momento atual, os estudantes não percam a esperança e a aspiração de
       uma vida um pouco melhor no futuro! <p />
 
-      Um abraço <br/>
+      Um abraço, <br/>
       Prof. Hermano Lustosa
     </main>
   );

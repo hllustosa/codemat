@@ -41,9 +41,9 @@
     "category": "Programming",
     "labels": ["aritmética", "básico", "seção 1"]
   },
-  "ex_cryptomoedas": {
-    "id": "ex_cryptomoedas",
-    "name": "Cryptomoedas",
+  "ex_criptomoedas": {
+    "id": "ex_criptomoedas",
+    "name": "Criptomoedas",
     "category": "Programming",
     "labels": ["aritmética", "básico", "seção 1"]
   },
@@ -81,42 +81,42 @@
     "id": "ex_par_ou_impar",
     "name": "Par ou Ímpar",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "aritmética", "seção 2"]
   }, 
   "ex_lucro_ou_prejuizo": {
     "id": "ex_lucro_ou_prejuizo",
     "name": "Lucro ou Prejuízo",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "aritmética", "seção 2"]
   },
   "ex_calculadora": {
     "id": "ex_calculadora",
     "name": "Calculadora",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "aritmética", "seção 2"]
   },
   "ex_media_2": {
     "id": "ex_media_2",
     "name": "Média 2",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "aritmética", "seção 2"]
   },
   "ex_maior_3": {
     "id": "ex_maior_3",
     "name": "Maior de 3",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "comparação", "seção 2"]
   },
   "ex_soma_positivos": {
     "id": "ex_soma_positivos",
     "name": "Soma Positivos",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "acumuladora", "seção 2"]
   },
   "ex_por_extenso": {
     "id": "ex_por_extenso",
     "name": "Por Extenso",
     "category": "Programming",
-    "labels": ["estrutura de controle", "básico", "seção 2"]
+    "labels": ["estrutura de controle", "string", "seção 2"]
   }
 }

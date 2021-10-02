@@ -6,7 +6,7 @@ exports.data = {
     "ex_circunferencia" : "programming",
     "ex_media_ponderada" : "programming",
     "ex_imc": "programming",
-    "ex_cryptomoedas": "programming",
+    "ex_criptomoedas": "programming",
     "ex_temperatura": "programming",
     "ex_movimento_retilineo" : "programming",
     "ex_seguranca_balada" : "programming",

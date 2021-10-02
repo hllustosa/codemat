@@ -10,14 +10,14 @@ export default function PaginatedList(props) {
   const pageSize = 10;
   const [pageNumber, setPageNumber] = useState(1);
   const [page, setPage] = useState(1);
-
+  
   useEffect(() => {
     setPageNumber(
       data.length % 10 === 0
         ?  Math.floor(data.length / pageSize)
         :  Math.floor(data.length / pageSize) + 1
     );
-  }, [pageSize]);
+  });
 
   const prev = () => {
     if (page > 1) {

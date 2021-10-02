@@ -41,9 +41,9 @@
     "category": "Programming",
     "labels": ["aritmética", "básico", "seção 1"]
   },
-  "ex_cryptomoedas": {
-    "id": "ex_cryptomoedas",
-    "name": "Cryptomoedas",
+  "ex_criptomoedas": {
+    "id": "ex_criptomoedas",
+    "name": "Criptomoedas",
     "category": "Programming",
     "labels": ["aritmética", "básico", "seção 1"]
   },
