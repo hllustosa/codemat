@@ -242,6 +242,9 @@ function CodePane(props) {
   };
 
   const handleNewOutput = (output) => {
+    if(Array.isArray(output))
+      output = JSON.stringify(output);
+
     entries.push({ content: output, type: "output" });
     setEntries([...entries]);
   };

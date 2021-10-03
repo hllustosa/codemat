@@ -9,7 +9,8 @@ export const TIMEOUT_ERROR_HTML = () => `
 export const TYPE_ERROR_HTML = (line, error) => `
     Seu código está tentando executar uma operação sobre um tipo inválido na linha ${line}. <br/><br/> 
     É possível que você esteja usando uma string em uma operação numérica ou vice-versa.
-    Também é possível que você esteja tentando utilizar uma variável contendo dados ou uma referência a um objeto como se fosse uma função.
+    Também é possível que você esteja tentando acessar um elemento de uma variável que não é uma lista, 
+    ou uma referência a um objeto como se fosse uma função.
     Verifique se os valores guardados em cada variável da linha indicada estão de acordo com o esperado. <br/>
     <br/><br/>
     Mensagem de Erro: ${error.message}

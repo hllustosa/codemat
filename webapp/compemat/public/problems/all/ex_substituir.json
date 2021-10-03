@@ -1,0 +1,17 @@
+{
+  "id": "ex_substituir",
+  "name": "Substituir",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "listas",
+    "string",
+    "seção 4"
+  ],
+  "cases": [
+    {
+      "input": {},
+      "output": []
+    }
+  ]
+}

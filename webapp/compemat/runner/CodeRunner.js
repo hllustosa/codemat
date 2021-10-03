@@ -22,6 +22,16 @@ export default class CodeRunner {
   constructor(input, code, onStatusChange, onNewOutput, onNewDebug) {
     try {
       this.input = input;
+      input= Object.assign({}, input);
+
+      for(const key of Object.keys(input)){
+        if(typeof input[key] === 'object'){
+          input[key] = JSON.stringify(input[key]);
+          code = code.replace(`input('${key}')`, `JSON.parse(input('${key}'))`)
+          code = code.replace(`input("${key}")`, `JSON.parse(input("${key}"))`)
+        } 
+      }
+
       this.onStatusChange = onStatusChange;
       this.code = code;
       this.debugLogs = [];
@@ -31,12 +41,32 @@ export default class CodeRunner {
       const outputs = this.outputs;
 
       var initFunc = function (interpreter, globalObject) {
+
+        var convert = function convert_data(data) {
+          if(typeof data === 'object'){
+            if(data.class === 'Array'){
+              const arrayOutput = [];
+              const length = Object.keys(data.properties).length;
+              for(let i = 0; i < length; i++){
+                arrayOutput.push(data.properties[i])
+              }
+              data = arrayOutput;
+            } else {
+              data = data.properties;
+            }
+          }
+          
+          return data;
+        }
+
         var debug_log_wrapper = function debug_log(data) {
+          data = convert(data);  
           if (onNewDebug) onNewDebug(data);
           debugLogs.push(data);
         };
 
         var output_wrapper = function output(data) {
+          data = convert(data);  
           if (onNewOutput) onNewOutput(data);
           outputs.push(data);
         };
@@ -56,7 +86,7 @@ export default class CodeRunner {
           "output",
           interpreter.createNativeFunction(output_wrapper)
         );
-
+        
         interpreter.setProperty(
           globalObject,
           "input",

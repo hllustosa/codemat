@@ -1,0 +1,16 @@
+{
+  "id": "ex_palindromo",
+  "name": "Palíndromo",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "listas",
+    "seção 4"
+  ],
+  "cases": [
+    {
+      "input": {},
+      "output": []
+    }
+  ]
+}

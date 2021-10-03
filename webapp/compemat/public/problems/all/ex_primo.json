@@ -1,0 +1,35 @@
+{
+  "id": "ex_primo",
+  "name": "Primo",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "seção 3"
+  ],
+  "cases": [
+    {
+      "input": {"n": 7},
+      "output": ["primo"]
+    },
+    {
+      "input": {"n": 19},
+      "output": ["primo"]
+    },
+    {
+      "input": {"n": 55},
+      "output": ["composto"]
+    },
+    {
+      "input": {"n": 61},
+      "output": ["primo"]
+    },
+    {
+      "input": {"n": 99},
+      "output": ["composto"]
+    },
+    {
+      "input": {"n": 79},
+      "output": ["primo"]
+    }
+  ]
+}

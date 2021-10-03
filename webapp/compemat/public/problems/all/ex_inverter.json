@@ -1,0 +1,28 @@
+{
+  "id": "ex_inverter",
+  "name": "Inverter Lista",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "listas",
+    "seção 4"
+  ],
+  "cases": [
+    {
+      "input": { "l" : [1, 2, 3, 4, 5]},
+      "output": [ [5, 4, 3, 2, 1] ]
+    },
+    {
+      "input": { "l" : ["uva", "pera", "maçã"]},
+      "output": [ ["maçã", "pera", "uva"] ]
+    },
+    {
+      "input": { "l" : [0, 1, 1, 2, 3, 5, 8, 13]},
+      "output": [ [13, 8, 5, 3, 2, 1, 1, 0] ]
+    },
+    {
+      "input": { "l" : [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]},
+      "output": [ [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2] ]
+    }
+  ]
+}

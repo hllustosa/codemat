@@ -1,0 +1,37 @@
+{
+  "id": "ex_ponto_quadrado",
+  "name": "Ponto no Quadrado",
+  "category": "Programming",
+  "labels": [
+    "estrutura de controle",
+    "geometria",
+    "condicional complexa",
+    "seção 3"
+  ],
+  "cases": [
+    {
+      "input": {"x1": 10.0, "x2": 20.0, "y1": 10.0, "y2": 20.0, "x":15.0, "y":15.0},
+      "output": ["dentro"]
+    },
+    {
+      "input": {"x1": 0.0, "x2": 5.0, "y1": 0.0, "y2": 5.0, "x":12.0, "y":2.5},
+      "output": ["fora"]
+    },
+    {
+      "input": {"x1": 5.0, "x2": 10.0, "y1": 0.0, "y2": 5.0, "x":7.5, "y":12.5},
+      "output": ["fora"]
+    },
+    {
+      "input": {"x1": 5.0, "x2": 10.0, "y1": 0.0, "y2": 5.0, "x":12.5, "y":12.5},
+      "output": ["fora"]
+    },
+    {
+      "input": {"x1": 2.5, "x2": 10.0, "y1": 2.5, "y2": 10.0, "x":5.0, "y":5.0},
+      "output": ["dentro"]
+    },
+    {
+      "input": {"x1": 0, "x2": 5.0, "y1": 2.5, "y2": 10.0, "x":4.0, "y":9.5},
+      "output": ["dentro"]
+    }
+  ]
+}

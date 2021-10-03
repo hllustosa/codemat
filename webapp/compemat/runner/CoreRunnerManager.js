@@ -90,7 +90,7 @@ export default class CodeRunnerManager {
     }
     
     for (let i = 0; i < outputs.length; i++) {
-      if (outputs[i] !== expectedOutput[i]) return false;
+      if (JSON.stringify(outputs[i]) !== JSON.stringify(expectedOutput[i])) return false;
     }
 
     return true;

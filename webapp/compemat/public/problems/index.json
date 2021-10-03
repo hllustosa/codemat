@@ -118,5 +118,131 @@
     "name": "Por Extenso",
     "category": "Programming",
     "labels": ["estrutura de controle", "string", "seção 2"]
+  },
+  "ex_tipos_triangulo": {
+    "id": "ex_tipos_triangulo",
+    "name": "Tipos de Triângulos",
+    "category": "Programming",
+    "labels": ["estrutura de controle", "geometria", "condicional complexa", "seção 3"]
+  },
+  "ex_ponto_quadrado": {
+    "id": "ex_ponto_quadrado",
+    "name": "Ponto no Quadrado",
+    "category": "Programming",
+    "labels": ["estrutura de controle", "geometria", "condicional complexa", "seção 3"]
+  },
+  "ex_sistema_irrigacao": {
+    "id": "ex_sistema_irrigacao",
+    "name": "Irrigação",
+    "category": "Programming",
+    "labels": ["estrutura de controle", "condicional complexa", "seção 3"]
+  },
+  "ex_ataque_cardiaco": {
+    "id": "ex_ataque_cardiaco",
+    "name": "Ataque Cardíaco",
+    "category": "Programming",
+    "labels": ["estrutura de controle", "condicional complexa", "seção 3"]
+  },
+  "ex_potencia_2": {
+    "id": "ex_potencia_2",
+    "name": "Potência de 2",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_soma_pares": {
+    "id": "ex_soma_pares",
+    "name": "Soma de Pares",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_num_divisiveis": {
+    "id": "ex_num_divisiveis",
+    "name": "Divisíveis",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_castigo": {
+    "id": "ex_castigo",
+    "name": "Castigo",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_fibonnaci": {
+    "id": "ex_fibonnaci",
+    "name": "Fibonnaci",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_tabuada": {
+    "id": "ex_tabuada",
+    "name": "Tabuada",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_primo": {
+    "id": "ex_primo",
+    "name": "Primo",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "seção 3"]
+  },
+  "ex_inverter": {
+    "id": "ex_inverter",
+    "name": "Inverter Lista",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_somar_elementos": {
+    "id": "ex_somar_elementos",
+    "name": "Somar Elementos",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_obter_maior": {
+    "id": "ex_obter_maior",
+    "name": "Obter Maior",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_obter_media": {
+    "id": "ex_obter_media",
+    "name": "Obter Média",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_filtrar_elementos": {
+    "id": "ex_filtrar_elementos",
+    "name": "Filtrar Elementos da Lista",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_calcular_quadrado": {
+    "id": "ex_calcular_quadrado",
+    "name": "Obter Quadrado",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_contar_ocorrencia": {
+    "id": "ex_contar_ocorrencia",
+    "name": "Contar Ocorrências",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_palindromo": {
+    "id": "ex_palindromo",
+    "name": "Palíndromo",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_intercalar": {
+    "id": "ex_intercalar",
+    "name": "Intercalar",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "seção 4"]
+  },
+  "ex_substituir": {
+    "id": "ex_substituir",
+    "name": "Substituir",
+    "category": "Programming",
+    "labels": ["estrutura de repetição", "listas", "string", "seção 4"]
   }
 }

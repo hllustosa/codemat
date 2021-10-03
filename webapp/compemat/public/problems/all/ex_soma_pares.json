@@ -1,0 +1,35 @@
+{
+  "id": "ex_soma_pares",
+  "name": "Soma de Pares",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "seção 3"
+  ],
+  "cases": [
+    {
+      "input": {"n": 12},
+      "output": [42]
+    },
+    {
+      "input": {"n": 70},
+      "output": [1260]
+    },
+    {
+      "input": {"n": 49},
+      "output": [600]
+    },
+    {
+      "input": {"n": 36},
+      "output": [342]
+    },
+    {
+      "input": {"n": 31},
+      "output": [240]
+    },
+    {
+      "input": {"n": 10},
+      "output": [30]
+    }
+  ]
+}

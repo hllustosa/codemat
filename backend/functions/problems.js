@@ -18,5 +18,16 @@ exports.data = {
     "ex_media_2" : "programming",
     "ex_maior_3" : "programming",
     "ex_soma_positivos" : "programming",
-    "ex_por_extenso" : "programming"
+    "ex_por_extenso" : "programming",
+    "ex_tipos_triangulo" : "programming",
+    "ex_ponto_quadrado" : "programming",
+    "ex_sistema_irrigacao" : "programming",
+    "ex_ataque_cardiaco" : "programming",
+    "ex_potencia_2" : "programming",
+    "ex_soma_pares" : "programming",
+    "ex_num_divisiveis" : "programming",
+    "ex_castigo" : "programming",
+    "ex_fibonnaci" : "programming",
+    "ex_tabuada" : "programming",
+    "ex_primo" : "programming"
 }

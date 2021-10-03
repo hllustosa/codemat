@@ -1,0 +1,16 @@
+{
+  "id": "ex_contar_ocorrencia",
+  "name": "Contar Ocorrências",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "listas",
+    "seção 4"
+  ],
+  "cases": [
+    {
+      "input": {},
+      "output": []
+    }
+  ]
+}

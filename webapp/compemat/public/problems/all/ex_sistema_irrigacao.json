@@ -1,0 +1,36 @@
+{
+  "id": "ex_sistema_irrigacao",
+  "name": "Irrigação",
+  "category": "Programming",
+  "labels": [
+    "estrutura de controle",
+    "condicional complexa",
+    "seção 3"
+  ],
+  "cases": [
+    {
+      "input": {
+        "temperatura" : "baixa", "umidade" : "alta"
+      },
+      "output": ["curto"]
+    },
+    {
+      "input": {
+        "temperatura" : "alta", "umidade" : "alta"
+      },
+      "output": ["medio"]
+    },
+    {
+      "input": {
+        "temperatura" : "alta", "umidade" : "baixa"
+      },
+      "output": ["longo"]
+    },
+    {
+      "input": {
+        "temperatura" : "alta", "umidade" : "alta"
+      },
+      "output": ["medio"]
+    }
+  ]
+}
