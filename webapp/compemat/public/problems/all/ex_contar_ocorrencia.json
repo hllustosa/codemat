@@ -9,8 +9,24 @@
   ],
   "cases": [
     {
-      "input": {},
-      "output": []
+      "input": {"texto": "A vida nao examinada nao vale a pena ser vivida", "c": "a"},
+      "output": [11]
+    },
+    {
+      "input": {"texto": "o ignorante afirma, o sabio duvida, o sensato reflete", "c": "o"},
+      "output": [7]
+    },
+    {
+      "input": {"texto": "a medida do amor e amar sem medida", "c": "a"},
+      "output": [7]
+    },
+    {
+      "input": {"texto": "eu penso, logo existo", "c": "e"},
+      "output": [4]
+    },
+    {
+      "input": {"texto": "o inferno sao os outros", "c": "o"},
+      "output": [7]
     }
   ]
 }

@@ -10,8 +10,24 @@
   ],
   "cases": [
     {
-      "input": {},
-      "output": []
+      "input": {"texto": "e vida nao examinada nao vale a pena ser vivida", "c": "a", "r": "e"},
+      "output": ["e vide neo exeminede neo vele e pene ser vivide"]
+    },
+    {
+      "input": {"texto": "o ignorante afirma, o sabio duvida, o sensato reflete", "c": "o", "r": "a"},
+      "output": ["a ignarante afirma, a sabia duvida, a sensata reflete"]
+    },
+    {
+      "input": {"texto": "a medida do amor e amar sem medida", "c": "a", "r": "o"},
+      "output": ["o medido do omor e omor sem medido"]
+    },
+    {
+      "input": {"texto": "eu penso, logo existo", "c": "e", "r": "a"},
+      "output": ["au panso, logo axisto"]
+    },
+    {
+      "input": {"texto": "o inferno sao os outros", "c": "o", "r": "u"},
+      "output": ["u infernu sau us uutrus"]
     }
   ]
 }

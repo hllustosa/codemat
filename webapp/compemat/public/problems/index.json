@@ -233,12 +233,6 @@
     "category": "Programming",
     "labels": ["estrutura de repetição", "listas", "seção 4"]
   },
-  "ex_intercalar": {
-    "id": "ex_intercalar",
-    "name": "Intercalar",
-    "category": "Programming",
-    "labels": ["estrutura de repetição", "listas", "seção 4"]
-  },
   "ex_substituir": {
     "id": "ex_substituir",
     "name": "Substituir",
