@@ -20,6 +20,7 @@ import {
   NoWrapContainer,
   Progress,
 } from "../../components/Styled";
+import ProblemaFrame from "../../components/ProblemFrame";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import ExecutionList from "../../components/ExecutionList";
 import CodeRunnerManager from "../../runner/CoreRunnerManager";
@@ -129,12 +130,10 @@ function ProblemPane(props) {
         </Grid>
 
         <Grid item xs={12}>
-          <NoWrap className={classes.problemContent}>
-            <iframe
-              className={classes.problemContentFrame}
-              src={`/problems/all/${data.id}.html`}
-            ></iframe>
-          </NoWrap>
+          <div className={classes.problemContent}>
+
+            <ProblemaFrame data={data}/>
+          </div>
         </Grid>
         <Grid item xs={12}>
           <NoWrap className={classes.problemContent}>

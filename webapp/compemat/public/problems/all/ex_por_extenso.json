@@ -1,20 +1,95 @@
 {
-  "id": "ex_por_extenso",
-  "name": "Por Extenso",
-  "category": "Programming",
-  "labels": ["estrutura de controle", "string", "seção 2"],
-  "previous": "",
-  "next": "",
-  "cases": [
-    { "input": { "n" : 1}, "output": ["um"] },
-    { "input": { "n" : 2}, "output": ["dois"] },
-    { "input": { "n" : 3 }, "output": ["três"] },
-    { "input": { "n" : 4 }, "output": ["quatro"] },
-    { "input": { "n" : 5 }, "output": ["cinco"] },
-    { "input": { "n" : 6 }, "output": ["seis"] },
-    { "input": { "n" : 7 }, "output": ["sete"] },
-    { "input": { "n" : 8 }, "output": ["oito"] },
-    { "input": { "n" : 9 }, "output": ["nove"] },
-    { "input": { "n" : 0 }, "output": ["zero"] }
-  ]
+    "id": "ex_por_extenso",
+    "name": "Por Extenso",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "string",
+        "seção 2"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "n": 1
+            },
+            "output": [
+                "um"
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "output": [
+                "dois"
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "output": [
+                "três"
+            ]
+        },
+        {
+            "input": {
+                "n": 4
+            },
+            "output": [
+                "quatro"
+            ]
+        },
+        {
+            "input": {
+                "n": 5
+            },
+            "output": [
+                "cinco"
+            ]
+        },
+        {
+            "input": {
+                "n": 6
+            },
+            "output": [
+                "seis"
+            ]
+        },
+        {
+            "input": {
+                "n": 7
+            },
+            "output": [
+                "sete"
+            ]
+        },
+        {
+            "input": {
+                "n": 8
+            },
+            "output": [
+                "oito"
+            ]
+        },
+        {
+            "input": {
+                "n": 9
+            },
+            "output": [
+                "nove"
+            ]
+        },
+        {
+            "input": {
+                "n": 0
+            },
+            "output": [
+                "zero"
+            ]
+        }
+    ],
+    "problem": "  Neste problema, você deve criar um programa que tenha como entrada um único número <b>n</b>, maior ou igual a 0 e menor ou igual a 9. O programa deve  produzir como saída uma cadeia de caracteres contendo o número <b>n</b> escrito por extenso.  <h3>Entradas</h3> Um número <b>n</b> que deve ser escrito por extenso. </p>  <h3>Saída</h3> Uma cadeia de caracteres contendo <b>n</b> escrito por extenso. </p> "
 }

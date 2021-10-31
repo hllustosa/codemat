@@ -2,17 +2,77 @@
     "id": "ex_imc",
     "name": "Índice de Massa Corporal",
     "category": "programming",
-    "labels": ["aritmética", "básico", "seção 1"],
+    "labels": [
+        "aritmética",
+        "básico",
+        "seção 1"
+    ],
     "previous": "",
     "next": "",
     "cases": [
-      { "input": { "peso": 93.8, "altura": 1.88 }, "output": [26.539157990040742] },
-      { "input": { "peso": 102.0, "altura": 1.73 }, "output": [34.08065755621638] },
-      { "input": { "peso": 77.2, "altura": 1.81 }, "output": [23.56460425505937] },
-      { "input": { "peso": 55.3, "altura": 1.63 }, "output": [20.813730287176785] },
-      { "input": { "peso": 78.1, "altura": 1.77 }, "output": [24.928979539723574] },
-      { "input": { "peso": 66.5, "altura": 1.65 }, "output": [24.42607897153352] },
-      { "input": { "peso": 43.5, "altura": 1.52 }, "output": [18.827908587257618] }
-    ]
-  }
-  
+        {
+            "input": {
+                "peso": 93.8,
+                "altura": 1.88
+            },
+            "output": [
+                26.539157990040742
+            ]
+        },
+        {
+            "input": {
+                "peso": 102.0,
+                "altura": 1.73
+            },
+            "output": [
+                34.08065755621638
+            ]
+        },
+        {
+            "input": {
+                "peso": 77.2,
+                "altura": 1.81
+            },
+            "output": [
+                23.56460425505937
+            ]
+        },
+        {
+            "input": {
+                "peso": 55.3,
+                "altura": 1.63
+            },
+            "output": [
+                20.813730287176785
+            ]
+        },
+        {
+            "input": {
+                "peso": 78.1,
+                "altura": 1.77
+            },
+            "output": [
+                24.928979539723574
+            ]
+        },
+        {
+            "input": {
+                "peso": 66.5,
+                "altura": 1.65
+            },
+            "output": [
+                24.42607897153352
+            ]
+        },
+        {
+            "input": {
+                "peso": 43.5,
+                "altura": 1.52
+            },
+            "output": [
+                18.827908587257618
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script> O índice de massa corporal (IMC) é um parâmetro calculado para saber se o peso de uma pessoa corresponde com a sua altura, isto é, se a pessoa está em seu peso ideal, abaixo ou acima dele. A fórmula para o cálculo do IMC é: </p>  $$imc = \\frac{peso}{altura^{2}}$$  Neste problema, você deve produzir um programa que receba como entrada o peso e a altura de uma pessoa e produza como saída o IMC. </p>  <h3>Entradas</h3> Dois números reais <b>peso</b> e <b>altura</b>. </p>  <h3>Saída</h3> Um número real <b>imc</b> contendo o índice de massa corporal calculado com base na entrada. </p> "
+}

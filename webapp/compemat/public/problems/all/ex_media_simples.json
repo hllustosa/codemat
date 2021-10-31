@@ -2,17 +2,77 @@
     "id": "ex_media_simples",
     "name": "Média Simples",
     "category": "programming",
-    "labels": ["aritmética", "básico", "seção 1"],
+    "labels": [
+        "aritmética",
+        "básico",
+        "seção 1"
+    ],
     "previous": "",
     "next": "",
     "cases": [
-      { "input": { "nota1": 9.8, "nota2": 7.6 }, "output": [8.7] },
-      { "input": { "nota1": 10.0, "nota2": 10.0 }, "output": [10.0] },
-      { "input": { "nota1": 0.0, "nota2": 1.5 }, "output": [0.75] },
-      { "input": { "nota1": 7.3, "nota2": 8.6 }, "output": [7.949999999999999] },
-      { "input": { "nota1": 10.0, "nota2": 9.5 }, "output": [9.75] },
-      { "input": { "nota1": 6.8, "nota2": 5.6 }, "output": [6.199999999999999] },
-      { "input": { "nota1": 4.4, "nota2": 7.7 }, "output": [6.050000000000001] }
-    ]
-  }
-  
+        {
+            "input": {
+                "nota1": 9.8,
+                "nota2": 7.6
+            },
+            "output": [
+                8.7
+            ]
+        },
+        {
+            "input": {
+                "nota1": 10.0,
+                "nota2": 10.0
+            },
+            "output": [
+                10.0
+            ]
+        },
+        {
+            "input": {
+                "nota1": 0.0,
+                "nota2": 1.5
+            },
+            "output": [
+                0.75
+            ]
+        },
+        {
+            "input": {
+                "nota1": 7.3,
+                "nota2": 8.6
+            },
+            "output": [
+                7.949999999999999
+            ]
+        },
+        {
+            "input": {
+                "nota1": 10.0,
+                "nota2": 9.5
+            },
+            "output": [
+                9.75
+            ]
+        },
+        {
+            "input": {
+                "nota1": 6.8,
+                "nota2": 5.6
+            },
+            "output": [
+                6.199999999999999
+            ]
+        },
+        {
+            "input": {
+                "nota1": 4.4,
+                "nota2": 7.7
+            },
+            "output": [
+                6.050000000000001
+            ]
+        }
+    ],
+    "problem": " Um professor necessita calcular a média aritmética simples das notas de duas avaliações que foram aplicadas em seus alunos. A média aritmética é obtida como a razão entre a soma das notas sobre a quantidade de avaliações aplicadas. </p>  Neste problema você deve produzir um programa que receba como entrada dois números reais (<b>nota1</b> e <b>nota2</b>) contendo as duas notas tiradas por um aluno nas avaliações aplicadas pelo professor. Em sequência, o programa deve produzir como saída a média aritmética dessas duas notas. </p>  <h3>Entradas</h3> Dois números reais <b>nota1</b> e <b>nota2</b>. </p>  <h3>Saída</h3> Um número real <b>media</b> contendo a média aritmética de <b>nota1</b> e <b>nota2</b>. </p> "
+}

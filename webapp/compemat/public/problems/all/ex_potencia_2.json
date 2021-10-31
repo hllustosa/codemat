@@ -1,39 +1,68 @@
 {
-  "id": "ex_potencia_2",
-  "name": "Potência de 2",
-  "category": "Programming",
-  "labels": [
-    "estrutura de repetição",
-    "seção 3"
-  ],
-  "cases": [
-    {
-      "input": { "expoente": 3},
-      "output": [8]
-    },
-    {
-      "input": { "expoente": 4},
-      "output": [16]
-    },
-    {
-      "input": { "expoente": 5},
-      "output": [32]
-    },
-    {
-      "input": { "expoente": 6},
-      "output": [64]
-    },
-    {
-      "input": { "expoente": 7},
-      "output": [128]
-    },
-    {
-      "input": { "expoente": 8},
-      "output": [256]
-    },
-    {
-      "input": { "expoente": 9},
-      "output": [512]
-    }
-  ]
+    "id": "ex_potencia_2",
+    "name": "Potência de 2",
+    "category": "Programming",
+    "labels": [
+        "estrutura de repetição",
+        "seção 3"
+    ],
+    "cases": [
+        {
+            "input": {
+                "expoente": 3
+            },
+            "output": [
+                8
+            ]
+        },
+        {
+            "input": {
+                "expoente": 4
+            },
+            "output": [
+                16
+            ]
+        },
+        {
+            "input": {
+                "expoente": 5
+            },
+            "output": [
+                32
+            ]
+        },
+        {
+            "input": {
+                "expoente": 6
+            },
+            "output": [
+                64
+            ]
+        },
+        {
+            "input": {
+                "expoente": 7
+            },
+            "output": [
+                128
+            ]
+        },
+        {
+            "input": {
+                "expoente": 8
+            },
+            "output": [
+                256
+            ]
+        },
+        {
+            "input": {
+                "expoente": 9
+            },
+            "output": [
+                512
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Neste problema você deve criar um programa que receba como entrada um número inteiro <b>expoente</b> e que produza como saída o valor \\( 2^{expoente}\\).  <h3>Entradas</h3> Um número inteiro <b>expoente</b>. </p>  <h3>Saída</h3> Um número inteiro contendo o valor de  \\( 2^{expoente}\\). </p> "
 }

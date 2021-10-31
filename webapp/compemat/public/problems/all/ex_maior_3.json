@@ -1,16 +1,75 @@
 {
-  "id": "ex_maior_3",
-  "name": "Maior de 3",
-  "category": "Programming",
-  "labels": ["estrutura de controle", "comparação", "seção 2"],
-  "previous": "",
-  "next": "",
-  "cases": [
-    { "input": { "n1": 1, "n2": 12, "n3": 3 }, "output": [12] },
-    { "input": { "n1": 4235, "n2": 342, "n3": 9048 }, "output": [9048] },
-    { "input": { "n1": 837, "n2": 673, "n3": 192 }, "output": [837] },
-    { "input": { "n1": 90281, "n2": 5833, "n3": 82937 }, "output": [90281] },
-    { "input": { "n1": 83628, "n2": 9823, "n3": 100320 }, "output": [100320] },
-    { "input": { "n1": 1, "n2": 3, "n3": 2 }, "output": [3] }
-  ]
+    "id": "ex_maior_3",
+    "name": "Maior de 3",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "comparação",
+        "seção 2"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "n1": 1,
+                "n2": 12,
+                "n3": 3
+            },
+            "output": [
+                12
+            ]
+        },
+        {
+            "input": {
+                "n1": 4235,
+                "n2": 342,
+                "n3": 9048
+            },
+            "output": [
+                9048
+            ]
+        },
+        {
+            "input": {
+                "n1": 837,
+                "n2": 673,
+                "n3": 192
+            },
+            "output": [
+                837
+            ]
+        },
+        {
+            "input": {
+                "n1": 90281,
+                "n2": 5833,
+                "n3": 82937
+            },
+            "output": [
+                90281
+            ]
+        },
+        {
+            "input": {
+                "n1": 83628,
+                "n2": 9823,
+                "n3": 100320
+            },
+            "output": [
+                100320
+            ]
+        },
+        {
+            "input": {
+                "n1": 1,
+                "n2": 3,
+                "n3": 2
+            },
+            "output": [
+                3
+            ]
+        }
+    ],
+    "problem": " Neste problema, você deve desenvolver um programa que receba como entrada três números inteiros (<b>n1</b>, <b>n2</b> e <b>n3</b>) e produza como saída o maior deles.  <h3>Entradas</h3> Três números <b>n1</b>, <b>n2</b> e <b>n3</b>. </p>  <h3>Saída</h3> Um número <b>r</b> que é o maior entre <b>n1</b>, <b>n2</b> e <b>n3</b>. </p>  "
 }

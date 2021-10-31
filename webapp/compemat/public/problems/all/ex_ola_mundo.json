@@ -2,16 +2,61 @@
     "id": "ex_ola_mundo",
     "name": "Olá Mundo",
     "category": "programming",
-    "labels": ["básico", "seção 1"],
+    "labels": [
+        "básico",
+        "seção 1"
+    ],
     "previous": "",
     "next": "",
     "cases": [
-      { "input": { "nome": "Maria" }, "output": ["Olá, Maria"] },
-      { "input": { "nome": "João" }, "output": ["Olá, João"] },
-      { "input": { "nome": "Hermano" }, "output": ["Olá, Hermano"] },
-      { "input": { "nome": "Carlos" }, "output": ["Olá, Carlos"] },
-      { "input": { "nome": "Ayla" }, "output": ["Olá, Ayla"] },
-      { "input": { "nome": "Juliana" }, "output": ["Olá, Juliana"] }
-    ]
-  }
-  
+        {
+            "input": {
+                "nome": "Maria"
+            },
+            "output": [
+                "Olá, Maria"
+            ]
+        },
+        {
+            "input": {
+                "nome": "João"
+            },
+            "output": [
+                "Olá, João"
+            ]
+        },
+        {
+            "input": {
+                "nome": "Hermano"
+            },
+            "output": [
+                "Olá, Hermano"
+            ]
+        },
+        {
+            "input": {
+                "nome": "Carlos"
+            },
+            "output": [
+                "Olá, Carlos"
+            ]
+        },
+        {
+            "input": {
+                "nome": "Ayla"
+            },
+            "output": [
+                "Olá, Ayla"
+            ]
+        },
+        {
+            "input": {
+                "nome": "Juliana"
+            },
+            "output": [
+                "Olá, Juliana"
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script> Quando aprendemos uma nova linguagem de programação, tradicionalmente, o primeiro programa que escrevemos nesta nova linguagem é chamado Hello World, ou Olá mundo em português. Geralmente, trata-se de um programa simples que apenas produz como saída a mensagem \"Hello World\".</p>  Neste problema, sua tarefa é apenas um pouco mais complicada que desenvolver um programa do tipo. O programa a ser produzido neste exercício deve emitir mensagens personalizadas para cada usuário. Você deve criar um programa que receba como entrada o nome de uma pessoa e produza como saída a mensagem \"Olá, \", seguida pelo nome da pessoa que recebeu como entrada. Note ser necessário respeitar o único espaço em branco após a vírgula.</p>  <h3>Entradas</h3> Uma cadeia de caracteres <b>nome</b> contendo um nome de usuário.</p>  <h3>Saída</h3> Uma cadeia de caracteres contendo a mensagem: \"Olá, \" seguida pelo nome do usuário. "
+}

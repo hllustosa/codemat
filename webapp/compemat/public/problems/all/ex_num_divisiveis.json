@@ -1,35 +1,60 @@
 {
-  "id": "ex_num_divisiveis",
-  "name": "Divisíveis",
-  "category": "Programming",
-  "labels": [
-    "estrutura de repetição",
-    "seção 3"
-  ],
-  "cases": [
-    {
-      "input": {"n": 8},
-      "output": [12]
-    },
-    {
-      "input": {"n": 3},
-      "output": [33]
-    },
-    {
-      "input": {"n": 4},
-      "output": [25]
-    },
-    {
-      "input": {"n": 5},
-      "output": [20]
-    },
-    {
-      "input": {"n": 6},
-      "output": [16]
-    },
-    {
-      "input": {"n": 7},
-      "output": [14]
-    }
-  ]
+    "id": "ex_num_divisiveis",
+    "name": "Divisíveis",
+    "category": "Programming",
+    "labels": [
+        "estrutura de repetição",
+        "seção 3"
+    ],
+    "cases": [
+        {
+            "input": {
+                "n": 8
+            },
+            "output": [
+                12
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "output": [
+                33
+            ]
+        },
+        {
+            "input": {
+                "n": 4
+            },
+            "output": [
+                25
+            ]
+        },
+        {
+            "input": {
+                "n": 5
+            },
+            "output": [
+                20
+            ]
+        },
+        {
+            "input": {
+                "n": 6
+            },
+            "output": [
+                16
+            ]
+        },
+        {
+            "input": {
+                "n": 7
+            },
+            "output": [
+                14
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Neste problema você deve criar um programa que recebe como entrada um número inteiro positivo <b>n</b> cujo valor é menor ou igual a 10, e que deve produzir como saída a quantidade de números divisíveis por <b>n</b> no intervalo entre 0 e 100, com o valor 100 incluso.  <h3>Entradas</h3> Um número inteiro positivo <b>n</b>. </p>  <h3>Saída</h3> Um número positivo representando a quantidade de números divisíveis por <b>n</b> no intervalo entre 0 e 100. </p> "
 }

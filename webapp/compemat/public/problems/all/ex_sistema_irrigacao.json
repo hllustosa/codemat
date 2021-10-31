@@ -1,36 +1,49 @@
 {
-  "id": "ex_sistema_irrigacao",
-  "name": "Irrigação",
-  "category": "Programming",
-  "labels": [
-    "estrutura de controle",
-    "condicional complexa",
-    "seção 3"
-  ],
-  "cases": [
-    {
-      "input": {
-        "temperatura" : "baixa", "umidade" : "alta"
-      },
-      "output": ["curto"]
-    },
-    {
-      "input": {
-        "temperatura" : "alta", "umidade" : "alta"
-      },
-      "output": ["medio"]
-    },
-    {
-      "input": {
-        "temperatura" : "alta", "umidade" : "baixa"
-      },
-      "output": ["longo"]
-    },
-    {
-      "input": {
-        "temperatura" : "alta", "umidade" : "alta"
-      },
-      "output": ["medio"]
-    }
-  ]
+    "id": "ex_sistema_irrigacao",
+    "name": "Irrigação",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "condicional complexa",
+        "seção 3"
+    ],
+    "cases": [
+        {
+            "input": {
+                "temperatura": "baixa",
+                "umidade": "alta"
+            },
+            "output": [
+                "curto"
+            ]
+        },
+        {
+            "input": {
+                "temperatura": "alta",
+                "umidade": "alta"
+            },
+            "output": [
+                "medio"
+            ]
+        },
+        {
+            "input": {
+                "temperatura": "alta",
+                "umidade": "baixa"
+            },
+            "output": [
+                "longo"
+            ]
+        },
+        {
+            "input": {
+                "temperatura": "alta",
+                "umidade": "alta"
+            },
+            "output": [
+                "medio"
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Suponha um sistema automatizado de irrigação de uma plantação que considere dois fatores, a temperatura e a umidade, para decidir durante quanto tempo a irrigação deve durar. As regras são listadas a seguir: </p>  <ul> <li>Caso a temperatura seja baixa e a umidade seja alta o tempo de irrigação é curto.</li> <li>Caso a temperatura seja alta e a umidade seja alta o tempo de irrigação é médio.</li> <li>Caso a temperatura seja alta e a umidade seja baixa o tempo de irrigação é longo.</li> <li>Caso a temperatura seja baixa e a umidade seja baixa o tempo de irrigação é médio.</li>  </ul> </p>  Neste exercício você deve criar um programa que receba como entrada duas cadeias de caracteres, <b>temperatura</b> e <b>umidade</b>. Os valores possíveis para essas duas entradas são as cadeias \"alta\" e \"baixa\", indicando respectivamente se a temperatura ou umidade estão altas, ou baixas naquele momento. </p>  O programa deve então produzir como saída uma nova cadeia de caracteres contendo o tempo de irrigação conforme as regras listadas. Os tempos devem ter o formato: \"curto\", \"medio\" ou \"longo\".  <h3>Entradas</h3> Duas cadeias de caracteres <b>temperatura</b> e <b>umidade</b>. </p>  <h3>Saída</h3> Uma cadeia de caracteres contendo o tempo de irrigação. </p> "
 }

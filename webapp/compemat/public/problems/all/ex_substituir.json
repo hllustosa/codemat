@@ -1,33 +1,64 @@
 {
-  "id": "ex_substituir",
-  "name": "Substituir",
-  "category": "Programming",
-  "labels": [
-    "estrutura de repetição",
-    "listas",
-    "string",
-    "seção 4"
-  ],
-  "cases": [
-    {
-      "input": {"texto": "e vida nao examinada nao vale a pena ser vivida", "c": "a", "r": "e"},
-      "output": ["e vide neo exeminede neo vele e pene ser vivide"]
-    },
-    {
-      "input": {"texto": "o ignorante afirma, o sabio duvida, o sensato reflete", "c": "o", "r": "a"},
-      "output": ["a ignarante afirma, a sabia duvida, a sensata reflete"]
-    },
-    {
-      "input": {"texto": "a medida do amor e amar sem medida", "c": "a", "r": "o"},
-      "output": ["o medido do omor e omor sem medido"]
-    },
-    {
-      "input": {"texto": "eu penso, logo existo", "c": "e", "r": "a"},
-      "output": ["au panso, logo axisto"]
-    },
-    {
-      "input": {"texto": "o inferno sao os outros", "c": "o", "r": "u"},
-      "output": ["u infernu sau us uutrus"]
-    }
-  ]
+    "id": "ex_substituir",
+    "name": "Substituir",
+    "category": "Programming",
+    "labels": [
+        "estrutura de repetição",
+        "listas",
+        "string",
+        "seção 4"
+    ],
+    "cases": [
+        {
+            "input": {
+                "texto": "e vida nao examinada nao vale a pena ser vivida",
+                "c": "a",
+                "r": "e"
+            },
+            "output": [
+                "e vide neo exeminede neo vele e pene ser vivide"
+            ]
+        },
+        {
+            "input": {
+                "texto": "o ignorante afirma, o sabio duvida, o sensato reflete",
+                "c": "o",
+                "r": "a"
+            },
+            "output": [
+                "a ignarante afirma, a sabia duvida, a sensata reflete"
+            ]
+        },
+        {
+            "input": {
+                "texto": "a medida do amor e amar sem medida",
+                "c": "a",
+                "r": "o"
+            },
+            "output": [
+                "o medido do omor e omor sem medido"
+            ]
+        },
+        {
+            "input": {
+                "texto": "eu penso, logo existo",
+                "c": "e",
+                "r": "a"
+            },
+            "output": [
+                "au panso, logo axisto"
+            ]
+        },
+        {
+            "input": {
+                "texto": "o inferno sao os outros",
+                "c": "o",
+                "r": "u"
+            },
+            "output": [
+                "u infernu sau us uutrus"
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Neste exercício, você deve criar um programa que receba como entrada uma cadeia de caracteres <b>texto</b>, um único caracteres <b>c</b> e um outro caractere <b>r</b> e produza como saída uma nova cadeia de caracteres em que todas as ocorrências de <b>c</b> em <b>texto</b> foram substituídas por <b>r</b>.  <h3>Entradas</h3> Uma cadeia de caracteres <b>texto</b>, um caractere <b>c</b> e um caractere <b>r</b>. </p>  <h3>Saída</h3> Uma cadeia de caracteres em que todas as ocorrências de <b>c</b> em <b>texto</b> foram substituídas por <b>r</b>. </p> "
 }

@@ -1,32 +1,58 @@
 {
-  "id": "ex_contar_ocorrencia",
-  "name": "Contar Ocorrências",
-  "category": "Programming",
-  "labels": [
-    "estrutura de repetição",
-    "listas",
-    "seção 4"
-  ],
-  "cases": [
-    {
-      "input": {"texto": "a vida nao examinada nao vale a pena ser vivida", "c": "a"},
-      "output": [11]
-    },
-    {
-      "input": {"texto": "o ignorante afirma, o sabio duvida, o sensato reflete", "c": "o"},
-      "output": [6]
-    },
-    {
-      "input": {"texto": "a medida do amor e amar sem medida", "c": "a"},
-      "output": [6]
-    },
-    {
-      "input": {"texto": "eu penso, logo existo", "c": "e"},
-      "output": [3]
-    },
-    {
-      "input": {"texto": "o inferno sao os outros", "c": "o"},
-      "output": [6]
-    }
-  ]
+    "id": "ex_contar_ocorrencia",
+    "name": "Contar Ocorrências",
+    "category": "Programming",
+    "labels": [
+        "estrutura de repetição",
+        "listas",
+        "seção 4"
+    ],
+    "cases": [
+        {
+            "input": {
+                "texto": "a vida nao examinada nao vale a pena ser vivida",
+                "c": "a"
+            },
+            "output": [
+                11
+            ]
+        },
+        {
+            "input": {
+                "texto": "o ignorante afirma, o sabio duvida, o sensato reflete",
+                "c": "o"
+            },
+            "output": [
+                6
+            ]
+        },
+        {
+            "input": {
+                "texto": "a medida do amor e amar sem medida",
+                "c": "a"
+            },
+            "output": [
+                6
+            ]
+        },
+        {
+            "input": {
+                "texto": "eu penso, logo existo",
+                "c": "e"
+            },
+            "output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "texto": "o inferno sao os outros",
+                "c": "o"
+            },
+            "output": [
+                6
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Neste exercício, você deve criar um programa que receba como entrada uma cadeia de caracteres <b>texto</b> e um único caracteres <b>c</b> e produza como saída a quantidade de vezes que o caractere <b>c</b> aparece em <b>texto</b>. O texto não irá conter acentos ou caracteres especiais e vai estar escrito com letras minúsculas.  <h3>Entradas</h3> Uma cadeia de caracteres <b>texto</b> e um caractere <b>c</b>. </p>  <h3>Saída</h3> Um número inteiro contendo a quantidade de vezes em que <b>c</b> aparece em <b>texto</b>. </p> "
 }

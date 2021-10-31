@@ -1,16 +1,63 @@
 {
-  "id": "ex_seguranca_balada",
-  "name": "Segurança da Balada",
-  "category": "Programming",
-  "labels": ["estrutura de controle", "básico", "seção 2"],
-  "previous": "",
-  "next": "ex_produto_simples",
-  "cases": [
-    { "input": { "idade" : 19}, "output": ["Permitida a Entrada"] },
-    { "input": { "idade" : 14}, "output": ["Entrada Proibida"] },
-    { "input": { "idade" : 26}, "output": ["Permitida a Entrada"] },
-    { "input": { "idade" : 16}, "output": ["Entrada Proibida"] },
-    { "input": { "idade" : 22}, "output": ["Permitida a Entrada"] },
-    { "input": { "idade" : 29}, "output": ["Permitida a Entrada"] }
-  ]
+    "id": "ex_seguranca_balada",
+    "name": "Segurança da Balada",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "básico",
+        "seção 2"
+    ],
+    "previous": "",
+    "next": "ex_produto_simples",
+    "cases": [
+        {
+            "input": {
+                "idade": 19
+            },
+            "output": [
+                "Permitida a Entrada"
+            ]
+        },
+        {
+            "input": {
+                "idade": 14
+            },
+            "output": [
+                "Entrada Proibida"
+            ]
+        },
+        {
+            "input": {
+                "idade": 26
+            },
+            "output": [
+                "Permitida a Entrada"
+            ]
+        },
+        {
+            "input": {
+                "idade": 16
+            },
+            "output": [
+                "Entrada Proibida"
+            ]
+        },
+        {
+            "input": {
+                "idade": 22
+            },
+            "output": [
+                "Permitida a Entrada"
+            ]
+        },
+        {
+            "input": {
+                "idade": 29
+            },
+            "output": [
+                "Permitida a Entrada"
+            ]
+        }
+    ],
+    "problem": " Em uma balada só são permitidos maiores de idade (no Brasil, maiores de 18 anos). Geralmente estes estabelecimentos mantêm um segurança na entrada que verifica os documentos das pessoas e permite apenas a entrada de maiores de 18 anos. </p> Neste problema, você deve criar um programa que tenha como entrada a idade de uma pessoa que está na fila para entrar na balada, e deve emitir como saída a cadeia de caracteres \"Permitida a Entrada\" caso a idade da pessoa seja maior ou igual a 18. Caso contrário, o programa deve produzir a saída \"Entrada Proibida\". </p>  <h3>Entradas</h3> Um número <b>idade</b> contendo a idade da pessoa na fila. </p>  <h3>Saída</h3> Uma cadeia de caracteres contendo a mensagem adequada. </p> "
 }

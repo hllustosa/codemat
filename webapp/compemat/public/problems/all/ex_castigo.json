@@ -1,31 +1,47 @@
 {
-  "id": "ex_castigo",
-  "name": "Castigo",
-  "category": "Programming",
-  "labels": ["estrutura de repetição", "seção 3"],
-  "cases": [
-    {
-      "input": { "texto": "Não devo contar mentiras", "n": 2 },
-      "output": ["Não devo contar mentiras", "Não devo contar mentiras"]
-    },
-    {
-      "input": { "texto": "O cachorro não comeu minha lição", "n": 5 },
-      "output": [
-        "O cachorro não comeu minha lição",
-        "O cachorro não comeu minha lição",
-        "O cachorro não comeu minha lição",
-        "O cachorro não comeu minha lição",
-        "O cachorro não comeu minha lição"
-      ]
-    },
-    {
-      "input": { "texto": "Minha avó não faz karate", "n": 4 },
-      "output": [
-        "Minha avó não faz karate",
-        "Minha avó não faz karate",
-        "Minha avó não faz karate",
-        "Minha avó não faz karate"
-      ]
-    }
-  ]
+    "id": "ex_castigo",
+    "name": "Castigo",
+    "category": "Programming",
+    "labels": [
+        "estrutura de repetição",
+        "seção 3"
+    ],
+    "cases": [
+        {
+            "input": {
+                "texto": "Não devo contar mentiras",
+                "n": 2
+            },
+            "output": [
+                "Não devo contar mentiras",
+                "Não devo contar mentiras"
+            ]
+        },
+        {
+            "input": {
+                "texto": "O cachorro não comeu minha lição",
+                "n": 5
+            },
+            "output": [
+                "O cachorro não comeu minha lição",
+                "O cachorro não comeu minha lição",
+                "O cachorro não comeu minha lição",
+                "O cachorro não comeu minha lição",
+                "O cachorro não comeu minha lição"
+            ]
+        },
+        {
+            "input": {
+                "texto": "Minha avó não faz karate",
+                "n": 4
+            },
+            "output": [
+                "Minha avó não faz karate",
+                "Minha avó não faz karate",
+                "Minha avó não faz karate",
+                "Minha avó não faz karate"
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Uma das maneiras costumeiras de castigar alunos antigamente era obrigá-los a escrever uma mesma frase repetidamente em algum lugar. Com advento da tecnologia, os alunos podem automatizar o trabalho imposto como castigo, criando programas de computador, que emitem uma mesma mensagem várias vezes. </p>  Neste problema você deve criar um programa que receba duas entradas, uma cadeia de caracteres <b>texto</b> contendo a frase que deve ser repetida, e um número inteiro <b>n</b> contendo a quantidade de vezes que a frase deve ser escrita.  <h3>Entradas</h3> Uma cadeia de caracteres <b>texto</b> e um número inteiro <b>n</b>. </p>  <h3>Saída</h3> A cadeia de caracteres sendo escrita um total de <b>n</b> vezes. </p> "
 }

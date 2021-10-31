@@ -2,15 +2,59 @@
     "id": "ex_produto_simples",
     "name": "Produto Simples",
     "category": "programming",
-    "labels": ["aritmética", "básico", "seção 1"],
+    "labels": [
+        "aritmética",
+        "básico",
+        "seção 1"
+    ],
     "previous": "",
     "next": "",
     "cases": [
-      { "input": { "x": 10, "y": 12 }, "output": [120] },
-      { "input": { "x": 24, "y": 24 }, "output": [576] },
-      { "input": { "x": 1000, "y": 35 }, "output": [35000] },
-      { "input": { "x": 28, "y": 28 }, "output": [784] },
-      { "input": { "x": 455, "y": -28 }, "output": [-12740] }
-    ]
-  }
-  
+        {
+            "input": {
+                "x": 10,
+                "y": 12
+            },
+            "output": [
+                120
+            ]
+        },
+        {
+            "input": {
+                "x": 24,
+                "y": 24
+            },
+            "output": [
+                576
+            ]
+        },
+        {
+            "input": {
+                "x": 1000,
+                "y": 35
+            },
+            "output": [
+                35000
+            ]
+        },
+        {
+            "input": {
+                "x": 28,
+                "y": 28
+            },
+            "output": [
+                784
+            ]
+        },
+        {
+            "input": {
+                "x": 455,
+                "y": -28
+            },
+            "output": [
+                -12740
+            ]
+        }
+    ],
+    "problem": " Neste problema, você deve desenvolver um programa que receba como entrada dois números inteiros e produza como saída o produto desses dois números.  <h3>Entradas</h3> Dois números <b>x</b> e <b>y</b>. </p>  <h3>Saída</h3> Um número <b>r</b> contendo o produto de <b>x</b> e <b>y</b>. </p> "
+}

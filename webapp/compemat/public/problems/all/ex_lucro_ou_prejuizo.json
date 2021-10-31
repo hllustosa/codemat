@@ -1,19 +1,96 @@
 {
-  "id": "ex_lucro_ou_prejuizo",
-  "name": "Lucro ou Prejuízo",
-  "category": "Programming",
-  "labels": ["estrutura de controle", "aritmética", "seção 2"],
-  "previous": "",
-  "next": "",
-  "cases": [
-    { "input": { "compra" : 33.50, "venda" : 45.25 }, "output": ["lucro"] },
-    { "input": { "compra" : 45.25, "venda" : 15.50 }, "output": ["prejuízo"] },
-    { "input": { "compra" : 105.75, "venda" : 108.50 }, "output": ["lucro"] },
-    { "input": { "compra" : 90.25, "venda" : 15.50 }, "output": ["prejuízo"] },
-    { "input": { "compra" : 15.50, "venda" : 35.00 }, "output": ["lucro"] },
-    { "input": { "compra" : 35.00, "venda" : 15.50 }, "output": ["prejuízo"] },
-    { "input": { "compra" : 108.50, "venda" : 120.75 }, "output": ["lucro"] },
-    { "input": { "compra" : 29.90, "venda" : 18.10 }, "output": ["prejuízo"] },
-    { "input": { "compra" : 12.30, "venda" : 90.25 }, "output": ["lucro"] }
-  ]
+    "id": "ex_lucro_ou_prejuizo",
+    "name": "Lucro ou Prejuízo",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "aritmética",
+        "seção 2"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "compra": 33.5,
+                "venda": 45.25
+            },
+            "output": [
+                "lucro"
+            ]
+        },
+        {
+            "input": {
+                "compra": 45.25,
+                "venda": 15.5
+            },
+            "output": [
+                "prejuízo"
+            ]
+        },
+        {
+            "input": {
+                "compra": 105.75,
+                "venda": 108.5
+            },
+            "output": [
+                "lucro"
+            ]
+        },
+        {
+            "input": {
+                "compra": 90.25,
+                "venda": 15.5
+            },
+            "output": [
+                "prejuízo"
+            ]
+        },
+        {
+            "input": {
+                "compra": 15.5,
+                "venda": 35.0
+            },
+            "output": [
+                "lucro"
+            ]
+        },
+        {
+            "input": {
+                "compra": 35.0,
+                "venda": 15.5
+            },
+            "output": [
+                "prejuízo"
+            ]
+        },
+        {
+            "input": {
+                "compra": 108.5,
+                "venda": 120.75
+            },
+            "output": [
+                "lucro"
+            ]
+        },
+        {
+            "input": {
+                "compra": 29.9,
+                "venda": 18.1
+            },
+            "output": [
+                "prejuízo"
+            ]
+        },
+        {
+            "input": {
+                "compra": 12.3,
+                "venda": 90.25
+            },
+            "output": [
+                "lucro"
+            ]
+        }
+    ],
+    "problem": "  Na bolsa de valores, investidores investem em diversos tipos de ativos financeiros. As ações de empresas estão entre os tipos de ativo mais comuns. Uma ação representa uma parte da empresa, e à medida que uma empresa opera no mercado e tem seus resultados positivos ou negativos, o valor de sua ação aumenta ou diminui. Isto ocorre porque os investidores querem ter ações de empresas que dão lucro e geram bons dividendos. </p>  Neste problema, considere que um investidor adquiriu uma ação por um valor e a vendeu algum tempo depois. Este investidor deseja saber se seu investimento deu lucro ou prejuízo (tendo lucro caso o preço da venda seja maior que o da compra e prejuízo caso contrário).  Você deve criar um programa que tenha como entrada os dois preços. A entrada <b>compra</b> irá conter o preço de compra da ação, e a entrada <b>venda</b> irá conter o preço de venda da ação. O programa deve verificar se houve lucro ou prejuízo na operação e emitir como saída as cadeias de caracteres \"lucro\" ou \"prejuízo\" respectivamente.  <h3>Entradas</h3> Dois números <b>compra</b> e <b>venda</b> com os preços de compra e venda da ação respectivamente. </p>  <h3>Saída</h3> Uma cadeia de caracteres contendo a mensagem adequada. </p> "
 }

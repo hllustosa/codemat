@@ -1,21 +1,95 @@
 {
-  "id": "ex_calculadora",
-  "name": "Calculadora",
-  "category": "Programming",
-  "labels": ["estrutura de controle", "aritmética", "seção 2"],
-  "previous": "",
-  "next": "ex_produto_simples",
-  "cases": [
-    { "input": { "n1": 269, "n2": 269, "operacao": "+" }, "output": [538] },
-    { "input": { "n1": 203, "n2": 88, "operacao": "-" }, "output": [115] },
-    { "input": { "n1": 134, "n2": 104, "operacao": "*" }, "output": [13936] },
-    { "input": { "n1": 200, "n2": 10, "operacao": "/" }, "output": [20] },
-    { "input": { "n1": 299, "n2": 298, "operacao": "+" }, "output": [597] },
-    { "input": { "n1": 251, "n2": 42, "operacao": "-" }, "output": [209] },
-    { "input": { "n1": 267, "n2": 59, "operacao": "*" }, "output": [15753] },
-    {
-      "input": { "n1": 254, "n2": 60, "operacao": "/" },
-      "output": [4.233333333333333]
-    }
-  ]
+    "id": "ex_calculadora",
+    "name": "Calculadora",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "aritmética",
+        "seção 2"
+    ],
+    "previous": "",
+    "next": "ex_produto_simples",
+    "cases": [
+        {
+            "input": {
+                "n1": 269,
+                "n2": 269,
+                "operacao": "+"
+            },
+            "output": [
+                538
+            ]
+        },
+        {
+            "input": {
+                "n1": 203,
+                "n2": 88,
+                "operacao": "-"
+            },
+            "output": [
+                115
+            ]
+        },
+        {
+            "input": {
+                "n1": 134,
+                "n2": 104,
+                "operacao": "*"
+            },
+            "output": [
+                13936
+            ]
+        },
+        {
+            "input": {
+                "n1": 200,
+                "n2": 10,
+                "operacao": "/"
+            },
+            "output": [
+                20
+            ]
+        },
+        {
+            "input": {
+                "n1": 299,
+                "n2": 298,
+                "operacao": "+"
+            },
+            "output": [
+                597
+            ]
+        },
+        {
+            "input": {
+                "n1": 251,
+                "n2": 42,
+                "operacao": "-"
+            },
+            "output": [
+                209
+            ]
+        },
+        {
+            "input": {
+                "n1": 267,
+                "n2": 59,
+                "operacao": "*"
+            },
+            "output": [
+                15753
+            ]
+        },
+        {
+            "input": {
+                "n1": 254,
+                "n2": 60,
+                "operacao": "/"
+            },
+            "output": [
+                4.233333333333333
+            ]
+        }
+    ],
+    "problem": " Os computadores são fundamentalmente máquinas capazes de realizar cálculos matemáticos de forma automatizada. Assim sendo, os cálculos aritméticos simples são a primeira e mais comum aplicação de computadores e da programação. </p>  Neste problema, você deve criar uma calculadora capaz de realizar as 4 operações aritméticas básicas (soma, subtração, multiplicação e divisão) sobre pares de números. O programa terá como entrada três valores. A entrada <b>operacao</b> é uma cadeia de caracteres que contém um dos quatro símbolos das operações ariméticas, +, -, * e /. Os valores <b>n1</b> e <b>n2</b> são os números que devem ser calculados. </p>  O programa deve produzir como saída o resultado da operação sobre os dois números de entrada. Para operações não comutativas, obedeça à ordem: n1 antes de n2. </p>  <h3>Entradas</h3> A cadeia de caracteres <b>operacao</b> contendo o símbolo da operação a ser realizada, e os valores <b>n1</b> e <b>n2</b> que devem ser operados. </p>  <h3>Saída</h3> Um número contendo o resultado da operação indicada pela entrada <b>operacao</b> sobre os valores <b>n1</b> e <b>n2</b>. </p> "
 }

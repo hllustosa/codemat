@@ -1,32 +1,93 @@
 {
-  "id": "ex_obter_maior",
-  "name": "Obter Maior",
-  "category": "Programming",
-  "labels": [
-    "estrutura de repetição",
-    "listas",
-    "seção 4"
-  ],
-  "cases": [
-    {
-      "input": {"l": [1, 2, 3, 4, 5, 6, 7]},
-      "output": [7]
-    },
-    {
-      "input": {"l": [64, 128, 32, 16, 8, 4]},
-      "output": [128]
-    },
-    {
-      "input": {"l": [0, 1, 1, 3, 5, 8, 13, 21, 34]},
-      "output": [34]
-    },
-    {
-      "input": {"l": [45.4, 22.4, 543.4, 23.4, 432.2, 33.6]},
-      "output": [543.4]
-    },
-    {
-      "input": {"l": [7, 6, 5, 4, 3, 2, 1]},
-      "output": [7]
-    }
-  ]
+    "id": "ex_obter_maior",
+    "name": "Obter Maior",
+    "category": "Programming",
+    "labels": [
+        "estrutura de repetição",
+        "listas",
+        "seção 4"
+    ],
+    "cases": [
+        {
+            "input": {
+                "l": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            },
+            "output": [
+                7
+            ]
+        },
+        {
+            "input": {
+                "l": [
+                    64,
+                    128,
+                    32,
+                    16,
+                    8,
+                    4
+                ]
+            },
+            "output": [
+                128
+            ]
+        },
+        {
+            "input": {
+                "l": [
+                    0,
+                    1,
+                    1,
+                    3,
+                    5,
+                    8,
+                    13,
+                    21,
+                    34
+                ]
+            },
+            "output": [
+                34
+            ]
+        },
+        {
+            "input": {
+                "l": [
+                    45.4,
+                    22.4,
+                    543.4,
+                    23.4,
+                    432.2,
+                    33.6
+                ]
+            },
+            "output": [
+                543.4
+            ]
+        },
+        {
+            "input": {
+                "l": [
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
+                ]
+            },
+            "output": [
+                7
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script> Neste exercício você deve criar um programa que receba como entrada uma lista de números <b>l</b> e que produza como saída o maior número contido na lista.  <h3>Entradas</h3> Uma lista <b>l</b>. </p>  <h3>Saída</h3> O maior elemento da lista. </p> "
 }

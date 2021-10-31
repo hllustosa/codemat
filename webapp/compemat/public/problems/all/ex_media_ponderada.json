@@ -2,17 +2,84 @@
     "id": "ex_media_ponderada",
     "name": "Média Ponderada",
     "category": "programming",
-    "labels": ["aritmética", "básico", "seção 1"],
+    "labels": [
+        "aritmética",
+        "básico",
+        "seção 1"
+    ],
     "previous": "",
     "next": "",
     "cases": [
-      { "input": { "nota1": 9.8, "nota2": 7.6, "nota3": 8.5 }, "output": [8.488888888888889] },
-      { "input": { "nota1": 10.0, "nota2": 10.0, "nota3": 7.2 }, "output": [8.755555555555555] },
-      { "input": { "nota1": 0.0, "nota2": 1.5, "nota3": 8.3 }, "output": [4.188888888888889] },
-      { "input": { "nota1": 7.3, "nota2": 8.6, "nota3": 4.5 }, "output": [6.488888888888889] },
-      { "input": { "nota1": 10.0, "nota2": 9.5, "nota3": 9.7 }, "output": [9.7] },
-      { "input": { "nota1": 6.8, "nota2": 5.6, "nota3": 6.2 }, "output": [6.133333333333334] },
-      { "input": { "nota1": 4.4, "nota2": 7.7, "nota3": 5.8 }, "output": [6.122222222222223] }
-    ]
-  }
-  
+        {
+            "input": {
+                "nota1": 9.8,
+                "nota2": 7.6,
+                "nota3": 8.5
+            },
+            "output": [
+                8.488888888888889
+            ]
+        },
+        {
+            "input": {
+                "nota1": 10.0,
+                "nota2": 10.0,
+                "nota3": 7.2
+            },
+            "output": [
+                8.755555555555555
+            ]
+        },
+        {
+            "input": {
+                "nota1": 0.0,
+                "nota2": 1.5,
+                "nota3": 8.3
+            },
+            "output": [
+                4.188888888888889
+            ]
+        },
+        {
+            "input": {
+                "nota1": 7.3,
+                "nota2": 8.6,
+                "nota3": 4.5
+            },
+            "output": [
+                6.488888888888889
+            ]
+        },
+        {
+            "input": {
+                "nota1": 10.0,
+                "nota2": 9.5,
+                "nota3": 9.7
+            },
+            "output": [
+                9.7
+            ]
+        },
+        {
+            "input": {
+                "nota1": 6.8,
+                "nota2": 5.6,
+                "nota3": 6.2
+            },
+            "output": [
+                6.133333333333334
+            ]
+        },
+        {
+            "input": {
+                "nota1": 4.4,
+                "nota2": 7.7,
+                "nota3": 5.8
+            },
+            "output": [
+                6.122222222222223
+            ]
+        }
+    ],
+    "problem": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script> Um professor precisa calcular a média aritmética ponderada das notas de três avaliações aplicadas em seus alunos. A média aritmética ponderada é obtida como a razão entre a soma dos produtos das notas e dos pesos dessas notas sobre a soma dos pesos. </p>  Para o cálculo da média, a primeira avaliação terá peso 2, a segunda terá peso 3 e a terceira terá peso 4. Portanto, o cálculo da média fica conforme a fórmula: </p>  $$media = \\frac{2\\ nota_{1} + 3\\ nota_{2} + 4\\ nota_{3} }{9}$$  O valor 9 no denominador representa a soma dos pesos \\( 2 + 3 + 4 = 9\\). </p>  Neste problema você deve produzir um programa que receba como entrada três números reais (nota1, nota2, nota3) contendo as três notas tiradas por um aluno nas avaliações aplicadas pelo professor. Na sequência, o programa deve produzir como saída a média ponderada dessas notas, considerando os pesos 2, 3 e 4 paras as notas nota1, nota2 e nota3 respectivamente.</p>  <h3>Entradas</h3> Três números reais <b>nota1</b>, <b>nota2</b> e <b>nota3</b>. </p>  <h3>Saída</h3> Um número real <b>media</b> contendo a média ponderada de <b>nota1</b>, <b>nota2</b> e <b>nota3</b>; </p> "
+}

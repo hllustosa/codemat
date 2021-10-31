@@ -1,19 +1,87 @@
 {
-  "id": "ex_positivo_negativo",
-  "name": "Positivo ou Negativo",
-  "category": "Programming",
-  "labels": ["estrutura de controle", "básico", "seção 2"],
-  "previous": "",
-  "next": "",
-  "cases": [
-    { "input": { "n" : 215}, "output": ["positivo"] },
-    { "input": { "n" : -106}, "output": ["negativo"] },
-    { "input": { "n" : 42 }, "output": ["positivo"] },
-    { "input": { "n" : -204 }, "output": ["negativo"] },
-    { "input": { "n" : 288 }, "output": ["positivo"] },
-    { "input": { "n" : -54 }, "output": ["negativo"] },
-    { "input": { "n" : 108 }, "output": ["positivo"] },
-    { "input": { "n" : -36 }, "output": ["negativo"] },
-    { "input": { "n" : 92 }, "output": ["positivo"] }
-  ]
+    "id": "ex_positivo_negativo",
+    "name": "Positivo ou Negativo",
+    "category": "Programming",
+    "labels": [
+        "estrutura de controle",
+        "básico",
+        "seção 2"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "n": 215
+            },
+            "output": [
+                "positivo"
+            ]
+        },
+        {
+            "input": {
+                "n": -106
+            },
+            "output": [
+                "negativo"
+            ]
+        },
+        {
+            "input": {
+                "n": 42
+            },
+            "output": [
+                "positivo"
+            ]
+        },
+        {
+            "input": {
+                "n": -204
+            },
+            "output": [
+                "negativo"
+            ]
+        },
+        {
+            "input": {
+                "n": 288
+            },
+            "output": [
+                "positivo"
+            ]
+        },
+        {
+            "input": {
+                "n": -54
+            },
+            "output": [
+                "negativo"
+            ]
+        },
+        {
+            "input": {
+                "n": 108
+            },
+            "output": [
+                "positivo"
+            ]
+        },
+        {
+            "input": {
+                "n": -36
+            },
+            "output": [
+                "negativo"
+            ]
+        },
+        {
+            "input": {
+                "n": 92
+            },
+            "output": [
+                "positivo"
+            ]
+        }
+    ],
+    "problem": "  Neste problema, você deve criar um programa que tenha como entrada um único número <b>n</b>. O programa deve verificar se o número é positivo ou negativo e produzir a cadeia de caracteres \"positivo\" ou \"negativo\" respectivamente em cada caso. A entrada 0 (zero) não precisa ser tratada.  <h3>Entradas</h3> Um número <b>n</b> que deve ser verificado. </p>  <h3>Saída</h3> Uma cadeia de caracteres contendo a mensagem adequada. </p> "
 }

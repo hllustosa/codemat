@@ -1,15 +1,60 @@
 {
-  "id": "ex_soma_simples",
-  "name": "Soma Simples",
-  "category": "programming",
-  "labels": ["aritmética", "básico", "seção 1"],
-  "previous": "",
-  "next": "ex_produto_simples",
-  "cases": [
-    { "input": { "x": 10, "y": 12 }, "output": [22] },
-    { "input": { "x": 24, "y": 24 }, "output": [48] },
-    { "input": { "x": 1000, "y": 35 }, "output": [1035] },
-    { "input": { "x": 28, "y": 28 }, "output": [56] },
-    { "input": { "x": 455, "y": -28 }, "output": [427] }
-  ]
+    "id": "ex_soma_simples",
+    "name": "Soma Simples",
+    "category": "programming",
+    "labels": [
+        "aritmética",
+        "básico",
+        "seção 1"
+    ],
+    "previous": "",
+    "next": "ex_produto_simples",
+    "cases": [
+        {
+            "input": {
+                "x": 10,
+                "y": 12
+            },
+            "output": [
+                22
+            ]
+        },
+        {
+            "input": {
+                "x": 24,
+                "y": 24
+            },
+            "output": [
+                48
+            ]
+        },
+        {
+            "input": {
+                "x": 1000,
+                "y": 35
+            },
+            "output": [
+                1035
+            ]
+        },
+        {
+            "input": {
+                "x": 28,
+                "y": 28
+            },
+            "output": [
+                56
+            ]
+        },
+        {
+            "input": {
+                "x": 455,
+                "y": -28
+            },
+            "output": [
+                427
+            ]
+        }
+    ],
+    "problem": " Neste problema, você deve desenvolver um programa que receba como entrada dois números inteiros e produza como saída a soma desses dois números.  <h3>Entradas</h3> Dois números <b>x</b> e <b>y</b>. </p>  <h3>Saída</h3> Um número <b>r</b> contendo a soma de <b>x</b> e <b>y</b>. </p>  "
 }
