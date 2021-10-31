@@ -1,7 +1,7 @@
 const routes = {
   course: "/course",
   exercises: "/exercises",
-  classes: "/classes",
+  classes: "/classes/section-0/1",
   about: "/about",
   profile: "/profile",
   exercisesCategory: (category) => `/exercises/${category}`,
