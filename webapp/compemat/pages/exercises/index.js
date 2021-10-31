@@ -13,7 +13,7 @@ const styles = makeStyles((theme) => ({
     width: "100%",
     minHeight: "calc(100vh - 68px)",
     margin: "auto",
-    backgroundColor: GREY_2,
+    //backgroundColor: GREY_2,
     padding: "10px",
     zIndex: 0,
   },
@@ -52,76 +52,68 @@ function Body(props) {
           />
         </Grid>
 
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} md={6}>
           <Card
             title={"Programação"}
-            image={"/img/programming.jpg"}
-            height={"220"}
+            image={"/img/progamming.svg"}
+            height={"180"}
             href={"exercises/list?cat=programming"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
             title={"Aritmética e Porcentagem"}
-            image={"/img/arithmetic.jpg"}
-            height={"120"}
+            image={"/img/arithmetic.svg"}
+            height={"180"}
             href={"exercises/list?cat=arithmetic"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
             title={"Análise Combinatória"}
-            image={"img/combinatorics.jpg"}
-            height={"120"}
+            image={"img/combinatorics.svg"}
+            height={"180"}
             href={"exercises/list?cat=combinatorics"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
             title={"Matemática Financeira"}
-            image={"/img/financial.jpg"}
-            height={"120"}
+            image={"/img/finances.svg"}
+            height={"180"}
             href={"exercises/list?cat=financial"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
             title={"Funções"}
-            image={"/img/functions.jpg"}
-            height={"120"}
+            image={"/img/functions.svg"}
+            height={"180"}
             href={"exercises/list?cat=functions"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
             title={"Probabilidade"}
-            image={"/img/probability.jpg"}
-            height={"120"}
+            image={"/img/probability.svg"}
+            height={"180"}
             href={"exercises/list?cat=probability"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
-            title={"Progressão Geométrica"}
-            image={"img/progression.jpg"}
-            height={"120"}
+            title={"Progressões"}
+            image={"img/progression.svg"}
+            height={"180"}
             href={"exercises/list?cat=progression"}
           />
         </Grid>
         <Grid item xs={12} md={6}>
           <Card
             title={"Trigonometria"}
-            image={"/img/trigonometry.png"}
-            height={"120"}
+            image={"/img/trigonometry.svg"}
+            height={"180"}
             href={"exercises/list?cat=trigonometry"}
-          />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Card
-            title={"Unidades"}
-            image={"/img/units.jpg"}
-            height={"120"}
-            href={"exercises/list?cat=unities"}
           />
         </Grid>
       </Grid>

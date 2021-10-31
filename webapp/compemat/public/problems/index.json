@@ -217,7 +217,7 @@
   },
   "ex_calcular_quadrado": {
     "id": "ex_calcular_quadrado",
-    "name": "Obter Quadrado",
+    "name": "Calcular Quadrado",
     "category": "Programming",
     "labels": ["estrutura de repetição", "listas", "seção 4"]
   },

@@ -132,7 +132,7 @@ export default function HamburguerMenu(props) {
         <Divider />
         <MenuItem onClick={goTo(routes.course)}>Curso</MenuItem>
         <MenuItem onClick={goTo(routes.exercises)}>Exercícios</MenuItem>
-        <MenuItem onClick={goTo(routes.tutorials)}>Tutoriais</MenuItem>
+        <MenuItem onClick={goTo(routes.classes)}>Aulas</MenuItem>
         <MenuItem onClick={goTo(routes.about)}>Sobre</MenuItem>
       </Menu>
     </React.Fragment>

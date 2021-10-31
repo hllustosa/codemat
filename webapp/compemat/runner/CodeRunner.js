@@ -9,7 +9,7 @@ import {
   TimeOutError,
 } from "../seedwork/Errors";
 
-const MAX_TIMEOUT = 30000;
+const MAX_TIMEOUT = 45000;
 
 export const CodeRunnerStates = {
   INITIAL: "INITIAL",

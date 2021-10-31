@@ -23,7 +23,7 @@ const styles = makeStyles((theme) => ({
   cupon: {
     width: "100%",
     padding: "10px",
-    height: "200px",
+    height: "250px",
     backgroundColor: GREY_2,
   },
   cuponText: {
@@ -90,7 +90,7 @@ function Body() {
         >
           <Fade in timeout={6000}>
             <Typography className={classes.cuponText}>
-              {"Curso Gratuito no Udemy com o cupom:"}
+              {"Material do Curso"}
             </Typography>
           </Fade>
           <Fade in timeout={6000}>

@@ -35,7 +35,7 @@ export default function Footer() {
           {"C&M (C) | 2021"}
         </Typography>
         <Typography className={classes.footerText}>
-          {"Udemy | Youtube | Email"}
+          {"Email | YouTube"}
         </Typography>
       </Grid>
     </footer>

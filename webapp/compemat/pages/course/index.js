@@ -66,7 +66,7 @@ function Course() {
       disponível aos estudantes. Espero que um bom número deles se beneficie e
       aprenda coisas novas.
       <p />
-      O curso está disponível na Udemy e é divido em algumas unidades temáticas.
+      O curso está divido em algumas unidades temáticas.
       Programação, Aritmética, Funções, Progressões, Trigonometria, Matemática
       Financeira, entre outros temas. O principal diferencial do curso é o
       aspecto computacional e prático. Por exemplo, esta página disponibiliza um ambiente com 
@@ -80,24 +80,9 @@ function Course() {
       estudante estiver logado, é possível registrar o progresso e as soluções
       enviadas para conferência posterior.
       <p />
-      A Udemy foi a plataforma escolhida para hospedar o material por ser uma referência no mercado
-      de cursos online, e por ter um ambiente robusto, próprio para aprendizado e sem as distrações de outras
-      plataformas como o YouTube. 
-      <p />
-      Infelizmente, não é possível ter um curso de maior duração totalmente gratuíto no Udemy. 
-      E isto é ruim para os objetivos deste projeto, já que  curso foi pensado em alunos do ensino médio 
-      de escolas públicas, que em geral são de famílias de menor renda. Embora o curso
-      esteja disponível de forma paga na Udemy, o autor irá emitir o maior número de códigos de acesso 
-      gratuíto possível aos estudantes, para que a maioria dos alunos acesse o material gratuitamente. 
-      <p />
       A necessidade de um ter um computador ou celular e acesso a internet
-      é uma barreira grande. Como medida individual, o autor do curso também planeja oferecer aulas e oficinas
-      presenciais baseadas no curso em um ambiente físico, quando isto for possível no futuro. Se o curso 
-      arrecadar algum valor, ele será utilizado para possibilitar as oficinas e atividades presenciais.   
-      <p />
-      Se você está lendo até aqui e está curioso sobre como o curso funciona, porque não dar uma chance? 
-      Acesse nossa página inicial, obtenha um código e se cadastre em [link do curso aqui] para começar a 
-      estudar agora mesmo.
+      é uma barreira grande. Como medida individual, o autor do curso planeja oferecer aulas e oficinas
+      presenciais baseadas no curso em um ambiente físico, quando isto for possível no futuro.  
       <p />
       O tempo está passando, para que esperar mais? Bora aprender?
       <p />

@@ -89,6 +89,10 @@ export default class CodeRunnerManager {
       return false;
     }
     
+    if(outputs.length !== expectedOutput.length){
+      return false;
+    }
+
     for (let i = 0; i < outputs.length; i++) {
       if (JSON.stringify(outputs[i]) !== JSON.stringify(expectedOutput[i])) return false;
     }

@@ -24,7 +24,7 @@ export default function ImgMediaCard(props) {
   return (
     <Fade in timeout={4000}>
       <Link className={classes.link} href={href}>
-        <Card className={classes.root}>
+        <Card className={classes.root} elevation={0}>
           <CardActionArea>
             <CardMedia
               component="img"

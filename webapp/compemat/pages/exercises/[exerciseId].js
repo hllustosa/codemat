@@ -73,7 +73,7 @@ const styles = makeStyles((theme) => ({
     height: "calc(100vh - 310px)",
     minHeight: "330px",
     minWidth: "290px",
-    backgroundColor: "#eeeeee",
+    backgroundColor: "#FFFFFF",
     border:"none",
   },
   problemMark: {
@@ -89,12 +89,11 @@ const styles = makeStyles((theme) => ({
     paddingTop: "10px",
   },
   executionList: {
-    backgroundColor: "#F9F9F9",
+    backgroundColor: "#FFFFFF",
     margin: "10px",
     width: "calc(100% - 20px)",
     flex: 1,
     overflowY: "auto",
-    backgroundColor: "#eeeeee",
   },
 }));
 

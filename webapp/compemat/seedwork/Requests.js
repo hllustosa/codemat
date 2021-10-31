@@ -65,7 +65,6 @@ export const getIdToken = async (email, password) => {
 export const updatePassword = async (oldPassword, password) => {
   const user = store.getState().user;
   const response = await getIdToken(user.email, oldPassword);
-  console.log(response);
 
   return await axios({
     method: "post",
