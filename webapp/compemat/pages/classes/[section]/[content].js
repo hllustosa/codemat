@@ -38,11 +38,9 @@ const styles = makeStyles((theme) => ({
   },
   sectionMenuItem: {
     color: PRIMARY,
-    fontWeight: "600",
   },
   menuItem: {
     color: PRIMARY,
-    fontWeight: "450",
     padding: "3px",
   },
 }));

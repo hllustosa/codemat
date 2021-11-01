@@ -95,6 +95,29 @@ const TitleText = (hasError, answer, index) => {
   }
 };
 
+const TitleColor = (hasError, answer) => {
+  if (hasError) {
+    return "#cd1e41";
+  } else if (answer) {
+    return "#15906e";
+  } else {
+    return "#cd1e41";
+  }
+};
+
+const summary = (results) => {
+  const total = results.length;
+  let correct = 0;
+
+  for(const result of results){
+    if(result.answer){
+      correct++;
+    }
+  }
+
+  return `${correct}/${total}`;
+}
+
 export default function ResultDialog(props) {
   const classes = useStyles();
   const { onClose, open, results } = props;
@@ -109,13 +132,15 @@ export default function ResultDialog(props) {
     onClose();
   };
 
+  
+
   return (
     <Dialog
       onClose={handleClose}
       aria-labelledby="titulo-dialogo-resultado"
       open={open}
     >
-      <DialogTitle id="result-dialog">Resultado da Execução</DialogTitle>
+      <DialogTitle id="result-dialog">{"Resultado da Execução "+summary(results)}</DialogTitle>
       <Divider />
       {results.map((item, index) => (
         <StyledAccordion
@@ -128,9 +153,10 @@ export default function ResultDialog(props) {
           <StyledAccordionSummary
             aria-controls="panel-content"
             id="panel-header"
+            style={{color:TitleColor(item.hasError, item.answer)}}
           >
             <ResultIcon hasError={item.hasError} answer={item.answer} /> &nbsp;
-            <Typography>
+            <Typography >
               {" "}
               {TitleText(item.hasError, item.answer, index)}
             </Typography>

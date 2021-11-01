@@ -1,11 +1,20 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import AppBar from "../../../components/AppBar";
 import Page from "../../../components/Page";
 import SearchField from "../../../components/SearchField";
 import { useQueryParams } from "../../../seedwork/Utils";
-import { makeStyles, IconButton, Grid, ListItem, ListItemText, ListItemSecondaryAction, Divider  } from "@material-ui/core";
-import { VisibilityRounded  } from "@material-ui/icons";
+import {
+  makeStyles,
+  IconButton,
+  Grid,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  Divider,
+} from "@material-ui/core";
+import { VisibilityRounded } from "@material-ui/icons";
 import { GREY_2, PRIMARY } from "../../../public/colors";
 import problems from "../../../public/problems/index.json";
 import { translateCategory } from "../../../seedwork/Translations";
@@ -25,6 +34,10 @@ const styles = makeStyles((theme) => ({
     flex: 1,
     height: "400px",
   },
+  link: {
+    fontSize: "10px",
+    textDecoration: "none",
+  },
 }));
 
 function Body() {
@@ -34,13 +47,13 @@ function Body() {
   const [search, setSearch] = React.useState(q ? q : "");
   const [category, setCategory] = React.useState(cat ? cat : cat);
   const [filteredProblems, setFilteredProblems] = React.useState([]);
-  
+
   useEffect(() => {
     const keys = Object.keys(problems);
     const foundProblems = keys
       .map((key) => problems[key])
       .filter((item) => {
-        if(!search && !category){
+        if (!search && !category) {
           return true;
         }
 
@@ -66,7 +79,8 @@ function Body() {
     return [
       <ListItem key={`trial-${index}`}>
         <ListItemText
-          primary={`${item.name}`}
+          primary={<Link href={`/exercises/${item.id}`}>{item.name}</Link>}
+          primaryTypographyProps={{ style: { color: PRIMARY } }}
           secondary={translateCategory(item.category)}
         />
         <ListItemSecondaryAction>

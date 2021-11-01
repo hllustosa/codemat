@@ -23,7 +23,8 @@ const styles = makeStyles((theme) => ({
   cupon: {
     width: "100%",
     padding: "10px",
-    height: "250px",
+    minHeight: "200px",
+    height: "calc(100vh - 667px)",
     backgroundColor: GREY_2,
   },
   cuponText: {

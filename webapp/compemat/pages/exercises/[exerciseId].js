@@ -2,7 +2,7 @@ import Page from "../../components/Page";
 import AppBar from "../../components/AppBar";
 import React, { useEffect } from "react";
 import problems from "../../public/problems/index.json";
-import { Grid, makeStyles } from "@material-ui/core";
+import { Grid, Tooltip, makeStyles } from "@material-ui/core";
 import {
   PlayArrowRounded,
   AssessmentRounded,
@@ -75,7 +75,7 @@ const styles = makeStyles((theme) => ({
     minHeight: "330px",
     minWidth: "290px",
     backgroundColor: "#FFFFFF",
-    border:"none",
+    border: "none",
   },
   problemMark: {
     padding: "10px",
@@ -114,9 +114,11 @@ function ProblemPane(props) {
           </Grid>
         </Grid>
         <Grid item>
+        <Tooltip title="Minimizar Problema" placement="bottom-end">
           <BaseIconButton onClick={handleClick}>
             <ChevronLeftRounded />
           </BaseIconButton>
+          </Tooltip>
         </Grid>
       </Grid>
       <Grid container item direction="column" xs={12}>
@@ -131,8 +133,7 @@ function ProblemPane(props) {
 
         <Grid item xs={12}>
           <div className={classes.problemContent}>
-
-            <ProblemaFrame data={data}/>
+            <ProblemaFrame data={data} />
           </div>
         </Grid>
         <Grid item xs={12}>
@@ -240,8 +241,7 @@ function CodePane(props) {
   };
 
   const handleNewOutput = (output) => {
-    if(Array.isArray(output))
-      output = JSON.stringify(output);
+    if (Array.isArray(output)) output = JSON.stringify(output);
 
     entries.push({ content: output, type: "output" });
     setEntries([...entries]);
@@ -324,9 +324,11 @@ function CodePane(props) {
         wrap="nowrap"
       >
         <Grid item>
-          <BaseIconButton onClick={handleClick}>
-            <ChevronRightRounded />
-          </BaseIconButton>
+          <Tooltip title="Minimizar Solução" placement="bottom-end">
+            <BaseIconButton onClick={handleClick}>
+              <ChevronRightRounded />
+            </BaseIconButton>
+          </Tooltip>
         </Grid>
         <Grid item>
           <Title size={22}>Solução {running && <Progress />} </Title>
@@ -334,20 +336,26 @@ function CodePane(props) {
         <Grid item>
           {!running && (
             <NoWrap>
-              <BaseIconButton onClick={handleTestClick}>
-                <PlayArrowRounded />
-              </BaseIconButton>
-              <BaseIconButton onClick={handleExecutionClick}>
-                <AssessmentRounded />
-              </BaseIconButton>
+              <Tooltip title="Testar" placement="bottom-end">
+                <BaseIconButton onClick={handleTestClick}>
+                  <PlayArrowRounded />
+                </BaseIconButton>
+              </Tooltip>
+              <Tooltip title="Enviar Para Correção" placement="bottom-end">
+                <BaseIconButton onClick={handleExecutionClick}>
+                  <AssessmentRounded />
+                </BaseIconButton>
+              </Tooltip>
             </NoWrap>
           )}
 
           {running && (
             <NoWrap>
-              <BaseIconButton onClick={handleStop}>
-                <StopRounded />
-              </BaseIconButton>
+              <Tooltip title="Parar Execução" placement="bottom-end">
+                <BaseIconButton onClick={handleStop}>
+                  <StopRounded />
+                </BaseIconButton>
+              </Tooltip>
             </NoWrap>
           )}
         </Grid>
@@ -368,9 +376,11 @@ function CodePane(props) {
           <Title size={14}>Execução</Title>
         </Grid>
         <Grid>
+        <Tooltip title="Limpar Registros" placement="bottom-end">
           <BaseIconButton onClick={() => setEntries([])}>
             <ClearAllRounded />
           </BaseIconButton>
+          </Tooltip>
         </Grid>
       </Grid>
       <Grid
