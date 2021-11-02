@@ -92,9 +92,8 @@ export default function HamburguerMenu(props) {
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
         {isAuth && (
-          <React.Fragment>
-            {" "}
-            <MenuItem onClick={goTo(routes.profile)}>
+          [
+            <MenuItem key="auth-menu" onClick={goTo(routes.profile)}>
               <Avatar
                 style={{
                   width: 32,
@@ -107,18 +106,17 @@ export default function HamburguerMenu(props) {
                 {user.email[0].toUpperCase()}
               </Avatar>{" "}
               Perfil
-            </MenuItem>
-            <MenuItem onClick={logout}>
+            </MenuItem>,
+            <MenuItem key="auth-menu-logout"  onClick={logout}>
               <ListItemIcon style={{ marginRight: "-25px" }}>
                 <Logout fontSize="small" />
               </ListItemIcon>
               Logout
-            </MenuItem>{" "}
-          </React.Fragment>
+            </MenuItem>
+          ]
         )}
 
         {!isAuth && (
-          <React.Fragment>
             <MenuItem
               style={{ color: PRIMARY_LIGHT }}
               color="secondary"
@@ -126,7 +124,6 @@ export default function HamburguerMenu(props) {
             >
               Entrar
             </MenuItem>
-          </React.Fragment>
         )}
 
         <Divider />

@@ -36,8 +36,11 @@ export const withBaseContentPage = (Component, message, submessage, height) => {
       "C & M - Computação, Programação e Matemática"
     );
     const [meta, setMeta] = React.useState(
-      "Página com centenas de exercícios de programação para iniciantes baseados em questões de matemática do ENEM."
+      "Página com vários exercícios de programação para iniciantes baseados em questões de matemática do ENEM."
     );
+
+    const [headerTitle, setHeaderTitle] = React.useState(message);
+    const [headerSubTitle, setHeaderSubTitle] = React.useState(submessage);
 
     return (
       <React.Fragment>
@@ -50,8 +53,18 @@ export const withBaseContentPage = (Component, message, submessage, height) => {
           <meta name="description" content={meta} />
         </Head>
         <div>
-          <Header message={message} submessage={submessage} height={height} />
-          <Component setTitle={setTitle} setMeta={setMeta} {...props} />
+          <Header
+            headerTitle={headerTitle}
+            headerSubTitle={headerSubTitle}
+            height={height}
+          />
+          <Component
+            setTitle={setTitle}
+            setMeta={setMeta}
+            setHeaderTitle={setHeaderTitle}
+            setHeaderSubTitle={setHeaderSubTitle}
+            {...props}
+          />
           <Footer />
         </div>
       </React.Fragment>

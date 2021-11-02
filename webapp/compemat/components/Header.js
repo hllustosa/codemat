@@ -44,6 +44,9 @@ const styles = makeStyles((theme) => ({
     fontSize: "16px",
     fontWeight: "600",
     textDecoration: "None",
+    "&:visited": {
+      color: SECONDARY,
+    },
     "&:hover": {
       color: CONTRAST_COLOR,
     },
@@ -87,7 +90,7 @@ function RowMenu() {
 
 export default function Header(props) {
   
-  const { message, submessage, height} = props;
+  const { headerTitle, headerSubTitle, height} = props;
   const classes = styles();
   return (
     <header>
@@ -133,14 +136,14 @@ export default function Header(props) {
           <Grid>
             <Fade in timeout={3000}>
               <Typography className={classes.message}>
-                {message}
+                {headerTitle}
               </Typography>
             </Fade>
           </Grid>
           <Grid>
             <Fade in timeout={3000}>
               <Typography className={classes.submessage}>
-                {submessage}
+                {headerSubTitle}
               </Typography>
             </Fade>
           </Grid>

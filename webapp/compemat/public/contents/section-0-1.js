@@ -1,24 +1,39 @@
 import React from "react";
+import {ClassContainer, ClassSectionTitle, ClassEquation, ClassBox} from "../../components/ClassContent";
 
 function Content(){
-    return (<div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices aliquet felis, in iaculis enim facilisis ac. Nullam lobortis libero eu commodo ultrices. Sed id malesuada orci, id porttitor nibh. Morbi aliquam nunc nec viverra ornare. In imperdiet molestie efficitur. Mauris finibus est in sodales rutrum. Nullam eu orci pretium, maximus urna sed, feugiat ante. Nulla lorem eros, ornare in nisi sit amet, iaculis interdum diam. Pellentesque quam est, porttitor in aliquam sit amet, eleifend in quam. Etiam a quam rutrum, feugiat quam sed, iaculis eros. In ullamcorper aliquam libero, eu tincidunt metus bibendum non. Nam et quam maximus tortor ullamcorper eleifend. In orci ligula, gravida eget pharetra vitae, convallis vel eros.
+    return (<ClassContainer> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices aliquet felis, in iaculis enim facilisis ac. Nullam lobortis libero eu commodo ultrices. Sed id malesuada orci, id porttitor nibh. Morbi aliquam nunc nec viverra ornare. In imperdiet molestie efficitur. Mauris finibus est in sodales rutrum. Nullam eu orci pretium, maximus urna sed, feugiat ante. Nulla lorem eros, ornare in nisi sit amet, iaculis interdum diam. Pellentesque quam est, porttitor in aliquam sit amet, eleifend in quam. Etiam a quam rutrum, feugiat quam sed, iaculis eros. In ullamcorper aliquam libero, eu tincidunt metus bibendum non. Nam et quam maximus tortor ullamcorper eleifend. In orci ligula, gravida eget pharetra vitae, convallis vel eros.
 
         Pellentesque interdum posuere eros. Donec vulputate massa et imperdiet pulvinar. Etiam dictum urna quis massa finibus dictum. Nunc id vestibulum leo, quis aliquet ipsum. Aliquam erat volutpat. Mauris venenatis pharetra leo, faucibus varius lorem lacinia non. Duis eleifend turpis vel velit tincidunt tempor. Pellentesque erat purus, tempor aliquet iaculis a, congue id nibh. Donec at tellus et justo sollicitudin euismod convallis vel ipsum. Maecenas facilisis euismod sapien. Cras sollicitudin non urna id eleifend. Praesent massa libero, ultrices eget nunc efficitur, dapibus faucibus diam. In hac habitasse platea dictumst. Fusce ipsum massa, bibendum sed lacinia id, elementum non ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris finibus est libero, vel consectetur enim bibendum non.
         
-        In euismod fringilla lacinia. Morbi eget nisl enim. Nullam auctor tincidunt vulputate. Fusce sit amet rutrum risus. Sed feugiat lacus euismod ante pretium, nec sagittis sem bibendum. Nullam in neque pretium, pretium ligula vel, pellentesque ligula. Nunc non malesuada metus, a viverra tellus. Sed varius est ac diam sollicitudin, id euismod sem finibus. Aliquam eu venenatis arcu, eget viverra augue.
+        In euismod fringilla lacinia. 
+        
+        <ClassSectionTitle title={"Título da Seção"}/>
+
+
+        
+        Morbi eget nisl enim. Nullam auctor tincidunt vulputate. Fusce sit amet rutrum risus. Sed feugiat lacus euismod ante pretium, nec sagittis sem bibendum. Nullam in neque pretium, pretium ligula vel, pellentesque ligula. Nunc non malesuada metus, a viverra tellus. Sed varius est ac diam sollicitudin, id euismod sem finibus. Aliquam eu venenatis arcu, eget viverra augue.
         
         Sed condimentum turpis vitae convallis auctor. In sed rhoncus nibh, sodales porta turpis. In hac habitasse platea dictumst. Quisque ut pulvinar nisl, in facilisis ligula. In hendrerit tortor non sapien rutrum, a tincidunt ante consectetur. Donec elementum augue massa. In tempus interdum nisi eget auctor. Nullam eleifend nunc vitae semper aliquet. Maecenas molestie hendrerit orci, a iaculis ipsum porttitor sed. Phasellus ex arcu, mattis sit amet accumsan sed, sodales a arcu. Suspendisse pharetra faucibus nisi quis fringilla. Duis tempor elementum tempus. Proin imperdiet ac libero nec commodo.
         
+
+
+        <ClassEquation equation={" 2 + 2 = 5"}/>
+
         Etiam sed dui neque. Nullam vitae dignissim justo. Fusce vitae tincidunt mi. Cras luctus mattis magna a convallis. Ut in ligula erat. Sed id hendrerit purus. Pellentesque sapien metus, sodales vitae tincidunt quis, eleifend eu felis. Aenean rhoncus eu ipsum eget bibendum. Cras eu sapien nec lacus vulputate accumsan.
         
         Morbi ante urna, laoreet id nisi sed, consectetur vulputate urna. Morbi nec viverra felis. Donec consequat lectus non justo pharetra ullamcorper. Mauris nec maximus ante. Pellentesque bibendum augue commodo dui molestie, nec consequat ipsum tincidunt. Praesent at purus eu metus ullamcorper scelerisque a quis diam. Nunc vehicula ut arcu et finibus. Cras auctor felis non euismod convallis. Pellentesque a nulla sed arcu mollis molestie nec vel nisl. Etiam interdum leo sit amet magna mollis tempor. Aliquam eu fermentum nibh. Nulla non semper metus, id sagittis orci. Integer est tortor, porttitor eget mollis quis, sollicitudin sit amet mi. Nulla ac pharetra massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         
+        <ClassBox content={"Frase de efeito utilizada para ilustrar um conceito"} float="right"/>
+
         Praesent feugiat enim at eros gravida, vel aliquet nisi egestas. Fusce non risus tellus. Mauris egestas tortor a porta porttitor. Cras imperdiet egestas ligula vitae bibendum. Mauris nec velit augue. Duis feugiat nulla nec tempus imperdiet. Donec dignissim turpis in arcu placerat imperdiet. Maecenas congue quis metus at euismod. Etiam faucibus, massa ac viverra pretium, risus velit iaculis elit, sit amet dignissim orci magna sed metus. Suspendisse efficitur ligula orci, sit amet sagittis ipsum fermentum porta.
         
         Vestibulum viverra odio diam, et tempus turpis vehicula id. Nunc ornare mauris ac risus consectetur, quis ultricies magna sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ac consequat dui. Morbi risus dolor, tincidunt ac aliquam vitae, convallis sed est. Vestibulum facilisis nunc quis arcu imperdiet posuere. Praesent non eros vehicula, blandit justo ut, maximus eros. Aenean auctor mollis imperdiet. In semper congue mollis. Donec pulvinar feugiat elit, quis sodales mauris hendrerit eget.
         
         Donec rutrum, nulla quis molestie bibendum, velit massa maximus leo, vitae ornare erat turpis sed erat. Pellentesque volutpat pellentesque dignissim. Etiam id lacus sit amet magna lobortis rhoncus sed in ex. Nam mattis nulla id velit venenatis laoreet. Nam pulvinar lacinia tellus id dictum. Praesent eget magna eu lectus pharetra rutrum. Mauris consectetur ipsum vel sapien venenatis consequat. Integer quis pulvinar metus. Sed nec vulputate ex. Praesent ultrices consectetur libero, eget feugiat tortor scelerisque nec.
         
+        <ClassBox content={"Frase de efeito utilizada para ilustrar um conceito"} float="left"/>
+
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut luctus mi. Vivamus vehicula posuere luctus. Cras vehicula ante quam, in bibendum tortor blandit in. Quisque vitae metus rhoncus, malesuada ligula vitae, faucibus mauris. Praesent vel ultricies urna. Nunc est leo, consectetur eget mauris vitae, suscipit vulputate erat.
         
         Aenean vitae sagittis nulla. Sed euismod augue non volutpat rhoncus. Aliquam erat volutpat. Sed gravida justo sit amet leo porttitor lobortis. Quisque lorem leo, fermentum vel volutpat at, luctus sagittis nibh. Donec est mi, suscipit at massa quis, tincidunt dictum nibh. Nam euismod ultrices pretium. Phasellus quis laoreet velit. Proin leo sapien, pharetra vel elementum eget, vestibulum eget est. Etiam eleifend lectus ac dui aliquet, quis ultrices massa egestas. Nam sem metus, aliquam ut luctus at, condimentum quis enim. Donec non urna a quam euismod lobortis. Curabitur semper fringilla neque pretium vulputate. Fusce sodales nec sem quis eleifend.
@@ -99,7 +114,7 @@ function Content(){
         
         Proin bibendum eros fringilla diam aliquam rhoncus. Pellentesque fringilla eu nisi vel pellentesque. Donec posuere, ligula ut eleifend blandit, ligula dui mattis ex, at venenatis nunc velit in risus. Maecenas scelerisque massa sit amet purus hendrerit egestas. Nam nec vehicula est, a commodo velit. Maecenas eu suscipit tortor, ut pulvinar lectus. Nunc pretium sollicitudin tristique. Etiam scelerisque diam mauris, nec sodales nisi varius id. Phasellus id sapien et felis auctor blandit ut sit amet justo. Maecenas arcu sapien, viverra vel sollicitudin ac, sollicitudin nec magna. Etiam volutpat augue at lorem tincidunt, sit amet malesuada ligula ultrices. Suspendisse potenti. Integer tellus augue, molestie sed nulla eget, aliquam ornare nulla.
         
-        Cras elementum iaculis orci, cursus posuere lacus. Nullam pellentesque risus tellus, id vehicula felis molestie vitae. Nullam nec tempor dolor, a porttitor dui. Fusce feugiat mi urna, at venenatis tortor posuere quis. Etiam vitae est efficitur, cursus felis a, lobortis quam. Donec eget urna quis magna luctus iaculis interdum eget leo. Nunc bibendum imperdiet posuere. Sed fringilla dapibus odio quis ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit elementum justo, eu posuere enim varius nec. Quisque ac elit tellus.</div>)
+        Cras elementum iaculis orci, cursus posuere lacus. Nullam pellentesque risus tellus, id vehicula felis molestie vitae. Nullam nec tempor dolor, a porttitor dui. Fusce feugiat mi urna, at venenatis tortor posuere quis. Etiam vitae est efficitur, cursus felis a, lobortis quam. Donec eget urna quis magna luctus iaculis interdum eget leo. Nunc bibendum imperdiet posuere. Sed fringilla dapibus odio quis ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit elementum justo, eu posuere enim varius nec. Quisque ac elit tellus.</ClassContainer>)
 }
 
 export default Content;

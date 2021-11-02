@@ -9,7 +9,6 @@ const styles = makeStyles((theme) => ({
     minHeight: "calc(100vh - 230px)",
     background: CONTENT_BG,
     margin: "auto",
-    fontSize: "16px",
   },
   blockQuote: {
     borderLeft: `7px solid ${PRIMARY}`,
@@ -51,9 +50,9 @@ function Course() {
       principais tópicos cobrados na prova ENEM, enquanto aprendem e
       praticam programação.
       <p />
-      Muitos podem questionar: "Para que aprender a resolver as questões do ENEM
+      Muitos podem questionar: &ldquo;Para que aprender a resolver as questões do ENEM
       utilizando programação, se não vou poder usar um computador durante a
-      prova?". A resposta para isso é simples, se você consegue criar uma
+      prova?&rdquo;. A resposta para isso é simples, se você consegue criar uma
       solução computacional reproduzível para uma questão do ENEM, você
       facilmente seria capaz de manualmente resolver uma instância desse mesmo
       problema. De qualquer forma, vale ressaltar que este curso não é uma bala

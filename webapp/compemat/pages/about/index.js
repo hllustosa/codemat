@@ -8,8 +8,7 @@ const styles = makeStyles((theme) => ({
     padding: "25px",
     minHeight: "calc(100vh - 230px)",
     background: CONTENT_BG,
-    margin: "auto",
-    fontSize: "16px",
+    margin: "auto"
   }
 }));
 

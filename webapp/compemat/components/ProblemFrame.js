@@ -4,22 +4,28 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemIcon,
   makeStyles,
 } from "@material-ui/core";
+import { ChevronRightRounded, ChevronLeftRounded } from "@material-ui/icons/";
+import dynamic from "next/dynamic";
+
+const MathComponent = dynamic(
+  import("mathjax-react").then((mod) => mod.MathComponent),
+  {
+    ssr: false,
+  }
+);
 
 const styles = makeStyles((theme) => ({
   root: {
     padding: "15px",
     width: "100%",
-    height: "calc(100vh - 310px)",
+    height: "calc(100vh - 340px)",
     minHeight: "330px",
     minWidth: "290px",
     backgroundColor: "#FFFFFF",
     border: "none",
-    fontSize: "21px",
-    letterSpacing: "-0.003em",
-    lineHeight: "32px",
-    fontFamily: "charter, Georgia, Cambria,",
     overflowY: "auto",
     display: "flex",
     flexDirection: "column",
@@ -34,9 +40,11 @@ function ProblemaFrame(props) {
   const fontEnhancedProp = { style: { fontSize: "18px", fontWeight: "600" } };
   const testCases = data.cases.slice(0, 2);
 
+  const Page = dynamic(() => import(`../public/problems/all/${data.id}.js`));
+
   return (
     <div className={classes.root}>
-      <div dangerouslySetInnerHTML={{ __html: data.problem }}></div>
+      <Page />
       <div>
         <h3>Exemplos</h3>
         <List dense>
@@ -47,8 +55,11 @@ function ProblemaFrame(props) {
             for (const entry of Object.keys(testCase.input)) {
               listItems.push(
                 <ListItem>
+                  <ListItemIcon>
+                    <ChevronRightRounded />
+                  </ListItemIcon>
                   <ListItemText
-                    primaryTypographyProps={fontSizeProp}
+                    primaryTypographyProps={fontEnhancedProp}
                     secondaryTypographyProps={fontSizeProp}
                     primary={entry}
                     secondary={JSON.stringify(testCase.input[entry])}
@@ -59,6 +70,9 @@ function ProblemaFrame(props) {
 
             listItems.push(
               <ListItem>
+                <ListItemIcon>
+                  <ChevronLeftRounded />
+                </ListItemIcon>
                 <ListItemText
                   primaryTypographyProps={fontEnhancedProp}
                   secondaryTypographyProps={fontSizeProp}

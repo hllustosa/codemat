@@ -1,5 +1,4 @@
 import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
-import { ptBR } from '@material-ui/data-grid';
 
 let theme = createTheme({
   palette: {
@@ -55,7 +54,7 @@ let theme = createTheme({
       },
     },
   },
-}, ptBR);
+});
 
 theme = responsiveFontSizes(theme);
 

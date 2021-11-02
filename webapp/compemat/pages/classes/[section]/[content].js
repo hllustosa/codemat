@@ -10,9 +10,13 @@ import {
 import { TextButton } from "../../../components/Styled";
 import { CONTENT_BG, SECONDARY, PRIMARY } from "../../../public/colors";
 import Classes from "../classes-menu.json";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
+
+
+const META = `O curso compemat tem como objetivo promover o ensino da programação e da matemática. Os principais tópicos abordados são: Programação, Aritmética, Funções, Progressões, Probabilidade e Análise Combinatória.  
+`;
 
 const styles = makeStyles((theme) => ({
   root: {
@@ -28,7 +32,7 @@ const styles = makeStyles((theme) => ({
     backgroundColor: SECONDARY,
   },
   content: {
-    padding: "15px",
+    padding: "20px",
   },
   contentFrame: {
     width: "100%",
@@ -38,10 +42,12 @@ const styles = makeStyles((theme) => ({
   },
   sectionMenuItem: {
     color: PRIMARY,
+    fontSize: "calc(14px + (17 - 14) * ((100vw - 300px) / (1600 - 300)))",
   },
   menuItem: {
     color: PRIMARY,
     padding: "3px",
+    fontSize: "calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)))",
   },
 }));
 
@@ -72,9 +78,8 @@ function Menu() {
         >
           {item}
         </MenuItem>,
-        <Collapse in={open[item]} timeout="auto" unmountOnExit>
+        <Collapse in={open[item]} key={`menu-item-list-${index}`} timeout="auto" unmountOnExit>
           <MenuList
-            key={`menu-item-list-${index}`}
             style={{ paddingLeft: "25px" }}
           >
             {Classes[item].map((subitem, subindex) => (
@@ -95,19 +100,11 @@ function Menu() {
 }
 
 function Content(props) {
+  const { items } = props;
   const { section, content } = props.data;
   const classes = styles();
-  const ref = useRef();
-  const [height, setHeight] = useState("0px");
   const [next, setNext] = useState();
   const [prev, setPrevious] = useState();
-
-  const items = [];
-  Object.keys(Classes).forEach((key) => {
-    Classes[key].forEach((item) => {
-      items.push(item);
-    });
-  });
 
   useEffect(() => {
     if (section && content) {
@@ -152,11 +149,17 @@ function Content(props) {
   );
 
   return (
-    <Grid container className={classes.content} direction="columnn">
+    <Grid container className={classes.content} direction="column">
       <Grid item xs={12}>
         <Page />
       </Grid>
-      <Grid container item direction="row" justifyContent="space-between" style={{marginTop: "15px"}}>
+      <Grid
+        container
+        item
+        direction="row"
+        justifyContent="space-between"
+        style={{ marginTop: "15px" }}
+      >
         <Grid item>
           {prev && (
             <TextButton onClick={goTo(prev)}>{"< " + getText(prev)}</TextButton>
@@ -173,7 +176,29 @@ function Content(props) {
 }
 
 function Class(props) {
+  const { setTitle, setMeta, setHeaderTitle, setHeaderSubTitle, data } = props;
+  const { section, content } = data;
   const classes = styles();
+
+  const items = [];
+  Object.keys(Classes).forEach((key) => {
+    Classes[key].forEach((item) => {
+      items.push({ ...item, section: key });
+    });
+  });
+
+  const itemLink = `/classes/${section}/${content}`;
+  const currentItem = items.filter((item) => item.link === itemLink)[0];
+
+  setTitle(`C & M - ${currentItem.section}: ${currentItem.title}`);
+  setMeta(META);
+
+  setHeaderTitle(
+    currentItem.section.includes("-")
+      ? currentItem.section.split("-")[1]
+      : currentItem.section
+  );
+  setHeaderSubTitle(currentItem.title);
 
   return (
     <main className={classes.root}>
@@ -185,22 +210,17 @@ function Class(props) {
         wrap="wrap-reverse"
       >
         <Grid item xs={12} sm={12} md={4} lg={3} xl={2}>
-          <Menu {...props} />
+          <Menu {...props} items={items} />
         </Grid>
         <Grid item xs={12} sm={12} md={8} lg={9} xl={10}>
-          <Content {...props} />
+          <Content {...props} items={items} />
         </Grid>
       </Grid>
     </main>
   );
 }
 
-export default withBaseContentPage(
-  Class,
-  "Aulas",
-  "Conteúdo do Curso",
-  "180px"
-);
+export default withBaseContentPage(Class, "", "", "180px");
 
 export async function getStaticPaths() {
   const sections = Object.keys(Classes);
@@ -215,7 +235,7 @@ export async function getStaticPaths() {
 
   return {
     fallback: false,
-    paths: paths,
+    paths: ["/classes/section-0/1"],
   };
 }
 

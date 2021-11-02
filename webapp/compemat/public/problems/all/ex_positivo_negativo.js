@@ -1,0 +1,14 @@
+export default function Exercise() {
+  return (
+    <div>
+      Neste problema, você deve criar um programa que tenha como entrada um
+      único número <b>n</b>. O programa deve verificar se o número é positivo ou
+      negativo e produzir a cadeia de caracteres "positivo" ou "negativo"
+      respectivamente em cada caso. A entrada 0 (zero) não precisa ser tratada.
+      <h3>Entradas</h3>
+      Um número <b>n</b> que deve ser verificado. <p />
+      <h3>Saída</h3>
+      Uma cadeia de caracteres contendo a mensagem adequada. <p />
+    </div>
+  );
+}

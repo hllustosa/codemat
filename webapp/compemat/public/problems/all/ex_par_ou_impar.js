@@ -1,0 +1,39 @@
+export default function Exercise() {
+  return (
+    <div>
+      O par ou ímpar é uma brincadeira muito comum entre crianças. Inicialmente,
+      os jogadores estabelecem quem ganha caso o resultado seja par, e quem
+      ganha caso o resultado seja ímpar. Após isso, os jogadores apresentam as
+      mãos ao mesmo tempo, com os dedos esticados. A quantidade de dedos
+      esticados representa o número escolhido por cada jogador. A paridade da
+      soma dos números escolhidos por cada jogador deve ser avaliada, caso a
+      soma seja par, o jogador que pediu o número par no começo da partida
+      vence, e vice-versa. <p />
+      Ana e Maria estão jogando diversas partidas de par ou ímpar. Como Ana é a
+      mais jovem, é sempre ela quem decide primeiro se será par ou ímpar,
+      ficando o contrário do que Ana escolheu atribuído à Maria. Após isso, elas
+      apresentam as mãos e verificam quem venceu a partida.
+      <p />
+      Neste problema, você deve criar um programa que ajude Ana e Maria a
+      calcular quem venceu a partida de par ou ímpar. O programa a ser
+      desenvolvido por você terá três entradas. A entrada <b>ana</b> é uma
+      cadeia de caracteres contendo os valores "par" ou "ímpar", dependendo do
+      que Ana escolheu naquela partida. As outras duas entradas{" "}
+      <b>ana_numero</b> e <b>maria_numero</b> irão conter os dois números
+      escolhidos por Ana e Maria respectivamente.
+      <p />
+      O programa deve estabelecer quem venceu e gerar como saída a mensagem
+      "Maria Ganhou" ou "Ana Ganhou" dependendo do resultado. <p />
+      <b>Dica:</b> Utilize o operador % para verificar o resto da divisão
+      inteira e determinar se um número é par ou ímpar.
+      <h3>Entradas</h3>
+      Uma cadeia de caracteres <b>ana</b> contendo o valor "par" ou "ímpar"
+      dependendo da escolha de Ana, os números <b>ana_numero</b> e{" "}
+      <b>maria_numero</b> que são os números escolhidos por Ana e Maria na
+      partida. <p />
+      <h3>Saída</h3>
+      Uma cadeia de caracteres contendo a mensagem "Maria Ganhou" ou "Ana
+      Ganhou" dependendo do resultado. <p />
+    </div>
+  );
+}

@@ -31,6 +31,7 @@ import store from "../../redux/store";
 import { decode } from "js-base64";
 import dynamic from "next/dynamic";
 import { translateCategory } from "../../seedwork/Translations";
+
 const TextEditor = dynamic(import("../../components/CodeEditor"), {
   ssr: false,
 });
@@ -47,8 +48,8 @@ const styles = makeStyles((theme) => ({
     "-o-transition": "width 1s",
     "-ms-transition": "width 1s",
     transition: "width 1s",
-    height: "calc(100vh - 52px)",
-    maxHeight: "calc(100vh - 52px)",
+    height: "calc(100vh - 60px)",
+    maxHeight: "calc(100vh - 60px)",
     minHeight: "550px",
   },
   codePane: {
@@ -101,7 +102,7 @@ const styles = makeStyles((theme) => ({
 function ProblemPane(props) {
   const classes = styles();
   const { problemSize, handleClick, data } = props;
-
+  
   return (
     <Grid item className={classes.problemPane} style={{ width: problemSize }}>
       <Grid container justifyContent="space-between" wrap="nowrap">
@@ -114,10 +115,10 @@ function ProblemPane(props) {
           </Grid>
         </Grid>
         <Grid item>
-        <Tooltip title="Minimizar Problema" placement="bottom-end">
-          <BaseIconButton onClick={handleClick}>
-            <ChevronLeftRounded />
-          </BaseIconButton>
+          <Tooltip title="Minimizar Problema" placement="bottom-end">
+            <BaseIconButton onClick={handleClick}>
+              <ChevronLeftRounded />
+            </BaseIconButton>
           </Tooltip>
         </Grid>
       </Grid>
@@ -376,10 +377,10 @@ function CodePane(props) {
           <Title size={14}>Execução</Title>
         </Grid>
         <Grid>
-        <Tooltip title="Limpar Registros" placement="bottom-end">
-          <BaseIconButton onClick={() => setEntries([])}>
-            <ClearAllRounded />
-          </BaseIconButton>
+          <Tooltip title="Limpar Registros" placement="bottom-end">
+            <BaseIconButton onClick={() => setEntries([])}>
+              <ClearAllRounded />
+            </BaseIconButton>
           </Tooltip>
         </Grid>
       </Grid>

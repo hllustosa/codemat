@@ -109,7 +109,7 @@ function Body() {
 function Home() {
   return (
     <div>
-      <Header message={"Comp & Mat: Um curso de programação e matemática"} submessage={"Repleto de questões do ENEM"} height={"300px"}/>
+      <Header headerTitle={"Comp & Mat: Um curso de programação e matemática"} headerSubTitle={"Repleto de questões do ENEM"} height={"300px"}/>
       <Body />
     </div>
   );
