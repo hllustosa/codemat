@@ -25,8 +25,8 @@ function Course() {
     <main className={classes.root}>
       <p style={{ fontSize: "20px" }}> Bem vindos ao Comp & Mat </p>
       <img
-        style={{ margin: "auto",  display: "block" }}
-        src=""
+        style={{ margin: "auto",  display: "block", maxWidth: "270px"  }}
+        src="/img/logo-header.svg"
         width="320px"
         height="130px"
       ></img>{" "}

@@ -235,7 +235,8 @@ export async function getStaticPaths() {
 
   return {
     fallback: false,
-    paths: ["/classes/section-0/1"],
+    //paths: ["/classes/section-0/1"],
+    paths: paths,
   };
 }
 
