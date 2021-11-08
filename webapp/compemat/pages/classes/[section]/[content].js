@@ -111,10 +111,10 @@ function Content(props) {
       const sectionNumber = parseInt(section.split("-")[1]);
       const contentNumber = parseInt(content);
 
-      const nextItem = `/classes/section-${sectionNumber}/${contentNumber + 1}`;
-      const nextSection = `/classes/section-${sectionNumber + 1}/1`;
-      const prevItem = `/classes/section-${sectionNumber}/${contentNumber - 1}`;
-      const prevSection = `/classes/section-${sectionNumber - 1}/1`;
+      const nextItem = `/classes/unity-${sectionNumber}/${contentNumber + 1}`;
+      const nextSection = `/classes/unity-${sectionNumber + 1}/1`;
+      const prevItem = `/classes/unity-${sectionNumber}/${contentNumber - 1}`;
+      const prevSection = `/classes/unity-${sectionNumber - 1}/1`;
 
       if (items.some((item) => item.link === nextItem)) {
         setNext(nextItem);
