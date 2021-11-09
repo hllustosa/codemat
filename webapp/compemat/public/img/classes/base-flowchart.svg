@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1505" height="768">
+    <style>
+        <![CDATA[.B{stroke:#313b61}.C{fill:#313b61}.D{fill:#e4e7f1}]]>
+    </style>
+    <defs>
+        <style>@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i"); </style>
+        <path d="M0 0l4 5h-8z" stroke="none" id="A"/>
+    </defs>
+    <path d="M499.5 144.5l20-70h130l-20 70z" class="B D"/>
+    <text fill="#000">
+        <tspan x="574.5" y="114.12">E/S</tspan>
+    </text>
+    <rect height="50" width="150" x="84.5" y="84.5" rx="5" class="B D"/>
+    <text font-size="10" class="C">
+        <tspan x="159.5" y="112.8">Ação</tspan>
+    </text>
+    <path d="M369.5 69.5l-75 40 75 40 75-40z" class="B D"/>
+    <text font-size="10" class="C">
+        <tspan x="369.5" y="112.8">Condição</tspan>
+    </text>
+    <rect height="30" rx="15" width="150" x="299.5" y="24.5" class="B D"/>
+    <text font-size="10" class="C">
+        <tspan x="374.5" y="42.8">Começo/Fim</tspan>
+    </text>
+    <g transform="translate(44.5 54.5)">
+        <path d="M5 0h-.5" fill="none" stroke="#000"/>
+        <use transform="matrix(0 -1 1 0 0 0)" xlink:href="#A"/>
+    </g>
+    <g transform="translate(234.5 109.5)" class="C">
+        <path d="M0 0h55.5" class="B"/>
+        <use x="60" transform="matrix(0 1 -1 0 60 -60)" xlink:href="#A"/>
+    </g>
+    <g transform="translate(444.5 109.5)">
+        <path fill="none" d="M0 0h60.5" class="B"/>
+        <use x="65" transform="matrix(0 1 -1 0 65 -65)" xlink:href="#A" class="C"/>
+    </g>
+</svg>

@@ -11,32 +11,36 @@
       "link": "/classes/unity-1/1"
     },
     {
-      "title": "Algoritmos, Código e Software",
+      "title": "Abstrações e Sistemas Numéricos",
       "link": "/classes/unity-1/2"
     },
     {
-      "title": "Variáveis e Literais",
+      "title": "Algoritmos, Código e Software",
       "link": "/classes/unity-1/3"
     },
     {
-      "title": "Entrada e Saída",
+      "title": "Variáveis e Literais",
       "link": "/classes/unity-1/4"
     },
     {
-      "title": "Atribuições e Expressões",
+      "title": "Entrada e Saída",
       "link": "/classes/unity-1/5"
     },
     {
-      "title": "Resolução de Problemas",
+      "title": "Atribuições e Expressões",
       "link": "/classes/unity-1/6"
+    },
+    {
+      "title": "Resolução de Problemas",
+      "link": "/classes/unity-1/7"
     },
     {
       "title": "Lidando com Erros",
-      "link": "/classes/unity-1/6"
+      "link": "/classes/unity-1/8"
     },
     {
       "title": "Exercícios",
-      "link": "/classes/unity-1/7"
+      "link": "/classes/unity-1/9"
     }
   ],
   "Unidade 2 - Estruturas de Controle": [

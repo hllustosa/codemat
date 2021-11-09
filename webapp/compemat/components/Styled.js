@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Typography,
   Button,
@@ -6,7 +7,7 @@ import {
   CircularProgress,
   TextField,
   Snackbar,
-  Grid
+  Grid,
 } from "@material-ui/core";
 import { CONTRAST_COLOR } from "../public/colors";
 import { makeStyles } from "@material-ui/core";
@@ -34,28 +35,36 @@ export function Title(props) {
   );
 }
 
-export function BaseIconButton(props) {
+export const BaseIconButton = React.forwardRef((props, ref) => {
   return (
-    <IconButton color="primary" variant="outlined" size="small" {...props}>
+    <IconButton
+      ref={ref}
+      color="primary"
+      variant="outlined"
+      size="small"
+      {...props}
+    >
       {props.children}
     </IconButton>
   );
-}
+});
 
-export function Progress(props) {
+export const Progress = React.forwardRef((props, ref) => {
   return (
     <CircularProgress
+      ref={ref}
       color="primary"
       variant="indeterminate"
       size={16}
       {...props}
     />
   );
-}
+});
 
-export function BaseChip(props) {
+export const BaseChip = React.forwardRef((props, ref) => {
   return (
     <Chip
+      ref={ref}
       size="small"
       color="primary"
       {...props}
@@ -64,7 +73,7 @@ export function BaseChip(props) {
       {props.children}
     </Chip>
   );
-}
+});
 
 export function NoWrap(props) {
   return (
@@ -94,9 +103,10 @@ export function NoWrapHtmlContainer(props) {
   return <div {...props} style={{ minWidth: "200px", whiteSpace: "normal" }} />;
 }
 
-export function OutlinedButton(props) {
+export const OutlinedButton = React.forwardRef((props, ref) => {
   return (
     <Button
+      ref={ref}
       color="primary"
       variant="outlined"
       size="small"
@@ -106,11 +116,12 @@ export function OutlinedButton(props) {
       {props.children}
     </Button>
   );
-}
+});
 
-export function ContainedButton(props) {
+export const ContainedButton = React.forwardRef((props, ref) => {
   return (
     <Button
+      ref={ref}
       color="primary"
       variant="contained"
       size="small"
@@ -121,19 +132,27 @@ export function ContainedButton(props) {
       {props.children}
     </Button>
   );
-}
+});
 
-export function TextButton(props) {
+export const TextButton = React.forwardRef((props, ref) => {
   return (
-    <Button color="primary" size="small" disableElevation fullWidth {...props}>
+    <Button
+      ref={ref}
+      color="primary"
+      size="small"
+      disableElevation
+      fullWidth
+      {...props}
+    >
       {props.children}
     </Button>
   );
-}
+});
 
-export function Input(props) {
+export const Input = React.forwardRef((props, ref) => {
   return (
     <TextField
+      ref={ref}
       fullWidth
       label="Outlined"
       variant="outlined"
@@ -141,7 +160,7 @@ export function Input(props) {
       {...props}
     />
   );
-}
+});
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;

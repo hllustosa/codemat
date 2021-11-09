@@ -4,6 +4,7 @@ import {
   ClassImage,
   ClassBox,
   ClassLink,
+  ClassToolTip,
 } from "../../components/ClassContent";
 
 function Content() {
@@ -12,22 +13,57 @@ function Content() {
       <ClassImage
         src="/img/logo-header.svg"
         pos="center"
-        style={{ marginTop: "35px", marginBottom: "35px", maxWidth: "270px"  }}
+        style={{ marginTop: "35px", marginBottom: "35px", maxWidth: "270px" }}
       />
       Em seu início, a computação e a programação foram utilizadas
       exclusivamente para automatizar a solução de problemas matemáticos. Desde
       à máquina analítica de{" "}
-      <ClassLink href="https://pt.wikipedia.org/wiki/Charles_Babbage">
-        Charles Babbage
-      </ClassLink>
+      <ClassToolTip
+        content={{
+          title: "Charles Babbage",
+          text: `
+          Charles Babbage (Londres, 26 de dezembro de 1791 — Londres, 18 de outubro de 1871) foi um cientista, matemático, filósofo, engenheiro mecânico e inventor inglês nascido em Teignmouth, Devon, que originou o conceito de um computador programável junto à condessa de Lovelace, Augusta Ada King
+          `,
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Charles_Babbage_-_1860.jpg/300px-Charles_Babbage_-_1860.jpg",
+          link: "https://pt.wikipedia.org/wiki/Charles_Babbage",
+        }}
+      >
+        {" "}
+        Charles Babbage{" "}
+      </ClassToolTip>
       , passando pelas contribuições de{" "}
-      <ClassLink href="https://pt.wikipedia.org/wiki/Alan_Turing">
-        Alan Turing
-      </ClassLink>{" "}
+      <ClassToolTip
+        content={{
+          title: "Alan Turing",
+          text: `
+          Alan Mathison Turing (23 de junho de 1912 – 7 de junho de 1954) foi um matemático,[1] cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico britânico. Turing foi altamente influente no desenvolvimento da ciência da computação teórica, proporcionando uma formalização dos conceitos de algoritmo e computação com a máquina de Turing
+          `,
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/300px-Alan_Turing_Aged_16.jpg",
+          link: "https://pt.wikipedia.org/wiki/Alan_Turing",
+        }}
+      >
+        {" "}
+        Alan Turing{" "}
+      </ClassToolTip>
       e chegando ao{" "}
-      <ClassLink href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</ClassLink>
-      , primeiro computador eletrônico do mundo, a matemática permeia a
-      computação, sendo a segunda uma filha prodigiosa da primeira.
+      <ClassToolTip
+        content={{
+          title: "ENIAC",
+          text: `
+          Electronic Numerical Integrator and Computer (ENIAC - em português: computador integrador numérico eletrônico) foi o primeiro computador digital eletrônico de grande escala. Muitos comentam que o primeiro foi o Mark I, mas este era apenas eletromecânico. O ENIAC entrou em funcionamento em fevereiro de 1946[1][2] pelas mãos dos cientistas norte-americanos John Eckert e John Mauchly, da Electronic Control Company.
+          `,
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Two_women_operating_ENIAC.gif/330px-Two_women_operating_ENIAC.gif",
+          link: "https://pt.wikipedia.org/wiki/ENIAC",
+        }}
+      >
+        {" "}
+        ENIAC{" "}
+      </ClassToolTip>
+      , um dos primeiros computadores eletrônico do mundo, a matemática permeia
+      a computação, sendo a segunda uma filha prodigiosa da primeira.
       <p />
       Na prática, tudo que um computador faz é resolver problemas matemáticos.
       Se você consegue resolver um grande número de problemas matemáticos de
@@ -47,9 +83,19 @@ function Content() {
       />
       Dada a relação íntima entre computação e matemática, parece natural unir o
       estudo de ambas as coisas em um exercício de{" "}
-      <ClassLink href="https://pt.wikipedia.org/wiki/Interdisciplinaridade#Transdisciplinaridade">
-        transdisciplinaridade
-      </ClassLink>
+      <ClassToolTip
+        content={{
+          title: "Transdisciplinaridade",
+          text: `
+          A transdisciplinaridade é uma abordagem científica que visa à unidade do conhecimento. Desta forma, procura estimular uma nova compreensão da realidade articulando elementos que passam entre, além e através das disciplinas, numa busca de compreensão da complexidade do mundo real. Além disso, do ponto de vista humano, a transdisciplinaridade é uma atitude empática de abertura ao outro e seu conhecimento
+          `,
+          image:"",
+          link: "https://pt.wikipedia.org/wiki/Interdisciplinaridade#Transdisciplinaridade",
+        }}
+      >
+        {" "}
+        transdisciplinaridade{" "}
+      </ClassToolTip>
       . Por isso, neste curso, os tópicos básicos de programação são apenas um
       aperitivo.  O verdadeiro esforço estará em conectar os pontos para unir o
       código a sua aplicação na solução de problemas matemáticos.
@@ -75,15 +121,25 @@ function Content() {
       certeza terá dificuldades enquanto estiver programando. Isso é normal, é
       esperado e faz parte do processo! Abrace a dificuldade como uma amiga, e
       entenda que só é possível ser uma versão melhor de si mesmo com alguma
-      dose desconforto.
+      dose de desconforto.
       <p />
       Mas tome cuidado. Atualmente, vemos pessoas defendendo a ideia de que se
       você não souber programar nos próximos anos, você será equivalente a um
       analfabeto ou analfabeta. Acho esse discurso bastante forçado, e uma
       maneira de gerar{" "}
-      <ClassLink href="https://pt.wikipedia.org/wiki/S%C3%ADndrome_de_FOMO">
+      <ClassToolTip
+        content={{
+          title: "FOMO",
+          text: `
+          Síndrome de FOMO (do inglês fear of missing out, «o medo de perder algo» ou «o medo de ficar de fora») é a patologia psicológica que se produz pelo medo a ficar fora do mundo tecnológico ou a não se desenvolver ao mesmo ritmo que a tecnologia.
+          `,
+          image:"",
+          link: "https://pt.wikipedia.org/wiki/S%C3%ADndrome_de_FOMO",
+        }}
+      >
+        {" "}
         FOMO
-      </ClassLink>
+      </ClassToolTip>
       , criar ansiedade e fazer as pessoas investirem em cursos e materiais
       caros.
       <p />
@@ -109,19 +165,19 @@ function Content() {
       capacidade de resolver problemas`}
         float="left"
       />
-      O curso está organizado em 11 unidades. As 4 primeiras são uma introdução à
-      programação com base na linguagem JavaScript. Nessas unidades são
+      O curso está organizado em 11 unidades. As 4 primeiras são uma introdução
+      à programação com base na linguagem JavaScript. Nessas unidades são
       apresentados os conceitos fundamentais da programação de computadores.
       Cada unidade apresenta um conjunto de exercícios que exigem a aplicação
       progressiva dos conceitos ensinados em cada etapa.
       <p />
-      As unidades posteriores tratam de tópicos da matemática do ensino médio com
-      ênfase nos temas mais cobrados no ENEM. São eles: aritmética, grandezas
-      proporcionais, progressões, probabilidade, funções, trigonometria,
-      matemática financeiras e análise combinatória. Cada tópico tem aplicações
-      profundas no mundo de hoje. Estão presentes na engenharia, física,
-      química, biologia, economia, negócios e até mesmo nas ciências humanas e
-      sociais.
+      As unidades posteriores tratam de tópicos da matemática do ensino médio
+      com ênfase nos temas mais cobrados no ENEM. São eles: aritmética,
+      grandezas proporcionais, progressões, probabilidade, funções,
+      trigonometria, matemática financeiras e análise combinatória. Cada tópico
+      tem aplicações profundas no mundo de hoje. Estão presentes na engenharia,
+      física, química, biologia, economia, negócios e até mesmo nas ciências
+      humanas e sociais.
       <p />
       Os exercícios dessas unidades são em grande parte baseados em questões do
       ENEM. Como talvez você já saiba, as questões do ENEM contêm histórias bem

@@ -28,14 +28,14 @@ const styles = makeStyles((theme) => ({
   },
   message: {
     color: CONTRAST_COLOR,
-    fontSize: "38px",
+    fontSize:  "calc(19px + (28 - 14) * ((100vw - 300px) / (1600 - 300)))",
     fontWeight: "600",
     textAlign: "center",
     lineHeight: "normal",
   },
   submessage: {
     color: SECONDARY,
-    fontSize: "22px",
+    fontSize:  "calc(15px + (22 - 14) * ((100vw - 300px) / (1600 - 300)))",
     fontWeight: "600",
     textAlign: "center",
   },

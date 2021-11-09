@@ -115,7 +115,7 @@ function ProblemPane(props) {
           </Grid>
         </Grid>
         <Grid item>
-          <Tooltip title="Minimizar Problema" placement="bottom-end">
+          <Tooltip disableFocusListener title="Minimizar Problema" placement="bottom-end">
             <BaseIconButton onClick={handleClick}>
               <ChevronLeftRounded />
             </BaseIconButton>

@@ -1,6 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
-import { CONTRAST_COLOR, PRIMARY, SECONDARY } from "../public/colors";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+import Tooltip from "@material-ui/core/Tooltip";
+import Typography from "@material-ui/core/Typography";
+import { CONTRAST_COLOR, PRIMARY, CONSTRAST_LIGHT } from "../public/colors";
 import dynamic from "next/dynamic";
 
 const MathComponent = dynamic(
@@ -9,6 +11,16 @@ const MathComponent = dynamic(
     ssr: false,
   }
 );
+
+const HtmlTooltip = withStyles((theme) => ({
+  tooltip: {
+    backgroundColor: "#f5f5f9",
+    color: "rgba(0, 0, 0, 0.87)",
+    maxWidth: 220,
+    fontSize: "12px",
+    border: "1px solid #dadde9",
+  },
+}))(Tooltip);
 
 const styles = makeStyles((theme) => ({
   root: {
@@ -30,13 +42,29 @@ const styles = makeStyles((theme) => ({
     fontWeight: "450",
     color: PRIMARY,
     padding: "15px",
-    width: "320px",
+    width: "250px",
     backgroundColor: CONTRAST_COLOR,
     borderRadius: "5px",
   },
   equation: {
     color: PRIMARY,
     textAlign: "center",
+    maxWidth: "95%",
+    overflowX: "auto",
+    margin: "15px"
+  },
+  image: {
+    marginTop: "25px",
+    marginBottom: "25px",
+  },
+  link: {
+    backgroundColor: CONSTRAST_LIGHT,
+  },
+  tooltipText: {
+    backgroundColor: CONSTRAST_LIGHT,
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 }));
 
@@ -46,9 +74,39 @@ export function ClassSectionTitle(props) {
     <div className={classes.sectionTitle}>
       <div width="100%">{props.title}</div>
       <div width="100%">
-        <hr style={{ height: `1px`, color: PRIMARY, backgroundColor: PRIMARY, marginTop: "2px" }} />
+        <hr
+          style={{
+            height: `1px`,
+            color: PRIMARY,
+            backgroundColor: PRIMARY,
+            marginTop: "2px",
+          }}
+        />
       </div>
     </div>
+  );
+}
+
+export function ClassToolTip(props) {
+  const classes = styles();
+  const { title, text, image, link } = props.content;
+  return (
+    <HtmlTooltip
+      title={
+        <React.Fragment>
+            <div>
+              <Typography color="inherit">{title}</Typography>
+              <img
+                src={image}
+                style={{ float: "right", marginLeft: "5px", width: "100px" }}
+              ></img>
+              {text}
+            </div>
+        </React.Fragment>
+      }
+    >
+      <a target="_blank" rel="noopener" href={link} className={classes.tooltipText}>{props.children}</a>
+    </HtmlTooltip>
   );
 }
 
@@ -86,7 +144,8 @@ export function ClassEquation(props) {
       {process.browser && (
         <MathComponent
           tex={String.raw`${props.equation}`}
-          display={props.block}
+          display={props.block ? true : false}
+          
         />
       )}
     </div>
@@ -94,12 +153,13 @@ export function ClassEquation(props) {
 }
 
 export function ClassImage(props) {
+  const classes = styles();
   const style =
     props.pos == "center"
       ? { textAlign: "center" }
       : { float: props.pos, margin: "10px" };
   return (
-    <div style={style}>
+    <div className={classes.image} style={style}>
       <img {...props} />
       <div style={{ textAlign: "center", fontSize: "12px" }}>
         {props.legend}
@@ -109,8 +169,9 @@ export function ClassImage(props) {
 }
 
 export function ClassLink(props) {
+  const classes = styles();
   return (
-    <a target="_blank" style={{ backgroundColor: "#e4e7f1ff"}} {...props}>
+    <a  target="_blank" rel="noopener" className={classes.link} {...props}>
       {props.children}
     </a>
   );
@@ -130,53 +191,4 @@ export function Eq(props) {
 export function ClassContainer(props) {
   const classes = styles();
   return <article className={classes.root}>{props.children}</article>;
-}
-
-export function ClassFlowchart(props) {
-  const classes = styles();
-
-  const opt = {
-    x: 0,
-    y: 0,
-    "line-width": 3,
-    "line-length": 50,
-    "text-margin": 10,
-    "font-size": 14,
-    "font-color": "black",
-    "line-color": "black",
-    "element-color": "black",
-    fill: "white",
-    "yes-text": "yes",
-    "no-text": "no",
-    "arrow-end": "block",
-    scale: 1,
-    symbols: {
-      start: {
-        "font-color": "red",
-        "element-color": "green",
-        "font-weight": "bold",
-      },
-      end: {
-        "font-color": "red",
-        "element-color": "green",
-        "font-weight": "bold",
-      },
-    },
-    flowstate: {
-      department1: { fill: "pink" },
-      department2: { fill: "yellow" },
-      external: { fill: "green" },
-    },
-  };
-
-  return (
-    <Flowchart
-      chartCode={`st->op1->cond
-      cond(yes)->io->e
-      cond(no)->para
-      para(path1, bottom)->sub1(right)->op1
-      para(path2, top)->op1`}
-      //options={opt}
-    />
-  );
 }
