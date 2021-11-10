@@ -63,6 +63,15 @@ export const ERROR_HTML = (line, error) => `
     Mensagem de Erro: ${error.message}
 `;
 
+export const ERROR_INPUT = (line, error) => `
+    Existe um erro no sua descrição de entrada. <br/><br/> 
+
+    Esse erro indica que a sua descrição de entrada contém algum erro. Verifique se 
+    a entrada informada é um JSON válido. Procure por chaves ou colchetes faltando, ou mesmo por vírgulas fora do lugar.
+    <br/><br/>
+    Mensagem de Erro: ${error.message}
+`;
+
 export class TimeOutError extends Error {
   constructor(message) {
     super(message);

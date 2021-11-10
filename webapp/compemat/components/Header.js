@@ -75,6 +75,11 @@ function RowMenu() {
           </Link>
         </Grid>
         <Grid item>
+          <Link href={routes.ide}>
+            <a className={classes.link}>IDE</a>
+          </Link>
+        </Grid>
+        <Grid item>
           <Link href={routes.about}>
             <a className={classes.link}>Sobre</a>
           </Link>
