@@ -15,6 +15,9 @@ const useStyles = makeStyles({
   link: {
     textDecoration: "none",
   },
+  image: {
+    objectFit: "contain",
+  },
 });
 
 export default function ImgMediaCard(props) {
@@ -32,6 +35,7 @@ export default function ImgMediaCard(props) {
               height={height}
               image={image}
               title={title}
+              classes={{ img: classes.image }}
             />
             <CardContent>
               <Typography

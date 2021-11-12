@@ -2,21 +2,24 @@ import React from "react";
 import {
   ClassContainer,
   ClassBox,
-  ClassSectionTitle
+  ClassSectionTitle,
+  ClassImage,
 } from "../../components/ClassContent";
 
 function Content() {
   return (
     <ClassContainer>
-      {" "}
+      <ClassImage
+        src="/img/programming.svg"
+        pos="center"
+        style={{ marginTop: "35px", marginBottom: "35px", width: "400px", maxWidth: "80%" }}
+      />{" "}
       Se fôssemos responder de forma rápida a pergunta: “O que é programar?”,
       poderíamos dizer que se trata do ato de criar <i>softwares</i>.  Portanto,
       antes de entrar em detalhes de como se faz para programar, é necessário
       entender o que a palavra <i>software</i> significa.
       <p />
-
-      <ClassSectionTitle title= "Soft vs. Hard"/>
-
+      <ClassSectionTitle title="Soft vs. Hard" />
       <i>Software</i> é mais uma palavra estrangeira adotada na nossa língua. Na
       verdade, essa palavra foi inventada para servir de antônimo (oposto) de
       outra palavra mais comum e mais antiga na língua inglesa, o{" "}
@@ -33,20 +36,18 @@ function Content() {
       maioria baseado em circuitos eletrônicos, que fazem parte daquilo que nós
       convencionamos chamar de computador. Mas calma, você só vai entender o que
       é um computador quando eu terminar de explicar o que o termo{" "}
-      <i>software</i> significa. Então segure as pontas por mais alguns parágrafos.
-      <p />
-      O prefixo hard da palavra <i>hardware</i> em inglês pode ser
+      <i>software</i> significa. Então segure as pontas por mais alguns
+      parágrafos.
+      <p />O prefixo hard da palavra <i>hardware</i> em inglês pode ser
       traduzido como “duro” ou “sólido”. Trata-se de algo tangível, concreto,
       que podemos pegar em nossas mãos e ver com nossos olhos. Porém, existe uma
       parte do maquinário que não tem essas propriedades. Uma parte abstrata,
       que não podemos pegar em nossas mãos, mas que é real e extremamente
-      importante. A esta parte damos o nome de <i>software</i>. O prefixo
-      {" "}<i>soft</i> em inglês é justamente o oposto <i>hard</i>, e se 
-      refere a algo macio, suave ou leve.
+      importante. A esta parte damos o nome de <i>software</i>. O prefixo{" "}
+      <i>soft</i> em inglês é justamente o oposto <i>hard</i>, e se refere a
+      algo macio, suave ou leve.
       <p />
-    
-      <ClassSectionTitle title= "Máquinas"/>
-
+      <ClassSectionTitle title="Máquinas" />
       Afinal de contas, do que consiste esta parte abstrata, intangível do
       maquinário e dos eletrônicos que utilizamos diariamente? Vamos nos
       aprofundar no conceito de máquina para conseguir responder a essa
@@ -84,9 +85,7 @@ function Content() {
       mais complicado também fica o roteiro, script ou passo-a-passo que estas
       máquinas têm que “seguir” para executar sua função.
       <p />
-
-      <ClassSectionTitle title= "Computador: Máquinas Programáveis"/>
-
+      <ClassSectionTitle title="Computador: Máquinas Programáveis" />
       Porém, por mais sofisticada que seja uma máquina de lavar, ela ainda é
       construída para uma tarefa específica, conhecida e determinada antes mesmo
       de sua fabricação. Atualmente, existem máquinas incríveis, capazes de
@@ -106,9 +105,10 @@ function Content() {
       <p />
       Finalmente chegamos ao momento de ouro dessa bela linha de raciocínio.  O
       que faz com que a máquina seja tão flexível e poderosa não é seu{" "}
-      <i>hardware</i> apenas, mas sim o conjunto de instruções, passos ou tarefas que esse
-      {" "}<i>hardware</i> consegue executar. A esse conjunto de passos que o{" "}
-      <i>hardware</i> executa para cumprir com uma tarefa, damos o nome de <i>software</i>.
+      <i>hardware</i> apenas, mas sim o conjunto de instruções, passos ou
+      tarefas que esse <i>hardware</i> consegue executar. A esse conjunto de
+      passos que o <i>hardware</i> executa para cumprir com uma tarefa, damos o
+      nome de <i>software</i>.
       <p />O <i>software</i> é um conjunto de passos, instruções ou comandos que
       determinam o que o <i>hardware</i> deve fazer em um determinado instante.
       Esses comandos ou passos são uma especificação muito abstrata (soft), em
@@ -129,27 +129,24 @@ function Content() {
       tarefa para a qual ele não necessariamente foi construído, temos em nossas
       mãos aquilo que costumamos chamar de COMPUTADOR.
       <p />
-      Chamamos de computador uma máquina que é programável e que
-      pode executar uma sequência de instruções lógicas e aritméticas (iremos
-      entender o que elas são em breve).  Este é o caso do <i>hardware</i> de um
-      celular, mas também de um notebook, de um relógio inteligente, de uma TV
-      inteligente, de uma geladeira inteligente, de uma torradeira inteligente,
-      ou de qualquer outra coisa inteligente que você possa imaginar.
+      Chamamos de computador uma máquina que é programável e que pode executar
+      uma sequência de instruções lógicas e aritméticas (iremos entender o que
+      elas são em breve).  Este é o caso do <i>hardware</i> de um celular, mas
+      também de um notebook, de um relógio inteligente, de uma TV inteligente,
+      de uma geladeira inteligente, de uma torradeira inteligente, ou de
+      qualquer outra coisa inteligente que você possa imaginar.
       <p />
-
       Na verdade, mesmo equipamentos cujo comportamento não precisa ser tão
       flexível e programável ainda assim usam um tipo especial de{" "}
-      <i>software</i> bastante conectado ao <i>hardware</i> para o qual ele foi produzido.
-      Micro-ondas, máquinas de lavar, rádios automotivos e uma série de outras
-      máquinas domésticas e industriais vêm de fábrica com esses <i>software</i>
-      s embutidos dentro de seu <i>hardware</i>. Temos um nome para esse tipo de{" "}
-      <i>software</i>: firmware. Ele é menos flexível e manipulável que o{" "}
-      <i>software</i> tradicional executado em um notebook ou PC, por exemplo.
-      Ele é mais <i>firm</i> (firme) e menos <i>soft</i>.
+      <i>software</i> bastante conectado ao <i>hardware</i> para o qual ele foi
+      produzido. Micro-ondas, máquinas de lavar, rádios automotivos e uma série
+      de outras máquinas domésticas e industriais vêm de fábrica com esses{" "}
+      <i>software</i>s embutidos dentro de seu <i>hardware</i>. Temos um nome
+      para esse tipo de <i>software</i>: firmware. Ele é menos flexível e
+      manipulável que o <i>software</i> tradicional executado em um notebook ou
+      PC, por exemplo. Ele é mais <i>firm</i> (firme) e menos <i>soft</i>.
       <p />
-
-      <ClassSectionTitle title= "Softwares"/>
-
+      <ClassSectionTitle title="Softwares" />
       Existem vários tipos de <i>software</i>s. Há <i>software</i>s que fazem o
       trabalho duro de manter o <i>hardware</i> em ordem e acessível a outros{" "}
       <i>software</i>s. Esses são chamados de Sistemas Operacionais. São um tipo
@@ -164,8 +161,8 @@ function Content() {
       de mensagem instantânea, redes sociais, email, visualização, criação e
       edição de documentos, entre outros.
       <p />
-      Para cada tarefa do tipo, diversos aplicativos existem. Esses são <i>softwares</i> bem 
-      flexíveis e criados para funcionar em um grande
+      Para cada tarefa do tipo, diversos aplicativos existem. Esses são{" "}
+      <i>softwares</i> bem flexíveis e criados para funcionar em um grande
       número diferente de dispositivos. São <i>software</i>s que estão “mais
       distantes” do <i>hardware</i> e são construídos sobre muitas camadas de
       abstração (um termo que também vamos explorar mais no futuro).
@@ -185,12 +182,12 @@ function Content() {
       <p />
       De qualquer forma, espero que o objetivo da unidade tenha sido atingido.
       Espero que você entenda que programar é o ato de criar <i>softwares</i> e
-      que <i>softwares</i> são apenas conjuntos de instruções que uma determinada
-      classe de máquinas (os computadores) conseguem executar para realizar uma
-      tarefa.
+      que <i>softwares</i> são apenas conjuntos de instruções que uma
+      determinada classe de máquinas (os computadores) conseguem executar para
+      realizar uma tarefa.
       <p />
-      Nas próximas seções, vamos começar a entender como podemos criar
-      {" "}<i>software</i>s, e quais ferramentas utilizamos para tal.
+      Nas próximas seções, vamos começar a entender como podemos criar{" "}
+      <i>software</i>s, e quais ferramentas utilizamos para tal.
     </ClassContainer>
   );
 }

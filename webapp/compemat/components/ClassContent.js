@@ -161,7 +161,7 @@ export function ClassImage(props) {
   return (
     <div className={classes.image} style={style}>
       <img {...props} />
-      <div style={{ textAlign: "center", fontSize: "12px" }}>
+      <div style={{ textAlign: "center", fontSize: "12px", width: "100%" }}>
         {props.legend}
       </div>
     </div>

@@ -55,8 +55,8 @@ function Body(props) {
         <Grid item xs={12} md={6}>
           <Card
             title={"Programação"}
-            image={"/img/progamming.svg"}
-            height={"180"}
+            image={"/img/programming.svg"}
+            height={"280"}
             href={"exercises/list?cat=programming"}
           />
         </Grid>
@@ -64,7 +64,7 @@ function Body(props) {
           <Card
             title={"Aritmética e Porcentagem"}
             image={"/img/arithmetic.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=arithmetic"}
           />
         </Grid>
@@ -72,7 +72,7 @@ function Body(props) {
           <Card
             title={"Análise Combinatória"}
             image={"img/combinatorics.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=combinatorics"}
           />
         </Grid>
@@ -80,7 +80,7 @@ function Body(props) {
           <Card
             title={"Matemática Financeira"}
             image={"/img/finances.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=financial"}
           />
         </Grid>
@@ -88,7 +88,7 @@ function Body(props) {
           <Card
             title={"Funções"}
             image={"/img/functions.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=functions"}
           />
         </Grid>
@@ -96,7 +96,7 @@ function Body(props) {
           <Card
             title={"Probabilidade"}
             image={"/img/probability.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=probability"}
           />
         </Grid>
@@ -104,7 +104,7 @@ function Body(props) {
           <Card
             title={"Progressões"}
             image={"img/progression.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=progression"}
           />
         </Grid>
@@ -112,7 +112,7 @@ function Body(props) {
           <Card
             title={"Trigonometria"}
             image={"/img/trigonometry.svg"}
-            height={"180"}
+            height={"280"}
             href={"exercises/list?cat=trigonometry"}
           />
         </Grid>

@@ -12,7 +12,7 @@ import {
 function Content() {
   return (
     <ClassContainer>
-      <ClassImage
+            <ClassImage
         src="/img/programming.svg"
         pos="center"
         style={{
@@ -22,16 +22,19 @@ function Content() {
           maxWidth: "80%",
         }}
       />
+      
       Vamos conversar sobre um conceito bastante importante no mundo da
       programação, a abstração. Na filosofia, entende-se que há uma distinção
       entre objetos ou coisas ditas concretas e abstratas. Não é muito simples
-      determinar o que faz algo ser concreto ou abstrato, mas de forma
-      simplista, costumamos dizer que coisas que possuem uma existência física,
-      que podem ser tocadas, vistas e medidas são concretas. Alternativamente,
-      coisas que existem apenas como conceitos ou ideias são consideradas
-      abstratas. Por essa definição, um cachorro é algo concreto, que podemos
-      ver, sentir, tocar e medir. Agora, números são coisas abstratas. Existem
-      em um mundo de ideias, mas não têm uma existência física palpável. <p />
+      determinar o que faz algo ser concreto ou abstrato, mas de forma simplista,
+      costumamos dizer que coisas que possuem uma existência física, que podem
+      ser tocadas, vistas e medidas são concretas. Alternativamente, coisas que existem
+      apenas como conceitos ou ideias são consideradas abstratas. 
+      Por essa definição, um cachorro é algo concreto, que 
+      podemos ver, sentir, tocar e medir. Agora, números são
+      coisas abstratas. Existem em um mundo de ideias, mas não têm uma existência
+      física palpável. <p />
+
       <ClassSectionTitle title="O Poder da Abstração" />
       Quando pegamos algo que é concreto e removemos ou desconsideramos uma
       série de características com intuito de estudar, representar ou
@@ -39,9 +42,9 @@ function Content() {
       abstração. Imagine, por exemplo, um cachorro chamado Tobi. Tobi tem um
       determinado tipo de pelo, está numa determinada faixa de tamanho e peso,
       tem um formato específico de focinho, orelha, etc. Nós podemos abstrair ou
-      ignorar todas as características específicas de Tobi que o fazem único,
-      como seu nome, local de nascimento, gostos, personalidade, comportamento,
-      etc.
+      ignorar todas as características específicas de Tobi que o fazem
+      único, como seu nome, local de nascimento, gostos,
+      personalidade, comportamento, etc.
       <p />
       Para criar a abstração, vamos pensar apenas num subconjunto das
       características que tornam Tobi parecido com diversos outros cachorros,
@@ -56,18 +59,18 @@ function Content() {
       grupo desses cachorros e colocamos um rótulo nela. Não existe um labrador
       como um objeto único e concreto no mundo físico, o que existe é uma ideia
       do que é um labrador e instâncias de cachorros que se encaixam em
-      diferentes graus nessa ideia. Por este racicionío, concluímos que até a
-      mesmo a definição do que é um cachorro é um tipo de abstração. De fato, os
-      conceitos e ideias com os quais lidamos diariamente são abstrações que nos
-      ajudam a entender o mundo a nossa volta.
+      diferentes graus nessa ideia. Por este racicionío, concluímos que até
+      a mesmo a definição do que é um cachorro é um tipo de abstração. De fato,
+      os conceitos e ideias com os quais lidamos diariamente são abstrações que
+      nos ajudam a entender o mundo a nossa volta.
       <p />
       <ClassSectionTitle title="Computador Abstrato" />
-      Saindo um pouco da nossa filosofia de botequim, vamos discutir a aplicação
-      do conceito de abstração no mundo da computação. Todos os computadores que
+      Saindo um pouco da nossa filosofia de botequim, vamos discutir a aplicação do
+      conceito de abstração no mundo da computação. Todos os computadores que
       existem no mundo diferem entre si. Cada um tem um conjunto de equipamentos
-      eletrônicos diferentes produzidos por fabricantes diversos. Porém, todos
-      esses computadores têm coisas em comum. Eles têm o mesmo potencial de
-      executar um conjunto específico de tarefas.
+      eletrônicos diferentes produzidos por fabricantes diversos. Porém, todos esses
+      computadores têm coisas em comum. Eles têm o mesmo potencial de executar
+      um conjunto específico de tarefas.
       <p />
       <ClassBox
         content={` Os computadores conseguem resolver
@@ -75,28 +78,29 @@ function Content() {
         float="left"
       />
       Quais tarefas específicas são essas? Os computadores conseguem resolver
-      pequenos problemas lógicos e aritméticos. Exemplos de problemas
-      aritméticos são: somar, subtrair, multiplicar ou dividir pares de números.
-      Já um problema lógico tem a ver com estabelecer se certas afirmações sobre
-      valores numéricos são verdadeiras ou falsas. Por exemplo, determinar se
-      dois números são iguais ou se um é maior que o outro. A solução de um
-      problema lógico permite que o computador tome decisões sobre como
-      prosseguir a execução de seu <i>software</i>.
+      pequenos problemas lógicos e aritméticos. Exemplos de problemas aritméticos são:
+      somar, subtrair, multiplicar ou dividir pares de números. Já um problema
+      lógico tem a ver com estabelecer se certas afirmações sobre valores
+      numéricos são verdadeiras ou falsas. Por exemplo, determinar se dois
+      números são iguais ou se um é maior que o outro. A solução de um problema
+      lógico permite que o computador tome decisões sobre como prosseguir
+      a execução de seu <i>software</i>.
       <p />
       Todas as coisas incríveis que os computadores fazem podem ser quebradas em
-      pequenas instruções simples deste tipo. Os computadores atualmente
-      utilizam-se da eletrônica para conseguir resolver bilhões (ou mesmo
-      trilhões, quatrilhões e até quintilhões) de operações matemáticas e
-      lógicas deste tipo em apenas um segundo.
-      <p />A computação e a programação evoluíram com as abstrações criadas
-      sobres os computadores. Os primeiros computadores eletrônicos eram muito
-      difíceis de serem programados. Era necessário entender profundamente o{" "}
-      <i>hardware</i> e até mesmo modificá-lo para programar. Atualmente, nós
-      conseguimos criar <i>softwares</i> que executam em diverso computadores,
-      sem ser necessário entender a fundo como eles funcionam. Entretanto,
-      existe um mínimo que precisamos saber sobre computadores para conseguir
-      programá-los. Precisamos ter em nossa mente o conjunto certo de abstrações
-      para compreender como um computador consegue executar seu <i>software</i>.
+      pequenas instruções simples deste tipo. Os computadores
+      atualmente utilizam-se da eletrônica para conseguir resolver bilhões (ou
+      mesmo trilhões, quatrilhões e até quintilhões) de operações matemáticas e
+      lógicas deste tipo em apenas um segundo. 
+      <p />
+      A computação e a programação evoluíram com as abstrações criadas sobres os computadores. 
+      Os primeiros computadores eletrônicos eram muito difíceis de serem programados. Era
+      necessário entender profundamente o <i>hardware</i> e até mesmo
+      modificá-lo para programar. Atualmente, nós conseguimos criar <i>softwares</i> que executam em diverso
+      computadores, sem ser necessário entender a fundo como eles funcionam.
+      Entretanto, existe um mínimo que precisamos saber sobre computadores para
+      conseguir programá-los. Precisamos ter em nossa mente o conjunto certo de
+      abstrações para compreender como um computador consegue executar seu{" "}
+      <i>software</i>.
       <p />
       Felizmente para nós, um matemático genial chamado{" "}
       <ClassToolTip
@@ -139,21 +143,20 @@ function Content() {
       computador e através deles conseguimos enviar dados para o computador e
       obter dados como resposta. Você provavelmente está interagindo com alguns
       desses dispositivos neste exato momento. A tela do computador ou celular é
-      um dispositivo de saída onde dados são apresentados constantemente. O{" "}
-      <i>touchscreen</i> do celular tem uma função dupla, de realizar a saída
-      dos dados e a entrada através de toque simultaneamente. Os tradicionais:
-      mouse, teclado, touchpad, trackpad, câmera, microfone e scanner são
-      dispositivos de entrada. Os alto-falantes, impressoras e monitores são
-      dispositivos de saída.
+      um dispositivo de saída onde dados são apresentados constantemente. O
+      {" "}<i>touchscreen</i> do celular tem uma função dupla, de realizar a saída dos dados
+      e a entrada através de toque simultaneamente. Os tradicionais: mouse, teclado, touchpad,
+      trackpad, câmera, microfone e scanner são dispositivos de entrada. Os
+      alto-falantes, impressoras e monitores são dispositivos de saída.
       <p />
       Debaixo do capô, temos dois componentes principais que formam o
-      computador. A UCP (ou CPU em inglês), a unidade central de processamento e
-      a memória. A CPU é aquilo que chamamos de processador ou o cérebro do
-      computador. Do ponto de vista do <i>hardware</i>, trata-se é um circuito
-      eletrônico ultra complexo, com bilhões de transistores, que são como
-      interruptores microscópicos capazes de ligar e desligar sinais elétricos.
-      A CPU pode ser dividida ainda em duas partes, a unidade lógica e
-      aritmética (ULA) e a unidade de controle.
+      computador. A UCP (ou CPU em inglês), a unidade central de processamento
+      e a memória. A CPU é aquilo que chamamos de processador ou o cérebro do computador. Do
+      ponto de vista do <i>hardware</i>, trata-se é um circuito eletrônico ultra
+      complexo, com bilhões de transistores, que são como interruptores
+      microscópicos capazes de ligar e desligar sinais elétricos. A CPU pode ser
+      dividida ainda em duas partes, a unidade lógica e aritmética (ULA) e a
+      unidade de controle.
       <p />
       Para entender o que cada uma dessas partes faz, precisamos explicar um
       fato importante sobre a arquitetura de von Neunman. Nesta arquitetura, o{" "}
@@ -257,8 +260,8 @@ function Content() {
       algarismos diferentes, nós conseguimos representar qualquer número.  
       <p />
       Se combinarmos os algarismos 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9 de forma
-      repetida podemos representar qualquer número que quisermos. Porém, será
-      que existe a obrigatoriedade de serem 10 algarismos diferentes para
+      repetida podemos representar qualquer número que quisermos. Porém,
+      será que existe a obrigatoriedade de serem 10 algarismos diferentes para
       representar os números? E se mais algarismos ou menos algarismos fossem
       utilizados? Na verdade, o chamado sistema numérico decimal é uma convenção
       que utilizamos para representar números. Este sistema provavelmente surgiu
@@ -296,15 +299,15 @@ function Content() {
       novo digito à esquerda representando valores de maior magnitude. Perceba
       que 10d em decimal e 10b em binário são números completamente diferentes.
       <p />
-      Ambos os sistemas são posicionais, isto significa que o valor de um
-      determinado algarismo depende de sua posição. Quanto mais à esquerda, mais
-      significativo é o algarismo, e maior o valor que ele representa. A
-      diferença entre os sistemas numéricos reside em sua base, isto é, o valor
-      que cada dígito representa em cada posição. No sistema decimal a base é
-      10, e portanto cada posição representa um valor que é multiplicado por uma
-      potência de 10. O mesmo é válido para números binários em relação à base
-      2. Como a base decimal é maior, em geral, menos dígitos são necessários
-      para representar um mesmo número em comparação com a base binária.
+      Ambos os sistemas são posicionais, isto significa que o valor de
+      um determinado algarismo depende de sua posição. Quanto mais à
+      esquerda, mais significativo é o algarismo, e maior o valor que ele
+      representa. A diferença entre os sistemas numéricos reside em sua base, 
+      isto é, o valor que cada dígito representa em cada posição. No sistema decimal a
+      base é 10, e portanto cada posição representa um valor que é multiplicado por
+      uma potência de 10. O mesmo é válido para números binários em relação à base 2. Como a base
+      decimal é maior, em geral, menos dígitos são necessários para representar um mesmo
+      número em comparação com a base binária.
       <p />
       Vamos utilizar como exemplo o número 238d em decimal que tem sua
       equivalência no valor 11101110b em binário.  
@@ -323,43 +326,41 @@ function Content() {
       através da qual podemos estabelecer o valor em decimal de qualquer número
       na base binária.
       <p />
-      Em suma, é necessário entender que para um computador apenas existem uns e
-      zeros. O <i>software</i> que executa em um computador é convertido em
-      código binário é representado como uns e zeros. Todos os arquivos, textos,
-      imagens, vídeos, documentos, gráficos são codificados como grandes
-      sequências numéricas. Um computador armazena tudo na forma de números, e
-      todos esses números estão no sistema numérico binário.
+      Em suma, é necessário entender que para um computador apenas existem uns e zeros. 
+      O <i>software</i> que executa em um computador é convertido em código 
+      binário é representado como uns e zeros. Todos os
+      arquivos, textos, imagens, vídeos, documentos, gráficos são codificados
+      como grandes sequências numéricas. Um computador armazena tudo na forma de
+      números, e todos esses números estão no sistema numérico binário.
       <p />
       A primeira vez em que fui apresentado a esta ideia, eu fiquei bastante
       tempo para conseguir digeri-la. Eu pensei nos documentos de texto que eu
-      utilizava para fazer meus trabalhos de escola. Me perguntava como eles
-      poderiam
+      utilizava para fazer meus trabalhos de escola. Me perguntava como eles poderiam
       <ClassBox
         content={`Um computador armazena tudo na forma de
         números, e todos esses números estão no sistema numérico binário`}
         float="right"
       />
-      ser apenas números, se os documentos apareciam para mim como um conjunto
-      de palavras. Apenas muito tempo depois que eu entendi que cada caractere
-      em um texto é representado como um número, e que existem tabelas de
-      codificação, como tabela ASCII que estabelecem um numérico para cada
-      caractere.
+      ser apenas números, se os documentos apareciam para mim como um conjunto de palavras.
+      Apenas muito tempo depois que eu entendi que cada caractere em um texto é representado como
+      um número, e que existem tabelas de codificação, como tabela ASCII que
+      estabelecem um numérico para cada caractere.
       <p />
       Eu também pensava nas cores que eu via no meu monitor e nos gráficos. Como
       era possível que todos aqueles pixels que formam as imagens na minha tela
-      fossem apenas números, e pior, apenas uns e zeros? Apenas depois de
-      bastante estudo que eu fui capaz de entender como funcionam os espaços de
-      cor, como RGB, e os formatos de arquivo como JPG e PNG. O mesmo vale para
-      vídeos e áudios. Arquivos de computador são apenas dados brutos
-      representados como sequências numéricas. São números binários que precisam
-      ser interpretados pelo <i>software</i> e transformados em sinais que só
-      fazem sentido quando são enviados e processados nos dispostivos de saída
-      do computador. O computador gera dados em forma numérico, e o{" "}
-      <i>hardware</i> de entrada e saída transforma esses sinais em imagens,
-      cores e sonos na tela do computador.
+      fossem apenas números, e pior, apenas uns e zeros? 
+      Apenas depois de bastante estudo que eu fui capaz
+      de entender como funcionam os espaços de cor, como RGB, e os formatos de
+      arquivo como JPG e PNG. O mesmo vale para vídeos e áudios. Arquivos de
+      computador são apenas dados brutos representados como sequências
+      numéricas. São números binários que precisam ser interpretados pelo{" "}
+      <i>software</i> e transformados em sinais que só fazem sentido 
+      quando são enviados e processados nos dispostivos de saída do computador.
+      O computador gera dados em forma numérico, e o <i>hardware</i> de entrada
+      e saída transforma esses sinais em imagens, cores e sonos na tela do computador.
       <p />
-      Sempre precisamos ter em mente a unidade utilizada para medir uma
-      quantidade de dados. Um único digito binário é chamado de bit (
+      Sempre precisamos ter em mente a unidade utilizada para medir uma quantidade
+      de dados. Um único digito binário é chamado de bit (
       <i>binary digit</i>). Trata-se de um átomo da informação digital. Se
       pegarmos um conjunto de 8 bits, temos um byte. A partir daí, valem os
       prefixos do{" "}
@@ -383,12 +384,13 @@ function Content() {
         {" "}
         Existe uma longa lista de prefixos que você pode consultar.{" "}
       </ClassLink>
+      
       <p />
-      Chegamos ao final de mais uma seção. Até aqui apresentamos um vasta teoria
-      e gama de conceitos que nos ajudam a entender mais sobre computação e
-      programação. Nós ainda nem sequer chegamos a falar sobre linguagens de
-      programação e código fonte, pois este é o tema da próxima seção. Por
-      favor, respire fundo e não desanime! Até a próxima seção.
+      Chegamos ao final de mais uma seção. Até aqui apresentamos um vasta teoria 
+      e gama de conceitos que nos ajudam a
+      entender mais sobre computação e programação. Nós ainda nem sequer chegamos a falar sobre
+      linguagens de programação e código fonte, pois este é o tema da próxima seção.
+      Por favor, respire fundo e não desanime! Até a próxima seção.
       <p />
     </ClassContainer>
   );
