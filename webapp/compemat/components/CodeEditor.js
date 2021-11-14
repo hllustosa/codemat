@@ -5,13 +5,15 @@ import "ace-builds/src-noconflict/ext-language_tools";
 import "ace-builds/src-noconflict/ext-beautify";
 
 export default function CodeEditor(props) {
-  const { code, setCode, readOnly } = props;
+  const { code, setCode, readOnly, width, height, border } = props;
 
   return (
     <AceEditor
       style={{
-        height: "50vh",
-        width: "100%",
+        height: height? height :"50vh",
+        width: width ? width: "100%",
+        border: border ? "solid 1px black" : "none",
+        margin : border ? "auto" : "none"
       }}
       placeholder=""
       mode="javascript"
@@ -23,6 +25,7 @@ export default function CodeEditor(props) {
       showGutter={true}
       highlightActiveLine={false}
       readOnly={readOnly}
+      disabled={true}
       value={code}
       setOptions={{
         enableBasicAutocompletion: false,
