@@ -58,6 +58,7 @@ function Body(props) {
             image={"/img/programming.svg"}
             height={"280"}
             href={"exercises/list?cat=programming"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -66,6 +67,7 @@ function Body(props) {
             image={"/img/arithmetic.svg"}
             height={"280"}
             href={"exercises/list?cat=arithmetic"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -74,6 +76,7 @@ function Body(props) {
             image={"img/combinatorics.svg"}
             height={"280"}
             href={"exercises/list?cat=combinatorics"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -82,6 +85,7 @@ function Body(props) {
             image={"/img/finances.svg"}
             height={"280"}
             href={"exercises/list?cat=financial"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -90,6 +94,7 @@ function Body(props) {
             image={"/img/functions.svg"}
             height={"280"}
             href={"exercises/list?cat=functions"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -98,6 +103,7 @@ function Body(props) {
             image={"/img/probability.svg"}
             height={"280"}
             href={"exercises/list?cat=probability"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -106,6 +112,7 @@ function Body(props) {
             image={"img/progression.svg"}
             height={"280"}
             href={"exercises/list?cat=progression"}
+            contain
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -114,6 +121,7 @@ function Body(props) {
             image={"/img/trigonometry.svg"}
             height={"280"}
             href={"exercises/list?cat=trigonometry"}
+            contain
           />
         </Grid>
       </Grid>

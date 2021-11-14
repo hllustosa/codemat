@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard(props) {
   const classes = useStyles();
-  const { title, content, image, height, href } = props;
+  const { title, content, image, height, href, contain } = props;
 
   return (
     <Fade in timeout={4000}>
@@ -35,7 +35,7 @@ export default function ImgMediaCard(props) {
               height={height}
               image={image}
               title={title}
-              classes={{ img: classes.image }}
+              classes={contain ? { img: classes.image } : {}}
             />
             <CardContent>
               <Typography

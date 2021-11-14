@@ -12,7 +12,7 @@ import {
 function Content() {
   return (
     <ClassContainer>
-            <ClassImage
+      <ClassImage
         src="/img/programming.svg"
         pos="center"
         style={{
@@ -22,376 +22,317 @@ function Content() {
           maxWidth: "80%",
         }}
       />
-      
-      Vamos conversar sobre um conceito bastante importante no mundo da
-      programação, a abstração. Na filosofia, entende-se que há uma distinção
-      entre objetos ou coisas ditas concretas e abstratas. Não é muito simples
-      determinar o que faz algo ser concreto ou abstrato, mas de forma simplista,
-      costumamos dizer que coisas que possuem uma existência física, que podem
-      ser tocadas, vistas e medidas são concretas. Alternativamente, coisas que existem
-      apenas como conceitos ou ideias são consideradas abstratas. 
-      Por essa definição, um cachorro é algo concreto, que 
-      podemos ver, sentir, tocar e medir. Agora, números são
-      coisas abstratas. Existem em um mundo de ideias, mas não têm uma existência
-      física palpável. <p />
-
-      <ClassSectionTitle title="O Poder da Abstração" />
-      Quando pegamos algo que é concreto e removemos ou desconsideramos uma
-      série de características com intuito de estudar, representar ou
-      categorizar este algo, estamos realizando um processo conhecido como
-      abstração. Imagine, por exemplo, um cachorro chamado Tobi. Tobi tem um
-      determinado tipo de pelo, está numa determinada faixa de tamanho e peso,
-      tem um formato específico de focinho, orelha, etc. Nós podemos abstrair ou
-      ignorar todas as características específicas de Tobi que o fazem
-      único, como seu nome, local de nascimento, gostos,
-      personalidade, comportamento, etc.
+      Agora que temos um bom entendimento do que é <i>software</i>, chegou o
+      momento de começarmos a entender como <i>softwares</i> são desenvolvidos.
+      Vamos explorar o conceito de algoritmo e como eles podem ser implementados
+      através de linguagens de programação, e enfim transformados em{" "}
+      <i>software</i> executável por um computador.
       <p />
-      Para criar a abstração, vamos pensar apenas num subconjunto das
-      características que tornam Tobi parecido com diversos outros cachorros,
-      tais como seu pelo, formato da cabeça, focinho, orelhas, entre outras
-      coisas. Agora vamos dar um nome para essa categoria de cachorros que tem
-      um conjunto específico de características similares as de Tobi. Vamos
-      supor que essa classe de cachorros similares vai ser chamada de labrador.
+      <ClassSectionTitle title="O Mundo Dominado Por Algoritmos" />
+      Você já deve ter ouvido o termo algoritmo em algum lugar nos últimos anos.
+      O algoritmo para diagnosticar uma doença através de imagens, o algoritmo
+      de reconhecimento facial para detectar rostos de criminosos, o algoritmo
+      que o Facebook, o YouTube ou o mesmo o Netflix utilizam para recomendar
+      conteúdo. De uma palavra restrita ao mundo da matemática e computação, o
+      termo algoritmo se tornou uma palavra popular na mídia, na cultura
+      popular, e sobretudo entre os “especialistas” da tecnologia (muitos que
+      talvez nunca tenham criado ou implementado um algoritmo).
       <p />
-      Este conceito de labrador que estabelecemos é uma abstração. No mundo
-      físico existem milhões e milhões de cachorros com várias propriedades. Nós
-      simplesmente pegamos um conjunto de características que são comuns a um
-      grupo desses cachorros e colocamos um rótulo nela. Não existe um labrador
-      como um objeto único e concreto no mundo físico, o que existe é uma ideia
-      do que é um labrador e instâncias de cachorros que se encaixam em
-      diferentes graus nessa ideia. Por este racicionío, concluímos que até
-      a mesmo a definição do que é um cachorro é um tipo de abstração. De fato,
-      os conceitos e ideias com os quais lidamos diariamente são abstrações que
-      nos ajudam a entender o mundo a nossa volta.
+      Existem algoritmos para prever o tempo, para saber se sua transação de
+      cartão de crédito vai ser aprovada ou não, para precificar o valor do
+      seguro a ser pago. Temos também o algoritmo que estabelece quanto aquela
+      corrida entre dois bairros vai custar através do motorista de aplicativo. 
+      O algoritmo que calcula o preço do quarto de hotel, ou melhor, o algoritmo
+      que opera por trás das lojas virtuais e faz ajustes em tempo real no preço
+      conforme a demanda. Não se esqueça dos algoritmos que compram e vendem
+      ações, e fazem verdadeiras fortunas trocarem de mão a cada minuto.
       <p />
-      <ClassSectionTitle title="Computador Abstrato" />
-      Saindo um pouco da nossa filosofia de botequim, vamos discutir a aplicação do
-      conceito de abstração no mundo da computação. Todos os computadores que
-      existem no mundo diferem entre si. Cada um tem um conjunto de equipamentos
-      eletrônicos diferentes produzidos por fabricantes diversos. Porém, todos esses
-      computadores têm coisas em comum. Eles têm o mesmo potencial de executar
-      um conjunto específico de tarefas.
+      Parece que de uma hora para outra, esses tais algoritmos começaram a
+      dominar o mundo e influenciar enormemente a nossa vida. Não vou comentar
+      sobre os potenciais impactos positivos ou negativos dessa influência, mas
+      vamos apenas tentar entender afinal de contas o que é um algoritmo e como
+      parece que eles surgiram do nada para dominar o mundo.
       <p />
+      Talvez você fique surpreso em saber que você lida com algoritmos desde que
+      você era uma criança. No primário, muito provavelmente, te ensinaram a
+      fazer coisas como: obter o MDC ou MMC de dois números, ou mesmo a fazer
+      divisões longas entre números reais. Você pode lembrar da sua educadora ou
+      educador mostrando uma série de passos que você precisava executar com
+      precisão para chegar no resultado correto.
+      <p />
+      Por exemplo, para calcular o MDC, primeiro você deveria realizar a
+      decomposição dos números em fatores primos, o que é um termo bonito para
+      criar uma lista de números primos que quando multiplicados fosse igual ao
+      número. Depois você deveria olhar a interseção dessas listas de fatores
+      primos, e ao calcular o produto de todos os números na lista, você
+      terminava com o MDC.
+      <p />
+      Nas aulas de matemática você deve ter cansado de executar esses conjuntos
+      de passos que te davam a solução desejava. Um algoritmo nada mais é do que
+      essas pequenas receitas de bolo que utilizamos para resolver problemas. A
+      definição mais precisa de algoritmo seria: uma sequência finita e bem
+      definida de passos utilizada para resolver um problema ou realizar uma
+      computação.
+      <p />
+      Você deve ter percebido que o conceito de algoritmo não parece tão
+      diferente do conceito de <i>software</i>. Inclusive você pode estar se
+      questionando qual a diferença entre as duas coisas? Bem, a diferença
+      reside no nível de abstração e talvez no escopo de aplicação. Enquanto o
+      algoritmo é uma sequência de passos para resolver um problema qualquer, o
+      <i>software</i> é aa implementação de um ou vários algoritmos. O algoritmo
+      pode ser representado de diversas formas, o <i>software</i> é uma forma de
+      representar o algoritmo que permite sua execução por um computador. Um{" "}
+      <i>software</i> é um conjunto de algoritmos traduzidos para a linguagem
+      que os computadores “entendem”.
       <ClassBox
-        content={` Os computadores conseguem resolver
-        pequenos problemas lógicos e aritméticos`}
+        content={`A definição mais precisa de algoritmo seria: uma sequência finita e bem 
+        definida de passos utilizada para resolver um problema ou realizar uma computação`}
         float="left"
       />
-      Quais tarefas específicas são essas? Os computadores conseguem resolver
-      pequenos problemas lógicos e aritméticos. Exemplos de problemas aritméticos são:
-      somar, subtrair, multiplicar ou dividir pares de números. Já um problema
-      lógico tem a ver com estabelecer se certas afirmações sobre valores
-      numéricos são verdadeiras ou falsas. Por exemplo, determinar se dois
-      números são iguais ou se um é maior que o outro. A solução de um problema
-      lógico permite que o computador tome decisões sobre como prosseguir
-      a execução de seu <i>software</i>.
       <p />
-      Todas as coisas incríveis que os computadores fazem podem ser quebradas em
-      pequenas instruções simples deste tipo. Os computadores
-      atualmente utilizam-se da eletrônica para conseguir resolver bilhões (ou
-      mesmo trilhões, quatrilhões e até quintilhões) de operações matemáticas e
-      lógicas deste tipo em apenas um segundo. 
+      Algoritmos não precisam de computadores para existir. Sabemos da
+      existência de algoritmos há milênios. Nós os utilizamos para resolver
+      problemas sem a necessidade de uma máquina. Os algoritmos que dominam o
+      mundo hoje, só conseguem fazê-lo, pois foram implementados como{" "}
+      <i>softwares</i>, sendo assim capazes de serem executados de forma
+      automatizada sobre grandes volumes de dados.
       <p />
-      A computação e a programação evoluíram com as abstrações criadas sobres os computadores. 
-      Os primeiros computadores eletrônicos eram muito difíceis de serem programados. Era
-      necessário entender profundamente o <i>hardware</i> e até mesmo
-      modificá-lo para programar. Atualmente, nós conseguimos criar <i>softwares</i> que executam em diverso
-      computadores, sem ser necessário entender a fundo como eles funcionam.
-      Entretanto, existe um mínimo que precisamos saber sobre computadores para
-      conseguir programá-los. Precisamos ter em nossa mente o conjunto certo de
-      abstrações para compreender como um computador consegue executar seu{" "}
-      <i>software</i>.
+      Poderíamos muito bem chama-los de <i>softwares</i>, aplicativos, sistemas
+      informatizados ou programas ao invés de algoritmos. Eu acredito que esses
+      termos referentes à informática e computação tenham ficado datados e
+      perderam apelo. Talvez há 30 ou 40 anos, uma empresa dizer que utilizava
+      <i>softwares</i> ou sistemas informatizados fosse algo atraente. Hoje em
+      dia, basicamente tudo está informatizado de uma forma ou outra, e o
+      marketing das empresas precisou de um novo termo mais atraente para fazer
+      com que todos os envolvidos pareçam mais inteligentes. A palavra algoritmo
+      serve a esse proposito. Em algum momento no futuro, o próprio termo
+      algoritmo vai ficar datado (assim como a discussão desse parágrafo), e o
+      pessoal do marketing vai utilizar uma nova palavra da moda para fazer com
+      que conceitos velhos pareçam ser algo novo.
+      <ClassSectionTitle title="Representação de Algoritmos" />
+      Um algoritmo pode ser presentado de diversas formas. Podemos pegar um
+      pedaço de papel e escrever uma série de frases em português ou outro
+      idioma, e se essas frases estabelecerem um conjunto finito de passos que
+      podem ser utilizados para resolver um problema, teremos então uma
+      descrição de um algoritmo.
       <p />
-      Felizmente para nós, um matemático genial chamado{" "}
-      <ClassToolTip
-        content={{
-          title: "John von Neumann",
-          text: `
-          John von Neumann, nascido Margittai Neumann János Lajos (Budapeste, 28 de dezembro de 1903 — Washington, D.C., 8 de fevereiro de 1957) foi um matemático húngaro de origem judaica, naturalizado estadunidense.
-          `,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/JohnvonNeumann-LosAlamos.jpg/300px-JohnvonNeumann-LosAlamos.jpg",
-          link: "https://pt.wikipedia.org/wiki/John_von_Neumann",
-        }}
-      >
-        {" "}
-        John von Neumann{" "}
-      </ClassToolTip>
-      estabeleceu uma abstração fundamental do que é um computador, ou de como
-      deveríamos pensar em um computador. Como uma parte significativa dos
-      computadores modernos está de acordo com esta abstração, podemos
-      utilizá-la como base do nosso entendimento.
+      O problema é que a linguagem utilizada por nós no dia a dia não é muito
+      adequada para representar os algoritmos de maneira formal. O jeito como
+      falamos é muito impreciso, cheio de figuras de linguagem, duplos sentidos,
+      sarcasmos, ironias e palavrões. Nossa comunicação tem forte influência de
+      nossas emoções e cultura. Nós não nos comunicamos de maneira clara, rápida
+      e eficiente. Adoramos “enfeitar o pavão”, adicionamos adornos, somos
+      prolixos (isto é, falamos demais). Ficamos dando voltas, somos
+      repetitivos. Enfim, já deu para perceber que quero usar esse parágrafo
+      para exemplificar as imprecisões presentes em nossa comunicação.
       <p />
+      Se as nossas linguagens naturais (os idiomas e formas de comunicação que
+      nós seres humanos desenvolvemos e utilizamos para nos comunicar no
+      dia-a-dia) são muito imprecisas para expressar os algoritmos, quais seriam
+      as alternativas? A primeira delas é a própria linguagem e notação
+      matemática. A matemática é uma linguagem imune às paixões humanas. A
+      linguagem matemática não aceita duplo sentido ou imprecisões. Tudo deve
+      ter uma definição formal e clara, não há espaços para interpretações
+      subjetivas ou opiniões fortes.  
+      <p />
+      Podemos escrever algoritmos com poucas palavras em linguagem natural e
+      utilizando o máximo possível de símbolos e notações matemáticas. Essa
+      abordagem é útil quando os matemáticos querem comunicar entre si suas
+      ideais ou provas matemáticas, ou querem formalizar a solução algorítmica
+      que encontraram para um problema. Esse formato não é adequado para a
+      criação de <i>software</i>, pois ele ainda é muito complexo para poder ser
+      “interpretado” por um computador.
+      <p />
+      Para especificar um algoritmo de maneira a ser possível que um computador
+      consiga executá-lo, nós precisamos de linguagens artificias, extremamente
+      formais e rígidas. Essas linguagens especiais, criadas apenas para o
+      proposito de representar algoritmos, são chamadas de linguagens
+      programação. As linguagens de programação são o meio através do qual uma
+      pessoa consegue implementar um algoritmo, isto é, a linguagem de
+      programação é uma ferramenta fundamental para a criação de{" "}
+      <i>softwares</i>.
+      <p />
+      Existem centenas de linguagens de programação atualmente. Muitas dessas
+      linguagens são de propósito geral e podem ser utilizadas para a criação de
+      qualquer tipo de <i>software</i>. Há linguagem mais específicas utilizadas
+      apenas para uma única classe de <i>softwares</i>. Algumas poucas dezenas
+      dessas linguagens são extremamente populares e amplamente utilizadas.
+      Podemos citar linguagens de programação populares como: C, C++, Java, C#,
+      Python, Ruby, PHP, Go, Kotlin e Swift.
+      <p />
+      Os desenvolvedores têm discussões intermináveis sobre as linguagens de
+      programação. Em geral, os programadores se especializam em um grupo
+      pequeno de linguagens. Ao se tornarem especialistas em uma tecnologia,
+      eles viram “evangelistas”, isto é, desejam “converter” outros
+      programadores a sua linguagem de predileção. Para tal, esses
+      “evangelistas” usarão todo tipo de ferramenta possível em seu arsenal.
+      Desde perseguição, passando pela mentira, até mesmo memes e piadas
+      jocosas. Tudo visando aumentar a popularidade de sua linguagem do coração
+      e diminuir a reputação das linguagens concorrentes.
+      <p />
+      Brincadeiras à parte, eu sou a favor da máxima: a melhor linguagem de
+      programação é aquela utilizada para criar um <i>software</i> de qualidade.
+      Para mim, se a linguagem foi bem utilizada e deu origem a um{" "}
+      <i>software</i>{" "}funcional, estável, fácil de manter, útil e gera valor, então esta
+      linguagem também tem qualidade. Os desenvolvedores têm linguagens de
+      preferência, mas todas as linguagens têm seu valor e merecem respeito. Não
+      vale a pena entrar em longas discussões para determinar qual a melhor
+      linguagem do universo, pois, em geral, cada uma tem suas vantagens e
+      desvantagens.
+      <p />
+      Para os fins do Comp&amp;Mat, aprenderemos uma linguagem bastante popular
+      chamada de JavaScript. O JavaScript é uma linguagem de programação usada
+      inicialmente em navegadores web para dar mais dinamismo e permitir a
+      criação de sites mais complexos. O JavaScript evoluiu, possuindo diversas
+      versões e variações que permitem sua utilização em aplicações diversas,
+      até mesmo e em aplicativos móveis.  A página que você está acessando agora
+      foi construída em sua maioria com JavaScript. Tanto o comportamento que
+      você vê em seu navegador, como uma parte do código mantida longe do
+      usuário, em um servidor, (um computador usado para armazenar e permitir
+      acesso às paginas web) foram totalmente desenvolvidos em JavaScript.
+      <p />O JavaScript (JS para os íntimos) foi escolhido por algumas razões. A
+      primeira é por possuir uma barreira de entrada pequena. Você não vai
+      precisar instalar nenhum outro <i>software</i> diferente em seu computador
+      ou celular para executar código em JavaScript. O próprio navegador
+      (Chrome, Edge, Firefox, Opera ou outros) consegue interpretar código em
+      JavaScript.
+      <p />
+      Além disso, é uma linguagem muito importante, com diversas aplicações e
+      cuja popularidade vem aumentando. Você terá, ao final do curso, algum
+      conhecimento em uma ferramenta bastante utilizada no mercado de trabalho.
+      Finalmente, mesmo que você futuramente tenha interesse em outras
+      linguagens, saiba que a maioria dos conceitos passados durantes as aulas
+      também estão presentes em boa parte das linguagens de programação mais
+      populares. Você vai ser capaz de aplicá-los quando estiver aprendendo
+      Python, Ruby, Java ou PHP.
+      <p />
+      <ClassSectionTitle title="Do Alto ao Baixo Nível" />
+      Como já discutimos, existem diversas formas de representar algoritmos. É
+      mais fácil para nós seres humanos representarmos algoritmos em nossa
+      linguagem natural, escrevendo sequenciais de passos que outro ser humano
+      conseguiria compreender e interpretar. Podemos escrever os algoritmos como
+      texto em português, ou inglês. Podemos, alternativamente, criar um
+      diagrama com formas geométricas, os chamados fluxogramas. Ambas as formas
+      são práticas e fáceis de compreender, se você for um ser humano.
+      <p />
+      Porém, na computação, queremos transformar algoritmos em <i>
+        softwares
+      </i>{" "}
+      para que sua execução seja automatizada em um computador. As formas de
+      representar algoritmos citadas no parágrafo anterior não são adequadas,
+      pois, elas estão em um nível de abstração muito alto. Isso significa que
+      não temos como, de forma confiável, criar <i>software</i> executável por
+      um computador com base nelas.
+      <p />
+      Vamos lembrar da arquitetura de von Neumann, e de como um computador
+      possui um processador capaz de executar instruções representadas em código
+      binário na memória do computador. O <i>software</i>, neste estado
+      executável, consiste em uma sequência de números (na base binária) que
+      representam instruções lógicas e aritméticas simples.
+      <p />O problema dessa representação, é que é extremamente difícil para um
+      ser humano criar <i>softwares</i> diretamente nesse formato. Caso esta
+      fosse a única maneira de se programar, cada programador teria que conhecer
+      os detalhes do computador para o qual está programando e seria impossível
+      criar um mesmo <i>software</i> que funcionasse em dispositivos diferentes.
+      Pprogramar desta forma seria um fardo enorme e muito pouco produtivo. Os
+      programadores precisariam decorar uma grande lista de códigos numéricos de
+      instruções de máquina.
       <ClassImage
+        src="/"
+        legend="Níveis de abstração para representação de algoritmos"
         pos="center"
-        src="/img/classes/von-neuman-arch.svg"
         style={{
           marginTop: "35px",
-          width: "80%",
-          maxWidth: "800px",
+          marginBottom: "35px",
+          width: "400px",
+          maxWidth: "80%",
         }}
-        legend="Diagrama da Arquitetura de von Neumann"
       />
-      Com essa abstração podemos ignorar detalhes do <i>hardware</i>, como
-      fabricante, modelo, funcionamento interno, e podemos focar nas partes
-      principais que compõe o computador. Essa abstração é chamada arquitetura
-      de von Neumann, e estabelece detalhes de como os principais componentes de
-      um computador devem funcionar. Vamos a eles:
       <p />
-      Um computador possui dispositivos de entrada e saída de dados. Esses
-      dispositivos funcionam como uma interface de comunicação com o resto do
-      computador e através deles conseguimos enviar dados para o computador e
-      obter dados como resposta. Você provavelmente está interagindo com alguns
-      desses dispositivos neste exato momento. A tela do computador ou celular é
-      um dispositivo de saída onde dados são apresentados constantemente. O
-      {" "}<i>touchscreen</i> do celular tem uma função dupla, de realizar a saída dos dados
-      e a entrada através de toque simultaneamente. Os tradicionais: mouse, teclado, touchpad,
-      trackpad, câmera, microfone e scanner são dispositivos de entrada. Os
-      alto-falantes, impressoras e monitores são dispositivos de saída.
+      Nós costumamos dizer que a linguagem da máquina, isto é, esse código
+      binário diretamente executável por um computador, é de baixo nível de
+      abstração. Isso faz com que seja muito difícil ou inconveniente para um
+      ser humano desenvolver <i>softwares</i> neste formato.
       <p />
-      Debaixo do capô, temos dois componentes principais que formam o
-      computador. A UCP (ou CPU em inglês), a unidade central de processamento
-      e a memória. A CPU é aquilo que chamamos de processador ou o cérebro do computador. Do
-      ponto de vista do <i>hardware</i>, trata-se é um circuito eletrônico ultra
-      complexo, com bilhões de transistores, que são como interruptores
-      microscópicos capazes de ligar e desligar sinais elétricos. A CPU pode ser
-      dividida ainda em duas partes, a unidade lógica e aritmética (ULA) e a
-      unidade de controle.
+      Temos então um impasse na hora de nos “comunicarmos” com um computador.
+      Nossa linguagem humana é de super alto nível de abstração e não temos como
+      transformá-la em <i>software</i>, pois ela é cheia de imprecisões e sem os
+      formalismos necessários. Por outro lado, o hardware é muito limitado e
+      precisa das instruções codificadas em formato que é muito difícil para
+      seres humanos entenderem.
       <p />
-      Para entender o que cada uma dessas partes faz, precisamos explicar um
-      fato importante sobre a arquitetura de von Neunman. Nesta arquitetura, o{" "}
-      <i>software</i> do computador precisa ser transformado em dados
-      (codificado) e colocados na memória do computador. A memória é um
-      componente fundamental, responsável por armazenar o <i>software</i> e
-      todos os dados que esse <i>software</i> irá manipular durante a sua
-      execução.
-      <p />A unidade de controle lê a memória do computador e carrega cada
-      instrução do <i>software</i> individualmente. Essas instruções são
-      interpretadas pela unidade de controle, que em seguida aciona a ULA,
-      informando a esta qual operação lógica ou aritmética deve ser executada. A
-      ULA é o componente que executa efetivamente as operações lógicas e
-      aritméticas, lendo e escrevendo valores na memória do computador.
-      <p />A ULA é um circuito eletrônico capaz de executar somas, subtrações,
-      comparações e transformações. Ela funciona como o motor que move a
-      computação e permite com que a execução do programa avance passo a passo.
-      Como veremos nas próximas seções, o <i>software</i> que produzimos precisa
-      ser, primeiramente, transformado em algo que CPU consiga executar, e em
-      seguida, deve ser carregado na memória do computador. Nas próximas seções
-      vamos entender quais ferramentas são utilizadas para permitir a criação do{" "}
-      <i>software</i> e como este pode ser carregado na CPU.
-      <p />A título de curiosidade vale a pena citar que a contribuição de von
-      Neumann se deu com base nas abstrações ainda mais fundamentais
-      estabelecidas por pessoas também brilhantes que vieram antes.
-      <ClassToolTip
-        content={{
-          title: "Ada Lovelace",
-          text: `
-          Augusta Ada Byron King, Condessa de Lovelace (nascida Byron, 10 de dezembro de 1815 — 27 de novembro de 1852), atualmente conhecida como Ada Lovelace, foi uma matemática e escritora inglesa. Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo para ser processado por uma máquina, a máquina analítica de Charles Babbage
-          `,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ada_lovelace.jpg/300px-Ada_lovelace.jpg",
-          link: "https://pt.wikipedia.org/wiki/Ada_Lovelace",
-        }}
-      >
-        {" "}
-        Ada Lovelace{" "}
-      </ClassToolTip>
-      , que viveu no século XIX, é considerada a primeira pessoa no mundo a
-      programar. Ela previu os conceitos básicos de programação de computadores
-      muito antes de um computador sequer ter sido construído. Ela era
-      correspondente de{" "}
-      <ClassToolTip
-        content={{
-          title: "Charles Babbage",
-          text: `
-          Charles Babbage (Londres, 26 de dezembro de 1791 — Londres, 18 de outubro de 1871) foi um cientista, matemático, filósofo, engenheiro mecânico e inventor inglês nascido em Teignmouth, Devon, que originou o conceito de um computador programável junto à condessa de Lovelace, Augusta Ada King
-          `,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Charles_Babbage_-_1860.jpg/300px-Charles_Babbage_-_1860.jpg",
-          link: "https://pt.wikipedia.org/wiki/Charles_Babbage",
-        }}
-      >
-        {" "}
-        Charles Babbage{" "}
-      </ClassToolTip>
-      , um inventor prodigioso cujo objetivo era construir a incrível máquina
-      analítica, um computador que funcionaria com peças mecânicas e que não
-      pôde ser finalizado devido às limitações tecnológicas da época.
+      A solução para tal problema foi justamente a criação de linguagens de
+      programação de alto nível. Essas linguagens, como o JavaScript, são um
+      meio-termo entre as linguagens naturais que utilizamos para nos
+      comunicarmos no dia-a-dia e a linguagem de máquina que o computador
+      “entende”. As linguagens de programação de alto nível têm aspectos
+      parecidos com nossas linguagens naturais, porém elas são limitadas, com
+      bastante formalismos e regras de sintaxe bem rígidas, de maneira que
+      conseguimos de forma automática transformar o texto escrito nelas em um
+      código binário executável por um computador.
       <p />
-      No século XX, o brilhante matemático inglês{" "}
-      <ClassToolTip
-        content={{
-          title: "Alan Turing",
-          text: `
-          Alan Mathison Turing (23 de junho de 1912 – 7 de junho de 1954) foi um matemático,[1] cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico britânico. Turing foi altamente influente no desenvolvimento da ciência da computação teórica, proporcionando uma formalização dos conceitos de algoritmo e computação com a máquina de Turing
-          `,
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/300px-Alan_Turing_Aged_16.jpg",
-          link: "https://pt.wikipedia.org/wiki/Alan_Turing",
-        }}
-      >
-        {" "}
-        Alan Turing{" "}
-      </ClassToolTip>
-      criou os fundamentos matemáticos da computação. Antes de termos um
-      computador eletrônico funcional, Turing já havia estabelecido a abstração
-      matemática mais fundamental para máquinas que automatizassem cálculos, a
-      chamada{" "}
-      <ClassToolTip
-        content={{
-          title: "Máquina Turing",
-          text: `
-          A Máquina de Turing é um dispositivo teórico conhecido como máquina universal, que foi concebido pelo matemático britânico Alan Turing (1912-1954), muitos anos antes de existirem os modernos computadores digitais 
-          `,
-          image: "",
-          link: "https://pt.wikipedia.org/wiki/Alan_Turing",
-        }}
-      >
-        {" "}
-        Máquina de Turing.{" "}
-      </ClassToolTip>
-      <ClassSectionTitle title="Uns e Zeros" />
-      Se lhe perguntasse quantos números diferentes existem, a sua resposta
-      natural seria: existem infinitos números. E você estaria correto, os
-      conjuntos numéricos (naturais, inteiros, reais, etc.) têm infinitos
-      elementos. Porém, e se eu lhe perguntasse quantos símbolos diferentes
-      precisamos para representar esses infinitos números? Depois de uma
-      cuidadosa avaliação, você poderia responder que com dez símbolos ou
-      algarismos diferentes, nós conseguimos representar qualquer número.  
+      Quando criamos código em uma linguagem de programação, uma vírgula, ponto
+      ou um símbolo qualquer que não corresponda com as regras da linguagem é o
+      suficiente para fazer com que o programa não funcione. Essa rigidez é
+      necessária para garantir que o que está escrito no código possa ser
+      transformado no conjunto de instruções lógicas e aritméticas que o
+      hardware consegue obedecer. Vamos aprender mais como esse processo
+      funciona na próxima seção.
+      <ClassSectionTitle title="Algoritmo, Código e Software" />
       <p />
-      Se combinarmos os algarismos 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9 de forma
-      repetida podemos representar qualquer número que quisermos. Porém,
-      será que existe a obrigatoriedade de serem 10 algarismos diferentes para
-      representar os números? E se mais algarismos ou menos algarismos fossem
-      utilizados? Na verdade, o chamado sistema numérico decimal é uma convenção
-      que utilizamos para representar números. Este sistema provavelmente surgiu
-      por termos dez dedos em nossas mãos. É totalmente possível, e até
-      conveniente em alguns casos, utilizar outros sistemas numéricos para
-      representar números.
+      Um desenvolvedor ou desenvolvedora utiliza uma linguagem de programação
+      para criar <i>software</i>. Criar <i>software</i> consiste em escrever o
+      que chamamos de código-fonte, isto é, um texto que corresponde com as
+      regras de uma linguagem de programação. A programação exige que os devs
+      (desenvolvedores ou desenvolvedoras) estabeleçam um conjunto de passos
+      para que uma solução seja atingida (criar um algoritmo) e depois escrevam
+      uma série de instruções na linguagem de programação de escolha que
+      representam este conjunto de passos.
       <p />
-      Os computadores representam os dados de forma digital (ou seja, dados
-      baseados em dígitos ou números). Devido à maneira como construímos
-      circuitos eletrônicos, é mais fácil, barato e conveniente utilizar apenas
-      dois sinais ou estados possíveis para representar valores numéricos. O
-      estado em que há tensão ou corrente elétrica representa o valor 1, e o
-      estado em que não há tensão ou corrente elétrica representa o valor 0.
-      Dessa forma, se quisermos representar um número dentro de um circuito
-      eletrônico, vamos utilizar o chamado sistema numérico binário. Com apenas
-      dois algarismos diferentes, o 0 e 1, conseguimos representar números da
-      mesma forma que com 10, observe:  
+      Chamamos de código, ou código-fonte, os arquivos gerados por pessoas (e às
+      vezes automaticamente através de algumas ferramentas) que contém as
+      instruções codificadas em uma linguagem de programação. Esse código-fonte
+      está em uma linguagem de alto nível, mais próximo da linguagem natural
+      humana, mas que tem certas limitações que permitem com que o texto escrito
+      seja passível de ser transformado em <i>software</i> executável.
+      <p />O código-fonte é transformado através de algumas ferramentas em
+      código executável. Existe um conjunto complexo de outros <i>
+        softwares
+      </i>{" "}
+      que os devs utilizam para tal tarefa. Em algumas linguagens, o
+      código-fonte é submetido a um programa chamado de compilador, que
+      transforma diretamente e de uma vez só todas as instruções na linguagem de
+      alto nível em código de máquina, esse processo deve ser feito antes da
+      execução do <i>software</i>.
+      <p />
+      Diferentemente, códigos desenvolvidos em linguagens como JavaScript são
+      submetidas a um outro <i>software</i> chamado de interpretador. Esse{" "}
+      <i>software</i> lê cada instrução do código-fonte durante a as executa uma
+      a uma sem a necessidade de transformá-lo em sua totalidade em código de
+      máquina. O interpretador funciona como intermediário entre o código-fonte
+      e o processador do computador. Ao contrário da compilação, esse processo é
+      realizado no momento da execução do <i>software</i> e não anteriormente.
       <p />
       <ClassImage
+        src="/"
+        legend="Etapas para criação de software"
         pos="center"
-        src="/img/classes/bin-dec-table.svg"
         style={{
           marginTop: "35px",
-          width: "80%",
-          maxWidth: "400px",
+          marginBottom: "35px",
+          width: "400px",
+          maxWidth: "80%",
         }}
-        legend="Números Decimais vs. Binários"
       />
-      Quando chegamos ao nove no sistema decimal, precisamos utilizar dois
-      algarismos para representar o próximo valor, o dez. O mesmo ocorre no
-      sistema binário quando chegamos ao 1 (um) e precisamos representar o
-      próximo valor, o dois, representado por 10b (vamos colocar o b ao lado dos
-      números binários e d ao lado dos decimais para diferenciá-los). Quando
-      esgotamos o número de algarimos diferentes em uma posição, adicionamos um
-      novo digito à esquerda representando valores de maior magnitude. Perceba
-      que 10d em decimal e 10b em binário são números completamente diferentes.
-      <p />
-      Ambos os sistemas são posicionais, isto significa que o valor de
-      um determinado algarismo depende de sua posição. Quanto mais à
-      esquerda, mais significativo é o algarismo, e maior o valor que ele
-      representa. A diferença entre os sistemas numéricos reside em sua base, 
-      isto é, o valor que cada dígito representa em cada posição. No sistema decimal a
-      base é 10, e portanto cada posição representa um valor que é multiplicado por
-      uma potência de 10. O mesmo é válido para números binários em relação à base 2. Como a base
-      decimal é maior, em geral, menos dígitos são necessários para representar um mesmo
-      número em comparação com a base binária.
-      <p />
-      Vamos utilizar como exemplo o número 238d em decimal que tem sua
-      equivalência no valor 11101110b em binário.  
-      <ClassEquation
-        equation={"2 . 10^{2} + 3 . 10^{1} + 8 . 10^{0} = 200 + 30 + 8 = 238"}
-      />
-      <ClassEquation
-        equation={
-          "1. 2^{7} + 1 . 2^{6} + 1 . 2^{5} + 0 . 2^{4} + 1 . 2^{3} + 1 . 2^{2} + 1 . 2^{1} + 0 . 2^{0} = 128 + 64 + 32 + 8 + 4 + 2 = 238"
-        }
-      />
-      <p />
-      Perceba que para determinarmos o valor que o número representa, nós
-      simplesmente somamos os produtos de cada algarismo pelo valor da base
-      elevado um expoente que depende da posição do algarismo. Esta é a maneira
-      através da qual podemos estabelecer o valor em decimal de qualquer número
-      na base binária.
-      <p />
-      Em suma, é necessário entender que para um computador apenas existem uns e zeros. 
-      O <i>software</i> que executa em um computador é convertido em código 
-      binário é representado como uns e zeros. Todos os
-      arquivos, textos, imagens, vídeos, documentos, gráficos são codificados
-      como grandes sequências numéricas. Um computador armazena tudo na forma de
-      números, e todos esses números estão no sistema numérico binário.
-      <p />
-      A primeira vez em que fui apresentado a esta ideia, eu fiquei bastante
-      tempo para conseguir digeri-la. Eu pensei nos documentos de texto que eu
-      utilizava para fazer meus trabalhos de escola. Me perguntava como eles poderiam
-      <ClassBox
-        content={`Um computador armazena tudo na forma de
-        números, e todos esses números estão no sistema numérico binário`}
-        float="right"
-      />
-      ser apenas números, se os documentos apareciam para mim como um conjunto de palavras.
-      Apenas muito tempo depois que eu entendi que cada caractere em um texto é representado como
-      um número, e que existem tabelas de codificação, como tabela ASCII que
-      estabelecem um numérico para cada caractere.
-      <p />
-      Eu também pensava nas cores que eu via no meu monitor e nos gráficos. Como
-      era possível que todos aqueles pixels que formam as imagens na minha tela
-      fossem apenas números, e pior, apenas uns e zeros? 
-      Apenas depois de bastante estudo que eu fui capaz
-      de entender como funcionam os espaços de cor, como RGB, e os formatos de
-      arquivo como JPG e PNG. O mesmo vale para vídeos e áudios. Arquivos de
-      computador são apenas dados brutos representados como sequências
-      numéricas. São números binários que precisam ser interpretados pelo{" "}
-      <i>software</i> e transformados em sinais que só fazem sentido 
-      quando são enviados e processados nos dispostivos de saída do computador.
-      O computador gera dados em forma numérico, e o <i>hardware</i> de entrada
-      e saída transforma esses sinais em imagens, cores e sonos na tela do computador.
-      <p />
-      Sempre precisamos ter em mente a unidade utilizada para medir uma quantidade
-      de dados. Um único digito binário é chamado de bit (
-      <i>binary digit</i>). Trata-se de um átomo da informação digital. Se
-      pegarmos um conjunto de 8 bits, temos um byte. A partir daí, valem os
-      prefixos do{" "}
-      <ClassToolTip
-        content={{
-          title: "Sistema Internacional de Unidades",
-          text: `
-          Sistema Internacional de Unidades[1] (sigla SI, do francês Système international d'unités)[2] é a forma moderna do sistema métrico e é geralmente um sistema de unidades de medida concebido em torno de sete unidades básicas e da conveniência do número dez.
-          `,
-          image: "",
-          link: "https://pt.wikipedia.org/wiki/Sistema_Internacional_de_Unidades",
-        }}
-      >
-        {" "}
-        Sistema Internacional de Unidades (SI){" "}
-      </ClassToolTip>{" "}
-      . Mil bytes equivalem a 1 kilobyte, 1 milhão de bytes equivalem a um
-      megabyte, 1 bilhão equivalem a 1 gigabyte, 1 trilhão equivalem a 1
-      terabyte.{" "}
-      <ClassLink href="https://pt.wikipedia.org/wiki/Prefixos_do_Sistema_Internacional_de_Unidades">
-        {" "}
-        Existe uma longa lista de prefixos que você pode consultar.{" "}
-      </ClassLink>
-      
-      <p />
-      Chegamos ao final de mais uma seção. Até aqui apresentamos um vasta teoria 
-      e gama de conceitos que nos ajudam a
-      entender mais sobre computação e programação. Nós ainda nem sequer chegamos a falar sobre
-      linguagens de programação e código fonte, pois este é o tema da próxima seção.
-      Por favor, respire fundo e não desanime! Até a próxima seção.
-      <p />
+      Existem linguagens que funcionam em um modelo híbrido (compilação e
+      interpretação) e mais complexo, cujos detalhes fogem do nosso escopo. O
+      que é importante que você absorva desse é que, o código que iremos criar
+      durante o curso será transformado em algo que o processador conseguirá
+      executar através de um interpretador. Para nossa sorte, esse interpretador
+      está no próprio navegador que você utiliza para visualizar essa página,
+      portanto você não vai precisar instalar nada em seu dispositivo para
+      começar a programar, todas as ferramentas necessárias estarão à sua
+      disposição através da página. 
     </ClassContainer>
   );
 }
