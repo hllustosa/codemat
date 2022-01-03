@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
+import { useRouter } from "next/router";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
 import { CONTRAST_COLOR, PRIMARY, CONSTRAST_LIGHT } from "../public/colors";
 import dynamic from "next/dynamic";
+import CodeEditor from "./CodeEditor";
+import { Button } from "@material-ui/core";
+import { encode } from "js-base64";
 
 const MathComponent = dynamic(
   import("mathjax-react").then((mod) => mod.MathComponent),
@@ -51,7 +55,7 @@ const styles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "95%",
     overflowX: "auto",
-    margin: "15px"
+    margin: "15px",
   },
   image: {
     marginTop: "25px",
@@ -59,6 +63,13 @@ const styles = makeStyles((theme) => ({
   },
   link: {
     backgroundColor: CONSTRAST_LIGHT,
+  },
+  code: {
+    position: "relative",
+    top: "0px",
+    right: "0px",
+    maxWidth: "90%",
+    margin: "auto",
   },
   tooltipText: {
     backgroundColor: CONSTRAST_LIGHT,
@@ -94,18 +105,25 @@ export function ClassToolTip(props) {
     <HtmlTooltip
       title={
         <React.Fragment>
-            <div>
-              <Typography color="inherit">{title}</Typography>
-              <img
-                src={image}
-                style={{ float: "right", marginLeft: "5px", width: "100px" }}
-              ></img>
-              {text}
-            </div>
+          <div>
+            <Typography color="inherit">{title}</Typography>
+            <img
+              src={image}
+              style={{ float: "right", marginLeft: "5px", width: "100px" }}
+            ></img>
+            {text}
+          </div>
         </React.Fragment>
       }
     >
-      <a target="_blank" rel="noopener" href={link} className={classes.tooltipText}>{props.children}</a>
+      <a
+        target="_blank"
+        rel="noopener"
+        href={link}
+        className={classes.tooltipText}
+      >
+        {props.children}
+      </a>
     </HtmlTooltip>
   );
 }
@@ -145,7 +163,6 @@ export function ClassEquation(props) {
         <MathComponent
           tex={String.raw`${props.equation}`}
           display={props.block ? true : false}
-          
         />
       )}
     </div>
@@ -171,13 +188,11 @@ export function ClassImage(props) {
 export function ClassLink(props) {
   const classes = styles();
   return (
-    <a  target="_blank" rel="noopener" className={classes.link} {...props}>
+    <a target="_blank" rel="noopener" className={classes.link} {...props}>
       {props.children}
     </a>
   );
 }
-
-
 
 export function Eq(props) {
   return (
@@ -187,6 +202,43 @@ export function Eq(props) {
         display={props.block ? true : false}
       />
     )
+  );
+}
+
+export function ClassCodeEditor(props) {
+  const classes = styles();
+  const [ showBtn, setShowBtn ] = useState(false);
+  const { code, input, height } = props;
+  const router = useRouter();
+
+  const handleClick = () => {
+    const c = encode(code ? code : "");
+    const i = encode(input ? input : "");
+    const link = `${window.location.protocol}//${window.location.host}/ide?c=${c}&i=${i}`;
+    router.push(link);
+  }
+
+  return (
+    <div
+      className={classes.code}
+      onMouseEnter={() => setShowBtn(true)}
+      onMouseLeave={() => setShowBtn(false)}
+    >
+      {showBtn && <Button
+        variant="contained"
+        color="primary"
+        style={{
+          position: "absolute",
+          right: "5px",
+          top: "5px",
+          zIndex: "99"
+        }}
+        onClick={handleClick}
+      >
+        Executar
+      </Button>}
+      <CodeEditor border code={code} readOnly height={height} width="100%" />
+    </div>
   );
 }
 
