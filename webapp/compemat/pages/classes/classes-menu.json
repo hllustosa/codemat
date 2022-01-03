@@ -87,18 +87,26 @@
       "link": "/classes/unity-3/5"  
     }
   ],
-  "Unidade 4 - Funções e Listas": [
+  "Unidade 4 - Listas": [
     {
-      "title": "Funções",
+      "title": "Listas",
       "link": "/classes/unity-4/1"
     },
     {
-      "title": "Listas",
+      "title": "Iteração",
       "link": "/classes/unity-4/2"
     },
     {
-      "title": "Exercícios",
+      "title": "Adicionando e Removendo Elementos",
       "link": "/classes/unity-4/3"
+    },
+    {
+      "title": "Entrada e Saída",
+      "link": "/classes/unity-4/4"
+    },
+    {
+      "title": "Exercícios",
+      "link": "/classes/unity-4/5"
     }
   ],
   "Unidade 5 - Aritmética": [
