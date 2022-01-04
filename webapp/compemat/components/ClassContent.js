@@ -212,10 +212,10 @@ export function ClassCodeEditor(props) {
   const router = useRouter();
 
   const handleClick = () => {
-    const c = encode(code ? code : "");
-    const i = encode(input ? input : "");
+    const c = encode(code ? code : "", true);
+    const i = encode(input ? input : "", true);
     const link = `${window.location.protocol}//${window.location.host}/ide?c=${c}&i=${i}`;
-    router.push(link);
+    window.open(link, "_blank"); 
   }
 
   return (
@@ -227,6 +227,7 @@ export function ClassCodeEditor(props) {
       {showBtn && <Button
         variant="contained"
         color="primary"
+        size="small"
         style={{
           position: "absolute",
           right: "5px",

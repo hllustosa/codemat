@@ -27,20 +27,16 @@
       "link": "/classes/unity-1/5"
     },
     {
-      "title": "Atribuições e Expressões",
+      "title": "Resolução de Problemas",
       "link": "/classes/unity-1/6"
     },
     {
-      "title": "Resolução de Problemas",
+      "title": "Lidando com Erros",
       "link": "/classes/unity-1/7"
     },
     {
-      "title": "Lidando com Erros",
-      "link": "/classes/unity-1/8"
-    },
-    {
       "title": "Exercícios",
-      "link": "/classes/unity-1/9"
+      "link": "/classes/unity-1/8"
     }
   ],
   "Unidade 2 - Estruturas de Controle": [
@@ -79,12 +75,8 @@
       "link": "/classes/unity-3/3"
     },
     {
-      "title": "Estrutura de Repetição e Controle",
-      "link": "/classes/unity-3/4"
-    },
-    {
       "title": "Exercícios",
-      "link": "/classes/unity-3/5"  
+      "link": "/classes/unity-3/4"  
     }
   ],
   "Unidade 4 - Listas": [

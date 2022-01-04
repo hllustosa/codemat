@@ -168,8 +168,8 @@ function CodePane(props) {
   };
 
   const shareLink = () => {
-    const c = encode(code);
-    const i = encode(input);
+    const c = encode(code, true);
+    const i = encode(input, true);
     const link = `${window.location.protocol}//${window.location.host}/ide?c=${c}&i=${i}`;
     copyTextToClipboard(link);
     alert("Link copiado para área de transferência:\n");

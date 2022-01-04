@@ -12,7 +12,7 @@ export default function CodeEditor(props) {
       style={{
         height: height? height :"50vh",
         width: width ? width: "100%",
-        border: border ? "solid 1px black" : "none",
+        border: border ? "solid 1px #c1c1c1" : "none",
         margin : border ? "auto" : "none"
       }}
       placeholder=""
