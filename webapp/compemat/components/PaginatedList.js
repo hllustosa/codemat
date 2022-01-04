@@ -17,7 +17,7 @@ export default function PaginatedList(props) {
         ?  Math.floor(data.length / pageSize)
         :  Math.floor(data.length / pageSize) + 1
     );
-  });
+  }, [data.length]);
 
   const prev = () => {
     if (page > 1) {

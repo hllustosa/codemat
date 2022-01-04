@@ -14,7 +14,7 @@ import {
 function Content() {
   return (
     <ClassContainer>
-      Em breve!
+      
     </ClassContainer>
   );
 }

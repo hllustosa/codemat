@@ -29,5 +29,6 @@ exports.data = {
     "ex_castigo" : "programming",
     "ex_fibonnaci" : "programming",
     "ex_tabuada" : "programming",
-    "ex_primo" : "programming"
+    "ex_primo" : "programming",
+    "ex_miniatura_trofeu" : "arithmetic",
 }

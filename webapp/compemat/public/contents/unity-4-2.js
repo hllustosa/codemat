@@ -9,7 +9,7 @@ import {
   ClassToolTip,
   ClassCodeEditor,
 } from "../../components/ClassContent";
-import CodeEditor from "../../components/CodeEditor";
+
 
 function Content() {
   return (

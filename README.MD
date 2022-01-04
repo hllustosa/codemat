@@ -34,4 +34,10 @@ cd [PROJECT FOLDER]
 firebase deploy
 ```
 
-
+## Build and deploy webapp
+```
+cd [PROJECT FOLDER]/webapp/compemat
+yarn build
+cd ..
+firebase deploy
+```

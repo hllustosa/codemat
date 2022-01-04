@@ -238,5 +238,11 @@
     "name": "Substituir",
     "category": "Programming",
     "labels": ["estrutura de repetição", "listas", "string", "unidade 4"]
+  },
+  "ex_miniatura_trofeu": {
+    "id": "ex_miniatura_trofeu",
+    "name": "Miniatura do Troféu",
+    "category": "Arithmetic",
+    "labels": [ "enem", "arimética", "unidade 5"]
   }
 }

@@ -5,7 +5,9 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
 import { CONTRAST_COLOR, PRIMARY, CONSTRAST_LIGHT } from "../public/colors";
 import dynamic from "next/dynamic";
-import CodeEditor from "./CodeEditor";
+const CodeEditor = dynamic(import("./CodeEditor"), {
+  ssr: false,
+});
 import { Button } from "@material-ui/core";
 import { encode } from "js-base64";
 
@@ -118,7 +120,7 @@ export function ClassToolTip(props) {
     >
       <a
         target="_blank"
-        rel="noopener"
+        rel="noreferrer"
         href={link}
         className={classes.tooltipText}
       >
@@ -188,7 +190,7 @@ export function ClassImage(props) {
 export function ClassLink(props) {
   const classes = styles();
   return (
-    <a target="_blank" rel="noopener" className={classes.link} {...props}>
+    <a target="_blank" rel="noreferrer" className={classes.link} {...props}>
       {props.children}
     </a>
   );
