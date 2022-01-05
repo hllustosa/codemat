@@ -37,7 +37,7 @@ import { GREY_2, PRIMARY_LIGHT, PRIMARY } from "../../public/colors";
 import store from "../../redux/store";
 import { getUserStats, updatePassword } from "../../seedwork/Requests";
 import { translateStatus } from "../../seedwork/Translations";
-import problems from "../../public/problems/index.json";
+import problems from "../../public/exercises/index.json";
 import { encode } from "js-base64";
 
 const styles = makeStyles((theme) => ({
@@ -141,7 +141,7 @@ function Stats(props) {
             <Typography
               align="center"
               color="primary"
-              variant="h2"
+              variant="h3"
             >{`${count.solved}/${count.tried}`}</Typography>
           </Grid>
           <Grid>
@@ -154,7 +154,7 @@ function Stats(props) {
             >{`Resolvidos/Tentados`}</Title>
           </Grid>
         </Grid>
-        <Grid style={{ height: "300px" }} xs={12} sm={12} md={12}>
+        <Grid style={{ height: "200px" }} xs={12} sm={12} md={12}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               width={500}

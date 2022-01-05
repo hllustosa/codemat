@@ -13,18 +13,21 @@ import {
 function Content() {
   return (
     <ClassContainer>
-      A estrutura de repetição <b>while</b> é bastante flexível e não assume
-      nada em relação a como o programador irá controlar o número de repetições.
-      Basta colocar uma expressão lógica que avalia se dada condição é verdade,
-      cabendo ao programador estabelecer algum mecanismo de incremento ou
-      modificação das variáveis que aparecem na expressão lógica.
+      Em programação, à medida que aprendemos novos conceitos, somos capazes de
+      criar programas cada vez mais complexos. Qualquer pessoa que esteja
+      interessada em aprender mais sobre programação deve escrever vários
+      exemplos de código e realizar experimentos afim de entender como os
+      conceitos aprendidos funcionam quando combinados.
       <p />
-      Porém, o uso de variáveis contadoras e incrementos é tão comum em laços de
-      repetição, que linguagens como o JavaScript oferecem uma outra estrutura
-      de controle que facilita seu uso. A estrutura <b>for</b> tem essa função,
-      e iremos aprender como ela funciona nessa seção.
+      Para resolver problemas reais utilizando uma linguagem como JavaScript,
+      precisamos ser criativos em relação a como combinamos as ferramentas que a
+      linguagem oferece. Uma maneira de fazer isso é unindo os laços de
+      repetição <b>while</b> e <b>for</b> com a estrutuas de controle <b>if</b>.
+      Nessa seção, vamos explorar esses conceitos e estudar exemplos de código
+      onde combinamos diversas estruturas.
+      <p />
       <ClassImage
-        src="/img/loops.svg"
+        src="/img/programming.svg"
         pos="center"
         style={{
           marginTop: "35px",
@@ -33,129 +36,122 @@ function Content() {
           maxWidth: "80%",
         }}
       />
-      <ClassSectionTitle title="Outro Padrão de Repetição" />
+      <ClassSectionTitle title="Estrutura de Repetição em uma Estrutura de Controle" />
+      Até o momento, nós aprendemos a criar blocos de código delimitados por
+      chaves. Verificamos que um bloco de código associado a um <b>if</b> ou{" "}
+      <b>else</b> é executado ou não dependendo da avaliação de uma expressão
+      lógica. Também vimos que um bloco de código associado a uma laço de
+      repetição pode ter 0 ou vários execuções, da mesma forma, dependendo de
+      uma expressão lógica.
       <p />
-      O padrão de laço de repetição que vimos anteriormente se torna muito comum
-      em situações em que sabemos de antemão o número de vezes que iremos
-      precisar executar um trecho de código. Entenda que saber o número de vezes
-      de antemão pode significar duas coisas.
+      Entretanto, nada nos impede de combinar blocos de código. Isto é, de
+      termos um bloco de código dentro de outro. É possível termos uma estrutura
+      de repetição dentro de uma estrutura de controle e vice-versa. Podemos até
+      mesmo ter múltiplas estruturas de repetição, uma dentro da outra sem
+      problema nenhum. Podemos fazer isso quantas vezes, quisermos, embora seja
+      desaconselhável colocarmos muitas estruturas aninhadas. Existem, formas de
+      evitar que isto ocorra que iremos aprender em outro momento.
       <p />
-      Podemos saber que o laço deve ser executado um determinado número de vezes
-      durante o desenvolvimento do nosso programa e podemos colocar o número
-      fixo (um literal numérico) diretamente no código. Nesse caso, o laço terá
-      um número fixo de repetição que não se altera nunca.
-      <p />
-      Alternativamente, o número de repetições pode não ser determinado durante
-      o desenvolvimento do programa, porém pode estar armazenado em uma variável
-      durante sua execução. Antes de entrarmos no laço, já temos como saber
-      quantas vezes o bloco de código dentro do mesmo será repetido. Nesse caso
-      podemos variar o número de repetições entre execuções diferentes do
-      programa, mas o código será bastante parecido com caso em que temos um
-      número fixo, por exemplo:
+      Vamos a um exemplo de uma estrutura de repetição dentro de um <b>if</b>:
       <p />
       <ClassCodeEditor
-        code={`var limite = 5;\nvar contadora = 0;\n\nwhile(contadora < limite){\n    output("Essa mensagem será impressa "+limite+" vezes");\n    contadora = contadora + 1;\n}\n\noutput("Essa mensagem será impressa só uma vez.");`}
-        height="175px"
+        code={`var contar = input("contar");\n\nif(contar){\n\n    for(var i = 0; i < 10; i++){\n        output(i);\n    }\n\n}`}
+        input={`{\n    "contar": true\n}`}
+        height="170px"
       />
       <p />
-      Temos um teste lógico que verifica se uma variável contadora atingiu um
-      determinado valor e temos um incremento ocorrendo no trecho de código, que
-      efetivamente conta quantas vezes o laço de repetição foi executado até
-      aquele instante. De fato, essa estrutura é tão comum que as linguagens de
-      programação evoluíram de forma a criar uma estrutura de repetição que
-      incorporasse esse padrão. Chamamos essa estrutura de laço de repetição{" "}
-      <b>for</b>, e iremos estudar seu funcionamento.
+      Este exemplo é de um programa que tem o seguinte comportamento. Caso a
+      variável lógica de entrada
+      <b>contar</b> tenha o valor <b>true</b>, isto é, verdadeiro, executamos o
+      bloco de código associado ao <b>if</b>. Dentro dele, temos um <b>for</b>{" "}
+      com um bloco de código em que imprimimos o valor de <b>i</b>. Caso a
+      variável lógica <b>contar</b> tenha o valor <b>false</b> (falso), então
+      todo o código dentro do bloco associado ao <b>if</b> será completamente
+      ignorado e o programa não irá emitir nenhuma saída. Pedimos que execute o
+      código, alterando o valor da entrada (true ou false) para ver o resultado.
       <p />
-      <ClassSectionTitle title="Repetição com For" />A palavra <b>for</b> em
-      inglês pode ser traduzida como <b>Para</b>. Não é muito intuitivo à
-      princípio, mas em geral, ao nos depararmos com uma estrutura <b>for</b> em
-      nosso código, podemos interpretá-la como algo do tipo: Para uma
-      determinada variável, iniciada com um valor e tendo o valor menor que um
-      determinado limite, façamos algo. Não se preocupe se estiver muito
-      abstrato agora, vamos entender melhor o que isso significa.
-      <p />A estrutura <b>for</b> é, em muitos aspectos, equivalente à estrutura{" "}
-      <b>while</b>. Isto é, ambas tem a mesma função de permitir a repetição de
-      um mesmo bloco de código. São maneiras diferentes de atingir objetos
-      parecidos. A estrutura <b>for</b> será preferível em qualquer situação em
-      que a repetição se dará um número de vezes conhecido de antemão.
+      Perceba como a identação do código se comporta nesse caso. Como esperado,
+      o <b>for</b> está com um nível de espaçamento em relação à margem esquerda
+      (4 espaços para ser mais preciso). Porém, neste caso temos um outro bloco
+      de código dentro do <b>for</b>. O comando <b>output</b> dentro do{" "}
+      <b>for</b> possui dois níveis de espaçamento em relação à margem esquerda,
+      ou 8 espaços em branco.
       <p />
-      De maneira geral, é possível dizer que estrutura <b>for</b> é mais comum
-      do que a estrutura <b>while</b>. Isto é, na maioria das vezes você irá se
-      deparar com códigos contendo <b>fors</b> e não <b>whiles</b>.
+      Todo o código dentro de um bloco deve ter o mesmo espaçamento e quanto
+      mais "interno" for o bloco, mais níveis de identação teremos e maior será
+      o espaço entre a margem e o começo da linha. Se estamos fora de qualquer
+      bloco de código, na raíz do nosso programa, não temos espaçamento. Se
+      estamos em um bloco de código dentro da raíz, temos 1 nível de identação.
+      Se tivermos um bloco de código dentro de outro bloco, temos dois níveis e
+      assim sucessivamente. Quanto mais "interno" o bloco, maior o espaçamento a
+      partir da margem.
       <p />
-      Vamos a um exemplo de repetição com a estrutura <b>for</b>:
+      <ClassSectionTitle title="Estrutura de Controle em uma Estrutura de Repetição" />
+      <p />
+      Vamos agora inverter os blocos e apresentar um programa que contém um{" "}
+      <b>if</b> dentro de um laço de repetição. Vejamos este exemplo:
       <p />
       <ClassCodeEditor
-        code={`for(var cont = 0; cont < 5; cont = cont + 1){\n    output("Essa mensagem será impressa 5 vezes");\n}\n\noutput("Essa mensagem será impressa só uma vez.");`}
-        input={`{}`}
-        height="100px"
+        code={`for(var i = 0; i < 10; i++){\n\n    if( i % 2 == 0){\n        output(i + " é par");\n    } else {\n        output(i + " é ímpar") \n    }\n\n}`}
+        height="170px"
       />
       <p />
-      Em um primeiro momento o <b>for</b> parece muito mais complexo do que o{" "}
-      <b>while</b>, mas iremos entender cada parte do comando com calma. Veja
-      que após a palavra reservada <b>for</b>, nós temos três partes ou comandos entre
-      parênteses separados por ; (ponto é vírgula).
-      <p />A primeira parte é o que chamamos de inicialização. Esse comando é
-      executado uma vez apenas e antes que o bloco de código seja executado pela
-      primeira vez. Nele, nós geralmente declaramos e iniciamos uma variável que
-      funcionará como contadora, neste caso a chamamos de <b>cont</b> para
-      encurtar.
-      <p />A segunda parte é o teste lógico. Ele funciona da mesma forma que o
-      teste lógico contido em um comando <b>while</b>. Trata-se de uma expressão
-      lógica muito simples, que depende do valor da variável definida durante a
-      inicialização. Essa expressão lógica é avaliada antes de qualquer execução
-      do bloco de código associado. O bloco de código só será executado se a
-      expressão lógica <b>for</b> avaliada como verdadeira.
-      <p />A terceira parte é o incremento. Essa parte é executada após cada
-      execução do bloco de código. Essa parte do <b>for</b> é onde colocamos uma
-      instrução de incremento, isto é, onde atualizamos o valor da variável
-      contadora. O incremento em 1 é a maneira mais comum, porém isto não é uma
-      obrigação, é possível que o incremento se dê em valores maiores do que 1,
-      ou mesmo que ocorra o decremento (existem laços de repetição em que
-      decrementamos sucessivamente a variável contadora).
+      Este exemplo é bastante interessante. No nível mais externo temos um laço
+      de repetição que é executado múltiplas vezes, 10 para ser mais preciso.
+      Dentro do bloco de código temos um <b>if</b> com uma expressão lógica bem
+      interessante. Nela estamos o utilizando o operador <b>%</b> que nos dá o
+      resto da divisão inteira entre dois números. Veja que estamos utilizando o
+      operador <b>==</b> para comparar o resultado de i % 2 com 0.
       <p />
-      Podemos ter um expressão lógica em um <b>for</b> que dependa de outras
-      variáveis também. Da mesma forma que nosso exemplo com o <b>while</b> que
-      dependia de um limite, podemos ter um <b>for</b> que funciona da mesma
-      maneira. Um exemplo:
+      Afinal de contas, o que esta expressão lógica está avaliando? É muito
+      simples, se olharmos o resto da divisão inteira entre um número e 2
+      podemos ter dois resultados distintos. Se um número inteiro, ao ser
+      dividido por 2 tem como resto o valor 1, isso significa que ele é ímpar.
+      Isso quer dizer que ao tentarmos dividí-lo por 2, existe a sobra de uma
+      unidade. Caso o resto da divisão por 2 seja 0, isso significa que o número
+      em questão é par. Portanto, essa expressão lógica é verdadeira quando o
+      valor de <b>i</b> é par.
+      <p />
+      Como o <b>i</b> é uma variável contadora cujo valor se altera em cada uma
+      das execuções do laço de repetição, indo de 0 até 9, em cada uma das
+      execuções do laço, iremos testar se todos os números inteiros nesse
+      intervalo são pares ou ímpares. Dentro do bloco de código do <b>if</b>{" "}
+      emitimos a mensagem de que o valor contido em <b>i</b> é par, e dentro do{" "}
+      <b>else</b> emitimos a mensagem de que o valor contido é ímpar. Podemos
+      fazer pois sabemos que todo inteiro que não é par só pode ser ímpar.
+      <p />
+      <ClassSectionTitle title="Estruturas de Repetição Aninhadas" />
+      <p />
+      O que acontece quando colocamos um laço de repetição dentro de outro?
+      Vamos dar uma olhada nesse exemplo em que fazemos exatamente isso:
       <p />
       <ClassCodeEditor
-        code={`var limite = input("limite");\n\nfor(var cont = 0; cont < limite; cont = cont + 1){\n    output("Essa mensagem será impressa "+limite+" vezes");\n}\n\noutput("Essa mensagem será impressa só uma vez.");`}
-        input={`{\n    "limite": 5\n}`}
-        height="175px"
+        code={`for(var i = 0; i < 3; i++){\n\n    for(var j = 0; j < 3; j++){\n        output("i= "+i+" e j="+j);\n    }\n\n}`}
+        height="170px"
       />
       <p />
-      Teste o código acima, variando o valor da variável de entrada{" "}
-      <b>limite</b> e veja também que o número de repetições irá variar.
-      <ClassSectionTitle title="Convenções de Repetição com o For" />
-      Vamos dar uma olhada nesse laço de repetição:
+      No código acima temos dois laços de repetição <b>for</b> adinhados. O laço
+      mais externo é controlado pela variável <b>i</b> e o mas interno pela
+      variável <b>j</b>. Execute o código e veja se consegue entender o que
+      acontece.
       <p />
-      <ClassCodeEditor
-        code={`for(var i = 0; i < 5; i++){\n    output("Essa mensagem será impressa 5 vezes");\n}\n\noutput("Essa mensagem será impressa só uma vez.");`}
-        input={`{}`}
-        height="100px"
-      />
+      Quando combinamos laços de repetição desta forma, estamos na verdade
+      multiplicando o número de vezes que o código contido no laço de repetição
+      mais interno irá executar. Perceba que o laço mais externo execute 3
+      vezes, e para cada execução do laço externo o laço interno é executado
+      também 3 vezes. Portanto, temos que o bloco de código dentro do laço mais
+      interno será executado 3 x 3 = 9 vezes.
       <p />
-      Se executarmos esse trecho de código teremos o mesmo resultado que a
-      execução do trecho apresentado anteriormente. Apenas adicionamos duas
-      convenções que deixam o código mais compacto.
-      <p />A primeira delas é que ao invés de chamarmos a variável de{" "}
-      <b>cont</b> a batizamos de <b>i</b>. Em geral, é ideal que os nomes das
-      variáveis sejam significativos e nesse aspecto, o nome <b>cont</b> parece
-      nos dar um indício melhor do que <b>i</b>, para a função da variável em
-      nosso código. Entretanto, a variável com nome <b>i</b> é utilizada como
-      convenção para variáveis controladores de laços de repetição do tipo <b>for</b>.
+      Dentro do laço interno temos um comando de saída que emite uma mensagem
+      contendo os valores das variáveis <b>i</b> e <b>j</b> em cada execução.
+      Veja que primeiro temos todas as execuções em que o valor de <b>i</b> é 0,
+      nas quais o valor de <b>j</b> varia entre 0 e 2. O mesmo ocorre em ordem,
+      para as situações em que <b>i</b> é igual a 1 e 2. Após todas as execuções
+      ambos os laços terminam junto com o programa.
       <p />
-      Por isso, embora não seja um nome aparentemente significativo, podemos
-      dizer que adotar essa convenção é aceitável e até desejável, pois mantém o
-      código compacto, fácil de ler e de acordo com o que outros programadores
-      esperam.
-      <p />
-      Outra coisa interessante que adicionamos é o operador de incremento. Ao
-      invés de escrevermos: i = i + 1, podemos escrever i++. O operador ++
-      incrementa em 1 o valor da variável. Esse operador é aquilo que chamamos
-      de <b>açúcar sintático</b>, isto é, uma maneira um pouco mais compacta e
-      simples de fazer algo comum na programação.
+      Faça experimentos com este código, alterando os limtes das variáveis e veja o que acontece.
+      Com um pouco de experiência, logo você vai estar escrevendo suas próprias soluções que exigem laços 
+      de repetição aninhados dessa forma, ou até mesmo com mais níveis.
     </ClassContainer>
   );
 }

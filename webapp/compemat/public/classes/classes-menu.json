@@ -75,7 +75,7 @@
       "link": "/classes/unity-3/3"
     },
     {
-      "title": "Estrutura Aninhadas",
+      "title": "Estruturas Aninhadas",
       "link": "/classes/unity-3/4"
     },
     {
@@ -83,26 +83,18 @@
       "link": "/classes/unity-3/5"  
     }
   ],
-  "Unidade 4 - Listas": [
+  "Unidade 4 - Funções & Listas": [
     {
-      "title": "Listas",
+      "title": "Funções",
       "link": "/classes/unity-4/1"
     },
     {
-      "title": "Iteração",
+      "title": "Listas",
       "link": "/classes/unity-4/2"
     },
     {
-      "title": "Adicionando e Removendo Elementos",
-      "link": "/classes/unity-4/3"
-    },
-    {
-      "title": "Entrada e Saída",
-      "link": "/classes/unity-4/4"
-    },
-    {
       "title": "Exercícios",
-      "link": "/classes/unity-4/5"
+      "link": "/classes/unity-4/3"
     }
   ],
   "Unidade 5 - Aritmética": [
