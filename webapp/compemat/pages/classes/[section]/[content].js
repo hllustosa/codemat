@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core";
 import { TextButton } from "../../../components/Styled";
 import { CONTENT_BG, SECONDARY, PRIMARY } from "../../../public/colors";
-import Classes from "../classes-menu.json";
+import Classes from "../../../public/classes/classes-menu.json";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
@@ -145,7 +145,7 @@ function Content(props) {
   };
 
   const Page = dynamic(() =>
-    import(`../../../public/contents/${section}-${content}.js`)
+    import(`../../../public/classes/all/${section}-${content}.js`)
   );
 
   return (

@@ -70,7 +70,8 @@ const styles = makeStyles((theme) => ({
     position: "relative",
     top: "0px",
     right: "0px",
-    maxWidth: "90%",
+    width: "80%",
+    maxWidth: "600px",
     margin: "auto",
   },
   tooltipText: {

@@ -16,7 +16,7 @@ import {
 } from "@material-ui/core";
 import { VisibilityRounded } from "@material-ui/icons";
 import { GREY_2, PRIMARY } from "../../../public/colors";
-import problems from "../../../public/problems/index.json";
+import problems from "../../../public/exercises/index.json";
 import { translateCategory } from "../../../seedwork/Translations";
 import PaginatedList from "../../../components/PaginatedList";
 

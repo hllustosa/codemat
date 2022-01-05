@@ -40,7 +40,7 @@ function ProblemaFrame(props) {
   const fontEnhancedProp = { style: { fontSize: "18px", fontWeight: "600" } };
   const testCases = data.cases.slice(0, 2);
 
-  const Page = dynamic(() => import(`../public/problems/all/${data.id}.js`));
+  const Page = dynamic(() => import(`../public/exercises/all/${data.id}.js`));
 
   return (
     <div className={classes.root}>

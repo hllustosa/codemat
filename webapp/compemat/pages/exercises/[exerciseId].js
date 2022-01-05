@@ -1,7 +1,7 @@
 import Page from "../../components/Page";
 import AppBar from "../../components/AppBar";
 import React, { useEffect } from "react";
-import problems from "../../public/problems/index.json";
+import problems from "../../public/exercises/index.json";
 import { Grid, Tooltip, makeStyles } from "@material-ui/core";
 import {
   PlayArrowRounded,
@@ -484,7 +484,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const exerciseId = context.params.exerciseId;
-  const exerciseData = require(`../../public/problems/all/${exerciseId}.json`);
+  const exerciseData = require(`../../public/exercises/all/${exerciseId}.json`);
   return {
     props: {
       data: exerciseData,
