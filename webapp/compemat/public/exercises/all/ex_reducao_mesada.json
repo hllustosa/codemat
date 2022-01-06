@@ -1,0 +1,62 @@
+{
+    "id": "ex_reducao_mesada",
+    "name": "Redução da Mesada",
+    "category": "arithmetic",
+    "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+    ],
+    "cases": [
+        {
+            "input": {
+                "internet": 120,
+                "mensalidade": 700,
+                "mesada": 400
+            },
+            "output": [
+                23.5
+            ]
+        },
+        {
+            "input": {
+                "internet": 140,
+                "mensalidade": 590,
+                "mesada": 430
+            },
+            "output": [
+                20.232558139534884
+            ]
+        },
+        {
+            "input": {
+                "internet": 100,
+                "mensalidade": 800,
+                "mesada": 300
+            },
+            "output": [
+                33.333333333333336
+            ]
+        },
+        {
+            "input": {
+                "internet": 90,
+                "mensalidade": 1000,
+                "mesada": 450
+            },
+            "output": [
+                26.22222222222222
+            ]
+        },
+        {
+            "input": {
+                "internet": 80,
+                "mensalidade": 500,
+                "mesada": 250
+            },
+            "output": [
+                26.4
+            ]
+        }
+    ]
+}

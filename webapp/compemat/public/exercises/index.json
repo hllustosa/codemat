@@ -262,5 +262,35 @@
     "name": "Bandeira do Brasil",
     "category": "Arithmetic",
     "labels": [ "enem", "arimética", "unidade 5"]
+  },
+  "ex_porcelanato": {
+    "id": "ex_porcelanato",
+    "name": "Porcelanato",
+    "category": "Arithmetic",
+    "labels": [ "enem", "arimética", "unidade 5"]
+  },
+  "ex_jovens_trabalhadores": {
+    "id": "ex_jovens_trabalhadores",
+    "name": "Jovens Trabalhadores",
+    "category": "Arithmetic",
+    "labels": [ "enem", "arimética", "unidade 5"]
+  },
+  "ex_pesquisa_satisfacao": {
+    "id": "ex_pesquisa_satisfacao",
+    "name": "Pesquisa de Satisfação",
+    "category": "Arithmetic",
+    "labels": [ "enem", "arimética", "unidade 5"]
+  },
+  "ex_recipiente": {
+    "id": "ex_recipiente",
+    "name": "Recipiente",
+    "category": "Arithmetic",
+    "labels": [ "enem", "arimética", "unidade 5"]
+  },
+  "ex_reducao_mesada": {
+    "id": "ex_reducao_mesada",
+    "name": "Redução da Mesada",
+    "category": "Arithmetic",
+    "labels": [ "enem", "arimética", "unidade 5"]
   }
 }

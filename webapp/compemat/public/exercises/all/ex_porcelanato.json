@@ -1,0 +1,56 @@
+{
+    "id": "ex_porcelanato",
+    "name": "Porcelanato",
+    "category": "arithmetic",
+    "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+    ],
+    "cases": [
+        {
+            "input": {
+                "A_unidades": 4,
+                "B_unidades": 3,
+                "A_preco": 35.00,
+                "B_preco": 27.00
+            },
+            "output": [
+                3, 2
+            ]
+        },
+        {
+            "input": {
+                "A_unidades": 6,
+                "B_unidades": 5,
+                "A_preco": 42.00,
+                "B_preco": 35.00
+            },
+            "output": [
+                3,0
+            ]
+        },
+        {
+            "input": {
+                "A_unidades": 4,
+                "B_unidades": 7,
+                "A_preco": 18.00,
+                "B_preco": 38.00
+            },
+            "output": [
+                5,0
+            ]
+        },
+        {
+            "input": {
+                "A_unidades": 5,
+                "B_unidades": 4,
+                "A_preco": 22.00,
+                "B_preco": 19.00
+            },
+            "output": [
+                2, 2
+            ]
+        }
+    ]
+}
