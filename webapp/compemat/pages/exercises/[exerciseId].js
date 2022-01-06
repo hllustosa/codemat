@@ -65,14 +65,14 @@ const styles = makeStyles((theme) => ({
     minHeight: "550px",
   },
   problemContent: {
-    padding: "15px",
+    padding: "5px",
     margin: "auto",
     maxWidth: "1000px",
     width: "calc(100% - 30px)",
   },
   problemContentFrame: {
     width: "100%",
-    height: "calc(100vh - 310px)",
+    height: "calc(100vh - 210px)",
     minHeight: "330px",
     minWidth: "290px",
     backgroundColor: "#FFFFFF",
@@ -146,20 +146,6 @@ function ProblemPane(props) {
               ))}
             </NoWrapContainer>
           </NoWrap>
-        </Grid>
-        <Grid item xs={12} className={classes.problemContent}>
-          <Grid container direction="row" justifyContent="space-between">
-            <Grid item>
-              <OutlinedButton href={`/exercises/${data.previous}`}>
-                Anterior
-              </OutlinedButton>
-            </Grid>
-            <Grid item>
-              <OutlinedButton href={`/exercises/${data.next}`}>
-                Próximo
-              </OutlinedButton>
-            </Grid>
-          </Grid>
         </Grid>
       </Grid>
     </Grid>
@@ -374,7 +360,7 @@ function CodePane(props) {
         className={classes.executionTitle}
       >
         <Grid>
-          <Title size={14}>Execução</Title>
+          <Title size={14}>Terminal</Title>
         </Grid>
         <Grid>
           <Tooltip title="Limpar Registros" placement="bottom-end">

@@ -17,7 +17,7 @@ export default function CodeEditor(props) {
       }
       editor.current.editor.gotoLine(0);
     }
-  }, [props.readOnly]);
+  }, []);
 
   return (
     <AceEditor

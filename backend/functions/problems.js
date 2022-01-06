@@ -31,4 +31,5 @@ exports.data = {
     "ex_tabuada" : "programming",
     "ex_primo" : "programming",
     "ex_miniatura_trofeu" : "arithmetic",
+    "ex_combustivel_moto" :"arithmetic",
 }

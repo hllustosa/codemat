@@ -9,7 +9,7 @@ export default function Exercise() {
       troféu tem <b>H</b> cm de altura, incluída sua base.
       <p />
       <div style={{ textAlign: "center" }}>
-        <img src={"/img/ex_miniatura_trofeu.png"} width="90%" />
+        <img src={"/img/2020q138.svg"} width="70%" />
         <p />
       </div>
       A miniatura desse troféu deverá ser instalada no interior de uma caixa de

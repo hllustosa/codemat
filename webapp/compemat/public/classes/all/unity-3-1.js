@@ -13,7 +13,7 @@ import {
 function Content() {
   return (
     <ClassContainer>
-      Nesta unidade iremos aprender sobre estruturas de repetição, fundamentais
+      Nesta unidade, iremos aprender sobre estruturas de repetição, fundamentais
       para a solução da maioria absoluta dos problemas computacionais. Porém,
       primeiramente, vamos nos aprofundar em um tópico importante. Vamos
       aprender mais sobre expressões lógicas e mergulhar no mundo da lógica
@@ -69,7 +69,7 @@ function Content() {
         height="140px"
       />
       <p />
-      Neste exemplo, temos um programa que avalia se a valor contido na variável
+      Neste exemplo, temos um programa que avalia se a valor contido na variável{" "}
       <b>numero</b> está no intervalo aberto (0, 10). Para determinar isto,
       precisamos, na verdade que duas coisas sejam verdadeiras ao mesmo tempo. A
       primeira é que o valor de numero deve ser maior que 0 e a segunda é que o
@@ -113,7 +113,7 @@ function Content() {
       Vamos a um exemplo:
       <p />
       <ClassCodeEditor
-        code={`var numero = input("numero");\n\nif(numero > 0 || numero < 10){\n    output("numero está fora do intervalo (0, 10)");\n} else {\n    output("numero está no intervalo (0, 10)");\n}`}
+        code={`var numero = input("numero");\n\nif(numero <= 0 || numero >= 10){\n    output("numero está fora do intervalo (0, 10)");\n} else {\n    output("numero está no intervalo (0, 10)");\n}`}
         input={`{\n    "numero":1\n}`}
         height="140px"
       />
@@ -122,31 +122,31 @@ function Content() {
       anterior do operador <b>E</b>, porém dessa vez estamos usando o operador{" "}
       <b>Ou</b> e a lógica está invertida. Suponha queremos estabelecer se o
       valor contido em <b>numero</b> NÃO está no intervalo (0, 10). Para isso
-      ser verdade, ou o valor em numero deve ser menor que 0, ou o valor em
-      número deve ser maior que 10. Qualquer uma dessas condições é suficiente
+      ser verdade, ou o valor em <b>numero</b> deve ser menor ou igual a 0, ou o valor em
+      <b>numero</b> deve ser maior ou igual a 10. Qualquer uma dessas condições é suficiente
       para que o valor NÃO esteja no intervalo.
       <p />
       Se o valor em <b>numero</b> estiver fora do intervalo, ou a expressão:
-      numero &lt; 0, ou a expressão: numero &gt; 10 serão avaliadas como
-      verdadeiraS. Neste caso, a expressão mais complexa numero &lt; 0 || numero
-      &gt; 10 também será avaliada como verdadeira.
+      numero &lt;= 0, ou a expressão: numero &gt;= 10 serão avaliadas como
+      verdadeiraS. Neste caso, a expressão mais complexa numero &lt;= 0 || numero
+      &gt;= 10 também será avaliada como verdadeira.
       <p />
       Suponha um caso em que o valor em <b>numero</b> NÃO está no intervalo,
-      tomemos como exemplo o valor 20. Tendo o valor 20 armazenado na variável
-      <b>numero</b> fará com que a segunda expressão (numero &gt; 10) seja
-      avaliada como verdadeira. Embora a primeira expressão (numero &lt; 0) seja
-      avaliada como falsa ainda assim, por termos a segunda expressão
-      verdadeira, a expressão: (numero &lt; 0 || numero &gt; 10) também será
-      verdadeira, pois uma das duas expressões é verdadeira. Neste caso o
+      tomemos como exemplo o valor 20. Ter o valor 20 armazenado na variável{" "}
+      <b>numero</b> fará com que a segunda expressão (numero &gt;= 10) seja
+      avaliada como verdadeira. Embora a primeira expressão (numero &lt;= 0) seja
+      avaliada como falsa, ainda assim, por termos a segunda expressão
+      verdadeira, a expressão: (numero &lt;= 0 || numero &gt;= 10) também será
+      verdadeira, pois uma das duas expressões é verdadeira. O
       programa irá produzir como saída a mensagem: "numero está fora do
       intervalo (0, 10)".
       <p />
       Um outro caso que podemos analisar é aquele em que o valor de{" "}
-      <b>numero</b> é igual a 5. Neste caso, o valor está no intervalo (0,10) e
+      <b>numero</b> é igual a 5. O valor está no intervalo (0,10) e
       como podemos perceber, isto fará com que a expressão maior seja avaliada
-      como falsa. Isto porque, tanto: numero &lt; 0 quanto: numero &gt; 10 serão
+      como falsa. Isto porque, tanto: numero &lt;= 0 quanto: numero &gt;= 10 serão
       avaliadas como falsa. No caso de ambas serem falsas, o resultado da
-      expressão: numero &lt; 0 || numero &gt; 10 também é falso. Neste caso, o
+      expressão: numero &lt;= 0 || numero &gt;= 10 também é falso. Assim sendo, o
       programa irá produzir a mensagem: "numero está no intervalo (0, 10)".
       <p />
       Para solidificarmos o conhecimento, devemos entender que o operador é

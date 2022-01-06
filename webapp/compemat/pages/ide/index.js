@@ -272,7 +272,7 @@ function CodePane(props) {
         className={classes.executionTitle}
       >
         <Grid>
-          <Title size={14}>Execução</Title>
+          <Title size={14}>Terminal</Title>
         </Grid>
         <Grid>
           <Tooltip title="Limpar Registros" placement="bottom-end">

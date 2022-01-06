@@ -70,7 +70,7 @@ function Content() {
       existe outra condição. Isso significa que caso todas as expressões lógicas
       sejam avaliadas como falsas, o bloco relacionado ao último <b>else</b> é
       executado. Neste caso, o programa irá emitir como saída a string: "numero
-      difere de 1, 2 e 3".
+      diferente de 1, 2 e 3".
       <p />O <b>else</b> ao final será executado apenas se nenhuma das outras
       expressões lógicas forem consideradas verdadeiras. Esse <b>else</b> não é
       obrigatório (nenhum <b>else</b> é) e naturalmente só pode existir como

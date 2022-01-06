@@ -1,0 +1,48 @@
+{
+    "id": "ex_bandeira_do_brasil",
+    "name": "Bandeira do Brasil",
+    "category": "arithmetic",
+    "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+    ],
+    "cases": [
+        {
+            "input": {
+                "C": 180,
+                "L": 150
+            },
+            "output": [
+                63
+            ]
+        },
+        {
+            "input": {
+                "C": 140,
+                "L": 118
+            },
+            "output": [
+                49
+            ]
+        },
+        {
+            "input": {
+                "C": 220,
+                "L": 184
+            },
+            "output": [
+                77
+            ]
+        },
+        {
+            "input": {
+                "C": 280,
+                "L": 234
+            },
+            "output": [
+                98
+            ]
+        }
+    ]
+}
