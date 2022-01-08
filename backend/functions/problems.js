@@ -32,4 +32,11 @@ exports.data = {
     "ex_primo" : "programming",
     "ex_miniatura_trofeu" : "arithmetic",
     "ex_combustivel_moto" :"arithmetic",
+    "ex_onibus_vs_bicicleta": "arithmetic",
+    "ex_bandeira_do_brasil": "arithmetic",
+    "ex_porcelanato": "arithmetic",
+    "ex_jovens_trabalhadores": "arithmetic",
+    "ex_pesquisa_satisfacao": "arithmetic",
+    "ex_recipiente": "arithmetic",
+    "ex_reducao_mesada": "arithmetic"
 }

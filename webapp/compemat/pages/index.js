@@ -38,6 +38,8 @@ const styles = makeStyles((theme) => ({
 
 function Body() {
   const classes = styles();
+  const cardHeight = "130px";
+  const cardContentHeight = "130px";
 
   return (
     <React.Fragment>
@@ -52,7 +54,8 @@ function Body() {
             <Card
               title={"Curso Completo"}
               image={"/img/students.png"}
-              height={"220"}
+              height={cardHeight}
+              contentHeight={cardContentHeight}
               href={"/course"}
               content={
                 "Um curso de reforço em matemática, baseado no conteúdo do ENEM, que vai te ajudar a dar os primeiros passos na programação."
@@ -63,10 +66,11 @@ function Body() {
             <Card
               title={"Pratique"}
               image={"/img/study.png"}
-              height={"220"}
-              href={"/course"}
+              height={cardHeight}
+              contentHeight={cardContentHeight}
+              href={"/classes"}
               content={
-                "Temos dezenas de exercícios que vão te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."
+                "Temos um material didático que vai te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."
               }
             />
           </Grid>
@@ -74,8 +78,9 @@ function Body() {
             <Card
               title={"Prepare-se"}
               image={"/img/exam.png"}
-              height={"220"}
-              href={"/course"}
+              height={cardHeight}
+              contentHeight={cardContentHeight}
+              href={"/exercises"}
               content={
                 "Se familiarize com as questões de matemática do ENEM dos últimos anos e faça uma excelente prova."
               }

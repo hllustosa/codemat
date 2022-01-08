@@ -8,64 +8,92 @@ const styles = makeStyles((theme) => ({
     padding: "25px",
     minHeight: "calc(100vh - 230px)",
     background: CONTENT_BG,
-    margin: "auto"
-  }
+    margin: "auto",
+  },
+  blockQuote: {
+    borderLeft: `7px solid ${PRIMARY}`,
+    background: "#ebebeb",
+    padding: "15px 10px",
+    margin: "25px",
+    fontStyle: "italic",
+  },
 }));
 
-function About() {
+function Course() {
   const classes = styles();
   return (
     <main className={classes.root}>
+      <p style={{ fontSize: "20px" }}> Bem vindos ao Comp & Mat </p>
       <img
-        style={{ float: "right", marginLeft: "15px", marginBottom: "15px" }}
-        src=""
-        width="245px"
-        height="330px"
-      ></img>
-      <p style={{fontSize: "20px"}}> Saudações </p>
-      Eu sou o prof. Hermano Lustosa! Sou nascido e criado em Teresópolis no
-      estado do Rio de Janeiro. Filho de uma costureira e dona de casa e de um
-      mecânico. Sou (quase) casado com uma professora, e irmão de outras duas. 
-      Minha vida inteira sempre gostei de entender como as coisas
-      funcionavam. Adoro ciências, tecnologia, matemática 
-      e uma ou outra viagem filosófica e espiritualista. <p />
-      Sou do mundo das exatas. Formado em Ciência da Computação pela minha
-      querida faculdade UNIFESO, mestre e doutor em Gerenciamento de Dados
-      Científicos pelo LNCC. Passei minha vida em sala de aula, seja como aluno ou
-      professor. Depois dos últimos 6 anos trabalhando como professor
-      universitário, me senti esmagado com o cenário devastador da educação ao meu redor e em
-      nosso país. <p />
-      Vi muitos alunos e alunas empurrarem a faculdade com a barriga, passando
-      anos de suas vidas em um curso universitário caro, mas sem ter nenhuma
-      paixão, gosto ou motivação pelo conteúdo que lhes era passado. Vi alunos e
-      alunas pobres que assistiam às aulas à noite após as 8h horas de trabalho
-      diário e cuja capacidade de ter atenção e aprender um tema novo e denso
-      era seriamente prejudicada. Vi a instituição onde trabalhava tomar uma
-      série de medidas questionáveis para não ficar para trás na competição
-      agressiva com as grandes franquias de EaD. E vejo hoje, a uma certa distância,
-      o deficitário ensino público da minha comunidade ficar ainda pior. <p />
-      Por outro lado, também atuo como desenvolvedor há alguns anos, tendo
-      trabalhado em empresas na área de automação comercial, saúde e pagamentos.
-      Vejo o mundo das techs, big techs, fintechs, edutechs, logtechs, govtechs
-      e qualquer outra coisa tech que se possa imaginar. Nesse mundo, saber
-      programar e criar soluções computacionais é um privilégio! No momento
-      temos pleno emprego, oportunidades e bons salários. <p />
-      Este novo curso de matemática, computação e programação,
-      é o resultado da minha insatisfação como professor, meu amor
-      pela ciência e tecnologia, e minha esperança no mercado de desenvolvimento de softwares.  
-      O curso é voltado para alunas e alunos do ensino médio que 
-      queiram dar os primeiros passos no mundo da programação.
+        style={{ margin: "auto",  display: "block", maxWidth: "270px"  }}
+        src="/img/logo-header.svg"
+        width="320px"
+        height="130px"
+      ></img>{" "}
       <p />
-      Espero que o conteúdo passado no curso ajude os jovens a recuperar (mesmo
-      que em pequena parte) o tempo perdido com a falta das aulas durante a
-      pandemia. Também desejo que, mesmo diante das dificuldades e limitações impostas pelo
-      momento atual, os estudantes não percam a esperança e a aspiração de
-      uma vida um pouco melhor no futuro! <p />
-
-      Um abraço, <br/>
+      Milhões de estudantes do país inteiro ficaram sem aulas devido à
+      pandemia, e como sempre, os mais pobres foram os mais prejudicados. 
+      As escolas públicas fecharam primeiro, abriram depois e
+      praticamente não funcionaram durante este difícil momento pelo qual
+      passamos. <p />
+      Nesse cenário desolador, vai ser preciso muita paciência e determinação
+      para minimizar o impacto negativo do tempo passado fora da sala de aula
+      por milhões de jovens em todo o país.
+      <p />
+      Este curso é uma pequena iniciativa individual cujo objetivo é
+      fornecer um conteúdo de qualidade e estruturado para os estudantes que
+      querem aprimorar seu conhecimento matemático enquanto aprendem uma nova
+      habilidade, a programação.
+      <p />
+      Este curso une o útil ao mais útil ainda, permitindo que os alunos façam
+      uma revisão do conteúdo de matemática do ensino médio, com foco nos
+      principais tópicos cobrados na prova ENEM, enquanto aprendem e
+      praticam programação.
+      <p />
+      Muitos podem questionar: &ldquo;Para que aprender a resolver as questões do ENEM
+      utilizando programação, se não vou poder usar um computador durante a
+      prova?&rdquo;. A resposta para isso é simples, se você consegue criar uma
+      solução computacional reproduzível para uma questão do ENEM, você
+      facilmente seria capaz de manualmente resolver uma instância desse mesmo
+      problema. De qualquer forma, vale ressaltar que este curso não é uma bala
+      de prata para todas as necessidades de aprendizado em matemática, e os
+      estudantes devem buscar fontes complementares de estudo e exercícios para
+      se desenvolverem.
+      <p />
+      A internet está cheia de recursos parecidos e bastante
+      valiosos. E isto é ótimo! Esse curso se apresenta como mais um recurso
+      disponível aos estudantes. Espero que um bom número deles se beneficie e
+      aprenda coisas novas.
+      <p />
+      O curso está divido em algumas unidades temáticas.
+      Programação, Aritmética, Funções, Progressões, Trigonometria, Matemática
+      Financeira, entre outros temas. O principal diferencial do curso é o
+      aspecto computacional e prático. Por exemplo, esta página disponibiliza um ambiente com 
+      vários exercícios de programação e matemática, muitos deles baseados em questões
+      do ENEM. O ideal é que os alunos pratiquem resolvendo os exercícios enquanto avançam no curso.
+      <p />
+      Nesta página, os estudantes conseguem não apenas programar as soluções dos
+      exercícios na linguagem JavaScript, como também obter uma resposta
+      automática em tempo real sobre a corretude do código criado. O ambiente
+      também mostra mensagens amigáveis para os usuários em caso de erro, e se o
+      estudante estiver logado, é possível registrar o progresso e as soluções
+      enviadas para conferência posterior.
+      <p />
+      A necessidade de um ter um computador ou celular e acesso a internet
+      é uma barreira grande. Como medida individual, o autor do curso planeja oferecer aulas e oficinas
+      presenciais baseadas no curso em um ambiente físico, quando isto for possível no futuro.  
+      <p />
+      O tempo está passando, para que esperar mais? Bora aprender?
+      <p />
+      Bons Estudos <br />
       Prof. Hermano Lustosa
     </main>
   );
 }
 
-export default withBaseContentPage(About, "Sobre o autor", "Egotrip", "180px");
+export default withBaseContentPage(
+  Course,
+  "O Curso",
+  "Matemática, Programação e Computação",
+  "180px"
+);

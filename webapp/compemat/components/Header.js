@@ -60,11 +60,6 @@ function RowMenu() {
     <nav>
       <Grid container item alignItems="center" spacing={2}>
         <Grid item>
-          <Link href={routes.course}>
-            <a className={classes.link}>Curso</a>
-          </Link>
-        </Grid>
-        <Grid item>
           <Link href={routes.classes}>
             <a className={classes.link}>Aulas</a>
           </Link>

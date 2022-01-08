@@ -292,5 +292,23 @@
     "name": "Redução da Mesada",
     "category": "Arithmetic",
     "labels": [ "enem", "arimética", "unidade 5"]
+  },
+  "ex_baskahra": {
+    "id": "ex_baskahra",
+    "name": "Fórmula de Baskahra",
+    "category": "Functions",
+    "labels": [ "enem", "funções", "unidade 6"]
+  },
+  "ex_disciplinas": {
+    "id": "ex_disciplinas",
+    "name": "Disciplinas",
+    "category": "Functions",
+    "labels": [ "enem", "funções", "unidade 6"]
+  },
+  "ex_aluguel_bicicleta": {
+    "id": "ex_aluguel_bicicleta",
+    "name": "Aluguel de Bicicletas",
+    "category": "Functions",
+    "labels": [ "enem", "funções", "unidade 6"]
   }
 }

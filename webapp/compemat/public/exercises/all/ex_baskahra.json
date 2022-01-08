@@ -1,0 +1,73 @@
+{
+    "id": "ex_baskahra",
+    "name": "Fórmula de Baskahra",
+    "category": "Functions",
+    "labels": [
+        "funções",
+        "unidade 6"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "a": 6,
+                "b": 11,
+                "c": 35
+            },
+            "output": [
+                "sem raizes"
+            ]
+        },
+        {
+            "input": {
+                "a": 2,
+                "b": -4,
+                "c": -2
+            },
+            "output": [
+                2.414213562373095,-0.41421356237309515
+            ]
+        },
+        {
+            "input": {
+                "a": 1,
+                "b": 0,
+                "c": 0
+            },
+            "output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "a": 1,
+                "b": -1,
+                "c": -3
+            },
+            "output": [
+                2.302775637731995,-1.3027756377319946
+            ]
+        },
+        {
+            "input": {
+                "a": 3,
+                "b": 4,
+                "c": 2
+            },
+            "output": [
+                "sem raizes"
+            ]
+        },
+        {
+            "input": {
+                "a": -1,
+                "b": 6,
+                "c": 18
+            },
+            "output": [
+                -2.196152422706632,8.196152422706632
+            ]
+        }
+    ]
+}

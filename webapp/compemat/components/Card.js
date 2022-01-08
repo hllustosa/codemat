@@ -22,11 +22,11 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard(props) {
   const classes = useStyles();
-  const { title, content, image, height, href, contain } = props;
+  const { title, content, image, height, contentHeight, href, contain } = props;
 
   return (
-    <Fade in timeout={4000}>
       <Link className={classes.link} href={href}>
+        <Fade in timeout={4000}>
         <Card className={classes.root} elevation={0}>
           <CardActionArea>
             <CardMedia
@@ -37,7 +37,7 @@ export default function ImgMediaCard(props) {
               title={title}
               classes={contain ? { img: classes.image } : {}}
             />
-            <CardContent>
+            <CardContent style={{padding:"10px", height: contentHeight}} >
               <Typography
                 color="primary"
                 gutterBottom
@@ -52,7 +52,7 @@ export default function ImgMediaCard(props) {
             </CardContent>
           </CardActionArea>
         </Card>
+        </Fade>
       </Link>
-    </Fade>
   );
 }

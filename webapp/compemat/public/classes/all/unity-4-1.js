@@ -36,14 +36,13 @@ function Content() {
       outros pontos do mesmo software, e até mesmo exportado e utilizado em
       outros softwares.
       <p />
-      Quebrar um código grande e complexo em funções menores é uma boa prática
+      Quebrar um código grande e complexo em blocos menores é uma boa prática
       de programação e podemos fazer justamente isso com o uso de funções. As
       funções fazem com que o código fique mais legível e fácil de manter. Elas
       permitem que tarefas repetidas sejam encapsuladas, e ao invés de termos um
       mesmo conjunto de linhas em partes diferentes de nosso programa, podemos
       criar uma função com um bloco de código contendo esse trecho repetido em
-      apenas uma parte do nosso programa, permitindo que chamemos essa função
-      onde precisarmos.
+      apenas uma parte do nosso programa.
       <p />
       Vamos ao nosso primeiro exemplo:
       <p />
@@ -187,7 +186,7 @@ function Content() {
       na linguagem JavaScript:
       <p />
       <ClassCodeEditor
-        code={`//Exponenciação\nvar exp = Math.pow(2, 10);\noutput("2 elevado a 10 é igual a "+exp);\n\n//O logaritmo\nvar log = Math.log(64);\noutput("O log de 64 na base e é "+ log);\n\n//Valor absoluto ou módulo\nvar mod = Math.abs(-42);\noutput("O módulo de -42 é "+mod);\n\n//Função piso e teto\nvar piso = Math.floor(4.4);\nvar teto = Math.ceil(4.5);\noutput("O piso de 4,5 é "+piso+" e o teto é "+teto);\n\n//Funções trigonométricas (graus em radianos) \nvar cosseno = Math.cos(0);\nvar seno = Math.sin(0);\noutput("O cosseno de 0 é "+cosseno);\noutput("O seno de 0 é "+seno);`}
+        code={`//Exponenciação\nvar exp = Math.pow(2, 10);\noutput("2 elevado a 10 é igual a "+exp);\n\n//Raiz Quadrada\nvar raiz = Math.sqrt(4);\noutput("Raiz quadrada de 4 é "+raiz)\n\n//O logaritmo\nvar log = Math.log(64);\noutput("O log de 64 na base e é "+ log);\n\n//Valor absoluto ou módulo\nvar mod = Math.abs(-42);\noutput("O módulo de -42 é "+mod);\n\n//Função piso e teto\nvar piso = Math.floor(4.4);\nvar teto = Math.ceil(4.5);\noutput("O piso de 4,5 é "+piso+" e o teto é "+teto);\n\n//Funções trigonométricas (graus em radianos) \nvar cosseno = Math.cos(0);\nvar seno = Math.sin(0);\noutput("O cosseno de 0 é "+cosseno);\noutput("O seno de 0 é "+seno);`}
         input={"{}"}
         height="430px"
       />

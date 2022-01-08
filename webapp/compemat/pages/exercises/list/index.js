@@ -57,7 +57,10 @@ function Body() {
           return true;
         }
 
-        if (item.name.toUpperCase().includes(search.toUpperCase())) {
+        var normalizedSearch = search ? search.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") : "";
+        var itemName = item.name.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
+        if (itemName.includes(normalizedSearch)) {
           if (category) {
             return item.category.toUpperCase().includes(category.toUpperCase());
           }

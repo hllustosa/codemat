@@ -11,7 +11,7 @@ const styles = makeStyles((theme) => ({
   body: {
     maxWidth: "1000px",
     width: "100%",
-    minHeight: "calc(100vh - 68px)",
+    //minHeight: "calc(100vh - 68px)",
     margin: "auto",
     //backgroundColor: GREY_2,
     padding: "10px",
@@ -22,6 +22,8 @@ const styles = makeStyles((theme) => ({
 function Body(props) {
   const [search, setSearch] = React.useState("");
   const classes = styles();
+  const cardHeight = "135px";
+  const contentHeight = "90px";
   props.setTitle("C & M: Exercícios de Programação");
 
   const router = useRouter();
@@ -34,8 +36,7 @@ function Body(props) {
       <Grid
         className={classes.body}
         container
-        justifyContent="center"
-        spacing={2}
+        spacing={1}
       >
         <Grid item xs={12} md={12}>
           <SearchField
@@ -52,74 +53,82 @@ function Body(props) {
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card
             title={"Programação"}
             image={"/img/programming.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=programming"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card
             title={"Aritmética e Porcentagem"}
             image={"/img/arithmetic.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=arithmetic"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card
             title={"Análise Combinatória"}
             image={"img/combinatorics.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=combinatorics"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card
             title={"Matemática Financeira"}
             image={"/img/finances.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=financial"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6}  md={3}>
           <Card
             title={"Funções"}
             image={"/img/functions.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=functions"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card
             title={"Probabilidade"}
             image={"/img/probability.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=probability"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6}  md={3}>
           <Card
             title={"Progressões"}
             image={"img/progression.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=progression"}
             contain
           />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card
             title={"Trigonometria"}
             image={"/img/trigonometry.svg"}
-            height={"280"}
+            height={cardHeight}
+            contentHeight={contentHeight}
             href={"exercises/list?cat=trigonometry"}
             contain
           />
