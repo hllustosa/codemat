@@ -56,7 +56,7 @@ function Body() {
               image={"/img/students.png"}
               height={cardHeight}
               contentHeight={cardContentHeight}
-              href={"/course"}
+              href={"/about"}
               content={
                 "Um curso de reforço em matemática, baseado no conteúdo do ENEM, que vai te ajudar a dar os primeiros passos na programação."
               }
@@ -68,7 +68,7 @@ function Body() {
               image={"/img/study.png"}
               height={cardHeight}
               contentHeight={cardContentHeight}
-              href={"/classes"}
+              href={"/classes/unity-0/1"}
               content={
                 "Temos um material didático que vai te ajudar a fixar o conteúdo e a desenvolver seu pensamento computacional."
               }

@@ -1,0 +1,50 @@
+{
+    "id": "ex_canhao",
+    "name": "Canhão",
+    "category": "Functions",
+    "labels": [
+        "funções",
+        "enem",
+        "unidade 6"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "D": 20,
+                "H": 50
+            },
+            "output": [
+                "y = -0.5x^2 + 10x"
+            ]
+        },
+        {
+            "input": {
+                "D": 360,
+                "H": 8100
+            },
+            "output": [
+                "y = -0.25x^2 + 90x"
+            ]
+        },
+        {
+            "input": {
+                "D": 100,
+                "H": 250
+            },
+            "output": [
+                "y = -0.1x^2 + 10x"
+            ]
+        },
+        {
+            "input": {
+                "D": 300,
+                "H": 11250
+            },
+            "output": [
+                "y = -0.5x^2 + 150x"
+            ]
+        }
+    ]
+}

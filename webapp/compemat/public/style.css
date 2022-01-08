@@ -20,8 +20,8 @@ a, a:visited {
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: 10px;
-  scrollbar-color: #313B61 #e9e8e8;
+  scrollbar-width: thin;
+  scrollbar-color: #313B61 rgba(0, 0, 0, 0);
 }
 
 /* Chrome, Edge, and Safari */

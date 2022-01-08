@@ -310,5 +310,23 @@
     "name": "Aluguel de Bicicletas",
     "category": "Functions",
     "labels": [ "enem", "funções", "unidade 6"]
+  },
+  "ex_pneu": {
+    "id": "ex_pneu",
+    "name": "Carga de Pneus",
+    "category": "Functions",
+    "labels": [ "enem", "funções", "unidade 6"]
+  },
+  "ex_chocolate": {
+    "id": "ex_chocolate",
+    "name": "Barras de Chocolate",
+    "category": "Functions",
+    "labels": [ "enem", "funções", "unidade 6"]
+  },
+  "ex_canhao": {
+    "id": "ex_canhao",
+    "name": "Canhão",
+    "category": "Functions",
+    "labels": [ "enem", "funções", "unidade 6"]
   }
 }
