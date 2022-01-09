@@ -1,0 +1,59 @@
+{
+    "id": "ex_imposto_renda",
+    "name": "Imposto de Renda",
+    "category": "Probability",
+    "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "FC": 6.25,
+                "FI": 25
+            },
+            "output": [
+                0.5
+            ]
+        },
+        {
+            "input": {
+                "FC": 2.5,
+                "FI": 90
+            },
+            "output": [
+                0.9
+            ]
+        },
+        {
+            "input": {
+                "FC": 10,
+                "FI": 70
+            },
+            "output": [
+                0.6363636363636364
+            ]
+        },
+        {
+            "input": {
+                "FC": 5,
+                "FI": 40
+            },
+            "output": [
+                0.6666666666666666
+            ]
+        },
+        {
+            "input": {
+                "FC": 5,
+                "FI": 35
+            },
+            "output": [
+                0.6363636363636364
+            ]
+        }
+    ]
+}

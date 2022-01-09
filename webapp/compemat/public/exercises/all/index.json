@@ -364,11 +364,5 @@
     "name": "Imposto de Renda",
     "category": "Probability",
     "labels": [ "enem", "probabilidade", "unidade 7"]
-  },
-  "ex_amigo_secreto": {
-    "id": "ex_amigo_secreto",
-    "name": "Amigo Secreto",
-    "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
   }
 }

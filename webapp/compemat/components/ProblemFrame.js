@@ -21,7 +21,7 @@ const styles = makeStyles((theme) => ({
   root: {
     padding: "15px",
     width: "100%",
-    height: "calc(100vh - 180px)",
+    height: "calc(100vh - 200px)",
     minHeight: "330px",
     minWidth: "290px",
     backgroundColor: "#FFFFFF",
