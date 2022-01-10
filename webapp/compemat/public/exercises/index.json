@@ -370,5 +370,41 @@
     "name": "Amigo Secreto",
     "category": "Probability",
     "labels": [ "enem", "probabilidade", "unidade 7"]
+  },
+  "ex_soma_termos": {
+    "id": "ex_soma_termos",
+    "name": "Soma de Termos",
+    "category": "Progression",
+    "labels": [ "Progressões", "unidade 8"]
+  },
+  "ex_corredor": {
+    "id": "ex_corredor",
+    "name": "Corredor",
+    "category": "Progression",
+    "labels": [ "enem", "Progressões", "unidade 8"]
+  },
+  "ex_residuo": {
+    "id": "ex_residuo",
+    "name": "Resíduos",
+    "category": "Progression",
+    "labels": [ "enem", "Progressões", "unidade 8"]
+  },
+  "ex_codigo_secreto": {
+    "id": "ex_codigo_secreto",
+    "name": "Código Secreto",
+    "category": "Progression",
+    "labels": [ "enem", "Progressões", "unidade 8"]
+  },
+  "ex_papel": {
+    "id": "ex_papel",
+    "name": "Papel",
+    "category": "Progression",
+    "labels": [ "enem", "Progressões", "unidade 8"]
+  },
+  "ex_torneira": {
+    "id": "ex_torneira",
+    "name": "Torneira",
+    "category": "Progression",
+    "labels": [ "enem", "Progressões", "unidade 8"]
   }
 }

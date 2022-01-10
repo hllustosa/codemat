@@ -39,9 +39,7 @@ export function copyTextToClipboard(text) {
     return;
   }
   navigator.clipboard.writeText(text).then(
-    function () {
-    },
-    function (err) {
-    }
+    function () {},
+    function (err) {}
   );
 }

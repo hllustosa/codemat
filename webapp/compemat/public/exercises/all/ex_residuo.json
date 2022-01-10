@@ -1,0 +1,54 @@
+{
+    "id": "ex_residuo",
+    "name": "Resíduos",
+    "category": "Progression",
+    "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "a": 2020
+            },
+            "output": [
+                660
+            ]
+        },
+        {
+            "input": {
+                "a": 2015
+            },
+            "output": [
+                620
+            ]
+        },
+        {
+            "input": {
+                "a": 2030
+            },
+            "output": [
+                740
+            ]
+        },
+        {
+            "input": {
+                "a": 2040
+            },
+            "output": [
+                820
+            ]
+        },
+        {
+            "input": {
+                "a": 2100
+            },
+            "output": [
+                1300
+            ]
+        }
+    ]
+}

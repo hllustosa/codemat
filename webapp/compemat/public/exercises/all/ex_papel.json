@@ -1,0 +1,54 @@
+{
+    "id": "ex_papel",
+    "name": "Papel",
+    "category": "Progression",
+    "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+    ],
+    "previous": "",
+    "next": "",
+    "cases": [
+        {
+            "input": {
+                "s": 8
+            },
+            "output": [
+                256
+            ]
+        },
+        {
+            "input": {
+                "s": 7
+            },
+            "output": [
+                128
+            ]
+        },
+        {
+            "input": {
+                "s": 6
+            },
+            "output": [
+                64
+            ]
+        },
+        {
+            "input": {
+                "s": 5
+            },
+            "output": [
+                32
+            ]
+        },
+        {
+            "input": {
+                "s": 4
+            },
+            "output": [
+                16
+            ]
+        }
+    ]
+}
