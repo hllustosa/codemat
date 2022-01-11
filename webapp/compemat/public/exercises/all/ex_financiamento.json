@@ -1,0 +1,45 @@
+{
+  "id": "ex_financiamento",
+  "name": "Financiamento",
+  "category": "Financial",
+  "labels": ["enem", "Financeira", "unidade 9"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "p1": 202.00,
+        "p2": 204.02
+      },
+      "output": [400]
+    },
+    {
+      "input": {
+        "p1": 505,
+        "p2": 510.05
+      },
+      "output": [1000]
+    },
+    {
+      "input": {
+        "p1": 757.5,
+        "p2": 765.075
+      },
+      "output": [1500]
+    },
+    {
+      "input": {
+        "p1": 404,
+        "p2": 408.04
+      },
+      "output": [800]
+    },
+    {
+      "input": {
+        "p1": 1515,
+        "p2": 1530.15
+      },
+      "output": [3000]
+    }
+  ]
+}

@@ -56,7 +56,6 @@ export default class CodeRunnerManager {
   };
 
   onStatusChangeEnricher = function (newStatus, state) {
-    
     if (
       newStatus === CodeRunnerStates.FINISHED ||
       (newStatus === CodeRunnerStates.STOPPED && state.lastError)
@@ -64,7 +63,7 @@ export default class CodeRunnerManager {
       state["hasError"] = state.lastError ? true : false;
       state["answer"] = this.checkAnswer(state);
       state["expected"] = this.problem.cases[this.currentCase].output;
-      
+
       this.states.push(state);
 
       if (
@@ -82,19 +81,26 @@ export default class CodeRunnerManager {
   checkAnswer = function (state) {
     var expectedOutput = this.problem.cases[this.currentCase].output;
     var outputs = state.outputs;
-    
+
     state["expectedOutput"] = expectedOutput;
 
-    if(!outputs.length){
+    if (!outputs.length) {
       return false;
     }
-    
-    if(outputs.length !== expectedOutput.length){
+
+    if (outputs.length !== expectedOutput.length) {
       return false;
     }
 
     for (let i = 0; i < outputs.length; i++) {
-      if (JSON.stringify(outputs[i]) !== JSON.stringify(expectedOutput[i])) return false;
+      if (!isNaN(outputs[i]) && !isNaN(expectedOutput[i])) {
+        if (Math.abs(outputs[i] - expectedOutput[i]) < 0.000001) {
+          continue;
+        }
+      }
+
+      if (JSON.stringify(outputs[i]) !== JSON.stringify(expectedOutput[i]))
+        return false;
     }
 
     return true;

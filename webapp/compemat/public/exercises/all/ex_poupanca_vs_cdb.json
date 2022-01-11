@@ -1,0 +1,45 @@
+{
+  "id": "ex_poupanca_vs_cdb",
+  "name": "Poupança vs. CDB",
+  "category": "Financial",
+  "labels": ["enem", "Financeira", "unidade 9"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "r_p": 0.56,
+        "r_cdb": 0.876
+      },
+      "output": ["cdb", 504.2048]
+    },
+    {
+      "input": {
+        "r_p": 0.56,
+        "r_cdb": 0.676
+      },
+      "output": ["cdb",503.2448]
+    },
+    {
+      "input": {
+        "r_p": 0.56,
+        "r_cdb": 0.475
+      },
+      "output": ["poupanca",502.8]
+    },
+    {
+      "input": {
+        "r_p": 0.56,
+        "r_cdb": 0.765
+      },
+      "output": ["cdb",503.67199999999997]
+    },
+    {
+      "input": {
+        "r_p": 0.49,
+        "r_cdb": 0.61
+      },
+      "output": ["cdb",502.928]
+    }
+  ]
+}

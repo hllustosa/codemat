@@ -70,7 +70,7 @@
     "name": "Comparador de Números",
     "category": "Programming",
     "labels": ["estrutura de controle", "básico", "unidade 2"]
-  }, 
+  },
   "ex_positivo_negativo": {
     "id": "ex_positivo_negativo",
     "name": "Positivo ou Negativo",
@@ -82,7 +82,7 @@
     "name": "Par ou Ímpar",
     "category": "Programming",
     "labels": ["estrutura de controle", "aritmética", "unidade 2"]
-  }, 
+  },
   "ex_lucro_ou_prejuizo": {
     "id": "ex_lucro_ou_prejuizo",
     "name": "Lucro ou Prejuízo",
@@ -123,13 +123,23 @@
     "id": "ex_tipos_triangulo",
     "name": "Tipos de Triângulos",
     "category": "Programming",
-    "labels": ["estrutura de controle", "geometria", "condicional complexa", "unidade 3"]
+    "labels": [
+      "estrutura de controle",
+      "geometria",
+      "condicional complexa",
+      "unidade 3"
+    ]
   },
   "ex_ponto_quadrado": {
     "id": "ex_ponto_quadrado",
     "name": "Ponto no Quadrado",
     "category": "Programming",
-    "labels": ["estrutura de controle", "geometria", "condicional complexa", "unidade 3"]
+    "labels": [
+      "estrutura de controle",
+      "geometria",
+      "condicional complexa",
+      "unidade 3"
+    ]
   },
   "ex_sistema_irrigacao": {
     "id": "ex_sistema_irrigacao",
@@ -243,168 +253,204 @@
     "id": "ex_miniatura_trofeu",
     "name": "Miniatura do Troféu",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_combustivel_moto": {
     "id": "ex_combustivel_moto",
     "name": "Combustível da Moto",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_onibus_vs_bicicleta": {
     "id": "ex_onibus_vs_bicicleta",
     "name": "Ônibus vs. Bicicleta",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_bandeira_do_brasil": {
     "id": "ex_bandeira_do_brasil",
     "name": "Bandeira do Brasil",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_porcelanato": {
     "id": "ex_porcelanato",
     "name": "Porcelanato",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_jovens_trabalhadores": {
     "id": "ex_jovens_trabalhadores",
     "name": "Jovens Trabalhadores",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_pesquisa_satisfacao": {
     "id": "ex_pesquisa_satisfacao",
     "name": "Pesquisa de Satisfação",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_recipiente": {
     "id": "ex_recipiente",
     "name": "Recipiente",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_reducao_mesada": {
     "id": "ex_reducao_mesada",
     "name": "Redução da Mesada",
     "category": "Arithmetic",
-    "labels": [ "enem", "arimética", "unidade 5"]
+    "labels": ["enem", "arimética", "unidade 5"]
   },
   "ex_baskahra": {
     "id": "ex_baskahra",
     "name": "Fórmula de Baskahra",
     "category": "Functions",
-    "labels": [ "enem", "funções", "unidade 6"]
+    "labels": ["enem", "funções", "unidade 6"]
   },
   "ex_disciplinas": {
     "id": "ex_disciplinas",
     "name": "Disciplinas",
     "category": "Functions",
-    "labels": [ "enem", "funções", "unidade 6"]
+    "labels": ["enem", "funções", "unidade 6"]
   },
   "ex_aluguel_bicicleta": {
     "id": "ex_aluguel_bicicleta",
     "name": "Aluguel de Bicicletas",
     "category": "Functions",
-    "labels": [ "enem", "funções", "unidade 6"]
+    "labels": ["enem", "funções", "unidade 6"]
   },
   "ex_pneu": {
     "id": "ex_pneu",
     "name": "Carga de Pneus",
     "category": "Functions",
-    "labels": [ "enem", "funções", "unidade 6"]
+    "labels": ["enem", "funções", "unidade 6"]
   },
   "ex_chocolate": {
     "id": "ex_chocolate",
     "name": "Barras de Chocolate",
     "category": "Functions",
-    "labels": [ "enem", "funções", "unidade 6"]
+    "labels": ["enem", "funções", "unidade 6"]
   },
   "ex_canhao": {
     "id": "ex_canhao",
     "name": "Canhão",
     "category": "Functions",
-    "labels": [ "enem", "funções", "unidade 6"]
+    "labels": ["enem", "funções", "unidade 6"]
   },
   "ex_docentes": {
     "id": "ex_docentes",
     "name": "Docentes",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
+    "labels": ["enem", "probabilidade", "unidade 7"]
   },
   "ex_moedas": {
     "id": "ex_moedas",
     "name": "Moedas",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
-  }, 
+    "labels": ["enem", "probabilidade", "unidade 7"]
+  },
   "ex_restituição": {
     "id": "ex_restituição",
     "name": "Restituição",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
+    "labels": ["enem", "probabilidade", "unidade 7"]
   },
   "ex_sorteio_viagem": {
     "id": "ex_sorteio_viagem",
     "name": "Sorteio de Viagem",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
+    "labels": ["enem", "probabilidade", "unidade 7"]
   },
   "ex_cor_carro": {
     "id": "ex_cor_carro",
     "name": "Cor do Carro",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
+    "labels": ["enem", "probabilidade", "unidade 7"]
   },
   "ex_imposto_renda": {
     "id": "ex_imposto_renda",
     "name": "Imposto de Renda",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
+    "labels": ["enem", "probabilidade", "unidade 7"]
   },
   "ex_amigo_secreto": {
     "id": "ex_amigo_secreto",
     "name": "Amigo Secreto",
     "category": "Probability",
-    "labels": [ "enem", "probabilidade", "unidade 7"]
+    "labels": ["enem", "probabilidade", "unidade 7"]
   },
   "ex_soma_termos": {
     "id": "ex_soma_termos",
     "name": "Soma de Termos",
     "category": "Progression",
-    "labels": [ "Progressões", "unidade 8"]
+    "labels": ["Progressões", "unidade 8"]
   },
   "ex_corredor": {
     "id": "ex_corredor",
     "name": "Corredor",
     "category": "Progression",
-    "labels": [ "enem", "Progressões", "unidade 8"]
+    "labels": ["enem", "Progressões", "unidade 8"]
   },
   "ex_residuo": {
     "id": "ex_residuo",
     "name": "Resíduos",
     "category": "Progression",
-    "labels": [ "enem", "Progressões", "unidade 8"]
+    "labels": ["enem", "Progressões", "unidade 8"]
   },
   "ex_codigo_secreto": {
     "id": "ex_codigo_secreto",
     "name": "Código Secreto",
     "category": "Progression",
-    "labels": [ "enem", "Progressões", "unidade 8"]
+    "labels": ["enem", "Progressões", "unidade 8"]
   },
   "ex_papel": {
     "id": "ex_papel",
     "name": "Papel",
     "category": "Progression",
-    "labels": [ "enem", "Progressões", "unidade 8"]
+    "labels": ["enem", "Progressões", "unidade 8"]
   },
   "ex_torneira": {
     "id": "ex_torneira",
     "name": "Torneira",
     "category": "Progression",
-    "labels": [ "enem", "Progressões", "unidade 8"]
+    "labels": ["enem", "Progressões", "unidade 8"]
+  },
+  "ex_juros_simples": {
+    "id": "ex_juros_simples",
+    "name": "Juros Simples",
+    "category": "Financial",
+    "labels": ["Financeira", "unidade 9"]
+  },
+  "ex_juros_compostos": {
+    "id": "ex_juros_compostos",
+    "name": "Juros Compostos",
+    "category": "Financial",
+    "labels": ["Financeira", "unidade 9"]
+  },
+  "ex_aplicacao": {
+    "id": "ex_aplicacao",
+    "name": "Aplicação",
+    "category": "Financial",
+    "labels": ["enem", "Financeira", "unidade 9"]
+  },
+  "ex_prestacao_imovel": {
+    "id": "ex_prestacao_imovel",
+    "name": "Prestação do Imóvel",
+    "category": "Financial",
+    "labels": ["enem", "Financeira", "unidade 9"]
+  },
+  "ex_investimento": {
+    "id": "ex_investimento",
+    "name": "Investimentos",
+    "category": "Financial",
+    "labels": ["enem", "Financeira", "unidade 9"]
+  },
+  "ex_poupanca_vs_cdb": {
+    "id": "ex_poupanca_vs_cdb",
+    "name": "Poupança vs. CDB",
+    "category": "Financial",
+    "labels": ["enem", "Financeira", "unidade 9"]
   }
 }

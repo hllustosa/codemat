@@ -1,0 +1,40 @@
+{
+  "id": "ex_prestacao_imovel",
+  "name": "Prestação do Imóvel",
+  "category": "Financial",
+  "labels": ["enem", "Financeira", "unidade 9"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "n": 10
+      },
+      "output": [2255.00]
+    },
+    {
+      "input": {
+        "n": 300
+      },
+      "output": [805]
+    },
+    {
+      "input": {
+        "n": 180
+      },
+      "output": [1405]
+    },
+    {
+      "input": {
+        "n": 20
+      },
+      "output": [2205]
+    },
+    {
+      "input": {
+        "n": 100
+      },
+      "output": [1805]
+    }
+  ]
+}

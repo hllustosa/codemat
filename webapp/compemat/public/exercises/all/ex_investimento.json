@@ -1,0 +1,40 @@
+{
+  "id": "ex_investimento",
+  "name": "Investimento",
+  "category": "Financial",
+  "labels": ["enem", "Financeira", "unidade 9"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "M": 3800.00
+      },
+      "output": [5000.00]
+    },
+    {
+      "input": {
+        "M": 4200
+      },
+      "output": [5526.315789473684]
+    },
+    {
+      "input": {
+        "M": 10000
+      },
+      "output": [13157.894736842105]
+    },
+    {
+      "input": {
+        "M": 14000
+      },
+      "output": [18421.052631578947]
+    },
+    {
+      "input": {
+        "M": 900
+      },
+      "output": [1184.2105263157894]
+    }
+  ]
+}
