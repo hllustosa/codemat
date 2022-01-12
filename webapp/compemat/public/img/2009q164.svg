@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="82.107216mm"
+   height="63.049122mm"
+   viewBox="0 0 82.107216 63.049122"
+   version="1.1"
+   id="svg95776"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="2009q164.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview95778"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0460067"
+     inkscape:cx="157.13536"
+     inkscape:cy="101.41707"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g95914" />
+  <defs
+     id="defs95773">
+    <clipPath
+       id="clip0">
+      <rect
+         x="242"
+         y="54"
+         width="331"
+         height="267"
+         id="rect95881" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.009698,-15.158855)">
+    <g
+       clip-path="url(#clip0)"
+       transform="matrix(0.26458333,0,0,0.26458333,-49.444815,-2.2393076)"
+       id="g95914">
+      <rect
+         x="252"
+         y="90"
+         width="285"
+         height="190"
+         stroke="#000000"
+         stroke-width="1.66667"
+         stroke-miterlimit="8"
+         fill="#ffffff"
+         id="rect95886" />
+      <path
+         d="m 252.49,204.5 c 41.97,-0.005 75.999,33.787 76.01,75.481 l -76,0.019 z"
+         stroke="#000000"
+         stroke-width="1.25"
+         stroke-miterlimit="8"
+         fill="#f2f2f2"
+         fill-rule="evenodd"
+         id="path95888" />
+      <text
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="18px"
+         transform="translate(378.692,78)"
+         id="text95890">c km</text>
+      <path
+         d="M 8.33336,-0.416663 277.5,-0.416539 V 0.416794 L 8.33336,0.41667 Z M 10,5 0,0 10,-5 Z m 265.833,-9.99987 10,5.000001234 -10,4.999998766 z"
+         transform="matrix(1,0,0,-1,252.5,80.5)"
+         id="path95892" />
+      <text
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="18px"
+         transform="rotate(90,190.625,358.625)"
+         id="text95894">l km</text>
+      <path
+         d="M 0.416672,8.33337 0.416792,182.417 H -0.416541 L -0.416661,8.33337 Z M -4.99999,10 0,0 5.00001,10 Z m 10.00011,170.75 -4.999988766,10 -5.000011234,-10 z"
+         transform="matrix(1,0,0,-1,546.5,281.25)"
+         id="path95896" />
+      <path
+         d="m 8.33332,-0.416651 55.33338,10e-5 V 0.416783 L 8.33332,0.416682 Z M 9.99999,5.00002 0,0 10,-4.99998 Z M 62,-4.99989 72,1.31234e-4 62,5.00011 Z"
+         transform="matrix(1,0,0,-1,252.5,293.5)"
+         id="path95898" />
+      <text
+         font-family="Calibri, Calibri_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="18px"
+         transform="translate(271.412,304)"
+         id="text95908">r km<tspan
+   font-size="18px"
+   x="164.271"
+   y="-55"
+   id="tspan95900">José</tspan><tspan
+   font-size="18px"
+   x="111.067"
+   y="-153"
+   id="tspan95902">Pedro</tspan><tspan
+   font-size="18px"
+   x="128.383"
+   y="-129"
+   id="tspan95904">o</tspan><tspan
+   font-size="18px"
+   x="1.98334"
+   y="-179"
+   id="tspan95906">João</tspan></text>
+      <path
+         d="M 0,0 106,188.75"
+         stroke="#000000"
+         stroke-width="1.66667"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,253,278.75)"
+         id="path95910" />
+      <path
+         d="M 0,0 285.25,152"
+         stroke="#000000"
+         stroke-width="1.66667"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         transform="matrix(1,0,0,-1,253,279)"
+         id="path95912" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.67811;stroke-linecap:square;stroke-linejoin:round"
+         id="rect99121"
+         width="30.302931"
+         height="19.061522"
+         x="386.29089"
+         y="162.91072" />
+    </g>
+  </g>
+</svg>

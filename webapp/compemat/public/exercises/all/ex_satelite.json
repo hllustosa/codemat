@@ -1,0 +1,45 @@
+{
+  "id": "ex_satelite",
+  "name": "Satélite",
+  "category": "Trigonometry",
+  "labels": ["enem", "Trigonometria", "unidade 10"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "a": 5865,
+        "b": 0.15
+      },
+      "output": [12000]
+    },
+    {
+      "input": {
+        "a": 3500,
+        "b": 0.4
+      },
+      "output": [8333.333333333334]
+    },
+    {
+      "input": {
+        "a": 6300,
+        "b": 0.25
+      },
+      "output": [13440]
+    },
+    {
+      "input": {
+        "a": 5100,
+        "b": 0.15
+      },
+      "output": [10434.782608695652]
+    },
+    {
+      "input": {
+        "a": 4900,
+        "b": 0.5
+      },
+      "output": [13066.666666666666]
+    }
+  ]
+}

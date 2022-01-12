@@ -186,7 +186,7 @@ function Content() {
       na linguagem JavaScript:
       <p />
       <ClassCodeEditor
-        code={`//Exponenciação\nvar exp = Math.pow(2, 10);\noutput("2 elevado a 10 é igual a "+exp);\n\n//Raiz Quadrada\nvar raiz = Math.sqrt(4);\noutput("Raiz quadrada de 4 é "+raiz)\n\n//O logaritmo\nvar log = Math.log(64);\noutput("O log de 64 na base e é "+ log);\n\n//Valor absoluto ou módulo\nvar mod = Math.abs(-42);\noutput("O módulo de -42 é "+mod);\n\n//Função piso e teto\nvar piso = Math.floor(4.4);\nvar teto = Math.ceil(4.5);\noutput("O piso de 4,5 é "+piso+" e o teto é "+teto);\n\n//Funções trigonométricas (graus em radianos) \nvar cosseno = Math.cos(0);\nvar seno = Math.sin(0);\noutput("O cosseno de 0 é "+cosseno);\noutput("O seno de 0 é "+seno);`}
+        code={`//Exponenciação\nvar exp = Math.pow(2, 10);\noutput("2 elevado a 10 é igual a "+exp);\n\n//Raiz Quadrada\nvar raiz = Math.sqrt(4);\noutput("Raiz quadrada de 4 é "+raiz)\n\n//O logaritmo\nvar log = Math.log(64);\noutput("O log de 64 na base e é "+ log);\n\n//Valor absoluto ou módulo\nvar mod = Math.abs(-42);\noutput("O módulo de -42 é "+mod);\n\n//Função piso e teto\nvar piso = Math.floor(4.4);\nvar teto = Math.ceil(4.5);\noutput("O piso de 4,5 é "+piso+" e o teto é "+teto);\n\n//Funções trigonométricas (graus em radianos) \nvar cosseno = Math.cos(0);\nvar seno = Math.sin(0);\nvar tan = Math.tan(45*Math.PI/180.0);\noutput("O valor de PI é "+Math.PI);\noutput("O cosseno de 0 é "+cosseno);\noutput("O seno de 0 é "+seno);\noutput("A tangente de 45 é "+tan);`}
         input={"{}"}
         height="430px"
       />

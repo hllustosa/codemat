@@ -1,0 +1,45 @@
+{
+  "id": "ex_terreno",
+  "name": "Terreno",
+  "category": "Trigonometry",
+  "labels": ["enem", "Trigonometria", "unidade 10"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "c": 3,
+        "l": 2
+      },
+      "output": [0.19245008972987523]
+    },
+    {
+      "input": {
+        "c": 6,
+        "l": 3
+      },
+      "output": [0.14433756729740643]
+    },
+    {
+      "input": {
+        "c": 5,
+        "l": 2
+      },
+      "output": [0.11547005383792515]
+    },
+    {
+      "input": {
+        "c": 10,
+        "l": 4
+      },
+      "output": [0.11547005383792515]
+    },
+    {
+      "input": {
+        "c": 12,
+        "l": 7
+      },
+      "output": [0.16839382851364082]
+    }
+  ]
+}

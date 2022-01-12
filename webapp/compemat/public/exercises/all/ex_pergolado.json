@@ -1,0 +1,40 @@
+{
+  "id": "ex_pergolado",
+  "name": "Pergolado",
+  "category": "Trigonometry",
+  "labels": ["enem", "Trigonometria", "unidade 10"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "theta": 30
+      },
+      "output": [25.98076211353316]
+    },
+    {
+      "input": {
+        "theta": 15
+      },
+      "output": [55.98076211353316]
+    },
+    {
+      "input": {
+        "theta": 45
+      },
+      "output": [15.0]
+    },
+    {
+      "input": {
+        "theta": 60
+      },
+      "output": [8.660254037844389]
+    },
+    {
+      "input": {
+        "theta": 5
+      },
+      "output": [171.45078454142015]
+    }
+  ]
+}

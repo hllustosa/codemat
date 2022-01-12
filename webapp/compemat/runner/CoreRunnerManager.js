@@ -94,7 +94,7 @@ export default class CodeRunnerManager {
 
     for (let i = 0; i < outputs.length; i++) {
       if (!isNaN(outputs[i]) && !isNaN(expectedOutput[i])) {
-        if (Math.abs(outputs[i] - expectedOutput[i]) < 0.000001) {
+        if (Math.abs(outputs[i] - expectedOutput[i]) < 0.001) {
           continue;
         }
       }

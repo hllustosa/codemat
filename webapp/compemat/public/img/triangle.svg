@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="93.881393mm"
+   height="47.907688mm"
+   viewBox="0 0 93.881393 47.907688"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="triangle.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4467452"
+     inkscape:cx="212.89166"
+     inkscape:cy="113.7035"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         x="277"
+         y="94"
+         width="340"
+         height="164"
+         id="rect10650" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.763544,-37.028883)">
+    <g
+       clip-path="url(#clip0)"
+       transform="matrix(0.26458333,0,0,0.26458333,-47.245242,11.979932)"
+       id="g10657"
+       style="fill:none;stroke:#313b61;stroke-opacity:1">
+      <path
+         d="M 278,257 V 96 l 334,161 z"
+         stroke="#2f528f"
+         stroke-width="1.66667"
+         stroke-miterlimit="8"
+         fill="#4472c4"
+         fill-rule="evenodd"
+         id="path10655"
+         style="fill:none;stroke:#313b61;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#313b61;stroke-width:0.444;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path10785"
+       sodipodi:type="arc"
+       sodipodi:cx="115.85561"
+       sodipodi:cy="79.553581"
+       sodipodi:rx="25.270874"
+       sodipodi:ry="25.270874"
+       sodipodi:start="3.1350467"
+       sodipodi:end="3.5521263"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 90.585281,79.719002 A 25.270874,25.270874 0 0 1 92.684548,69.468009" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="70.206673"
+       y="18.479607"
+       id="text21035"
+       transform="rotate(26.887687)"
+       inkscape:transform-center-x="3.1089901"
+       inkscape:transform-center-y="-2.7432266"><tspan
+         sodipodi:role="line"
+         id="tspan21033"
+         style="font-size:4.23333px;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="70.206673"
+         y="18.479607">hipotenusa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="44.946194"
+       y="84.172302"
+       id="text21035-8"
+       transform="rotate(-0.09744513)"
+       inkscape:transform-center-x="4.0177583"
+       inkscape:transform-center-y="-1.0522543"><tspan
+         sodipodi:role="line"
+         id="tspan21033-8"
+         style="font-size:4.23333px;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="44.946194"
+         y="84.172302">cateto adjacente</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="73.04142"
+       y="75.212868"
+       id="text21035-8-8"
+       transform="rotate(-0.09744513)"
+       inkscape:transform-center-x="4.0177583"
+       inkscape:transform-center-y="-1.0522543"><tspan
+         sodipodi:role="line"
+         id="tspan21033-8-1"
+         style="font-size:3.52778px;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="73.04142"
+         y="75.212868">ângulo θ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="-73.566338"
+       y="25.739031"
+       id="text21035-8-4"
+       transform="rotate(-89.165313)"
+       inkscape:transform-center-x="1.093005"
+       inkscape:transform-center-y="4.0003342"><tspan
+         sodipodi:role="line"
+         id="tspan21033-8-4"
+         style="font-size:4.23333px;fill:#313b61;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="-73.566338"
+         y="25.739031">cateto oposto</tspan></text>
+  </g>
+</svg>

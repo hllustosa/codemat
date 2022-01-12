@@ -1,0 +1,45 @@
+{
+  "id": "ex_cateto_adjacente",
+    "name": "Cateto Adjacente",
+  "category": "Trigonometry",
+  "labels": ["Trigonometria", "unidade 10"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "h": 50,
+        "theta": 53.13
+      },
+      "output": [30]
+    },
+    {
+      "input": {
+        "h": 110,
+        "theta": 35.097
+      },
+      "output": [90]
+    },
+    {
+      "input": {
+        "h": 25,
+        "theta": 66.422
+      },
+      "output": [10]
+    },
+    {
+      "input": {
+        "h": 30,
+        "theta": 80.406
+      },
+      "output": [5]
+    },
+    {
+      "input": {
+        "h": 45,
+        "theta": 63.612
+      },
+      "output": [20]
+    }
+  ]
+}

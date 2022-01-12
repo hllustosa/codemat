@@ -452,5 +452,35 @@
     "name": "Poupança vs. CDB",
     "category": "Financial",
     "labels": ["enem", "Financeira", "unidade 9"]
+  },
+  "ex_cateto_oposto": {
+    "id": "ex_cateto_oposto",
+    "name": "Cateto Oposto",
+    "category": "Trigonometry",
+    "labels": ["Trigonometria", "unidade 10"]
+  },
+  "ex_cateto_adjacente": {
+    "id": "ex_cateto_adjacente",
+    "name": "Cateto Adjacente",
+    "category": "Trigonometry",
+    "labels": ["Trigonometria", "unidade 10"]
+  },
+  "ex_satelite": {
+    "id": "ex_satelite",
+    "name": "Satélite",
+    "category": "Trigonometry",
+    "labels": ["enem", "Trigonometria", "unidade 10"]
+  },
+  "ex_pergolado": {
+    "id": "ex_pergolado",
+    "name": "Pergolado",
+    "category": "Trigonometry",
+    "labels": ["enem", "Trigonometria", "unidade 10"]
+  },
+  "ex_terreno": {
+    "id": "ex_terreno",
+    "name": "Terreno",
+    "category": "Trigonometry",
+    "labels": ["enem", "Trigonometria", "unidade 10"]
   }
 }
