@@ -1,0 +1,45 @@
+{
+  "id": "ex_condominio",
+  "name": "Condomínio",
+  "category": "Combinatorics",
+  "labels": ["enem", "Combinatória", "unidade 11"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "Cx": 3,
+        "Cy": 3
+      },
+      "output": [17]
+    },
+    {
+      "input": {
+        "Cx": 2,
+        "Cy": 3
+      },
+      "output": [23]
+    },
+    {
+      "input": {
+        "Cx": 3,
+        "Cy": 2
+      },
+      "output": [17]
+    },
+    {
+      "input": {
+        "Cx": 4,
+        "Cy": 3
+      },
+      "output": [15]
+    },
+    {
+      "input": {
+        "Cx": 3,
+        "Cy": 4
+      },
+      "output": [25]
+    }
+  ]
+}

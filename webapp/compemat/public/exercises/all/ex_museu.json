@@ -1,0 +1,31 @@
+{
+  "id": "ex_museu",
+  "name": "Museu",
+  "category": "Combinatorics",
+  "labels": ["enem", "Combinatória", "unidade 11"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "m_n": 4,
+        "m_i": 4
+      },
+      "output": [24]
+    },
+    {
+      "input": {
+        "m_n": 6,
+        "m_i": 3
+      },
+      "output": [60]
+    },
+    {
+      "input": {
+        "m_n": 3,
+        "m_i": 5
+      },
+      "output": [10]
+    }
+  ]
+}

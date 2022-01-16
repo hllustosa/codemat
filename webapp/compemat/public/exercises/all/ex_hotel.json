@@ -1,0 +1,40 @@
+{
+  "id": "ex_hotel",
+  "name": "Hotel",
+  "category": "Combinatorics",
+  "labels": ["enem", "Combinatória", "unidade 11"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "n": 3
+      },
+      "output": [160]
+    },
+    {
+      "input": {
+        "n": 4
+      },
+      "output": [180]
+    },
+    {
+      "input": {
+        "n": 5
+      },
+      "output": [200]
+    },
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [220]
+    },
+    {
+      "input": {
+        "n": 9
+      },
+      "output": [280]
+    }
+  ]
+}

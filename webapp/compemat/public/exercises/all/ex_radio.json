@@ -1,0 +1,40 @@
+{
+  "id": "ex_radio",
+  "name": "Rádio",
+  "category": "Combinatorics",
+  "labels": ["enem", "Combinatória", "unidade 11"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "n": 4
+      },
+      "output": [16]
+    },
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [64]
+    },
+    {
+      "input": {
+        "n": 8
+      },
+      "output": [256]
+    },
+    {
+      "input": {
+        "n": 10
+      },
+      "output": [1024]
+    },
+    {
+      "input": {
+        "n": 20
+      },
+      "output": [1048576]
+    }
+  ]
+}

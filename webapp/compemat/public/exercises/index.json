@@ -482,5 +482,47 @@
     "name": "Terreno",
     "category": "Trigonometry",
     "labels": ["enem", "Trigonometria", "unidade 10"]
+  },
+  "ex_condominio": {
+    "id": "ex_condominio",
+    "name": "Condomínio",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_hotel": {
+    "id": "ex_hotel",
+    "name": "Hotel",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_radio": {
+    "id": "ex_radio",
+    "name": "Rádio",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_volei": {
+    "id": "ex_volei",
+    "name": "Volei",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_museu": {
+    "id": "ex_museu",
+    "name": "Museu",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_senha": {
+    "id": "ex_senha",
+    "name": "Senha",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_fatorial": {
+    "id": "ex_fatorial",
+    "name": "Fatorial",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
   }
 }
