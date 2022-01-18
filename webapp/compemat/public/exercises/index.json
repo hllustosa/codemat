@@ -477,6 +477,18 @@
     "category": "Trigonometry",
     "labels": ["enem", "Trigonometria", "unidade 10"]
   },
+  "ex_decoracao_cilindro": {
+    "id": "ex_decoracao_cilindro",
+    "name": "Decoração do Cilindro",
+    "category": "Trigonometry",
+    "labels": ["enem", "Trigonometria", "unidade 10"]
+  },
+  "ex_distancia_praia": {
+    "id": "ex_distancia_praia",
+    "name": "Distância da Praia",
+    "category": "Trigonometry",
+    "labels": ["enem", "Trigonometria", "unidade 10"]
+  },
   "ex_terreno": {
     "id": "ex_terreno",
     "name": "Terreno",
@@ -516,6 +528,12 @@
   "ex_senha": {
     "id": "ex_senha",
     "name": "Senha",
+    "category": "Combinatorics",
+    "labels": ["enem", "Combinatória", "unidade 11"]
+  },
+  "ex_interclasses": {
+    "id": "ex_interclasses",
+    "name": "Interclasses",
     "category": "Combinatorics",
     "labels": ["enem", "Combinatória", "unidade 11"]
   },

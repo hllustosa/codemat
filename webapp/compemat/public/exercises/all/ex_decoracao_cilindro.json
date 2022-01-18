@@ -1,0 +1,40 @@
+{
+  "id": "ex_decoracao_cilindro",
+  "name": "Decoração do Cilindro",
+  "category": "Trigonometry",
+  "labels": ["enem", "Trigonometria", "unidade 10"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [41.569219381653056]
+    },
+    {
+      "input": {
+        "n": 8
+      },
+      "output": [55.42562584220407]
+    },
+    {
+      "input": {
+        "n": 10
+      },
+      "output": [69.28203230275508]
+    },
+    {
+      "input": {
+        "n": 12
+      },
+      "output": [83.13843876330611]
+    },
+    {
+      "input": {
+        "n": 14
+      },
+      "output": [96.99484522385713]
+    }
+  ]
+}

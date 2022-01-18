@@ -1,0 +1,34 @@
+{
+  "id": "ex_interclasses",
+  "name": "Interclasses",
+  "category": "Combinatorics",
+  "labels": ["enem", "Combinatória", "unidade 11"],
+  "previous": "",
+  "next": "",
+  "cases": [
+    {
+      "input": {
+        "n": 10
+      },
+      "output": [720]
+    },
+    {
+      "input": {
+        "n": 11
+      },
+      "output": [990]
+    },
+    {
+      "input": {
+        "n": 12
+      },
+      "output": [1320]
+    },
+    {
+      "input": {
+        "n": 13
+      },
+      "output": [1716]
+    }
+  ]
+}
