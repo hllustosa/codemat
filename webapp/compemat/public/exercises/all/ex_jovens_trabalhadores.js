@@ -22,11 +22,11 @@ export default function Exercise() {
       </ul>
       <p />
       Neste problema você terá como entrada a porcentagem de jovens pesquisados 
-      em cada categoria, através das entradas: <b>somente_estuda</b>, <b>trabalhao_estuda</b>,
+      em cada categoria, através das entradas: <b>somente_estuda</b>, <b>trabalha_estuda</b>,
       <b>somente_trabalha</b>, <b>nao_trabalha_nao_estuda</b>. Seu programa deve emitir como saída
       o número total de jovens que trabalha de acordo com a pesquisa.<p />
       <h3>Entradas</h3>
-      Quatro números, <b>somente_estuda</b>, <b>trabalhao_estuda</b>, 
+      Quatro números, <b>somente_estuda</b>, <b>trabalha_estuda</b>, 
       <b>somente_trabalha</b>, <b>nao_trabalha_nao_estuda</b> indicando as porcentagem 
       dos jovens pesquisados em cada categoria.
       <h3>Saída</h3>

@@ -24,7 +24,7 @@ export default function Exercise() {
       recortes feitos.
       <p />
       Neste problema você deve determinar quantas caixas do tipo A e do tipo B o
-      propietário deve comprar de forma a obter o menor preço. Você deve
+      proprietário deve comprar de forma a obter o menor preço. Você deve
       considerar o preço e o número de unidades contidas em cada caixa. <p />
       <h3>Entradas</h3>
       Quatro números, <b>A_unidades</b>, <b>A_preco</b> indicando

@@ -20,7 +20,7 @@ export default function Exercise() {
       seu plano de treino.
       <h3>Entradas</h3>
       Dois números <b>m</b>, <b>d</b> contendo a distância em metros
-      incrementada ao treino diariamente e o número máximod e km autorizado pelo
+      incrementada ao treino diariamente e o número máximo de km autorizado pelo
       médico. <p />
       <h3>Saída</h3>
       Um número contendo o número de dias que irá levar para que o corredor

@@ -18,7 +18,7 @@ export default function Exercise() {
       <p />
       <h3>Entrada</h3>
       Três números inteiros, <b>B</b>, <b>C</b>, <b>V</b> contendo as
-      porcentagens de carros nas cores branca, ciza e vermelha respectivamente.
+      porcentagens de carros nas cores branca, cinza e vermelha respectivamente.
       <h3>Saída</h3>
       Um número real contendo a probabilidade do cliente ficar satisfeito com o
       carro.

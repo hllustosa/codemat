@@ -7,7 +7,7 @@ export default function Exercise() {
       facilitar os cálculos. <p />
       Neste problema você deve criar um programa que gere tabuadas. O programa
       tem como entrada um valor <b>n</b> e deve produzir como saída uma
-      sequência de cadeias de caracteres com as expressões de múltiplicação. Por
+      sequência de cadeias de caracteres com as expressões de multiplicação. Por
       exemplo, considere a tabuada a ser gerada quando <b>n</b>=7: <p />
       7 x 1 = 7<br /> 7 x 2 = 14
       <br /> 7 x 3 = 21

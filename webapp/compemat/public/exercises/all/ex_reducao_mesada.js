@@ -5,7 +5,7 @@ export default function Exercise() {
       e mesada do filho. No início do ano, a internet e a mensalidade escolar
       tiveram acréscimos, respectivamente, de 20% e 10%. <p />
       Necessitando manter o valor da despesa mensal total com os itens citados,
-      a família reduzirá a mesada do filho para cubrir o valor necessário.
+      a família reduzirá a mesada do filho para cobrir o valor necessário.
       <p />
       Neste problema você deverá determinar qual será a porcentagem de redução
       da mesada do filho com base nos valores atuais da mesada, da internet e da

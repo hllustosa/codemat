@@ -19,7 +19,7 @@ export default function Exercise() {
       da Compemat Coin e um valor de transação para ser convertido. <p />
       <h3>Saída</h3>
       Uma cadeia de caracteres concatenada com o prefixo R$ contendo o valor
-      convertido. Dica, utilize o operador + para contatenar uma string. <p />
+      convertido. Dica, utilize o operador + para concatenar uma string. <p />
     </div>
   );
 }

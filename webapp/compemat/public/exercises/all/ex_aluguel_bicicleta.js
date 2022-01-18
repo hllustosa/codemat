@@ -18,7 +18,7 @@ export default function Exercise() {
       Dois números <b>D</b> e <b>E</b> contento o valor máximo que Alex pode
       pagar. <p />
       <h3>Saída</h3>
-      Um string contendo a expressãoalgébrica da função que
+      Um string contendo a expressão algébrica da função que
       relaciona o valor f pago pela utilização da bicicleta por um ano, quando
       se utilizam x horas extras nesse período.
       <p />

@@ -20,7 +20,7 @@ export default function Exercise() {
       <h3>Entradas</h3>
       Dois números <b>a</b> e <b>b</b> que são parâmetros da fórmula. <p />
       <h3>Saída</h3>
-      Um número contendo a soma do perigeu e do apogeu do satelite. <p />
+      Um número contendo a soma do perigeu e do apogeu do satélite. <p />
     </div>
   );
 }

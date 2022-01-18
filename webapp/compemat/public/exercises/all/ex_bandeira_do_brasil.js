@@ -54,7 +54,7 @@ export default function Exercise() {
       comprimento e a largura do tecido verde disponível.
       <h3>Saída</h3>
       Uma número contendo o tamanho do lado do tecido azul necessário para
-      confecionar a maior bandeira possível com o tecido verde disponível. <p />
+      confeccionar a maior bandeira possível com o tecido verde disponível. <p />
     </div>
   );
 }

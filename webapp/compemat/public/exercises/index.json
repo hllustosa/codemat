@@ -411,6 +411,12 @@
     "category": "Progression",
     "labels": ["enem", "Progressões", "unidade 8"]
   },
+  "ex_postes": {
+    "id": "ex_postes",
+    "name": "Postes",
+    "category": "Progression",
+    "labels": ["enem", "Progressões", "unidade 8"]
+  },
   "ex_torneira": {
     "id": "ex_torneira",
     "name": "Torneira",
@@ -432,6 +438,12 @@
   "ex_aplicacao": {
     "id": "ex_aplicacao",
     "name": "Aplicação",
+    "category": "Financial",
+    "labels": ["enem", "Financeira", "unidade 9"]
+  },
+  "ex_financiamento": {
+    "id": "ex_financiamento",
+    "name": "Financiamento",
     "category": "Financial",
     "labels": ["enem", "Financeira", "unidade 9"]
   },

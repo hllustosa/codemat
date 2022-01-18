@@ -10,7 +10,7 @@ export default function Exercise() {
       novamente. O tempo de espera duplica, em relação ao tempo de espera
       anterior, a cada digitação errada.
       <p />
-      Suponha que uma pessoa consegua ativar o rádio somente na tentativa numéro{" "}
+      Suponha que uma pessoa consegua ativar o rádio somente na tentativa número{" "}
       <b>n</b>, sendo de 30 segundos o tempo gasto para digitação do código
       secreto a cada tentativa. Nos casos da digitação incorreta, ela iniciou a
       nova tentativa imediatamente após a liberação do sistema de espera.

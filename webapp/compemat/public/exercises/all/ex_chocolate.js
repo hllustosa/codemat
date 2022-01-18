@@ -24,7 +24,7 @@ export default function Exercise() {
       barra que dá o maior lucro.
       <p />
       <h3>Entradas</h3>
-      Cinco números contendos os preços das barras de chocolate:
+      Cinco números contendo os preços das barras de chocolate:
       <b>barraI</b>, <b>barraII</b>, <b>barraIII</b>,<b>barraIV</b> e{" "}
       <b>barraV</b>.
       <p />

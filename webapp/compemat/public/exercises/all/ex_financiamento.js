@@ -23,7 +23,7 @@ export default function Exercise() {
       pagas pelo produto.
       <p />
       <h3>Saída</h3>
-      Um nú.
+      Um número contendo o valor real do produto que deverá constar na nota fiscal.
       <p />
     </div>
   );

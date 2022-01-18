@@ -13,7 +13,7 @@ export default function Exercise() {
       três critérios:
       <p />
       <ol>
-        <li>Rapidez no antendimento: peso 3</li>
+        <li>Rapidez no atendimento: peso 3</li>
         <li>Clareza na informação: peso 5</li>
         <li>Cortesia no antedimento: peso 2</li>
       </ol>
@@ -25,9 +25,9 @@ export default function Exercise() {
       Neste problema, você deve criar um programa que tenha cinco entradas:{" "}
       <b>X</b>, <b>Y</b>, <b>Z</b>, <b>W</b> e <b>T</b>. Cada uma delas é uma
       lista contendo as três notas que a empresa obteve na avaliação. A nota na
-      posição 0 das listas é referente ao critério Rapidez no antendimento. A
-      nota na posição 1 é referente ao critério Clareza na informação na
-      informação. A nota na posição 2 é referente ao critério Cortesia no
+      posição 0 das listas é referente ao critério: Rapidez no atendimento. A
+      nota na posição 1 é referente ao critério: Clareza na informação na
+      informação. A nota na posição 2 é referente ao critério: Cortesia no
       antedimento.
       <p />
       Seu programa deve emitir com saída o nome da empresa que teve a melhor

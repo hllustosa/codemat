@@ -24,7 +24,7 @@ export default function Exercise() {
       limites do quadrado respectivamente.
       <h3>Entradas</h3>
       Seis números reais <b>x1</b>, <b>x2</b>, <b>y1</b>, <b>y2</b> contendo a
-      espeficação do quadrado e <b>x</b> ou <b>y</b> contendo a especificação do
+      especificação do quadrado e <b>x</b> ou <b>y</b> contendo a especificação do
       ponto. <p />
       <h3>Saída</h3>
       Uma cadeia de caracteres contendo os valores "dentro" ou "fora". <p />

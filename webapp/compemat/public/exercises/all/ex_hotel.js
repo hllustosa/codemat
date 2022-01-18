@@ -4,7 +4,7 @@ export default function Exercise() {
   return (
     <div>
       Um hotel de <b>n</b> andares está sendo construído. Cada andar terá 100
-      quartos. Os quartos serão numerados com três digitos a00 a a99 (onde a é o
+      quartos. Os quartos serão numerados com três dígitos a00 a a99 (onde a é o
       número do andar) e cada um terá seu número afixado à porta. Cada número
       será composto por peças individuais, cada uma simbolizando um único
       algarismo.

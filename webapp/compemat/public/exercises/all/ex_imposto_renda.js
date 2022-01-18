@@ -16,13 +16,13 @@ export default function Exercise() {
       <p />
       Neste problema você deve criar um programa que receba como entrada a
       porcentagem de declarações consideradas consistentes que eram fraudulentas
-      (<b>FC</b>) e a porcentagem de declarações incosistentes que eram
+      (<b>FC</b>) e a porcentagem de declarações inconsistentes que eram
       fraudulentas (<b>FI</b>) e que emita como saída a a probabilidade de,
       nesse ano, a declaração de um contribuinte ser considerada inconsistente,
       dado que ela era fraudulenta.
       <h3>Entrada</h3>
       Dois números inteiros, <b>FC</b>, <b>FI</b> com a porcentagem de
-      declarações fraudulentas consistentes e incosistentes.
+      declarações fraudulentas consistentes e inconsistentes.
       <h3>Saída</h3>
       Um número real contendo a probabilidade da declaração de um contribuinte
       ser considerada inconsistente, dado que ela era fraudulenta.

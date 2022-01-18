@@ -41,7 +41,7 @@ export default function Exercise() {
       <p />O programa deve produzir duas saídas caso o determinante seja
       positivo. Neste caso, emita primeiro como saída a raiz obtida com a versão
       da fórmula em que somamos a raiz do determinante e em seguida a função
-      fórmula em que subtraímos a raíz do determinante.
+      fórmula em que subtraímos a raiz do determinante.
       <p />
       Além disso, o programa deve produzir uma saída caso o determinante seja
       igual a 0, e a string "sem raizes" caso o determinante seja negativo.

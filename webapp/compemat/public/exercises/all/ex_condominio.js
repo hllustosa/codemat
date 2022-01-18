@@ -27,7 +27,7 @@ export default function Exercise() {
       <p />
       O programa deve produzir como saída o número de diferentes caminhos que
       André poderá utilizar para realizar o deslocamento nas condições
-      propostas. Isto é, se descolacando apenas para cima e para direita e sem
+      propostas. Isto é, se deslocando apenas para cima e para direita e sem
       passar pelo ponto C.
       <p />
       <h3>Entradas</h3>

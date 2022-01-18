@@ -15,7 +15,7 @@ export default function Exercise() {
       produza como saída o número máximo de disciplinas que Júlio pode cursar.
       <p />
       Dica: utilize a função embutida <b>Math.floor</b> realizar o
-      arrendodamento para baixo e produzir um número inteiro como saída.
+      arredondamento para baixo e produzir um número inteiro como saída.
       <h3>Entradas</h3>
       Um número <b>R</b> (<Eq s="0 < R < 980" />) contento o valor máximo que Alex pode pagar. <p />
       <h3>Saída</h3>

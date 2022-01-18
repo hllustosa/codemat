@@ -15,7 +15,7 @@ export default function Exercise() {
         <p />
       </div>
       <p />
-      Nessas circustâncias, deseja-se saber qual o percentual da área do terreno
+      Nessas circunstâncias, deseja-se saber qual o percentual da área do terreno
       que foi alocada a João. Portanto, neste problema, você deve criar um
       programa que receba como entrada o comprimento <b>c</b> e a largura{" "}
       <b>l</b> do terreno e produza como saída a porcentagem da área do terreno

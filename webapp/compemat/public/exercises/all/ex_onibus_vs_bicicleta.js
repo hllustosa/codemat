@@ -44,7 +44,7 @@ export default function Exercise() {
       em qual dia essa média se aplica.
       <h3>Saída</h3>
       Uma lista cujos elementos sejam strings contendo os dias da semana em que
-      é mais vantajoso andar de bicileta. <p />
+      é mais vantajoso andar de bicicleta. <p />
     </div>
   );
 }

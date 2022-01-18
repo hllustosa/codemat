@@ -13,7 +13,7 @@ export default function Exercise() {
       ganho.
       <p />
       Neste problema, você deve criar um programa que receba como entrada as
-      taxas de rendimento da poupança e do CDB e que prduza duas saídas. A
+      taxas de rendimento da poupança e do CDB e que produza duas saídas. A
       primeira saída deve ser um cadeia de caracteres: "poupanca" ou "cdb"
       indicando qual o investimento produziu o maior rendimento líquido. A
       segunda saída deve ser um número contendo o rendimento líquido do
@@ -21,7 +21,7 @@ export default function Exercise() {
       <p />
       <h3>Entradas</h3>
       Dois números, <b>r_p</b>, <b>r_cdb</b> contendo a taxa de rendimento da
-      poupanca e do CDB respectivamente.
+      poupança e do CDB respectivamente.
       <p />
       <h3>Saída</h3>
       Duas saídas, primeiro uma cadeia de caracteres: "poupanca" ou "cdb"

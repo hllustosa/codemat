@@ -7,7 +7,7 @@ export default function Exercise() {
       para iluminação ao longo de uma estrada retilínea, que inicia em uma praça
       central e termina numa fazenda na zona rural. Como a praça já possui
       iluminação, o primeiro poste será colocado a 80 metros da praça, os
-      próximos postes serão instalandos mantendo-se sempre uma distância de{" "}
+      próximos postes serão instalados mantendo-se sempre uma distância de{" "}
       <b>m</b> metros entre si, até que o último poste seja colocado a uma
       distância de <d>d</d> metros da praça.
       <p />
