@@ -93,10 +93,13 @@ function Stats(props) {
 
   const countCategories = trials.reduce(
     (count, item) => {
-      count[item.problem_category].tentado++;
-      if (item.status === "solved") {
-        count[item.problem_category].resolvido++;
+      if(count[item.problem_category]){
+        count[item.problem_category].tentado++;
+        if (item.status === "solved") {
+          count[item.problem_category].resolvido++;
+        }
       }
+     
       return count;
     },
     {
@@ -107,8 +110,7 @@ function Stats(props) {
       functions: { name:"Funções", tentado: 0, resolvido: 0 },
       probability: { name:"Probabilidade", tentado: 0, resolvido: 0 },
       progression: { name:"Progressões", tentado: 0, resolvido: 0 },
-      trigonometry: { name:"Trigonométria", tentado: 0, resolvido: 0 },
-      unities: { name:"Unidades", tentado: 0, resolvido: 0 },
+      trigonometry: { name:"Trigonométria", tentado: 0, resolvido: 0 }
     }
   );
 
@@ -117,58 +119,16 @@ function Stats(props) {
   return (
     <div style={{ width: "100%", maxWidth: "640px" }}>
       <Grid container direction="row">
-        <Grid
-          item
-          container
-          direction="column"
-          justifyContent="center"
-          alignContent="center"
-          style={{ height: "150px", padding: "15px" }}
-          xs={12}
-          sm={12}
-          md={12}
-        >
-          <Grid>
-            <Title
-              style={{
-                fontSize: "12px",
-                color: PRIMARY_LIGHT,
-                textAlign: "center",
-              }}
-            >{`Problemas`}</Title>
-          </Grid>
-          <Grid>
-            <Typography
-              align="center"
-              color="primary"
-              variant="h3"
-            >{`${count.solved}/${count.tried}`}</Typography>
-          </Grid>
-          <Grid>
-            <Title
-              style={{
-                fontSize: "12px",
-                color: PRIMARY_LIGHT,
-                textAlign: "center",
-              }}
-            >{`Resolvidos/Tentados`}</Title>
-          </Grid>
-        </Grid>
-        <Grid style={{ height: "200px" }} xs={12} sm={12} md={12}>
-          <ResponsiveContainer width="100%" height="100%">
+   
+        <Grid style={{ height: "350px" }} xs={12} sm={12} md={12}>
+          <ResponsiveContainer width="100%" >
             <BarChart
-              width={500}
-              height={300}
               data={countCategoriesList}
-              margin={{
-                top: 5,
-                right: 30,
-                left: 20,
-                bottom: 5,
-              }}
+              layout="vertical"
+              margin={{ top: 25, right: 20, bottom: 0, left: 55 }}
             >
-              <XAxis dataKey="name" />
-              <YAxis />
+              <XAxis  type="number" />
+              <YAxis type="category" dataKey="name" interval={0}/>
               <Tooltip />
               <Bar dataKey="resolvido" fill={PRIMARY_LIGHT} />
               <Bar dataKey="tentado" fill={PRIMARY} />
