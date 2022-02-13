@@ -43,7 +43,7 @@ const useStyles = makeStyles({
 
 async function login(user) {
   store.dispatch(getLogin(user));
-  window.location.reload(); 
+  window.location.reload();
 }
 
 function handleLoginError(error, setErrorMessage) {
@@ -236,7 +236,12 @@ function SignInForm() {
               <Typography size={12}>{validationMessage}</Typography>
             </Grid>
           </Grid>
-
+          <Grid item style={{ fontSize: "12px", margin: "15px" }}>
+            Ao se cadastrar você concorda com a nossa{" "}
+            <a rel="noopener noreferrer" target="_blank" href="/privacy.html">
+              Política de Privacidade
+            </a>
+          </Grid>
           <Grid item style={{ marginBottom: "10px" }}>
             <ContainedButton
               disabled={validationMessage}
@@ -273,7 +278,7 @@ function LoginForm(props) {
       })
       .catch((error) => {
         setErrorMessage(
-          error//"Não foi possível enviar email para redefinição de senha"
+          error //"Não foi possível enviar email para redefinição de senha"
         );
       });
   };
@@ -360,13 +365,6 @@ function LoginForm(props) {
             <GoogleLoginButton onClick={() => LoginWithGoogle(setErrorMessage)}>
               <span>Login Google</span>
             </GoogleLoginButton>
-          </Grid>
-          <Grid item>
-            <FacebookLoginButton
-              onClick={() => LoginWithFacebook(setErrorMessage)}
-            >
-              <span>Login Facebook</span>
-            </FacebookLoginButton>
           </Grid>
         </Grid>
       </Grid>

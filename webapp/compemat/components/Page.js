@@ -41,6 +41,7 @@ export const withBaseContentPage = (Component, message, submessage, height) => {
 
     const [headerTitle, setHeaderTitle] = React.useState(message);
     const [headerSubTitle, setHeaderSubTitle] = React.useState(submessage);
+    const [author, setAuthor] = React.useState("");
 
     return (
       <React.Fragment>
@@ -56,11 +57,13 @@ export const withBaseContentPage = (Component, message, submessage, height) => {
           <Header
             headerTitle={headerTitle}
             headerSubTitle={headerSubTitle}
+            headerAuthor={author}
             height={height}
           />
           <Component
             setTitle={setTitle}
             setMeta={setMeta}
+            setAuthor={setAuthor}
             setHeaderTitle={setHeaderTitle}
             setHeaderSubTitle={setHeaderSubTitle}
             {...props}

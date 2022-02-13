@@ -176,7 +176,7 @@ function Content(props) {
 }
 
 function Class(props) {
-  const { setTitle, setMeta, setHeaderTitle, setHeaderSubTitle, data } = props;
+  const { setTitle, setMeta, setAuthor, setHeaderTitle, setHeaderSubTitle, data } = props;
   const { section, content } = data;
   const classes = styles();
 
@@ -199,6 +199,7 @@ function Class(props) {
       : currentItem.section
   );
   setHeaderSubTitle(currentItem.title);
+  setAuthor(currentItem.author + "|" + currentItem.authorLink);
 
   return (
     <main className={classes.root}>

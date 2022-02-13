@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
-import { CONTRAST_COLOR, PRIMARY, CONSTRAST_LIGHT } from "../public/colors";
+import { CONTRAST_COLOR, PRIMARY, CONSTRAST_LIGHT, SECONDARY } from "../public/colors";
 import dynamic from "next/dynamic";
 const CodeEditor = dynamic(import("./CodeEditor"), {
   ssr: false,
@@ -39,6 +39,16 @@ const styles = makeStyles((theme) => ({
     marginBottom: "25px",
     fontSize: "calc(17px + (25 - 14) * ((100vw - 300px) / (1600 - 300)))",
     color: PRIMARY,
+  },
+  subsectionTitle: {
+    marginTop: "25px",
+    marginBottom: "25px",
+    paddingLeft: "10px",
+    marginRight: "25px",
+    borderRadius: "5px",
+    fontSize: "calc(12px + (25 - 21) * ((100vw - 300px) / (1600 - 300)))",
+    backgroundColor: PRIMARY,
+    color: SECONDARY,
   },
   sectionBox: {
     position: "relative",
@@ -97,6 +107,15 @@ export function ClassSectionTitle(props) {
           }}
         />
       </div>
+    </div>
+  );
+}
+
+export function ClassSubSectionTitle(props) {
+  const classes = styles();
+  return (
+    <div className={classes.subsectionTitle}>
+      <div width="100%">{props.title}</div>
     </div>
   );
 }
@@ -210,7 +229,7 @@ export function Eq(props) {
 
 export function ClassCodeEditor(props) {
   const classes = styles();
-  const [ showBtn, setShowBtn ] = useState(false);
+  const [showBtn, setShowBtn] = useState(false);
   const { code, input, height } = props;
   const router = useRouter();
 
@@ -218,8 +237,8 @@ export function ClassCodeEditor(props) {
     const c = encode(code ? code : "", true);
     const i = encode(input ? input : "", true);
     const link = `${window.location.protocol}//${window.location.host}/ide?c=${c}&i=${i}`;
-    window.open(link, "_blank"); 
-  }
+    window.open(link, "_blank");
+  };
 
   return (
     <div
@@ -227,20 +246,22 @@ export function ClassCodeEditor(props) {
       onMouseEnter={() => setShowBtn(true)}
       onMouseLeave={() => setShowBtn(false)}
     >
-      {showBtn && <Button
-        variant="contained"
-        color="primary"
-        size="small"
-        style={{
-          position: "absolute",
-          right: "5px",
-          top: "5px",
-          zIndex: "99"
-        }}
-        onClick={handleClick}
-      >
-        Executar
-      </Button>}
+      {showBtn && (
+        <Button
+          variant="contained"
+          color="primary"
+          size="small"
+          style={{
+            position: "absolute",
+            right: "5px",
+            top: "5px",
+            zIndex: "99",
+          }}
+          onClick={handleClick}
+        >
+          Executar
+        </Button>
+      )}
       <CodeEditor border code={code} readOnly height={height} width="100%" />
     </div>
   );

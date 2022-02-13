@@ -52,8 +52,8 @@ const styles = makeStyles((theme) => ({
     "-o-transition": "width 1s",
     "-ms-transition": "width 1s",
     transition: "width 1s",
-    height: "calc(100vh - 52px)",
-    maxHeight: "calc(100vh - 52px)",
+    height: "calc(100vh - 60px)",
+    maxHeight: "calc(100vh - 60px)",
     minHeight: "550px",
   },
   problemContent: {
@@ -64,7 +64,7 @@ const styles = makeStyles((theme) => ({
   },
   problemContentFrame: {
     width: "100%",
-    height: "calc(100vh - 310px)",
+    height: "calc(100vh - 330px)",
     minHeight: "330px",
     minWidth: "290px",
     backgroundColor: "#FFFFFF",
