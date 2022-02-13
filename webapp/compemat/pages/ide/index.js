@@ -108,7 +108,9 @@ function CodePane(props) {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
 
   const handleTestExecutionFinished = (state, status) => {
-    setRunning(false);
+    
+    if(state !== "RUNNING")
+      setRunning(false);
 
     if (status.lastError) {
       entries.push({ content: status.lastError, type: "error" });
