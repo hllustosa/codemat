@@ -25,7 +25,7 @@ function Content() {
         style={{
           marginTop: "35px",
           marginBottom: "35px",
-          width: "80%", maxWidth: "370px",
+          width: "80%", width: "250px",
         }}
       />
       <ClassSectionTitle title="Ângulos" />

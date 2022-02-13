@@ -23,7 +23,7 @@ function Content() {
         style={{
           marginTop: "35px",
           marginBottom: "35px",
-          width: "400px",
+          width: "250px",
           maxWidth: "80%",
         }}
       />

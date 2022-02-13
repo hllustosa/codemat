@@ -26,7 +26,7 @@ function Content() {
           marginTop: "35px",
           marginBottom: "35px",
           width: "80%",
-          maxWidth: "370px",
+          width: "250px",
         }}
       />
       <ClassSectionTitle title="Relações Trigonométricas: Seno, cosseno e tangente" />
