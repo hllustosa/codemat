@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
 
-const META = `O curso compemat tem como objetivo promover o ensino da programação e da matemática. Os principais tópicos abordados são: Programação, Aritmética, Funções, Progressões, Probabilidade e Análise Combinatória.  
+const META = `O curso compemat tem como objetivo promover o ensino da programação e da matemática. Os principais tópicos abordados são: Programação, Aritmética, Funções, Progressões, Probabilidade, Trigonometria e Análise Combinatória.  
 `;
 
 const styles = makeStyles((theme) => ({

@@ -5,6 +5,8 @@ import {
   ClassLink,
   ClassEquation,
   ClassSectionTitle,
+  ClassSubSectionTitle,
+  Eq,
   ClassImage,
   ClassToolTip,
   ClassCodeEditor,

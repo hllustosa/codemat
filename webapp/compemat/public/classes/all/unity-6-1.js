@@ -12,7 +12,7 @@ import {
   ClassToolTip,
   ClassCodeEditor,
 } from "../../../components/ClassContent";
-import { PRIMARY, SECONDARY, PRIMARY_LIGHT } from "../../colors";
+import { PRIMARY, SECONDARY, CONSTRAST_LIGHT } from "../../colors";
 
 function Content() {
   return (
@@ -360,14 +360,14 @@ function Content() {
       Assim, escolhendo valores para <Eq s="x" /> no Domínio, podemos obter suas
       imagens:
       <p />
-      <table style={{color: SECONDARY, margin: "auto", textAlign: "center"}}>
-        <thead style={{backgroundColor: PRIMARY}}>
+      <table style={{ margin: "auto", textAlign: "center"}}>
+        <thead style={{color: SECONDARY, backgroundColor: PRIMARY}}>
           <tr>
             <td width="50px">x</td>
             <td width="220px">y</td>
           </tr>
         </thead>
-        <tbody style={{backgroundColor: PRIMARY_LIGHT}}>
+        <tbody style={{color: PRIMARY, backgroundColor: CONSTRAST_LIGHT}}>
           <tr>
             <td>-7</td>
             <td>2.(-7) = -14</td>

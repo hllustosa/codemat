@@ -3,7 +3,12 @@ import { useRouter } from "next/router";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
-import { CONTRAST_COLOR, PRIMARY, CONSTRAST_LIGHT, SECONDARY } from "../public/colors";
+import {
+  CONTRAST_COLOR,
+  PRIMARY,
+  CONSTRAST_LIGHT,
+  SECONDARY,
+} from "../public/colors";
 import dynamic from "next/dynamic";
 const CodeEditor = dynamic(import("./CodeEditor"), {
   ssr: false,
@@ -199,7 +204,9 @@ export function ClassImage(props) {
       : { float: props.pos, margin: "10px" };
   return (
     <div className={classes.image} style={style}>
-      <img {...props} />
+      <a href={props.src} target="_blank">
+        <img {...props} />
+      </a>
       <div style={{ textAlign: "center", fontSize: "12px", width: "100%" }}>
         {props.legend}
       </div>

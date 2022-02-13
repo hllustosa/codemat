@@ -174,7 +174,7 @@ function Content() {
       As unidades posteriores tratam de tópicos da matemática do ensino médio
       com ênfase nos temas mais cobrados no ENEM. São eles: aritmética,
       grandezas proporcionais, progressões, probabilidade, funções,
-      trigonometria, matemática financeiras e análise combinatória. Cada tópico
+      trigonometria, matemática financeira e análise combinatória. Cada tópico
       tem aplicações profundas no mundo de hoje. Estão presentes na engenharia,
       física, química, biologia, economia, negócios e até mesmo nas ciências
       humanas e sociais.
