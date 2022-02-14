@@ -12,10 +12,14 @@ import {
 import { CONTRAST_COLOR } from "../public/colors";
 import { makeStyles } from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
+import Link from "next/link";
 
 const styles = makeStyles((theme) => ({
   title: {
     fontWeight: "600",
+  },
+  styledLink: {
+    cursor: "pointer",
   },
 }));
 
@@ -115,6 +119,17 @@ export const OutlinedButton = React.forwardRef((props, ref) => {
     >
       {props.children}
     </Button>
+  );
+});
+
+export const StyledLink = React.forwardRef((props, ref) => {
+  
+  return (
+    <Link {...props} ref={ref}>
+      <Typography variant="h5" primary style={{ cursor: "pointer" }}>
+        {props.children}
+      </Typography>
+    </Link>
   );
 });
 

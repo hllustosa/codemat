@@ -204,7 +204,7 @@ export function ClassImage(props) {
       : { float: props.pos, margin: "10px" };
   return (
     <div className={classes.image} style={style}>
-      <a href={props.src} target="_blank">
+      <a href={props.src} target="_blank"  rel="noreferrer">
         <img {...props} />
       </a>
       <div style={{ textAlign: "center", fontSize: "12px", width: "100%" }}>

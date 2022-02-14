@@ -9,12 +9,30 @@ import {
   ClassToolTip,
   ClassCodeEditor,
 } from "../../../components/ClassContent";
-
+import ProblemsList from "../../../components/ProblemsList";
 
 function Content() {
+
   return (
     <ClassContainer>
-      Em breve!
+      <ClassSectionTitle title="Recursos" />
+      <ul>
+        <li>
+          David Griffiths - Use a cabeça! Programação - Alta Books; 1ª edição
+          2009 - 8576084732.
+        </li>
+        <li>
+          Eric Freeman - Use a cabeça! Programação JavaScript - Alta Books; 1ª
+          edição 2016 - 8576089904.
+        </li>
+        <li>
+          Gilvan Vilarim - Algoritmos. Programação Para Iniciantes: Ciência
+          Moderna; 3ª edição 2017 - 8539908352.
+        </li>
+      </ul>
+    <p />
+      <ClassSectionTitle title="Exercícios" />
+      <ProblemsList unity="2"/>
     </ClassContainer>
   );
 }
