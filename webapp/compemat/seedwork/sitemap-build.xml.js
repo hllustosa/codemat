@@ -1,11 +1,11 @@
 import React from "react";
-import fs from "fs";
+//import fs from "fs";
 import problems from "../public/exercises/index.json";
 import classes from "../public/classes/classes-menu.json";
 
 const Sitemap = () => {};
-
-export const getServerSideProps = ({ res }) => {
+/*
+const getServerSideProps = ({ res }) => {
   const baseUrl = {
     development: "https://compemat.com.br",
     production: "https://compemat.com.br",
@@ -85,5 +85,5 @@ export const getServerSideProps = ({ res }) => {
     props: {},
   };
 };
-
+*/
 export default Sitemap;

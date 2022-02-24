@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+            <url>
+              <loc>https://compemat.com.br/about</loc>
+              <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+            <url>
+              <loc>https://compemat.com.br/classes</loc>
+              <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+            <url>
+              <loc>https://compemat.com.br/exercises</loc>
+              <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+            <url>
+              <loc>https://compemat.com.br/ide</loc>
+              <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+            <url>
+              <loc>https://compemat.com.br/index.js</loc>
+              <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+            <url>
+              <loc>https://compemat.com.br/profile</loc>
+              <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          
+        
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_ola_mundo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_soma_simples</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_produto_simples</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_media_simples</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_circunferencia</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_media_ponderada</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_imc</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_criptomoedas</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_temperatura</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_movimento_retilineo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_seguranca_balada</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_comparador_numeros</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_positivo_negativo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_par_ou_impar</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_lucro_ou_prejuizo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_calculadora</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_media_2</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_maior_3</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_soma_positivos</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_por_extenso</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_tipos_triangulo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_ponto_quadrado</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_sistema_irrigacao</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_ataque_cardiaco</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_potencia_2</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_soma_pares</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_num_divisiveis</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_castigo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_fibonnaci</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_tabuada</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_primo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_inverter</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_somar_elementos</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_obter_maior</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_obter_media</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_filtrar_elementos</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_calcular_quadrado</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_contar_ocorrencia</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_palindromo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_substituir</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_miniatura_trofeu</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_combustivel_moto</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_onibus_vs_bicicleta</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_bandeira_do_brasil</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_porcelanato</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_jovens_trabalhadores</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_pesquisa_satisfacao</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_recipiente</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_reducao_mesada</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_baskahra</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_disciplinas</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_aluguel_bicicleta</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_pneu</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_chocolate</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_canhao</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_docentes</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_moedas</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_restituição</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_sorteio_viagem</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_cor_carro</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_imposto_renda</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_amigo_secreto</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_soma_termos</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_corredor</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_residuo</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_codigo_secreto</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_papel</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_postes</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_torneira</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_juros_simples</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_juros_compostos</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_aplicacao</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_financiamento</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_prestacao_imovel</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_investimento</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_poupanca_vs_cdb</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_cateto_oposto</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_cateto_adjacente</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_satelite</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_pergolado</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_decoracao_cilindro</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_distancia_praia</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_terreno</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_condominio</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_hotel</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_radio</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_volei</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_museu</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_senha</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_interclasses</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+              <url>
+                <loc>https://compemat.com.br/exercises/ex_fatorial</loc>
+                <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            
+          
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-0/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/5</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/6</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/7</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-1/8</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-2/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-2/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-2/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-2/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-2/5</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-3/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-3/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-3/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-3/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-3/5</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-4/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-4/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-4/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-5/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-5/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-5/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-5/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-6/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-6/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-6/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-6/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-7/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-7/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-7/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-7/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-8/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-8/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-8/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-9/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-9/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-9/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-10/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-10/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-10/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-11/1</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-11/2</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-11/3</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-11/4</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+                <url>
+                  <loc>https://compemat.com.br/classes/unity-11/5</loc>
+                  <lastmod>2022-02-14T23:12:19.406Z</lastmod>
+                  <changefreq>monthly</changefreq>
+                  <priority>1.0</priority>
+                </url>
+              
+    </urlset>
+  

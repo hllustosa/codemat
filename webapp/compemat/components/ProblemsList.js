@@ -18,8 +18,8 @@ const ProblemsList = (props) => {
 
   return (
     <div>
-      {exercisesData.map((exercise) => (
-        <Grid style={{ margin: "15px" }} container direction="column">
+      {exercisesData.map((exercise, index) => (
+        <Grid key={`exercise-list-item${index}`} style={{ margin: "15px" }} container direction="column">
           <Grid item>
             <StyledLink href={`/exercises/${exercise.id}`}>
               {exercise.name}
