@@ -53,7 +53,8 @@ env:
       - BUILD
       - RUNTIME
 
-# Build from monorepo web app
+# Do NOT set buildCommand here — it makes the App Hosting buildpack rewrite
+# package.json and strip npm "workspaces", breaking this monorepo.
+# Use the apphosting:build script in package.json instead.
 scripts:
-  buildCommand: npm run build:content && npm run build -w apps/web
   runCommand: npm run start -w apps/web

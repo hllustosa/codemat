@@ -5,13 +5,14 @@
   "description": "CodeMat (Comp & Mat) — learn programming and math with interactive exercises",
   "license": "MIT",
   "engines": {
-    "node": ">=18"
+    "node": "20"
   },
   "workspaces": [
     "apps/web",
     "apps/functions"
   ],
   "scripts": {
+    "apphosting:build": "npm run build:content && npm run build -w apps/web",
     "dev": "npm run dev -w apps/web",
     "build": "npm run build:content && npm run build -w apps/functions && npm run build -w apps/web",
     "build:content": "node apps/functions/scripts/build-content.mjs",
