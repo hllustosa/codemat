@@ -1,6 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { EditorProps } from "@monaco-editor/react";
+import type { ComponentType } from "react";
 
 export type CodeEditorProps = {
   value: string;
@@ -12,24 +14,27 @@ export type CodeEditorProps = {
   className?: string;
 };
 
-const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
-  ssr: false,
-  loading: () => (
-    <div
-      style={{
-        height: "100%",
-        minHeight: 120,
-        color: "var(--cm-primary-light)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "#fafbfc",
-      }}
-    >
-      Carregando editor…
-    </div>
-  ),
-});
+const MonacoEditor = dynamic(
+  () => import("@monaco-editor/react").then((mod) => mod.default),
+  {
+    ssr: false,
+    loading: () => (
+      <div
+        style={{
+          height: "100%",
+          minHeight: 120,
+          color: "var(--cm-primary-light)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#fafbfc",
+        }}
+      >
+        Carregando editor…
+      </div>
+    ),
+  }
+) as ComponentType<EditorProps>;
 
 export function CodeEditor({
   value,
