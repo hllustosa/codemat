@@ -4,9 +4,14 @@
 #   npx firebase-tools@14.9.0 apphosting:backends:create --project codematbr
 runConfig:
   cpu: 1
-  memoryMiB: 512
+  memoryMiB: 1024
 
 env:
+  - variable: GOOGLE_BUILDABLE
+    value: apps/web
+    availability:
+      - BUILD
+      - RUNTIME
   - variable: NEXT_PUBLIC_SITE_URL
     value: https://codematbr.web.app
     availability:
@@ -53,8 +58,5 @@ env:
       - BUILD
       - RUNTIME
 
-# Do NOT set buildCommand here — it makes the App Hosting buildpack rewrite
-# package.json and strip npm "workspaces", breaking this monorepo.
-# Use the apphosting:build script in package.json instead.
-scripts:
-  runCommand: npm run start -w apps/web
+# Do NOT set buildCommand/runCommand here — buildCommand rewrites package.json
+# and strips npm workspaces. Use apphosting:build / apphosting:run in package.json.
