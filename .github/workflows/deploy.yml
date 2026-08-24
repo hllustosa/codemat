@@ -45,14 +45,18 @@ jobs:
         with:
           credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
 
+      # App Hosting CLI deploy needs firebase-tools >= 14.4.0 and an
+      # "apphosting" target in firebase.json (backendId: codemat).
       - name: Deploy Firebase Functions & rules
-        run: npx firebase-tools@13 deploy --only functions,firestore:rules,storage --project codematbr --non-interactive
-
-      - name: Deploy web (Firebase App Hosting / Hosting)
         run: |
-          if [ -f apphosting.yaml ]; then
-            npx firebase-tools@13 deploy --only apphosting --project codematbr --non-interactive || \
-            npx firebase-tools@13 deploy --only hosting --project codematbr --non-interactive
-          else
-            npx firebase-tools@13 deploy --only hosting --project codematbr --non-interactive
-          fi
+          npx firebase-tools@14.9.0 deploy \
+            --only functions,firestore:rules,storage \
+            --project codematbr \
+            --non-interactive
+
+      - name: Deploy App Hosting
+        run: |
+          npx firebase-tools@14.9.0 deploy \
+            --only apphosting:codemat \
+            --project codematbr \
+            --non-interactive

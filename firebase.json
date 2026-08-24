@@ -12,7 +12,6 @@
         ".git",
         "firebase-debug.log",
         "firebase-debug.*.log",
-        "*.local",
         "src",
         "scripts",
         "vitest.config.ts",
@@ -20,6 +19,22 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ],
+  "apphosting": [
+    {
+      "backendId": "codemat",
+      "rootDir": "/",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "backend",
+        "assets",
+        ".github",
+        "**/node_modules/**"
       ]
     }
   ],

@@ -1,12 +1,57 @@
 # Firebase App Hosting backend for the Next.js app (apps/web).
-# Create the App Hosting backend in Firebase Console linked to this repo/root.
+# Backend id: "codemat" (must match firebase.json → apphosting[].backendId).
+# Create once if missing:
+#   npx firebase-tools@14.9.0 apphosting:backends:create --project codematbr
 runConfig:
-  runtime: nodejs20
-  env:
-    - variable: NEXT_PUBLIC_SITE_URL
-      value: https://codematbr.web.app
-    - variable: NEXT_PUBLIC_API_BASE_URL
-      value: https://us-central1-codematbr.cloudfunctions.net/api
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: NEXT_PUBLIC_SITE_URL
+    value: https://codematbr.web.app
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_API_BASE_URL
+    value: https://us-central1-codematbr.cloudfunctions.net/api
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyB56b1j_L-IOVxIWPZavWN3h6qgJ9BT554
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: codematbr.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: codematbr
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: codematbr.firebasestorage.app
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: "10308488143"
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:10308488143:web:bc976e03f50efd5671a0ba
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: G-RW2STXN3PG
+    availability:
+      - BUILD
+      - RUNTIME
 
 # Build from monorepo web app
 scripts:
