@@ -20,15 +20,19 @@ export default function AboutPage() {
       />
 
       <p>
-        Milhões de estudantes do país inteiro ficaram sem aulas devido à
-        pandemia, e como sempre, os mais pobres foram os mais prejudicados. As
-        escolas públicas fecharam primeiro, abriram depois e praticamente não
-        funcionaram durante este difícil momento pelo qual passamos.
+        Vivemos um momento de grandes mudanças. A inteligência artificial está
+        transformando rapidamente a forma como estudamos, trabalhamos e criamos
+        tecnologia. E, como acontece com praticamente toda grande mudança,
+        muitos estudantes podem acabar se perguntando se ainda vale a pena
+        aprender determinadas habilidades.
       </p>
       <p>
-        Nesse cenário desolador, vai ser preciso muita paciência e determinação
-        para minimizar o impacto negativo do tempo passado fora da sala de aula
-        por milhões de jovens em todo o país.
+        Nesse cenário, vai ser preciso muita paciência e determinação para
+        entender que ferramentas novas não substituem a necessidade de aprender.
+        A inteligência artificial pode ajudar a escrever código, resolver
+        problemas e explicar conceitos, mas saber utilizar essas ferramentas de
+        verdade depende, justamente, de compreender aquilo que estamos tentando
+        fazer.
       </p>
       <p>
         Este curso é uma pequena iniciativa individual cujo objetivo é fornecer
@@ -48,16 +52,33 @@ export default function AboutPage() {
         durante a prova?&rdquo; A resposta para isso é simples: se você consegue
         criar uma solução computacional reproduzível para uma questão do ENEM,
         você facilmente seria capaz de manualmente resolver uma instância desse
-        mesmo problema. De qualquer forma, vale ressaltar que este curso não é
-        uma bala de prata para todas as necessidades de aprendizado em
-        matemática, e os estudantes devem buscar fontes complementares de estudo
-        e exercícios para se desenvolverem.
+        mesmo problema.
+      </p>
+      <p>
+        Hoje, talvez muitos também questionem: &ldquo;Para que aprender a
+        programar se uma inteligência artificial consegue escrever código para
+        mim?&rdquo; A resposta para isso também é simples: porque pedir uma
+        solução não é o mesmo que entender um problema. A inteligência
+        artificial pode gerar uma resposta, mas é você quem precisa saber se ela
+        está correta. Pode escrever um programa, mas é você quem precisa
+        entender o que aquele programa faz, identificar seus erros e decidir
+        como utilizá-lo.
+      </p>
+      <p>
+        De qualquer forma, vale ressaltar que este curso não é uma bala de prata
+        para todas as necessidades de aprendizado em matemática ou programação,
+        e os estudantes devem buscar fontes complementares de estudo e exercícios
+        para se desenvolverem. A inteligência artificial também pode ser uma
+        dessas ferramentas, desde que seja utilizada para ajudar no aprendizado,
+        e não simplesmente para evitar o esforço de aprender.
       </p>
       <p>
         A internet está cheia de recursos parecidos e bastante valiosos. E isto
-        é ótimo! Esse curso se apresenta como mais um recurso disponível aos
-        estudantes. Espero que um bom número deles se beneficie e aprenda coisas
-        novas.
+        é ótimo! Hoje existem cursos, vídeos, comunidades, ferramentas
+        interativas e inteligências artificiais capazes de ajudar estudantes a
+        aprender praticamente qualquer coisa. Esse curso se apresenta como mais
+        um recurso disponível aos estudantes. Espero que um bom número deles se
+        beneficie e aprenda coisas novas.
       </p>
       <p>
         O curso está dividido em algumas unidades temáticas. Programação,
@@ -77,14 +98,21 @@ export default function AboutPage() {
         soluções enviadas para conferência posterior.
       </p>
       <p>
-        A necessidade de ter um computador ou celular e acesso à internet é uma
-        barreira grande. Como medida individual, o autor do curso planeja
-        oferecer aulas e oficinas presenciais baseadas no curso em um ambiente
-        físico, quando isto for possível no futuro.
+        A necessidade de ter um computador ou celular e acesso à internet ainda
+        é uma barreira grande. Mesmo assim, cada vez mais ferramentas e recursos
+        educacionais estão disponíveis para quem deseja aprender. O importante é
+        não deixar que a existência de tecnologias cada vez mais poderosas seja
+        motivo para desistir de aprender. Pelo contrário: quanto mais você
+        entende, melhor consegue utilizar essas tecnologias.
       </p>
       <p>
-        O tempo está passando, para que esperar mais? Bora aprender?
+        A inteligência artificial não acabou com a necessidade de aprender a
+        programar. Ela tornou ainda mais importante saber pensar, resolver
+        problemas, fazer perguntas e entender respostas. Quem apenas copia uma
+        solução continua dependente da ferramenta. Quem entende a solução
+        consegue utilizar a ferramenta para ir muito mais longe.
       </p>
+      <p>O tempo está passando, para que esperar mais? Bora aprender?</p>
       <p>
         Bons Estudos
         <br />
