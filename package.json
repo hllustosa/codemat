@@ -12,7 +12,7 @@
     "apps/functions"
   ],
   "scripts": {
-    "apphosting:build": "npm run build:content && npm run build -w apps/web",
+    "apphosting:build": "npm run build:content && npm run build -w apps/web && mkdir -p apps/web/.next/standalone/apps/web/public apps/web/.next/standalone/apps/web/.next && cp -r apps/web/public/. apps/web/.next/standalone/apps/web/public/ && cp -r apps/web/.next/static apps/web/.next/standalone/apps/web/.next/static",
     "dev": "npm run dev -w apps/web",
     "build": "npm run build:content && npm run build -w apps/functions && npm run build -w apps/web",
     "build:content": "node apps/functions/scripts/build-content.mjs",

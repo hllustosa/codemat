@@ -11,7 +11,7 @@ if (!admin.apps.length) {
 }
 
 const allowedOrigins = [
-  "https://codematbr.web.app",
+  "https://codemat--codematbr.us-central1.hosted.app",
   "https://codematbr.firebaseapp.com",
   "http://localhost:3000",
   "http://127.0.0.1:3000",

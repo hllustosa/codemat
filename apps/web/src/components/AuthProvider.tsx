@@ -71,7 +71,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         const url =
           typeof window !== "undefined"
             ? `${window.location.origin}/`
-            : "https://codematbr.web.app/";
+            : "https://codemat--codematbr.us-central1.hosted.app/";
         await sendPasswordResetEmail(auth, email, { url });
       },
     }),

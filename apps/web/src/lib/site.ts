@@ -3,7 +3,9 @@ export const siteConfig = {
   projectName: "CodeMat",
   description:
     "Curso de programação e matemática para iniciantes — pratique com exercícios interativos no navegador.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://codematbr.web.app",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://codemat--codematbr.us-central1.hosted.app",
   locale: "pt-BR",
   githubRepo: "https://github.com/hllustosa/codemat",
   /** Path inside the repo where reference solutions live (not shipped in the app). */

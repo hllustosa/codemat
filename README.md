@@ -8,7 +8,7 @@
 
 **CodeMat** is the open-source name of **Code & Mat** — a free learning platform for beginners who want to practice **programming** and **mathematics** in the browser.
 
-> Live site: [https://codematbr.web.app](https://codematbr.web.app)  
+> Live site: [https://codemat--codematbr.us-central1.hosted.app](https://codemat--codematbr.us-central1.hosted.app)  
 > Display brand: **Code & Mat** · Open-source project: **CodeMat** · License: **MIT**  
 > Repository: [github.com/hllustosa/codemat](https://github.com/hllustosa/codemat/)
 
@@ -112,7 +112,7 @@ Required GitHub secrets for backend deploy:
 
 App Hosting env vars for the web build live in `apphosting.yaml` (not GitHub secrets).
 
-Default site URL: **https://codematbr.web.app**
+Default site URL: **https://codemat--codematbr.us-central1.hosted.app**
 
 ## Contributing
 
