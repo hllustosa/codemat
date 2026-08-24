@@ -6,10 +6,11 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)](https://nextjs.org/)
 [![Firebase](https://img.shields.io/badge/Firebase-Functions%20%2B%20Firestore-orange.svg)](https://firebase.google.com/)
 
-**CodeMat** is the open-source name of **Comp & Mat** — a free learning platform for beginners who want to practice **programming** and **mathematics** in the browser.
+**CodeMat** is the open-source name of **Code & Mat** — a free learning platform for beginners who want to practice **programming** and **mathematics** in the browser.
 
 > Live site: [https://codematbr.web.app](https://codematbr.web.app)  
-> Display brand: **Comp & Mat** · Open-source project: **CodeMat** · License: **MIT**
+> Display brand: **Code & Mat** · Open-source project: **CodeMat** · License: **MIT**  
+> Repository: [github.com/hllustosa/codemat](https://github.com/hllustosa/codemat/)
 
 ## Features
 
@@ -26,6 +27,7 @@
 apps/web          Next.js 15 (App Router, TypeScript, Ant Design)
 apps/functions    Firebase Cloud Functions (Express API, TypeScript)
 legacy/           Source curriculum used by the content build script
+assets/           Reference materials (exercise solutions) — not shipped in the app
 firestore.rules   Public content read; exerciseSecrets deny-all for clients
 ```
 

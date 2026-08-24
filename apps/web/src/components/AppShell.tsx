@@ -165,11 +165,20 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           background: "var(--cm-primary)",
           color: "var(--cm-accent)",
           padding: "14px 16px",
-          height: 56,
+          height: "auto",
+          minHeight: 56,
         }}
       >
-        {siteConfig.name} · open source as <strong>{siteConfig.projectName}</strong> ·
-        MIT
+        {siteConfig.name} ·{" "}
+        <a
+          href={siteConfig.githubRepo}
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "var(--cm-accent)", textDecoration: "underline" }}
+        >
+          {siteConfig.projectName} no GitHub
+        </a>{" "}
+        · MIT
       </Footer>
 
       <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />

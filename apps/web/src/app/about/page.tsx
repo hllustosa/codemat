@@ -99,7 +99,25 @@ export default function AboutPage() {
           LinkedIn
         </a>
         {" · "}
-        Repositório open source: <strong>{siteConfig.projectName}</strong> (MIT)
+        <a
+          href={siteConfig.githubRepo}
+          rel="noreferrer"
+          target="_blank"
+        >
+          GitHub ({siteConfig.projectName})
+        </a>
+        {" · "}
+        MIT
+      </p>
+      <p>
+        Gabaritos dos exercícios (código de referência):{" "}
+        <a
+          href={`${siteConfig.githubRepo}/tree/main/${siteConfig.exerciseSolutionsPath}`}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {siteConfig.exerciseSolutionsPath}
+        </a>
       </p>
     </main>
   );

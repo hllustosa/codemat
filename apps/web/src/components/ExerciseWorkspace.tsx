@@ -15,12 +15,21 @@ import { PlayCircleOutlined, CloudUploadOutlined } from "@ant-design/icons";
 import type { ExercisePublic } from "@/lib/content";
 import { runCodeLocally } from "@/lib/runner";
 import { gradeExercise } from "@/lib/api";
+import { getExerciseSolutionUrl, siteConfig } from "@/lib/site";
 import { useAuth } from "./AuthProvider";
 import { LoginModal } from "./LoginModal";
 import { CodeEditor } from "./CodeEditor";
 import { ExerciseStatement } from "./lesson/ExerciseStatement";
 
 type Props = { exercise: ExercisePublic };
+
+function unitFromLabels(labels: string[]): number | null {
+  for (const label of labels || []) {
+    const m = label.match(/unidade\s+(\d+)/i);
+    if (m) return Number(m[1]);
+  }
+  return null;
+}
 
 export function ExerciseWorkspace({ exercise }: Props) {
   const { message } = App.useApp();
@@ -40,6 +49,16 @@ export function ExerciseWorkspace({ exercise }: Props) {
         input: ex.input,
       })),
     [exercise.examples]
+  );
+
+  const unity = useMemo(
+    () => unitFromLabels(exercise.labels || []),
+    [exercise.labels]
+  );
+  const solutionUrl = useMemo(
+    () =>
+      unity !== null ? getExerciseSolutionUrl(exercise.id, unity) : null,
+    [exercise.id, unity]
   );
 
   const [exampleId, setExampleId] = useState(exampleOptions[0]?.value);
@@ -114,6 +133,31 @@ export function ExerciseWorkspace({ exercise }: Props) {
           <Typography.Paragraph type="secondary" style={{ marginTop: 16 }}>
             {exercise.labels.join(" · ")}
           </Typography.Paragraph>
+        )}
+        {solutionUrl ? (
+          <p style={{ marginTop: 12, fontSize: 14 }}>
+            <a href={solutionUrl} target="_blank" rel="noreferrer">
+              Ver gabarito no GitHub
+            </a>
+            {" · "}
+            <a
+              href={`${siteConfig.githubRepo}/tree/main/${siteConfig.exerciseSolutionsPath}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Todos os gabaritos
+            </a>
+          </p>
+        ) : (
+          <p style={{ marginTop: 12, fontSize: 14 }}>
+            <a
+              href={`${siteConfig.githubRepo}/tree/main/${siteConfig.exerciseSolutionsPath}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Gabaritos no GitHub
+            </a>
+          </p>
         )}
       </section>
 

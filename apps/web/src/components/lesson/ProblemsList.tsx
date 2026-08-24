@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Button } from "antd";
 import catalog from "../../../../functions/data/public/exercises-catalog.json";
+import { getExerciseSolutionUrl, getUnitSolutionsUrl } from "@/lib/site";
 import { PRIMARY } from "./LessonColors";
 
 type Props = { unity: number | string };
@@ -25,25 +26,45 @@ export default function ProblemsList({ unity }: Props) {
 
   return (
     <div>
-      {exercises.map((exercise) => (
-        <div key={exercise.id} style={{ margin: 15 }}>
-          <Link
-            href={`/exercises/${exercise.id}`}
-            style={{
-              color: PRIMARY,
-              fontWeight: 600,
-              textDecoration: "underline",
-            }}
-          >
-            {exercise.name}
-          </Link>
-          <div style={{ marginTop: 8 }}>
-            <Button size="small">
-              <Link href={`/exercises/${exercise.id}`}>Abrir exercício</Link>
-            </Button>
+      <p style={{ marginBottom: 12, fontSize: 14 }}>
+        <a
+          href={getUnitSolutionsUrl(unity)}
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: PRIMARY }}
+        >
+          Ver gabaritos da {label} no GitHub
+        </a>
+      </p>
+      {exercises.map((exercise) => {
+        const solutionUrl = getExerciseSolutionUrl(exercise.id, unity);
+        return (
+          <div key={exercise.id} style={{ margin: 15 }}>
+            <Link
+              href={`/exercises/${exercise.id}`}
+              style={{
+                color: PRIMARY,
+                fontWeight: 600,
+                textDecoration: "underline",
+              }}
+            >
+              {exercise.name}
+            </Link>
+            <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 8 }}>
+              <Button size="small">
+                <Link href={`/exercises/${exercise.id}`}>Abrir exercício</Link>
+              </Button>
+              {solutionUrl ? (
+                <Button size="small">
+                  <a href={solutionUrl} target="_blank" rel="noreferrer">
+                    Gabarito
+                  </a>
+                </Button>
+              ) : null}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
