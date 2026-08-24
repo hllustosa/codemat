@@ -24,41 +24,19 @@ jobs:
       - name: Install
         run: npm install
 
-      - name: Build content
-        run: npm run build:content
-
-      - name: Build packages
-        run: npm run build
-        env:
-          NEXT_PUBLIC_SITE_URL: https://codematbr.web.app
-          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }}
-          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ secrets.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }}
-          NEXT_PUBLIC_FIREBASE_PROJECT_ID: codematbr
-          NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: ${{ secrets.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET }}
-          NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID }}
-          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_APP_ID }}
-          NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID }}
-          NEXT_PUBLIC_API_BASE_URL: https://us-central1-codematbr.cloudfunctions.net/api
+      - name: Build content & functions
+        run: npm run build:deploy
 
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
 
-      # App Hosting CLI deploy needs firebase-tools >= 14.4.0 and an
-      # "apphosting" target in firebase.json (backendId: codemat).
-      - name: Deploy Firebase Functions & rules
+      # Web deploys via Firebase App Hosting GitHub integration (backend: codemat).
+      - name: Deploy Firebase Functions, rules & storage
         run: |
           npx firebase-tools@14.9.0 deploy \
             --only functions,firestore:rules,storage \
-            --project codematbr \
-            --non-interactive \
-            --force
-
-      - name: Deploy App Hosting
-        run: |
-          npx firebase-tools@14.9.0 deploy \
-            --only apphosting:codemat \
             --project codematbr \
             --non-interactive \
             --force

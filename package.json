@@ -13,10 +13,10 @@
   ],
   "scripts": {
     "apphosting:build": "npm run build:content && npm run build -w apps/web",
-    "apphosting:run": "sh -c 'cd apps/web/.next/standalone && HOSTNAME=0.0.0.0 exec node apps/web/server.js'",
     "dev": "npm run dev -w apps/web",
     "build": "npm run build:content && npm run build -w apps/functions && npm run build -w apps/web",
     "build:content": "node apps/functions/scripts/build-content.mjs",
+    "build:deploy": "npm run build:content && npm run build -w apps/functions",
     "lint": "npm run lint -w apps/web && npm run lint -w apps/functions",
     "test": "npm run test -w apps/web && npm run test -w apps/functions",
     "seed": "npm run seed -w apps/functions"

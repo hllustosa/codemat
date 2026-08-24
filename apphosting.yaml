@@ -1,10 +1,16 @@
-# Firebase App Hosting backend for the Next.js app (apps/web).
+# Firebase App Hosting — npm workspaces monorepo (apps/web + apps/functions).
+#
+# Required pattern (do not break):
+# - firebase.json rootDir: "/" (lock file lives at repo root)
+# - GOOGLE_BUILDABLE=apps/web (Next.js app location)
+# - apphosting:build in package.json (never buildCommand in this file — strips workspaces)
+# - runCommand below points at the monorepo standalone server.js path
+#
 # Backend id: "codemat" (must match firebase.json → apphosting[].backendId).
-# Create once if missing:
-#   npx firebase-tools@14.9.0 apphosting:backends:create --project codematbr
 runConfig:
   cpu: 1
   memoryMiB: 1024
+  runtime: nodejs20
 
 env:
   - variable: GOOGLE_BUILDABLE
@@ -62,5 +68,7 @@ env:
       - BUILD
       - RUNTIME
 
-# Do NOT set buildCommand/runCommand here — buildCommand rewrites package.json
-# and strips npm workspaces. Use apphosting:build / apphosting:run in package.json.
+# Do NOT set buildCommand here — it rewrites package.json and strips npm workspaces.
+# Use apphosting:build in package.json. Let the Next.js adapter set runCommand in bundle.yaml.
+scripts:
+  runCommand: node apps/web/.next/standalone/apps/web/server.js

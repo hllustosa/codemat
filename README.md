@@ -102,15 +102,17 @@ Never commit service account JSON; keep it under `backend/credentials/` (gitigno
 
 ## Deploy / CI
 
-- **CI** (`.github/workflows/ci.yml`): lint, test, build on pull requests and `main`.
-- **CD** (`.github/workflows/deploy.yml`): on push to `main`, deploy Functions (+ hosting/App Hosting) to Firebase project `codematbr`.
+- **CI** (`.github/workflows/ci.yml`): lint, test, full build on pull requests and `main`.
+- **CD — backend** (`.github/workflows/deploy.yml`): on push to `main`, deploy Functions, Firestore rules, and Storage only.
+- **CD — frontend**: Firebase App Hosting GitHub integration (backend `codemat`) deploys the Next.js app on push to `main`.
 
-Required GitHub secrets for deploy:
+Required GitHub secrets for backend deploy:
 
 - `FIREBASE_SERVICE_ACCOUNT` — JSON key with deploy permissions (Actions secret, not in git)
-- or configure Workload Identity / `google-github-actions/auth`
 
-Default site URL: **https://codematbr.web.app** (Firebase Hosting; no custom domain required).
+App Hosting env vars for the web build live in `apphosting.yaml` (not GitHub secrets).
+
+Default site URL: **https://codematbr.web.app**
 
 ## Contributing
 
