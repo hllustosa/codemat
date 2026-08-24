@@ -1,0 +1,35 @@
+{
+  "id": "ex_soma_termos",
+  "name": "Soma de Termos",
+  "category": "Progression",
+  "labels": [
+    "Progressões",
+    "unidade 8"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Soma de Termos</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "a1": 1,
+        "an": 100,
+        "n": 100
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "a1": 0,
+        "an": 100,
+        "n": 20
+      }
+    }
+  ],
+  "inputKeys": [
+    "a1",
+    "an",
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

@@ -1,0 +1,10 @@
+{
+  "id": "unity-11-4",
+  "section": "unity-11",
+  "content": "4",
+  "title": "Combinação",
+  "author": "Maria Luiza Alves Rizzo",
+  "authorLink": "https://www.instagram.com/mtmsemmacete/",
+  "unitTitle": "Unidade 11 - Análise Combinatória",
+  "bodyHtml": "<div class=\"lesson\"> A análise combinatória nos ajuda a facilitar o processo de contagem. Nessa unidade, vamos explorar alguns conceitos importantes da análise combinatória, como fatoriais, permutações, arranjos e combinações. <ClassImage src=\"/img/combinatorics.svg\" pos=\"center\" style=} /> <ClassSectionTitle title=\"Combinação simples\" /> Uma <b>combinação simples</b> é um agrupamento de elementos distintos que se diferem <b>somente pela natureza (tipo)</b>, ou seja, a ordem não é relevante. Cada grupo é formado por <Eq s=\"p\" /> elementos escolhidos dentre <Eq s=\"n\" /> elementos. Nessa situação, a fórmula abaixo indica a quantidade total de combinações possíveis: <p /> <Eq block s=\"C_=\\frac\" /> <p /> <b>Observação</b>: <Eq s=\"C_\" /> também pode ser representado como <Eq s=\"C^n_\" /> ou <Eq s=\"C^p_\" />. <p /> Vamos estudar alguns cenários: <p /> <ul> <li> De quantas maneiras é possível montar uma comissão com 3 participantes a partir de 8 pessoas? <p /> Observe que a ordem dos participantes <b>não importa</b>, somente quem está ou não na comissão. Como a ordem não é relevante, temos uma combinação de <Eq s=\"n=8\" /> em grupos de <Eq s=\"p=4\" />. Utilizando a fórmula, <p /> <Eq block s=\"C_=\\frac=\\frac = \\frac=70\" /> <p /> Ou seja, a comissão pode ser formada de 70 maneiras diferentes. <p /> </li> <li> Para realizar entrevistas, um pesquisador deve escolher 4 pessoas de um total de 9 candidatos. De quantas formas diferentes ele pode realizar esta escolha? <p /> Novamente, a ordem dos escolhidos não é relevante, somente quem foi escolhido. Portanto, temos uma combinação de <Eq s=\"n=9\" /> em grupos de <Eq s=\"p=4\" />. Utilizando a fórmula: <p /> <Eq s=\"C_=\\frac=\\frac{(4.3.2.1)\\cdot(5!"
+}

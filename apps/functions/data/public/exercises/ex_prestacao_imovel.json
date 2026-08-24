@@ -1,0 +1,30 @@
+{
+  "id": "ex_prestacao_imovel",
+  "name": "Prestação do Imóvel",
+  "category": "Financial",
+  "labels": [
+    "enem",
+    "Financeira",
+    "unidade 9"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Prestação do Imóvel</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 10
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 300
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

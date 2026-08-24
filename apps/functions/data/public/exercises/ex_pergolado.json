@@ -1,0 +1,30 @@
+{
+  "id": "ex_pergolado",
+  "name": "Pergolado",
+  "category": "Trigonometry",
+  "labels": [
+    "enem",
+    "Trigonometria",
+    "unidade 10"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Pergolado</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "theta": 30
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "theta": 15
+      }
+    }
+  ],
+  "inputKeys": [
+    "theta"
+  ],
+  "previous": "",
+  "next": ""
+}

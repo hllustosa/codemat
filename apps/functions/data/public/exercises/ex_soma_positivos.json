@@ -1,0 +1,42 @@
+{
+  "id": "ex_soma_positivos",
+  "name": "Soma Positivos",
+  "category": "Programming",
+  "labels": [
+    "estrutura de controle",
+    "acumuladora",
+    "unidade 2"
+  ],
+  "statementHtml": " Neste problema, você deve desenvolver um programa que receba como entrada cinco números inteiros (<b>n1</b>, <b>n2</b>, <b>n3</b>, <b>n4</b>, <b>n5</b>) e produza como saída a soma de todos os que forem positivos.  <h3>Entradas</h3> Cinco números <b>n1</b>, <b>n2</b>, <b>n3</b>, <b>n4</b>, <b>n5</b>. </p>  <h3>Saída</h3> Um número <b>r</b> que é o maior entre <b>n1</b>, <b>n2</b> e <b>n3</b>. </p>  ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n1": 1353,
+        "n2": -835,
+        "n3": 1021,
+        "n4": -1584,
+        "n5": 9049
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n1": -265,
+        "n2": 9321,
+        "n3": -8380,
+        "n4": 8485,
+        "n5": -6567
+      }
+    }
+  ],
+  "inputKeys": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5"
+  ],
+  "previous": "",
+  "next": ""
+}

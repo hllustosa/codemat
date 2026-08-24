@@ -1,0 +1,39 @@
+{
+  "id": "ex_porcelanato",
+  "name": "Porcelanato",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Porcelanato</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "A_unidades": 4,
+        "B_unidades": 3,
+        "A_preco": 35,
+        "B_preco": 27
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "A_unidades": 6,
+        "B_unidades": 5,
+        "A_preco": 42,
+        "B_preco": 35
+      }
+    }
+  ],
+  "inputKeys": [
+    "A_unidades",
+    "B_unidades",
+    "A_preco",
+    "B_preco"
+  ],
+  "previous": "",
+  "next": ""
+}

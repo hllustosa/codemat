@@ -1,0 +1,30 @@
+{
+  "id": "ex_radio",
+  "name": "Rádio",
+  "category": "Combinatorics",
+  "labels": [
+    "enem",
+    "Combinatória",
+    "unidade 11"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Rádio</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 4
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 6
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

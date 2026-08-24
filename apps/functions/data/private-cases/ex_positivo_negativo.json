@@ -1,0 +1,77 @@
+{
+  "id": "ex_positivo_negativo",
+  "cases": [
+    {
+      "input": {
+        "n": 215
+      },
+      "output": [
+        "positivo"
+      ]
+    },
+    {
+      "input": {
+        "n": -106
+      },
+      "output": [
+        "negativo"
+      ]
+    },
+    {
+      "input": {
+        "n": 42
+      },
+      "output": [
+        "positivo"
+      ]
+    },
+    {
+      "input": {
+        "n": -204
+      },
+      "output": [
+        "negativo"
+      ]
+    },
+    {
+      "input": {
+        "n": 288
+      },
+      "output": [
+        "positivo"
+      ]
+    },
+    {
+      "input": {
+        "n": -54
+      },
+      "output": [
+        "negativo"
+      ]
+    },
+    {
+      "input": {
+        "n": 108
+      },
+      "output": [
+        "positivo"
+      ]
+    },
+    {
+      "input": {
+        "n": -36
+      },
+      "output": [
+        "negativo"
+      ]
+    },
+    {
+      "input": {
+        "n": 92
+      },
+      "output": [
+        "positivo"
+      ]
+    }
+  ]
+}

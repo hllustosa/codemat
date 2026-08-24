@@ -1,0 +1,46 @@
+{
+  "id": "ex_calcular_quadrado",
+  "name": "Calcular Quadrado",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "listas",
+    "unidade 4"
+  ],
+  "statementHtml": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Neste exercício você deve criar um programa que receba como entrada uma lista <b>l</b> e produza como saída uma lista contendo o quadrado de cada elemento em <b>l</b>.  <h3>Entradas</h3> Uma lista <b>l</b>. </p>  <h3>Saída</h3> Uma lista contendo o quadrado dos elementos de <b>l</b>. </p> ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "l": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "l": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ]
+      }
+    }
+  ],
+  "inputKeys": [
+    "l"
+  ],
+  "previous": "",
+  "next": ""
+}

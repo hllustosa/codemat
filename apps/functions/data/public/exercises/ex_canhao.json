@@ -1,0 +1,33 @@
+{
+  "id": "ex_canhao",
+  "name": "Canhão",
+  "category": "Functions",
+  "labels": [
+    "funções",
+    "enem",
+    "unidade 6"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Canhão</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "D": 20,
+        "H": 50
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "D": 360,
+        "H": 8100
+      }
+    }
+  ],
+  "inputKeys": [
+    "D",
+    "H"
+  ],
+  "previous": "",
+  "next": ""
+}

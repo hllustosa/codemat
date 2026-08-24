@@ -1,0 +1,33 @@
+{
+  "id": "ex_aluguel_bicicleta",
+  "name": "Aluguel de Bicicletas",
+  "category": "Functions",
+  "labels": [
+    "funções",
+    "enem",
+    "unidade 6"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Aluguel de Bicicletas</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "D": 24,
+        "E": 3
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "D": 4,
+        "E": 56
+      }
+    }
+  ],
+  "inputKeys": [
+    "D",
+    "E"
+  ],
+  "previous": "",
+  "next": ""
+}

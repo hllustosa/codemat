@@ -1,0 +1,42 @@
+{
+  "id": "ex_chocolate",
+  "name": "Barras de Chocolate",
+  "category": "Functions",
+  "labels": [
+    "funções",
+    "enem",
+    "unidade 6"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Barras de Chocolate</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "barraI": 2,
+        "barraII": 3.5,
+        "barraIII": 4,
+        "barraIV": 7,
+        "barraV": 8
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "barraI": 5.5,
+        "barraII": 9.3,
+        "barraIII": 12.7,
+        "barraIV": 14.5,
+        "barraV": 18.9
+      }
+    }
+  ],
+  "inputKeys": [
+    "barraI",
+    "barraII",
+    "barraIII",
+    "barraIV",
+    "barraV"
+  ],
+  "previous": "",
+  "next": ""
+}

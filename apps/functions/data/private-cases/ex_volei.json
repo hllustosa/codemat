@@ -1,0 +1,29 @@
+{
+  "id": "ex_volei",
+  "cases": [
+    {
+      "input": {
+        "n": 8
+      },
+      "output": [
+        90
+      ]
+    },
+    {
+      "input": {
+        "n": 4
+      },
+      "output": [
+        2
+      ]
+    },
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [
+        12
+      ]
+    }
+  ]
+}

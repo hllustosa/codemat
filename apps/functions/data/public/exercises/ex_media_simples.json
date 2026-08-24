@@ -1,0 +1,33 @@
+{
+  "id": "ex_media_simples",
+  "name": "Média Simples",
+  "category": "programming",
+  "labels": [
+    "aritmética",
+    "básico",
+    "unidade 1"
+  ],
+  "statementHtml": " Um professor necessita calcular a média aritmética simples das notas de duas avaliações que foram aplicadas em seus alunos. A média aritmética é obtida como a razão entre a soma das notas sobre a quantidade de avaliações aplicadas. </p>  Neste problema você deve produzir um programa que receba como entrada dois números reais (<b>nota1</b> e <b>nota2</b>) contendo as duas notas tiradas por um aluno nas avaliações aplicadas pelo professor. Em sequência, o programa deve produzir como saída a média aritmética dessas duas notas. </p>  <h3>Entradas</h3> Dois números reais <b>nota1</b> e <b>nota2</b>. </p>  <h3>Saída</h3> Um número real <b>media</b> contendo a média aritmética de <b>nota1</b> e <b>nota2</b>. </p> ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "nota1": 9.8,
+        "nota2": 7.6
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "nota1": 10,
+        "nota2": 10
+      }
+    }
+  ],
+  "inputKeys": [
+    "nota1",
+    "nota2"
+  ],
+  "previous": "",
+  "next": ""
+}

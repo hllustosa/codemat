@@ -1,0 +1,32 @@
+{
+  "id": "ex_cateto_adjacente",
+  "name": "Cateto Adjacente",
+  "category": "Trigonometry",
+  "labels": [
+    "Trigonometria",
+    "unidade 10"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Cateto Adjacente</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "h": 50,
+        "theta": 53.13
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "h": 110,
+        "theta": 35.097
+      }
+    }
+  ],
+  "inputKeys": [
+    "h",
+    "theta"
+  ],
+  "previous": "",
+  "next": ""
+}

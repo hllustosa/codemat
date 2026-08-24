@@ -1,0 +1,30 @@
+{
+  "id": "ex_decoracao_cilindro",
+  "name": "Decoração do Cilindro",
+  "category": "Trigonometry",
+  "labels": [
+    "enem",
+    "Trigonometria",
+    "unidade 10"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Decoração do Cilindro</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 6
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 8
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

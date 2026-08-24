@@ -1,0 +1,33 @@
+{
+  "id": "ex_poupanca_vs_cdb",
+  "name": "Poupança vs. CDB",
+  "category": "Financial",
+  "labels": [
+    "enem",
+    "Financeira",
+    "unidade 9"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Poupança vs. CDB</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "r_p": 0.56,
+        "r_cdb": 0.876
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "r_p": 0.56,
+        "r_cdb": 0.676
+      }
+    }
+  ],
+  "inputKeys": [
+    "r_p",
+    "r_cdb"
+  ],
+  "previous": "",
+  "next": ""
+}

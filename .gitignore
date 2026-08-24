@@ -1,2 +1,54 @@
-webapp/compemat/.env
-backend/compemat-3277c049031f.json
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Secrets — never commit
+backend/credentials/*
+!backend/credentials/README.md
+**/credentials/**
+!**/credentials/README.md
+*.pem
+.env
+.env.*
+!.env.example
+apps/functions/service-account*.json
+**/*firebase-adminsdk*.json
+backend/*.json
+.tools/
+# Local-only reference copy of pre-revamp apps (not published)
+legacy/archive/
+
+# Builds
+.next/
+out/
+dist/
+build/
+apps/web/out/
+apps/functions/lib/
+.firebase/
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs & caches
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.turbo/
+coverage/
+.nyc_output/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# Firebase debug
+firebase-debug.log*
+firebase-debug.*.log*
+ui-debug.log

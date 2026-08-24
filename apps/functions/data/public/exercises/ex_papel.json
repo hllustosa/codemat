@@ -1,0 +1,30 @@
+{
+  "id": "ex_papel",
+  "name": "Papel",
+  "category": "Progression",
+  "labels": [
+    "Progressões",
+    "enem",
+    "unidade 8"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Papel</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "s": 8
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "s": 7
+      }
+    }
+  ],
+  "inputKeys": [
+    "s"
+  ],
+  "previous": "",
+  "next": ""
+}

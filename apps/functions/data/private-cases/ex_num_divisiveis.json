@@ -1,0 +1,53 @@
+{
+  "id": "ex_num_divisiveis",
+  "cases": [
+    {
+      "input": {
+        "n": 8
+      },
+      "output": [
+        12
+      ]
+    },
+    {
+      "input": {
+        "n": 3
+      },
+      "output": [
+        33
+      ]
+    },
+    {
+      "input": {
+        "n": 4
+      },
+      "output": [
+        25
+      ]
+    },
+    {
+      "input": {
+        "n": 5
+      },
+      "output": [
+        20
+      ]
+    },
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [
+        16
+      ]
+    },
+    {
+      "input": {
+        "n": 7
+      },
+      "output": [
+        14
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ex_seguranca_balada",
+  "cases": [
+    {
+      "input": {
+        "idade": 19
+      },
+      "output": [
+        "Permitida a Entrada"
+      ]
+    },
+    {
+      "input": {
+        "idade": 14
+      },
+      "output": [
+        "Entrada Proibida"
+      ]
+    },
+    {
+      "input": {
+        "idade": 26
+      },
+      "output": [
+        "Permitida a Entrada"
+      ]
+    },
+    {
+      "input": {
+        "idade": 16
+      },
+      "output": [
+        "Entrada Proibida"
+      ]
+    },
+    {
+      "input": {
+        "idade": 22
+      },
+      "output": [
+        "Permitida a Entrada"
+      ]
+    },
+    {
+      "input": {
+        "idade": 29
+      },
+      "output": [
+        "Permitida a Entrada"
+      ]
+    }
+  ]
+}

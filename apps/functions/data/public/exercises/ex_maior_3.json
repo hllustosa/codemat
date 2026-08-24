@@ -1,0 +1,36 @@
+{
+  "id": "ex_maior_3",
+  "name": "Maior de 3",
+  "category": "Programming",
+  "labels": [
+    "estrutura de controle",
+    "comparação",
+    "unidade 2"
+  ],
+  "statementHtml": " Neste problema, você deve desenvolver um programa que receba como entrada três números inteiros (<b>n1</b>, <b>n2</b> e <b>n3</b>) e produza como saída o maior deles.  <h3>Entradas</h3> Três números <b>n1</b>, <b>n2</b> e <b>n3</b>. </p>  <h3>Saída</h3> Um número <b>r</b> que é o maior entre <b>n1</b>, <b>n2</b> e <b>n3</b>. </p>  ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n1": 1,
+        "n2": 12,
+        "n3": 3
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n1": 4235,
+        "n2": 342,
+        "n3": 9048
+      }
+    }
+  ],
+  "inputKeys": [
+    "n1",
+    "n2",
+    "n3"
+  ],
+  "previous": "",
+  "next": ""
+}

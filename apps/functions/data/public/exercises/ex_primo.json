@@ -1,0 +1,29 @@
+{
+  "id": "ex_primo",
+  "name": "Primo",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "unidade 3"
+  ],
+  "statementHtml": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Um número primo é um número natural maior que 1 que não pode ser escrito como o produto de dois outros números menores. Os primos têm diversas aplicações como na criptografia digital utilizada para transmitir dados de forma segura através da internet. </p>  Neste problema, você deve criar um programa que recebe como entrada um número natural <b>n</b> e determine se esse número é primo ou composto, isto é, um número que pode ser escrito como o produto de números menores. O programa deve produzir a cadeia de caracteres \"primo\" caso identifique que o número é primo ou a cadeia \"composto\" caso contrário. </p>  <h3>Entradas</h3> Um número inteiro <b>n</b> maior que 1 e menor que 100. </p>  <h3>Saída</h3> Uma cadeia de caracteres com o valor \"primo\" ou \"composto\". ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 7
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 19
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ex_terreno",
+  "name": "Terreno",
+  "category": "Trigonometry",
+  "labels": [
+    "enem",
+    "Trigonometria",
+    "unidade 10"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Terreno</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "c": 3,
+        "l": 2
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "c": 6,
+        "l": 3
+      }
+    }
+  ],
+  "inputKeys": [
+    "c",
+    "l"
+  ],
+  "previous": "",
+  "next": ""
+}

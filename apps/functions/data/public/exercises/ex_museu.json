@@ -1,0 +1,33 @@
+{
+  "id": "ex_museu",
+  "name": "Museu",
+  "category": "Combinatorics",
+  "labels": [
+    "enem",
+    "Combinatória",
+    "unidade 11"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Museu</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "m_n": 4,
+        "m_i": 4
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "m_n": 6,
+        "m_i": 3
+      }
+    }
+  ],
+  "inputKeys": [
+    "m_n",
+    "m_i"
+  ],
+  "previous": "",
+  "next": ""
+}

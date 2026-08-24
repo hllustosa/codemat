@@ -1,0 +1,10 @@
+{
+  "id": "unity-5-2",
+  "section": "unity-5",
+  "content": "2",
+  "title": "Porcentagem",
+  "author": "Maria Luiza Alves Rizzo",
+  "authorLink": "https://www.instagram.com/mtmsemmacete/",
+  "unitTitle": "Unidade 5 - Aritmética",
+  "bodyHtml": "<div class=\"lesson\"> A partir dessa unidade iremos nos dedicar ao estudo da matemática. Começaremos fazendo uma revisão dos conceitos mais básicos da aritmética. <ClassImage src=\"/img/arithmetic.svg\" pos=\"center\" style=} /> <p /> <ClassSectionTitle title=\"Porcentagem\" /> <b>Porcentagem (%)</b> é um conceito matemático que utiliza frações de denominador 100 para comparar grandezas. Dessa forma, quando nos deparamos com os números 10%, 25% ou 50%, por exemplo, devemos interpretar como <Eq s=\"\\frac\" />, <Eq s=\"\\frac\" /> e <Eq s=\"\\frac\" />, respectivamente. <p /> Vejamos um exemplo de como calcular uma porcentagem sobre certo valor: <ol> <li> Ana herdou 25% de uma herança de R$80.000,00 reais. Quanto Ana recebeu? <p /> Na prática, resolver essa questão significa resolver a multiplicação <Eq s=\"\\frac\\cdot 80000\" />. <p /> <Eq block s=\"\\text = \\frac\\cdot 80000 = \\frac\\cdot \\frac = \\frac = \\frac = 20000\" /> <p /> Portanto, Ana recebeu R$20.000,00 reais. </li> </ol> <ClassSectionTitle title=\"Acréscimo e Desconto\" /> No comércio, é frequente o uso da porcentagem para estipular novos preços às mercadorias. Se o valor de um artigo aumentou, dizemos que houve <b>acréscimo</b>; se diminuiu, que houve <b>desconto</b>. Observe os exemplos: <ol> <li> Um produto de R$300 reais sofreu um acréscimo de 50%. Qual o valor atual desse produto? <Eq s=\"300 + (\\text) = 300 + (150)= 450\" /> </li> O produto passou a custar R$450,00 reais. <li> Um produto de R$90 reais sofreu um desconto de 10%. Qual o valor atual desse produto? <Eq s=\"90 - (\\text{10% de 90"
+}

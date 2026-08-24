@@ -1,0 +1,36 @@
+{
+  "id": "ex_cor_carro",
+  "name": "Cor do Carro",
+  "category": "Probability",
+  "labels": [
+    "probabilidade",
+    "enem",
+    "unidade 7"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Cor do Carro</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "B": 20,
+        "C": 50,
+        "V": 30
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "B": 33,
+        "C": 27,
+        "V": 40
+      }
+    }
+  ],
+  "inputKeys": [
+    "B",
+    "C",
+    "V"
+  ],
+  "previous": "",
+  "next": ""
+}

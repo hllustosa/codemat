@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "codematbr",
+    "codemat": "codematbr"
+  },
+  "targets": {},
+  "etags": {}
+}

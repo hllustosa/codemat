@@ -1,0 +1,33 @@
+{
+  "id": "ex_miniatura_trofeu",
+  "name": "Miniatura do Troféu",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Miniatura do Troféu</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "E": 30,
+        "H": 100
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "E": 30,
+        "H": 120
+      }
+    }
+  ],
+  "inputKeys": [
+    "E",
+    "H"
+  ],
+  "previous": "",
+  "next": ""
+}

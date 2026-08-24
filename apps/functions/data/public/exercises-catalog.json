@@ -1,0 +1,903 @@
+{
+  "exercises": [
+    {
+      "id": "ex_aluguel_bicicleta",
+      "name": "Aluguel de Bicicletas",
+      "category": "Functions",
+      "labels": [
+        "funções",
+        "enem",
+        "unidade 6"
+      ]
+    },
+    {
+      "id": "ex_amigo_secreto",
+      "name": "Amigo Secreto",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_aplicacao",
+      "name": "Aplicação",
+      "category": "Financial",
+      "labels": [
+        "enem",
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_ataque_cardiaco",
+      "name": "Ataque Cardíaco",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "condicional complexa",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_bandeira_do_brasil",
+      "name": "Bandeira do Brasil",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_chocolate",
+      "name": "Barras de Chocolate",
+      "category": "Functions",
+      "labels": [
+        "funções",
+        "enem",
+        "unidade 6"
+      ]
+    },
+    {
+      "id": "ex_calculadora",
+      "name": "Calculadora",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "aritmética",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_calcular_quadrado",
+      "name": "Calcular Quadrado",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_circunferencia",
+      "name": "Cálculo da Circunferência",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_canhao",
+      "name": "Canhão",
+      "category": "Functions",
+      "labels": [
+        "funções",
+        "enem",
+        "unidade 6"
+      ]
+    },
+    {
+      "id": "ex_pneu",
+      "name": "Carga de Pneus",
+      "category": "Functions",
+      "labels": [
+        "funções",
+        "enem",
+        "unidade 6"
+      ]
+    },
+    {
+      "id": "ex_castigo",
+      "name": "Castigo",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_cateto_adjacente",
+      "name": "Cateto Adjacente",
+      "category": "Trigonometry",
+      "labels": [
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_cateto_oposto",
+      "name": "Cateto Oposto",
+      "category": "Trigonometry",
+      "labels": [
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_codigo_secreto",
+      "name": "Código Secreto",
+      "category": "Progression",
+      "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_combustivel_moto",
+      "name": "Combustível da Moto",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_comparador_numeros",
+      "name": "Comparador de Números",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "básico",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_condominio",
+      "name": "Condomínio",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_contar_ocorrencia",
+      "name": "Contar Ocorrências",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_cor_carro",
+      "name": "Cor do Carro",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_corredor",
+      "name": "Corredor",
+      "category": "Progression",
+      "labels": [
+        "enem",
+        "Progressões",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_criptomoedas",
+      "name": "Criptomoedas",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_decoracao_cilindro",
+      "name": "Decoração do Cilindro",
+      "category": "Trigonometry",
+      "labels": [
+        "enem",
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_disciplinas",
+      "name": "Disciplinas",
+      "category": "Functions",
+      "labels": [
+        "funções",
+        "enem",
+        "unidade 6"
+      ]
+    },
+    {
+      "id": "ex_distancia_praia",
+      "name": "Distância da Praia",
+      "category": "Trigonometry",
+      "labels": [
+        "enem",
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_num_divisiveis",
+      "name": "Divisíveis",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_docentes",
+      "name": "Docentes",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_fatorial",
+      "name": "Fatorial",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_fibonnaci",
+      "name": "Fibonnaci",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_filtrar_elementos",
+      "name": "Filtrar Elementos da Lista",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_financiamento",
+      "name": "Financiamento",
+      "category": "Financial",
+      "labels": [
+        "enem",
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_baskahra",
+      "name": "Fórmula de Baskahra",
+      "category": "Functions",
+      "labels": [
+        "funções",
+        "unidade 6"
+      ]
+    },
+    {
+      "id": "ex_hotel",
+      "name": "Hotel",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_imposto_renda",
+      "name": "Imposto de Renda",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_imc",
+      "name": "Índice de Massa Corporal",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_interclasses",
+      "name": "Interclasses",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_inverter",
+      "name": "Inverter Lista",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_investimento",
+      "name": "Investimento",
+      "category": "Financial",
+      "labels": [
+        "enem",
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_sistema_irrigacao",
+      "name": "Irrigação",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "condicional complexa",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_jovens_trabalhadores",
+      "name": "Jovens Trabalhadores",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_juros_compostos",
+      "name": "Juros Compostos",
+      "category": "Financial",
+      "labels": [
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_juros_simples",
+      "name": "Juros Simples",
+      "category": "Financial",
+      "labels": [
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_lucro_ou_prejuizo",
+      "name": "Lucro ou Prejuízo",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "aritmética",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_maior_3",
+      "name": "Maior de 3",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "comparação",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_media_2",
+      "name": "Média 2",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "aritmética",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_media_ponderada",
+      "name": "Média Ponderada",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_media_simples",
+      "name": "Média Simples",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_miniatura_trofeu",
+      "name": "Miniatura do Troféu",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_moedas",
+      "name": "Moedas",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_movimento_retilineo",
+      "name": "Movimento Retilíneo",
+      "category": "programming",
+      "labels": [
+        "física",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_museu",
+      "name": "Museu",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_obter_maior",
+      "name": "Obter Maior",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_obter_media",
+      "name": "Obter Média",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_ola_mundo",
+      "name": "Olá Mundo",
+      "category": "programming",
+      "labels": [
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_onibus_vs_bicicleta",
+      "name": "Ônibus vs. Bicicleta",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_palindromo",
+      "name": "Palíndromo",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_papel",
+      "name": "Papel",
+      "category": "Progression",
+      "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_par_ou_impar",
+      "name": "Par ou Ímpar",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "aritmética",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_pergolado",
+      "name": "Pergolado",
+      "category": "Trigonometry",
+      "labels": [
+        "enem",
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_pesquisa_satisfacao",
+      "name": "Pesquisa de Satisfação",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_ponto_quadrado",
+      "name": "Ponto no Quadrado",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "geometria",
+        "condicional complexa",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_por_extenso",
+      "name": "Por Extenso",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "string",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_porcelanato",
+      "name": "Porcelanato",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_positivo_negativo",
+      "name": "Positivo ou Negativo",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "básico",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_postes",
+      "name": "Postes",
+      "category": "Progression",
+      "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_potencia_2",
+      "name": "Potência de 2",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_poupanca_vs_cdb",
+      "name": "Poupança vs. CDB",
+      "category": "Financial",
+      "labels": [
+        "enem",
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_prestacao_imovel",
+      "name": "Prestação do Imóvel",
+      "category": "Financial",
+      "labels": [
+        "enem",
+        "Financeira",
+        "unidade 9"
+      ]
+    },
+    {
+      "id": "ex_primo",
+      "name": "Primo",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_produto_simples",
+      "name": "Produto Simples",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_radio",
+      "name": "Rádio",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_recipiente",
+      "name": "Recipiente",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_reducao_mesada",
+      "name": "Redução da Mesada",
+      "category": "arithmetic",
+      "labels": [
+        "enem",
+        "arimética",
+        "unidade 5"
+      ]
+    },
+    {
+      "id": "ex_residuo",
+      "name": "Resíduos",
+      "category": "Progression",
+      "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_restituição",
+      "name": "Restituição",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_satelite",
+      "name": "Satélite",
+      "category": "Trigonometry",
+      "labels": [
+        "enem",
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_seguranca_balada",
+      "name": "Segurança da Balada",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "básico",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_senha",
+      "name": "Senha",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    },
+    {
+      "id": "ex_soma_pares",
+      "name": "Soma de Pares",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_soma_termos",
+      "name": "Soma de Termos",
+      "category": "Progression",
+      "labels": [
+        "Progressões",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_soma_positivos",
+      "name": "Soma Positivos",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "acumuladora",
+        "unidade 2"
+      ]
+    },
+    {
+      "id": "ex_soma_simples",
+      "name": "Soma Simples",
+      "category": "programming",
+      "labels": [
+        "aritmética",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_somar_elementos",
+      "name": "Somar Elementos",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_sorteio_viagem",
+      "name": "Sorteio de Viagem",
+      "category": "Probability",
+      "labels": [
+        "probabilidade",
+        "enem",
+        "unidade 7"
+      ]
+    },
+    {
+      "id": "ex_substituir",
+      "name": "Substituir",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "listas",
+        "string",
+        "unidade 4"
+      ]
+    },
+    {
+      "id": "ex_tabuada",
+      "name": "Tabuada",
+      "category": "Programming",
+      "labels": [
+        "estrutura de repetição",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_temperatura",
+      "name": "Temperatura",
+      "category": "programming",
+      "labels": [
+        "física",
+        "básico",
+        "unidade 1"
+      ]
+    },
+    {
+      "id": "ex_terreno",
+      "name": "Terreno",
+      "category": "Trigonometry",
+      "labels": [
+        "enem",
+        "Trigonometria",
+        "unidade 10"
+      ]
+    },
+    {
+      "id": "ex_tipos_triangulo",
+      "name": "Tipos de Triângulos",
+      "category": "Programming",
+      "labels": [
+        "estrutura de controle",
+        "geometria",
+        "condicional complexa",
+        "unidade 3"
+      ]
+    },
+    {
+      "id": "ex_torneira",
+      "name": "Torneira",
+      "category": "Progression",
+      "labels": [
+        "Progressões",
+        "enem",
+        "unidade 8"
+      ]
+    },
+    {
+      "id": "ex_volei",
+      "name": "Volei",
+      "category": "Combinatorics",
+      "labels": [
+        "enem",
+        "Combinatória",
+        "unidade 11"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ex_cateto_oposto",
+  "name": "Cateto Oposto",
+  "category": "Trigonometry",
+  "labels": [
+    "Trigonometria",
+    "unidade 10"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Cateto Oposto</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "h": 50,
+        "theta": 36.87
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "h": 110,
+        "theta": 54.903
+      }
+    }
+  ],
+  "inputKeys": [
+    "h",
+    "theta"
+  ],
+  "previous": "",
+  "next": ""
+}

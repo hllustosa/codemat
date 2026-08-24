@@ -1,0 +1,41 @@
+{
+  "id": "ex_sistema_irrigacao",
+  "cases": [
+    {
+      "input": {
+        "temperatura": "baixa",
+        "umidade": "alta"
+      },
+      "output": [
+        "curto"
+      ]
+    },
+    {
+      "input": {
+        "temperatura": "alta",
+        "umidade": "alta"
+      },
+      "output": [
+        "medio"
+      ]
+    },
+    {
+      "input": {
+        "temperatura": "alta",
+        "umidade": "baixa"
+      },
+      "output": [
+        "longo"
+      ]
+    },
+    {
+      "input": {
+        "temperatura": "alta",
+        "umidade": "alta"
+      },
+      "output": [
+        "medio"
+      ]
+    }
+  ]
+}

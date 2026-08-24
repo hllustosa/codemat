@@ -1,0 +1,30 @@
+{
+  "id": "ex_distancia_praia",
+  "name": "Distância da Praia",
+  "category": "Trigonometry",
+  "labels": [
+    "enem",
+    "Trigonometria",
+    "unidade 10"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Distância da Praia</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "alpha": 30
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "alpha": 40
+      }
+    }
+  ],
+  "inputKeys": [
+    "alpha"
+  ],
+  "previous": "",
+  "next": ""
+}

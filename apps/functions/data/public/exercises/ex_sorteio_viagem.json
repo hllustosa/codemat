@@ -1,0 +1,45 @@
+{
+  "id": "ex_sorteio_viagem",
+  "name": "Sorteio de Viagem",
+  "category": "Probability",
+  "labels": [
+    "probabilidade",
+    "enem",
+    "unidade 7"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Sorteio de Viagem</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "N30": 1,
+        "N31": 2,
+        "N32": 6,
+        "N33": 3,
+        "N34": 5,
+        "N35": 3
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "N30": 6,
+        "N31": 6,
+        "N32": 4,
+        "N33": 3,
+        "N34": 2,
+        "N35": 6
+      }
+    }
+  ],
+  "inputKeys": [
+    "N30",
+    "N31",
+    "N32",
+    "N33",
+    "N34",
+    "N35"
+  ],
+  "previous": "",
+  "next": ""
+}

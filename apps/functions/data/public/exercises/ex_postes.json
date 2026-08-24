@@ -1,0 +1,33 @@
+{
+  "id": "ex_postes",
+  "name": "Postes",
+  "category": "Progression",
+  "labels": [
+    "Progressões",
+    "enem",
+    "unidade 8"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Postes</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "m": 20,
+        "d": 1380
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "m": 25,
+        "d": 7420
+      }
+    }
+  ],
+  "inputKeys": [
+    "m",
+    "d"
+  ],
+  "previous": "",
+  "next": ""
+}

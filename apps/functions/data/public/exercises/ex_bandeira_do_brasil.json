@@ -1,0 +1,33 @@
+{
+  "id": "ex_bandeira_do_brasil",
+  "name": "Bandeira do Brasil",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Bandeira do Brasil</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "C": 180,
+        "L": 150
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "C": 140,
+        "L": 118
+      }
+    }
+  ],
+  "inputKeys": [
+    "C",
+    "L"
+  ],
+  "previous": "",
+  "next": ""
+}

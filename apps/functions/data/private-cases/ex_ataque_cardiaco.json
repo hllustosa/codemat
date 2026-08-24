@@ -1,0 +1,85 @@
+{
+  "id": "ex_ataque_cardiaco",
+  "cases": [
+    {
+      "input": {
+        "doenca": false,
+        "habitos": false,
+        "sobrepeso": false
+      },
+      "output": [
+        "muito baixo"
+      ]
+    },
+    {
+      "input": {
+        "doenca": true,
+        "habitos": false,
+        "sobrepeso": false
+      },
+      "output": [
+        "medio"
+      ]
+    },
+    {
+      "input": {
+        "doenca": false,
+        "habitos": true,
+        "sobrepeso": false
+      },
+      "output": [
+        "baixo"
+      ]
+    },
+    {
+      "input": {
+        "doenca": false,
+        "habitos": false,
+        "sobrepeso": true
+      },
+      "output": [
+        "baixo"
+      ]
+    },
+    {
+      "input": {
+        "doenca": true,
+        "habitos": true,
+        "sobrepeso": false
+      },
+      "output": [
+        "alto"
+      ]
+    },
+    {
+      "input": {
+        "doenca": true,
+        "habitos": false,
+        "sobrepeso": true
+      },
+      "output": [
+        "alto"
+      ]
+    },
+    {
+      "input": {
+        "doenca": false,
+        "habitos": true,
+        "sobrepeso": true
+      },
+      "output": [
+        "medio"
+      ]
+    },
+    {
+      "input": {
+        "doenca": true,
+        "habitos": true,
+        "sobrepeso": true
+      },
+      "output": [
+        "muito alto"
+      ]
+    }
+  ]
+}

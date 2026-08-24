@@ -1,0 +1,65 @@
+{
+  "id": "ex_chocolate",
+  "cases": [
+    {
+      "input": {
+        "barraI": 2,
+        "barraII": 3.5,
+        "barraIII": 4,
+        "barraIV": 7,
+        "barraV": 8
+      },
+      "output": [
+        "barraIV"
+      ]
+    },
+    {
+      "input": {
+        "barraI": 5.5,
+        "barraII": 9.3,
+        "barraIII": 12.7,
+        "barraIV": 14.5,
+        "barraV": 18.9
+      },
+      "output": [
+        "barraI"
+      ]
+    },
+    {
+      "input": {
+        "barraI": 4.2,
+        "barraII": 5.1,
+        "barraIII": 8.6,
+        "barraIV": 10.4,
+        "barraV": 14.9
+      },
+      "output": [
+        "barraIII"
+      ]
+    },
+    {
+      "input": {
+        "barraI": 3.6,
+        "barraII": 4.6,
+        "barraIII": 7.1,
+        "barraIV": 8.9,
+        "barraV": 13.4
+      },
+      "output": [
+        "barraIII"
+      ]
+    },
+    {
+      "input": {
+        "barraI": 6.1,
+        "barraII": 7,
+        "barraIII": 9.9,
+        "barraIV": 11.8,
+        "barraV": 19.7
+      },
+      "output": [
+        "barraII"
+      ]
+    }
+  ]
+}

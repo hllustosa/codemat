@@ -1,0 +1,40 @@
+{
+  "id": "ex_castigo",
+  "cases": [
+    {
+      "input": {
+        "texto": "Não devo contar mentiras",
+        "n": 2
+      },
+      "output": [
+        "Não devo contar mentiras",
+        "Não devo contar mentiras"
+      ]
+    },
+    {
+      "input": {
+        "texto": "O cachorro não comeu minha lição",
+        "n": 5
+      },
+      "output": [
+        "O cachorro não comeu minha lição",
+        "O cachorro não comeu minha lição",
+        "O cachorro não comeu minha lição",
+        "O cachorro não comeu minha lição",
+        "O cachorro não comeu minha lição"
+      ]
+    },
+    {
+      "input": {
+        "texto": "Minha avó não faz karate",
+        "n": 4
+      },
+      "output": [
+        "Minha avó não faz karate",
+        "Minha avó não faz karate",
+        "Minha avó não faz karate",
+        "Minha avó não faz karate"
+      ]
+    }
+  ]
+}

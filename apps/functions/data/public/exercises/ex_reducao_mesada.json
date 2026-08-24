@@ -1,0 +1,36 @@
+{
+  "id": "ex_reducao_mesada",
+  "name": "Redução da Mesada",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Redução da Mesada</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "internet": 120,
+        "mensalidade": 700,
+        "mesada": 400
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "internet": 140,
+        "mensalidade": 590,
+        "mesada": 430
+      }
+    }
+  ],
+  "inputKeys": [
+    "internet",
+    "mensalidade",
+    "mesada"
+  ],
+  "previous": "",
+  "next": ""
+}

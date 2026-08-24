@@ -1,0 +1,30 @@
+{
+  "id": "ex_por_extenso",
+  "name": "Por Extenso",
+  "category": "Programming",
+  "labels": [
+    "estrutura de controle",
+    "string",
+    "unidade 2"
+  ],
+  "statementHtml": "  Neste problema, você deve criar um programa que tenha como entrada um único número <b>n</b>, maior ou igual a 0 e menor ou igual a 9. O programa deve  produzir como saída uma cadeia de caracteres contendo o número <b>n</b> escrito por extenso.  <h3>Entradas</h3> Um número <b>n</b> que deve ser escrito por extenso. </p>  <h3>Saída</h3> Uma cadeia de caracteres contendo <b>n</b> escrito por extenso. </p> ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 1
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 2
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

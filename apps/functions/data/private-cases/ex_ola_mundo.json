@@ -1,0 +1,53 @@
+{
+  "id": "ex_ola_mundo",
+  "cases": [
+    {
+      "input": {
+        "nome": "Maria"
+      },
+      "output": [
+        "Olá, Maria"
+      ]
+    },
+    {
+      "input": {
+        "nome": "João"
+      },
+      "output": [
+        "Olá, João"
+      ]
+    },
+    {
+      "input": {
+        "nome": "Hermano"
+      },
+      "output": [
+        "Olá, Hermano"
+      ]
+    },
+    {
+      "input": {
+        "nome": "Carlos"
+      },
+      "output": [
+        "Olá, Carlos"
+      ]
+    },
+    {
+      "input": {
+        "nome": "Ayla"
+      },
+      "output": [
+        "Olá, Ayla"
+      ]
+    },
+    {
+      "input": {
+        "nome": "Juliana"
+      },
+      "output": [
+        "Olá, Juliana"
+      ]
+    }
+  ]
+}

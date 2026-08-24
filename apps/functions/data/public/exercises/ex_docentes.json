@@ -1,0 +1,42 @@
+{
+  "id": "ex_docentes",
+  "name": "Docentes",
+  "category": "Probability",
+  "labels": [
+    "probabilidade",
+    "enem",
+    "unidade 7"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Docentes</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "A": 112,
+        "E": 60,
+        "C": 28,
+        "P": 9,
+        "V": 30
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "A": 45,
+        "E": 112,
+        "C": 44,
+        "P": 133,
+        "V": 80
+      }
+    }
+  ],
+  "inputKeys": [
+    "A",
+    "E",
+    "C",
+    "P",
+    "V"
+  ],
+  "previous": "",
+  "next": ""
+}

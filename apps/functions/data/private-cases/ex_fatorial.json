@@ -1,0 +1,37 @@
+{
+  "id": "ex_fatorial",
+  "cases": [
+    {
+      "input": {
+        "n": 2
+      },
+      "output": [
+        2
+      ]
+    },
+    {
+      "input": {
+        "n": 4
+      },
+      "output": [
+        24
+      ]
+    },
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [
+        720
+      ]
+    },
+    {
+      "input": {
+        "n": 10
+      },
+      "output": [
+        3628800
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ex_aplicacao",
+  "name": "Aplicação",
+  "category": "Financial",
+  "labels": [
+    "enem",
+    "Financeira",
+    "unidade 9"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Aplicação</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "ib": 0.542,
+        "ab": 0.3,
+        "ip": 0.56,
+        "ap": 3.8
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "ib": 0.522,
+        "ab": 0.5,
+        "ip": 0.58,
+        "ap": 3.5
+      }
+    }
+  ],
+  "inputKeys": [
+    "ib",
+    "ab",
+    "ip",
+    "ap"
+  ],
+  "previous": "",
+  "next": ""
+}

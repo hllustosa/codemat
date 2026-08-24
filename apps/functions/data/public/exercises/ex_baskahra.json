@@ -1,0 +1,35 @@
+{
+  "id": "ex_baskahra",
+  "name": "Fórmula de Baskahra",
+  "category": "Functions",
+  "labels": [
+    "funções",
+    "unidade 6"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Fórmula de Baskahra</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "a": 6,
+        "b": 11,
+        "c": 35
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "a": 2,
+        "b": -4,
+        "c": -2
+      }
+    }
+  ],
+  "inputKeys": [
+    "a",
+    "b",
+    "c"
+  ],
+  "previous": "",
+  "next": ""
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ex_torneira",
+  "name": "Torneira",
+  "category": "Progression",
+  "labels": [
+    "Progressões",
+    "enem",
+    "unidade 8"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Torneira</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "x": 5
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "x": 15
+      }
+    }
+  ],
+  "inputKeys": [
+    "x"
+  ],
+  "previous": "",
+  "next": ""
+}

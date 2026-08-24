@@ -1,0 +1,30 @@
+{
+  "id": "ex_hotel",
+  "name": "Hotel",
+  "category": "Combinatorics",
+  "labels": [
+    "enem",
+    "Combinatória",
+    "unidade 11"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Hotel</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 3
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 4
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

@@ -1,0 +1,496 @@
+{
+  "units": [
+    {
+      "unitTitle": "Introdução",
+      "items": [
+        {
+          "id": "unity-0-1",
+          "title": "Apresentação do Curso",
+          "section": "unity-0",
+          "content": "1",
+          "link": "/classes/unity-0/1",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 1 - Conceitos Básicos",
+      "items": [
+        {
+          "id": "unity-1-1",
+          "title": "O que é Programação?",
+          "section": "unity-1",
+          "content": "1",
+          "link": "/classes/unity-1/1",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-2",
+          "title": "Abstrações e Sistemas Numéricos",
+          "section": "unity-1",
+          "content": "2",
+          "link": "/classes/unity-1/2",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-3",
+          "title": "Algoritmos, Código e Software",
+          "section": "unity-1",
+          "content": "3",
+          "link": "/classes/unity-1/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-4",
+          "title": "Variáveis e Literais",
+          "section": "unity-1",
+          "content": "4",
+          "link": "/classes/unity-1/4",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-5",
+          "title": "Entrada e Saída",
+          "section": "unity-1",
+          "content": "5",
+          "link": "/classes/unity-1/5",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-6",
+          "title": "Resolução de Problemas",
+          "section": "unity-1",
+          "content": "6",
+          "link": "/classes/unity-1/6",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-7",
+          "title": "Lidando com Erros",
+          "section": "unity-1",
+          "content": "7",
+          "link": "/classes/unity-1/7",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-1-8",
+          "title": "Recursos e Exercícios",
+          "section": "unity-1",
+          "content": "8",
+          "link": "/classes/unity-1/8",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 2 - Estruturas de Controle",
+      "items": [
+        {
+          "id": "unity-2-1",
+          "title": "Expressões Lógicas",
+          "section": "unity-2",
+          "content": "1",
+          "link": "/classes/unity-2/1",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-2-2",
+          "title": "Estrutura de Controle If",
+          "section": "unity-2",
+          "content": "2",
+          "link": "/classes/unity-2/2",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-2-3",
+          "title": "Estrutura de Controle If e Else",
+          "section": "unity-2",
+          "content": "3",
+          "link": "/classes/unity-2/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-2-4",
+          "title": "Estrutura de Controle Encadeada",
+          "section": "unity-2",
+          "content": "4",
+          "link": "/classes/unity-2/4",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-2-5",
+          "title": "Recursos e Exercícios",
+          "section": "unity-2",
+          "content": "5",
+          "link": "/classes/unity-2/5",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 3 - Estruturas de Repetição",
+      "items": [
+        {
+          "id": "unity-3-1",
+          "title": "Expressões Lógicas Complexas",
+          "section": "unity-3",
+          "content": "1",
+          "link": "/classes/unity-3/1",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-3-2",
+          "title": "Estrutura de Repetição While",
+          "section": "unity-3",
+          "content": "2",
+          "link": "/classes/unity-3/2",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-3-3",
+          "title": "Estrutura de Repetição For",
+          "section": "unity-3",
+          "content": "3",
+          "link": "/classes/unity-3/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-3-4",
+          "title": "Estruturas Aninhadas",
+          "section": "unity-3",
+          "content": "4",
+          "link": "/classes/unity-3/4",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-3-5",
+          "title": "Recursos e Exercícios",
+          "section": "unity-3",
+          "content": "5",
+          "link": "/classes/unity-3/5",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 4 - Funções & Listas",
+      "items": [
+        {
+          "id": "unity-4-1",
+          "title": "Funções",
+          "section": "unity-4",
+          "content": "1",
+          "link": "/classes/unity-4/1",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-4-2",
+          "title": "Listas",
+          "section": "unity-4",
+          "content": "2",
+          "link": "/classes/unity-4/2",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        },
+        {
+          "id": "unity-4-3",
+          "title": "Recursos e Exercícios",
+          "section": "unity-4",
+          "content": "3",
+          "link": "/classes/unity-4/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 5 - Aritmética",
+      "items": [
+        {
+          "id": "unity-5-1",
+          "title": "Revisão de Aritmética",
+          "section": "unity-5",
+          "content": "1",
+          "link": "/classes/unity-5/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-5-2",
+          "title": "Porcentagem",
+          "section": "unity-5",
+          "content": "2",
+          "link": "/classes/unity-5/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-5-3",
+          "title": "Proporcionalidade",
+          "section": "unity-5",
+          "content": "3",
+          "link": "/classes/unity-5/3",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-5-4",
+          "title": "Recursos e Exercícios",
+          "section": "unity-5",
+          "content": "4",
+          "link": "/classes/unity-5/4",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 6 - Funções",
+      "items": [
+        {
+          "id": "unity-6-1",
+          "title": "Fundamentos",
+          "section": "unity-6",
+          "content": "1",
+          "link": "/classes/unity-6/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-6-2",
+          "title": "Função de 1º Grau",
+          "section": "unity-6",
+          "content": "2",
+          "link": "/classes/unity-6/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-6-3",
+          "title": "Função de 2º Grau",
+          "section": "unity-6",
+          "content": "3",
+          "link": "/classes/unity-6/3",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-6-4",
+          "title": "Recursos e Exercícios",
+          "section": "unity-6",
+          "content": "4",
+          "link": "/classes/unity-6/4",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 7 - Probabilidade",
+      "items": [
+        {
+          "id": "unity-7-1",
+          "title": "Probabilidade",
+          "section": "unity-7",
+          "content": "1",
+          "link": "/classes/unity-7/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-7-2",
+          "title": "Eventos Independentes e Mutualmente Exclusivos",
+          "section": "unity-7",
+          "content": "2",
+          "link": "/classes/unity-7/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-7-3",
+          "title": "Eventos Inclusivos e Probabilidade Condicional",
+          "section": "unity-7",
+          "content": "3",
+          "link": "/classes/unity-7/3",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-7-4",
+          "title": "Recursos e Exercícios",
+          "section": "unity-7",
+          "content": "4",
+          "link": "/classes/unity-7/4",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 8 - Progressões",
+      "items": [
+        {
+          "id": "unity-8-1",
+          "title": "Progressão Aritmética (PA)",
+          "section": "unity-8",
+          "content": "1",
+          "link": "/classes/unity-8/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-8-2",
+          "title": "Progressão Geométrica (PG)",
+          "section": "unity-8",
+          "content": "2",
+          "link": "/classes/unity-8/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-8-3",
+          "title": "Recursos e Exercícios",
+          "section": "unity-8",
+          "content": "3",
+          "link": "/classes/unity-8/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 9 - Matemática Financeira",
+      "items": [
+        {
+          "id": "unity-9-1",
+          "title": "Juros Simples",
+          "section": "unity-9",
+          "content": "1",
+          "link": "/classes/unity-9/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-9-2",
+          "title": "Juros Compostos",
+          "section": "unity-9",
+          "content": "2",
+          "link": "/classes/unity-9/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-9-3",
+          "title": "Recursos e Exercícios",
+          "section": "unity-9",
+          "content": "3",
+          "link": "/classes/unity-9/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 10 - Trigonometria",
+      "items": [
+        {
+          "id": "unity-10-1",
+          "title": "Ângulos e Triângulos",
+          "section": "unity-10",
+          "content": "1",
+          "link": "/classes/unity-10/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-10-2",
+          "title": "Relações Trigonométricas",
+          "section": "unity-10",
+          "content": "2",
+          "link": "/classes/unity-10/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-10-3",
+          "title": "Recursos e Exercícios",
+          "section": "unity-10",
+          "content": "3",
+          "link": "/classes/unity-10/3",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    },
+    {
+      "unitTitle": "Unidade 11 - Análise Combinatória",
+      "items": [
+        {
+          "id": "unity-11-1",
+          "title": "Fatorial e Contagem",
+          "section": "unity-11",
+          "content": "1",
+          "link": "/classes/unity-11/1",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-11-2",
+          "title": "Permutação",
+          "section": "unity-11",
+          "content": "2",
+          "link": "/classes/unity-11/2",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-11-3",
+          "title": "Arranjo",
+          "section": "unity-11",
+          "content": "3",
+          "link": "/classes/unity-11/3",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-11-4",
+          "title": "Combinação",
+          "section": "unity-11",
+          "content": "4",
+          "link": "/classes/unity-11/4",
+          "author": "Maria Luiza Alves Rizzo",
+          "authorLink": "https://www.instagram.com/mtmsemmacete/"
+        },
+        {
+          "id": "unity-11-5",
+          "title": "Recursos e Exercícios",
+          "section": "unity-11",
+          "content": "5",
+          "link": "/classes/unity-11/5",
+          "author": "Hermano Lustosa",
+          "authorLink": "https://linkedin.com/in/hlustosa"
+        }
+      ]
+    }
+  ]
+}

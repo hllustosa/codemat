@@ -1,0 +1,33 @@
+{
+  "id": "ex_financiamento",
+  "name": "Financiamento",
+  "category": "Financial",
+  "labels": [
+    "enem",
+    "Financeira",
+    "unidade 9"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Financiamento</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "p1": 202,
+        "p2": 204.02
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "p1": 505,
+        "p2": 510.05
+      }
+    }
+  ],
+  "inputKeys": [
+    "p1",
+    "p2"
+  ],
+  "previous": "",
+  "next": ""
+}

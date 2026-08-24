@@ -1,0 +1,45 @@
+{
+  "id": "ex_disciplinas",
+  "cases": [
+    {
+      "input": {
+        "R": 720
+      },
+      "output": [
+        6
+      ]
+    },
+    {
+      "input": {
+        "R": 598
+      },
+      "output": [
+        4
+      ]
+    },
+    {
+      "input": {
+        "R": 450
+      },
+      "output": [
+        3
+      ]
+    },
+    {
+      "input": {
+        "R": 890
+      },
+      "output": [
+        18
+      ]
+    },
+    {
+      "input": {
+        "R": 650
+      },
+      "output": [
+        5
+      ]
+    }
+  ]
+}

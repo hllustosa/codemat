@@ -1,0 +1,139 @@
+{
+  "id": "ex_onibus_vs_bicicleta",
+  "cases": [
+    {
+      "input": {
+        "onibus": [
+          9,
+          20,
+          15,
+          12,
+          10,
+          30
+        ],
+        "bicicleta": [
+          15,
+          22,
+          24,
+          15,
+          18,
+          16
+        ],
+        "dia": [
+          "segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sabado"
+        ]
+      },
+      "output": [
+        [
+          "segunda",
+          "quarta",
+          "sexta"
+        ]
+      ]
+    },
+    {
+      "input": {
+        "onibus": [
+          12,
+          33,
+          43,
+          45,
+          22,
+          33
+        ],
+        "bicicleta": [
+          11,
+          43,
+          23,
+          12,
+          43,
+          54
+        ],
+        "dia": [
+          "segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sabado"
+        ]
+      },
+      "output": [
+        [
+          "sexta",
+          "sabado"
+        ]
+      ]
+    },
+    {
+      "input": {
+        "onibus": [
+          7,
+          11,
+          7,
+          21,
+          12,
+          10
+        ],
+        "bicicleta": [
+          10,
+          12,
+          5,
+          10,
+          13,
+          15
+        ],
+        "dia": [
+          "segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sabado"
+        ]
+      },
+      "output": [
+        []
+      ]
+    },
+    {
+      "input": {
+        "onibus": [
+          11,
+          13,
+          15,
+          14,
+          22,
+          12
+        ],
+        "bicicleta": [
+          8,
+          21,
+          17,
+          9,
+          34,
+          12
+        ],
+        "dia": [
+          "segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sabado"
+        ]
+      },
+      "output": [
+        [
+          "terça",
+          "sexta"
+        ]
+      ]
+    }
+  ]
+}

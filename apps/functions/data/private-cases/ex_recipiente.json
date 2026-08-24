@@ -1,0 +1,45 @@
+{
+  "id": "ex_recipiente",
+  "cases": [
+    {
+      "input": {
+        "V": 6
+      },
+      "output": [
+        14
+      ]
+    },
+    {
+      "input": {
+        "V": 4
+      },
+      "output": [
+        21
+      ]
+    },
+    {
+      "input": {
+        "V": 7
+      },
+      "output": [
+        12
+      ]
+    },
+    {
+      "input": {
+        "V": 10
+      },
+      "output": [
+        9
+      ]
+    },
+    {
+      "input": {
+        "V": 9
+      },
+      "output": [
+        10
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ex_potencia_2",
+  "name": "Potência de 2",
+  "category": "Programming",
+  "labels": [
+    "estrutura de repetição",
+    "unidade 3"
+  ],
+  "statementHtml": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script>  Neste problema você deve criar um programa que receba como entrada um número inteiro <b>expoente</b> e que produza como saída o valor \\( 2^{expoente}\\).  <h3>Entradas</h3> Um número inteiro <b>expoente</b>. </p>  <h3>Saída</h3> Um número inteiro contendo o valor de  \\( 2^{expoente}\\). </p> ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "expoente": 3
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "expoente": 4
+      }
+    }
+  ],
+  "inputKeys": [
+    "expoente"
+  ],
+  "previous": "",
+  "next": ""
+}

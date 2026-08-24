@@ -1,0 +1,33 @@
+{
+  "id": "ex_imposto_renda",
+  "name": "Imposto de Renda",
+  "category": "Probability",
+  "labels": [
+    "probabilidade",
+    "enem",
+    "unidade 7"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Imposto de Renda</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "FC": 6.25,
+        "FI": 25
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "FC": 2.5,
+        "FI": 90
+      }
+    }
+  ],
+  "inputKeys": [
+    "FC",
+    "FI"
+  ],
+  "previous": "",
+  "next": ""
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ex_residuo",
+  "name": "Resíduos",
+  "category": "Progression",
+  "labels": [
+    "Progressões",
+    "enem",
+    "unidade 8"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Resíduos</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "a": 2020
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "a": 2015
+      }
+    }
+  ],
+  "inputKeys": [
+    "a"
+  ],
+  "previous": "",
+  "next": ""
+}

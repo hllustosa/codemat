@@ -1,0 +1,14 @@
+# Firebase App Hosting backend for the Next.js app (apps/web).
+# Create the App Hosting backend in Firebase Console linked to this repo/root.
+runConfig:
+  runtime: nodejs20
+  env:
+    - variable: NEXT_PUBLIC_SITE_URL
+      value: https://codematbr.web.app
+    - variable: NEXT_PUBLIC_API_BASE_URL
+      value: https://us-central1-codematbr.cloudfunctions.net/api
+
+# Build from monorepo web app
+scripts:
+  buildCommand: npm run build:content && npm run build -w apps/web
+  runCommand: npm run start -w apps/web

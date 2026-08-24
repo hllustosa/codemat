@@ -1,0 +1,30 @@
+{
+  "id": "ex_fatorial",
+  "name": "Fatorial",
+  "category": "Combinatorics",
+  "labels": [
+    "enem",
+    "Combinatória",
+    "unidade 11"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Fatorial</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 2
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 4
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

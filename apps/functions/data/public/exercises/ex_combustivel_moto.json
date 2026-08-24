@@ -1,0 +1,33 @@
+{
+  "id": "ex_combustivel_moto",
+  "name": "Combustível da Moto",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Combustível da Moto</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "L": 5,
+        "C": 22
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "L": 4,
+        "C": 16
+      }
+    }
+  ],
+  "inputKeys": [
+    "L",
+    "C"
+  ],
+  "previous": "",
+  "next": ""
+}

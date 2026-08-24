@@ -1,0 +1,10 @@
+{
+  "id": "unity-2-3",
+  "section": "unity-2",
+  "content": "3",
+  "title": "Estrutura de Controle If e Else",
+  "author": "Hermano Lustosa",
+  "authorLink": "https://linkedin.com/in/hlustosa",
+  "unitTitle": "Unidade 2 - Estruturas de Controle",
+  "bodyHtml": "<div class=\"lesson\"> Nesta seção, vamos incrementar o comando <b>if</b> adicionando seu complemento, o <b>else</b>. Isto nos permite definir dois blocos de código, um que deve ser executado quando nossa expressão lógica é verdadeira e outro para quando é falsa. <ClassImage src=\"/img/conditional.svg\" pos=\"center\" style=} /> <p /> <ClassSectionTitle title=\"A estrutura de Controle If com o Else\" />A palavra <b>else</b> na língua inglesa pode ser traduzida como a conjunção <b>Senão</b>. Na programação, utilizamos essa palavra para criar um bloco de código que deve ser executado caso nossa expressão lógica seja avaliada com falsa. O <b>else</b> é opcional, porém só aparece quando utilizado a em conjunto com estrutura de controle <b>if</b>. Vamos a um exemplo: <p /> <ClassCodeEditor code=var numero = input(\"numero\");\\n\\nif(numero > 10) else input= height=\"140px\" /> <p /> Como sempre, aconselhamos você a fazer algumas alterações no código e nas entradas para se familiarizar com o comportamento. No exemplo temos o já conhecido <b>if</b> seguido de uma expressão lógica. <p /> Porém, adicionamos uma nova parte nesse comando. Imediatamente depois do bloco de código terminado pelo fechamento das chaves, temos a palavra else seguida de um novo bloco de código. Esse bloco de código será executado somente se a expressão lógica: numero &gt; 10 for avaliada como falsa. <p /> Os blocos if e else são extremamente comuns na programação e eles garantem que apenas um dos dois blocos de código será executado. Não se esqueça que após o final do bloco associado ao else, o código é executado de forma não condicional. Exemplo: <p /> <ClassCodeEditor code=var numero = input(\"numero\");\\n\\nif(numero > 10) else \\noutput(\"Essa linha é sempre executada \"); input= height=\"160px\" /> <p /> </div>"
+}

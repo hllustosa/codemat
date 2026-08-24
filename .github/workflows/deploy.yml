@@ -1,0 +1,58 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        run: npm install
+
+      - name: Build content
+        run: npm run build:content
+
+      - name: Build packages
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://codematbr.web.app
+          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }}
+          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ secrets.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }}
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: codematbr
+          NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: ${{ secrets.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET }}
+          NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID }}
+          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_APP_ID }}
+          NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID }}
+          NEXT_PUBLIC_API_BASE_URL: https://us-central1-codematbr.cloudfunctions.net/api
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+
+      - name: Deploy Firebase Functions & rules
+        run: npx firebase-tools@13 deploy --only functions,firestore:rules,storage --project codematbr --non-interactive
+
+      - name: Deploy web (Firebase App Hosting / Hosting)
+        run: |
+          if [ -f apphosting.yaml ]; then
+            npx firebase-tools@13 deploy --only apphosting --project codematbr --non-interactive || \
+            npx firebase-tools@13 deploy --only hosting --project codematbr --non-interactive
+          else
+            npx firebase-tools@13 deploy --only hosting --project codematbr --non-interactive
+          fi

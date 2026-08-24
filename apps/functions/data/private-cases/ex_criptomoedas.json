@@ -1,0 +1,68 @@
+{
+  "id": "ex_criptomoedas",
+  "cases": [
+    {
+      "input": {
+        "cotacao": 1.5,
+        "valor": 10
+      },
+      "output": [
+        "R$ 15"
+      ]
+    },
+    {
+      "input": {
+        "cotacao": 2,
+        "valor": 30
+      },
+      "output": [
+        "R$ 60"
+      ]
+    },
+    {
+      "input": {
+        "cotacao": 2.3,
+        "valor": 15
+      },
+      "output": [
+        "R$ 34.5"
+      ]
+    },
+    {
+      "input": {
+        "cotacao": 1.4,
+        "valor": 10
+      },
+      "output": [
+        "R$ 14"
+      ]
+    },
+    {
+      "input": {
+        "cotacao": 7.1,
+        "valor": 9
+      },
+      "output": [
+        "R$ 63.9"
+      ]
+    },
+    {
+      "input": {
+        "cotacao": 3,
+        "valor": 110
+      },
+      "output": [
+        "R$ 330"
+      ]
+    },
+    {
+      "input": {
+        "cotacao": 1.2,
+        "valor": 55
+      },
+      "output": [
+        "R$ 66"
+      ]
+    }
+  ]
+}

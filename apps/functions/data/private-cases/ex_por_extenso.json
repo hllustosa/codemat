@@ -1,0 +1,85 @@
+{
+  "id": "ex_por_extenso",
+  "cases": [
+    {
+      "input": {
+        "n": 1
+      },
+      "output": [
+        "um"
+      ]
+    },
+    {
+      "input": {
+        "n": 2
+      },
+      "output": [
+        "dois"
+      ]
+    },
+    {
+      "input": {
+        "n": 3
+      },
+      "output": [
+        "três"
+      ]
+    },
+    {
+      "input": {
+        "n": 4
+      },
+      "output": [
+        "quatro"
+      ]
+    },
+    {
+      "input": {
+        "n": 5
+      },
+      "output": [
+        "cinco"
+      ]
+    },
+    {
+      "input": {
+        "n": 6
+      },
+      "output": [
+        "seis"
+      ]
+    },
+    {
+      "input": {
+        "n": 7
+      },
+      "output": [
+        "sete"
+      ]
+    },
+    {
+      "input": {
+        "n": 8
+      },
+      "output": [
+        "oito"
+      ]
+    },
+    {
+      "input": {
+        "n": 9
+      },
+      "output": [
+        "nove"
+      ]
+    },
+    {
+      "input": {
+        "n": 0
+      },
+      "output": [
+        "zero"
+      ]
+    }
+  ]
+}

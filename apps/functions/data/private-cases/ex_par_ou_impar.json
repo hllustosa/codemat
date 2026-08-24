@@ -1,0 +1,75 @@
+{
+  "id": "ex_par_ou_impar",
+  "cases": [
+    {
+      "input": {
+        "ana": "par",
+        "ana_numero": 3,
+        "maria_numero": 4
+      },
+      "output": [
+        "Maria Ganhou"
+      ]
+    },
+    {
+      "input": {
+        "ana": "ímpar",
+        "ana_numero": 2,
+        "maria_numero": 3
+      },
+      "output": [
+        "Ana Ganhou"
+      ]
+    },
+    {
+      "input": {
+        "ana": "par",
+        "ana_numero": 1,
+        "maria_numero": 2
+      },
+      "output": [
+        "Maria Ganhou"
+      ]
+    },
+    {
+      "input": {
+        "ana": "ímpar",
+        "ana_numero": 1,
+        "maria_numero": 4
+      },
+      "output": [
+        "Ana Ganhou"
+      ]
+    },
+    {
+      "input": {
+        "ana": "ímpar",
+        "ana_numero": 4,
+        "maria_numero": 4
+      },
+      "output": [
+        "Maria Ganhou"
+      ]
+    },
+    {
+      "input": {
+        "ana": "par",
+        "ana_numero": 3,
+        "maria_numero": 5
+      },
+      "output": [
+        "Ana Ganhou"
+      ]
+    },
+    {
+      "input": {
+        "ana": "par",
+        "ana_numero": 1,
+        "maria_numero": 4
+      },
+      "output": [
+        "Maria Ganhou"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "ex_onibus_vs_bicicleta",
+  "name": "Ônibus vs. Bicicleta",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Ônibus vs. Bicicleta</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "onibus": [
+          9,
+          20,
+          15,
+          12,
+          10,
+          30
+        ],
+        "bicicleta": [
+          15,
+          22,
+          24,
+          15,
+          18,
+          16
+        ],
+        "dia": [
+          "segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sabado"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "onibus": [
+          12,
+          33,
+          43,
+          45,
+          22,
+          33
+        ],
+        "bicicleta": [
+          11,
+          43,
+          23,
+          12,
+          43,
+          54
+        ],
+        "dia": [
+          "segunda",
+          "terça",
+          "quarta",
+          "quinta",
+          "sexta",
+          "sabado"
+        ]
+      }
+    }
+  ],
+  "inputKeys": [
+    "onibus",
+    "bicicleta",
+    "dia"
+  ],
+  "previous": "",
+  "next": ""
+}

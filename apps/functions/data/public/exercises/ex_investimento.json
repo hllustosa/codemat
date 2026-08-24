@@ -1,0 +1,30 @@
+{
+  "id": "ex_investimento",
+  "name": "Investimento",
+  "category": "Financial",
+  "labels": [
+    "enem",
+    "Financeira",
+    "unidade 9"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Investimento</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "M": 3800
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "M": 4200
+      }
+    }
+  ],
+  "inputKeys": [
+    "M"
+  ],
+  "previous": "",
+  "next": ""
+}

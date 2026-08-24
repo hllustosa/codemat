@@ -1,0 +1,53 @@
+{
+  "id": "ex_porcelanato",
+  "cases": [
+    {
+      "input": {
+        "A_unidades": 4,
+        "B_unidades": 3,
+        "A_preco": 35,
+        "B_preco": 27
+      },
+      "output": [
+        3,
+        2
+      ]
+    },
+    {
+      "input": {
+        "A_unidades": 6,
+        "B_unidades": 5,
+        "A_preco": 42,
+        "B_preco": 35
+      },
+      "output": [
+        3,
+        0
+      ]
+    },
+    {
+      "input": {
+        "A_unidades": 4,
+        "B_unidades": 7,
+        "A_preco": 18,
+        "B_preco": 38
+      },
+      "output": [
+        5,
+        0
+      ]
+    },
+    {
+      "input": {
+        "A_unidades": 5,
+        "B_unidades": 4,
+        "A_preco": 22,
+        "B_preco": 19
+      },
+      "output": [
+        2,
+        2
+      ]
+    }
+  ]
+}

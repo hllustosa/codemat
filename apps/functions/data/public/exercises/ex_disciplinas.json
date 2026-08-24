@@ -1,0 +1,30 @@
+{
+  "id": "ex_disciplinas",
+  "name": "Disciplinas",
+  "category": "Functions",
+  "labels": [
+    "funções",
+    "enem",
+    "unidade 6"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Disciplinas</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "R": 720
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "R": 598
+      }
+    }
+  ],
+  "inputKeys": [
+    "R"
+  ],
+  "previous": "",
+  "next": ""
+}

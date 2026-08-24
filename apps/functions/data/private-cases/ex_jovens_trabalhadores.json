@@ -1,0 +1,49 @@
+{
+  "id": "ex_jovens_trabalhadores",
+  "cases": [
+    {
+      "input": {
+        "somente_estuda": 21.6,
+        "trabalha_estuda": 13.6,
+        "somente_trabalha": 45.2,
+        "nao_trabalha_nao_estuda": 19.6
+      },
+      "output": [
+        213444
+      ]
+    },
+    {
+      "input": {
+        "somente_estuda": 4.8,
+        "trabalha_estuda": 19.6,
+        "somente_trabalha": 30.4,
+        "nao_trabalha_nao_estuda": 45.2
+      },
+      "output": [
+        181500
+      ]
+    },
+    {
+      "input": {
+        "somente_estuda": 19.6,
+        "trabalha_estuda": 47.9,
+        "somente_trabalha": 27.1,
+        "nao_trabalha_nao_estuda": 5.4
+      },
+      "output": [
+        272250
+      ]
+    },
+    {
+      "input": {
+        "somente_estuda": 47.9,
+        "trabalha_estuda": 15.3,
+        "somente_trabalha": 9.7,
+        "nao_trabalha_nao_estuda": 27.1
+      },
+      "output": [
+        90750
+      ]
+    }
+  ]
+}

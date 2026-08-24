@@ -1,0 +1,10 @@
+{
+  "id": "unity-7-3",
+  "section": "unity-7",
+  "content": "3",
+  "title": "Eventos Inclusivos e Probabilidade Condicional",
+  "author": "Maria Luiza Alves Rizzo",
+  "authorLink": "https://www.instagram.com/mtmsemmacete/",
+  "unitTitle": "Unidade 7 - Probabilidade",
+  "bodyHtml": "<div class=\"lesson\"> Esta unidade contém uma discussão sobre probabilidade. O estudo das probabilidades nos permite estimar quão fácil ou difícil é para que um determinado evento ocorra. <ClassImage src=\"/img/probability.svg\" pos=\"center\" style=} /> <ClassSectionTitle title=\"Eventos Inclusivos\" /> Dois eventos são chamados de <b>inclusivos</b> quando há a possibilidade de ocorrer o evento <Eq s=\"A\" />, o evento <Eq s=\"B\" /> ou os dois ao mesmo tempo. Neste caso, se procuramos a probabilidade de ocorrer <Eq s=\"A\" /> <b>ou</b> <Eq s=\"B\" />, devemos subtrair a chance de ocorrer ambos: <p/> <Eq block s=\"P(A\\cup B)=P(A) + P(B)-P(A\\cap B)\" /> <p/> <ol> <li> Considere um baralho de 52 cartas, com 13 cartas de cada tipo (copas, espadas, ouros e paus). Escolhendo aleatoriamente uma carta deste baralho, qual a probabilidade de se obter um dois ou uma carta de ouros? <p /> Seja <Eq s=\"A\" /> o evento de escolher um dois e <Eq s=\"B\" /> o evento de escolher uma carta de ouros. Observe que existe a chance de ocorrer <Eq s=\"A\" /> e <Eq s=\"B\" /> ao mesmo tempo: o dois de ouros. Assim, <Eq s=\"P(A)=\\frac\" />, <Eq s=\"P(B)=\\frac\" /> e <Eq s=\"P(A\\cap B)=\\frac\" />. Portanto, a chance de ocorrer <Eq s=\"A\" /> <b>ou</b> <Eq s=\"B\" /> é <p /> <Eq block s=\"P(A\\cup B)=P(A) + P(B)-P(A\\cap B)=\\frac+\\frac-\\frac=\\frac\" /> <p /> Ou seja, existem 16 chances em 52 de se obter um dois ou uma carta de ouros. </li> </ol> <ClassSectionTitle title=\"Probabilidade Condicional\" />A Probabilidade <b>Condicional</b> refere-se à chance de ocorrer um evento <Eq s=\"A\" /> sabendo-se que o evento condicionante <Eq s=\"B\" /> já ocorreu, com ambos no mesmo espaço amostral. A situação de \"A ocorrer sabendo-se que B ocorreu\" é indicada pelo símbolo <Eq s=\"A|B\" /> e sua probabilidade é dada por: <p /> <Eq block s=\"P(A|B)=\\frac{P(A\\cap B"
+}

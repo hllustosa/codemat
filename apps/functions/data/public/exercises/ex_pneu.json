@@ -1,0 +1,33 @@
+{
+  "id": "ex_pneu",
+  "name": "Carga de Pneus",
+  "category": "Functions",
+  "labels": [
+    "funções",
+    "enem",
+    "unidade 6"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Carga de Pneus</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "i70": 335,
+        "i74": 375
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "i70": 200,
+        "i74": 180
+      }
+    }
+  ],
+  "inputKeys": [
+    "i70",
+    "i74"
+  ],
+  "previous": "",
+  "next": ""
+}

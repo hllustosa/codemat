@@ -1,0 +1,86 @@
+{
+  "id": "ex_lucro_ou_prejuizo",
+  "cases": [
+    {
+      "input": {
+        "compra": 33.5,
+        "venda": 45.25
+      },
+      "output": [
+        "lucro"
+      ]
+    },
+    {
+      "input": {
+        "compra": 45.25,
+        "venda": 15.5
+      },
+      "output": [
+        "prejuízo"
+      ]
+    },
+    {
+      "input": {
+        "compra": 105.75,
+        "venda": 108.5
+      },
+      "output": [
+        "lucro"
+      ]
+    },
+    {
+      "input": {
+        "compra": 90.25,
+        "venda": 15.5
+      },
+      "output": [
+        "prejuízo"
+      ]
+    },
+    {
+      "input": {
+        "compra": 15.5,
+        "venda": 35
+      },
+      "output": [
+        "lucro"
+      ]
+    },
+    {
+      "input": {
+        "compra": 35,
+        "venda": 15.5
+      },
+      "output": [
+        "prejuízo"
+      ]
+    },
+    {
+      "input": {
+        "compra": 108.5,
+        "venda": 120.75
+      },
+      "output": [
+        "lucro"
+      ]
+    },
+    {
+      "input": {
+        "compra": 29.9,
+        "venda": 18.1
+      },
+      "output": [
+        "prejuízo"
+      ]
+    },
+    {
+      "input": {
+        "compra": 12.3,
+        "venda": 90.25
+      },
+      "output": [
+        "lucro"
+      ]
+    }
+  ]
+}

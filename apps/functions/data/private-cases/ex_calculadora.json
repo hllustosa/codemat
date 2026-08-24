@@ -1,0 +1,85 @@
+{
+  "id": "ex_calculadora",
+  "cases": [
+    {
+      "input": {
+        "n1": 269,
+        "n2": 269,
+        "operacao": "+"
+      },
+      "output": [
+        538
+      ]
+    },
+    {
+      "input": {
+        "n1": 203,
+        "n2": 88,
+        "operacao": "-"
+      },
+      "output": [
+        115
+      ]
+    },
+    {
+      "input": {
+        "n1": 134,
+        "n2": 104,
+        "operacao": "*"
+      },
+      "output": [
+        13936
+      ]
+    },
+    {
+      "input": {
+        "n1": 200,
+        "n2": 10,
+        "operacao": "/"
+      },
+      "output": [
+        20
+      ]
+    },
+    {
+      "input": {
+        "n1": 299,
+        "n2": 298,
+        "operacao": "+"
+      },
+      "output": [
+        597
+      ]
+    },
+    {
+      "input": {
+        "n1": 251,
+        "n2": 42,
+        "operacao": "-"
+      },
+      "output": [
+        209
+      ]
+    },
+    {
+      "input": {
+        "n1": 267,
+        "n2": 59,
+        "operacao": "*"
+      },
+      "output": [
+        15753
+      ]
+    },
+    {
+      "input": {
+        "n1": 254,
+        "n2": 60,
+        "operacao": "/"
+      },
+      "output": [
+        4.233333333333333
+      ]
+    }
+  ]
+}

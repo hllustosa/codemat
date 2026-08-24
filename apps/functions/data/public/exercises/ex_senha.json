@@ -1,0 +1,30 @@
+{
+  "id": "ex_senha",
+  "name": "Senha",
+  "category": "Combinatorics",
+  "labels": [
+    "enem",
+    "Combinatória",
+    "unidade 11"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Senha</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "n": 2
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "n": 3
+      }
+    }
+  ],
+  "inputKeys": [
+    "n"
+  ],
+  "previous": "",
+  "next": ""
+}

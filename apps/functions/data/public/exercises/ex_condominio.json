@@ -1,0 +1,33 @@
+{
+  "id": "ex_condominio",
+  "name": "Condomínio",
+  "category": "Combinatorics",
+  "labels": [
+    "enem",
+    "Combinatória",
+    "unidade 11"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Condomínio</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "Cx": 3,
+        "Cy": 3
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "Cx": 2,
+        "Cy": 3
+      }
+    }
+  ],
+  "inputKeys": [
+    "Cx",
+    "Cy"
+  ],
+  "previous": "",
+  "next": ""
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ex_jovens_trabalhadores",
+  "name": "Jovens Trabalhadores",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Jovens Trabalhadores</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "somente_estuda": 21.6,
+        "trabalha_estuda": 13.6,
+        "somente_trabalha": 45.2,
+        "nao_trabalha_nao_estuda": 19.6
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "somente_estuda": 4.8,
+        "trabalha_estuda": 19.6,
+        "somente_trabalha": 30.4,
+        "nao_trabalha_nao_estuda": 45.2
+      }
+    }
+  ],
+  "inputKeys": [
+    "somente_estuda",
+    "trabalha_estuda",
+    "somente_trabalha",
+    "nao_trabalha_nao_estuda"
+  ],
+  "previous": "",
+  "next": ""
+}

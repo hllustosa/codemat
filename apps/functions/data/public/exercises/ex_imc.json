@@ -1,0 +1,33 @@
+{
+  "id": "ex_imc",
+  "name": "Índice de Massa Corporal",
+  "category": "programming",
+  "labels": [
+    "aritmética",
+    "básico",
+    "unidade 1"
+  ],
+  "statementHtml": " <script type=\"text/javascript\" id=\"MathJax-script\" async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\"></script> O índice de massa corporal (IMC) é um parâmetro calculado para saber se o peso de uma pessoa corresponde com a sua altura, isto é, se a pessoa está em seu peso ideal, abaixo ou acima dele. A fórmula para o cálculo do IMC é: </p>  $$imc = \\frac{peso}{altura^{2}}$$  Neste problema, você deve produzir um programa que receba como entrada o peso e a altura de uma pessoa e produza como saída o IMC. </p>  <h3>Entradas</h3> Dois números reais <b>peso</b> e <b>altura</b>. </p>  <h3>Saída</h3> Um número real <b>imc</b> contendo o índice de massa corporal calculado com base na entrada. </p> ",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "peso": 93.8,
+        "altura": 1.88
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "peso": 102,
+        "altura": 1.73
+      }
+    }
+  ],
+  "inputKeys": [
+    "peso",
+    "altura"
+  ],
+  "previous": "",
+  "next": ""
+}

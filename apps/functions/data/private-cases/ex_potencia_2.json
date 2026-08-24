@@ -1,0 +1,61 @@
+{
+  "id": "ex_potencia_2",
+  "cases": [
+    {
+      "input": {
+        "expoente": 3
+      },
+      "output": [
+        8
+      ]
+    },
+    {
+      "input": {
+        "expoente": 4
+      },
+      "output": [
+        16
+      ]
+    },
+    {
+      "input": {
+        "expoente": 5
+      },
+      "output": [
+        32
+      ]
+    },
+    {
+      "input": {
+        "expoente": 6
+      },
+      "output": [
+        64
+      ]
+    },
+    {
+      "input": {
+        "expoente": 7
+      },
+      "output": [
+        128
+      ]
+    },
+    {
+      "input": {
+        "expoente": 8
+      },
+      "output": [
+        256
+      ]
+    },
+    {
+      "input": {
+        "expoente": 9
+      },
+      "output": [
+        512
+      ]
+    }
+  ]
+}

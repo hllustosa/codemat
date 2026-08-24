@@ -1,0 +1,50 @@
+{
+  "id": "ex_cateto_oposto",
+  "cases": [
+    {
+      "input": {
+        "h": 50,
+        "theta": 36.87
+      },
+      "output": [
+        30
+      ]
+    },
+    {
+      "input": {
+        "h": 110,
+        "theta": 54.903
+      },
+      "output": [
+        90
+      ]
+    },
+    {
+      "input": {
+        "h": 25,
+        "theta": 23.578
+      },
+      "output": [
+        10
+      ]
+    },
+    {
+      "input": {
+        "h": 30,
+        "theta": 9.594
+      },
+      "output": [
+        5
+      ]
+    },
+    {
+      "input": {
+        "h": 45,
+        "theta": 26.388
+      },
+      "output": [
+        20
+      ]
+    }
+  ]
+}

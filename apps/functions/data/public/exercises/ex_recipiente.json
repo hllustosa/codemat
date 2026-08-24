@@ -1,0 +1,30 @@
+{
+  "id": "ex_recipiente",
+  "name": "Recipiente",
+  "category": "arithmetic",
+  "labels": [
+    "enem",
+    "arimética",
+    "unidade 5"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Recipiente</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "V": 6
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "V": 4
+      }
+    }
+  ],
+  "inputKeys": [
+    "V"
+  ],
+  "previous": "",
+  "next": ""
+}

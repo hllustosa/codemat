@@ -1,0 +1,32 @@
+{
+  "id": "ex_juros_compostos",
+  "name": "Juros Compostos",
+  "category": "Financial",
+  "labels": [
+    "Financeira",
+    "unidade 9"
+  ],
+  "statementHtml": "<p>Resolva o exercício <strong>Juros Compostos</strong>.</p>",
+  "examples": [
+    {
+      "id": 1,
+      "input": {
+        "C": 5000,
+        "t": 12
+      }
+    },
+    {
+      "id": 2,
+      "input": {
+        "C": 9500,
+        "t": 6
+      }
+    }
+  ],
+  "inputKeys": [
+    "C",
+    "t"
+  ],
+  "previous": "",
+  "next": ""
+}

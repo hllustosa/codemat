@@ -1,0 +1,53 @@
+{
+  "id": "ex_palindromo",
+  "cases": [
+    {
+      "input": {
+        "texto": "anotaramadatadamaratona"
+      },
+      "output": [
+        "palindromo"
+      ]
+    },
+    {
+      "input": {
+        "texto": "oignoranteafirmaosabioduvidaosensatoreflete"
+      },
+      "output": [
+        "texto normal"
+      ]
+    },
+    {
+      "input": {
+        "texto": "ovo"
+      },
+      "output": [
+        "palindromo"
+      ]
+    },
+    {
+      "input": {
+        "texto": "oloboamaobolo"
+      },
+      "output": [
+        "palindromo"
+      ]
+    },
+    {
+      "input": {
+        "texto": "eupensologoexisto"
+      },
+      "output": [
+        "texto normal"
+      ]
+    },
+    {
+      "input": {
+        "texto": "oinfernosaoosoutros"
+      },
+      "output": [
+        "texto normal"
+      ]
+    }
+  ]
+}
