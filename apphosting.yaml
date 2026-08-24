@@ -12,6 +12,10 @@ env:
     availability:
       - BUILD
       - RUNTIME
+  - variable: HOSTNAME
+    value: "0.0.0.0"
+    availability:
+      - RUNTIME
   - variable: NEXT_PUBLIC_SITE_URL
     value: https://codematbr.web.app
     availability:
