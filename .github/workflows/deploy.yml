@@ -52,11 +52,13 @@ jobs:
           npx firebase-tools@14.9.0 deploy \
             --only functions,firestore:rules,storage \
             --project codematbr \
-            --non-interactive
+            --non-interactive \
+            --force
 
       - name: Deploy App Hosting
         run: |
           npx firebase-tools@14.9.0 deploy \
             --only apphosting:codemat \
             --project codematbr \
-            --non-interactive
+            --non-interactive \
+            --force
